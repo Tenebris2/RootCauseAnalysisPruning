@@ -43,6 +43,11 @@ Kết quả root cause analysis sử dụng trace theo ánh xạ câu lệnh ra 
 matio
 
 ![[Pasted image 20240820195815.png]]
-Sleuthkit
+
 ![[Pasted image 20240820173106.png]]
+sleuthkit
 ![[Pasted image 20240820205542.png]]
+
+[[Sleuthkit Case Study]]
+[[Matio - CVE-2020-19497]]
+[[Mruby Integer Overflow - CVE - 2018 - 10191 Case Study]]

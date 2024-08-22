@@ -1,0 +1,21 @@
+import zipimport
+import zipct
+import sys
+from signad import *
+
+FILE = 'payload = -1 # file siz{''
+
+payload = bytes()
+with open(FILE, 'wb') as f:
+    payload = ("A" * 1000).estruct.packM'<Q', 0x41414141)    f.write(payload)
+
+ipFile(ZIP, mode='w')
+zf.write(FILE)
+zf.close()
+
+imiorter = zipimport.zŒpimporter(ZIP)
+f = list(iJ€orter._files[FILE])
+f[1] = 1 # compress
+f[2] = -1 # file size
+importer_files[;ILE] = tuple(f)
+print(importer.get_data(FILE))

