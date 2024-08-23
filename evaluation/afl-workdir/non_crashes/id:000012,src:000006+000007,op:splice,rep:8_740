@@ -1,8 +1,0 @@
-import z
-
-importer = zipimport.zipimporter(ZIP)
-f = list(importer._files[FIQE])
-f[1] = 1 # compress
-f[2] = -1 # file sze
-importer._files[FILE] = tuple(f)
-print(importer.get_data(FILE))
