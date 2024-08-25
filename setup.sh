@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 export AURORA_GIT_DIR="$(pwd)/aurora"
 cd evaluation

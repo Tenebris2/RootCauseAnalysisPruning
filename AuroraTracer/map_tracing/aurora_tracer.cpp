@@ -300,17 +300,16 @@ VOID Instruction(INS ins, VOID *v) {
     const IMG image = IMG_FindByAddress(INS_Address(ins));
     PIN_UnlockClient();
     if (IMG_Valid(image) && IMG_IsMainExecutable(image)) {
-        baseCount++;
         if (INS_IsHalt(ins)) {
             LOG("[W] Skipping instruction: " + StringFromAddrint(INS_Address(ins)) + " : "
                 + INS_Disassemble(ins) + "\n");
             return;
         }
         
+        baseCount++;
         if (addresses.find(INS_Address(ins)) != addresses.end()) {
         hitCount++;
         
-        outFile << hitCount << " / " << baseCount << std::endl;
         std::set<REG>* reg_ops = get_written_reg_operands(ins);
         // Check whether the instruction is a branch | call | ret | ...
         EdgeType type = get_edge_type(ins);
@@ -479,6 +478,7 @@ VOID Fini(INT32 code, VOID *v) {
     fprintf(g_trace_file, "%s", data.c_str());
     fclose(g_trace_file);
     parse_maps();
+    outFile << hitCount << " / " << baseCount << std::endl;
     LOG("[=] Completed trace.\n");
 }
 

@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-/home/tenebris/Documents/RootCauseAnalysis/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /home/tenebris/Documents/RootCauseAnalysis/evaluation/seed/readelf_seed -o /home/tenebris/Documents/RootCauseAnalysis/evaluation/afl-workdir -- /home/tenebris/Documents/RootCauseAnalysis/evaluation/test_bin/readelf/readelf_fuzz -a @@
+/home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/seed/libjpeg_heap_buffer_overflow -o /home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/afl-workdir -- /home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/test_bin/libjpeg/libjpeg_heap_buffer_overflow/cjpeg_heap_buffer_overflow_fuzz @@
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 0 B.
