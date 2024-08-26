@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-/home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/seed/libjpeg_heap_buffer_overflow -o /home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/afl-workdir -- /home/tenebris/Disk/Documents/RootCauseAnalysis/evaluation/test_bin/libjpeg/libjpeg_heap_buffer_overflow/cjpeg_heap_buffer_overflow_fuzz @@
+/media/ssd-partition/Documents/RootCauseAnalysis/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /media/ssd-partition/Documents/RootCauseAnalysis/evaluation/seed/tcpdump_seed/ -o /media/ssd-partition/Documents/RootCauseAnalysis/evaluation/afl-workdir -- /media/ssd-partition/Documents/RootCauseAnalysis/evaluation/test_bin/tcpdump/tcpdump_fuzz -vr @@
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 0 B.
