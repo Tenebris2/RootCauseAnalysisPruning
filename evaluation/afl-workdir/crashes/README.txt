@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-/media/ssd-partition/Documents/RootCauseAnalysis/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /media/ssd-partition/Documents/RootCauseAnalysis/evaluation/seed/tcpdump_seed/ -o /media/ssd-partition/Documents/RootCauseAnalysis/evaluation/afl-workdir -- /media/ssd-partition/Documents/RootCauseAnalysis/evaluation/test_bin/tcpdump/tcpdump_fuzz -vr @@
+/media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/seed/patch_seed -o /media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/afl-workdir -- /media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/test_bin/patch/patch_fuzz -o outfile -Rf
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 0 B.
