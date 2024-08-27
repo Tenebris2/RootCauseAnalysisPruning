@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-/media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/seed/patch_seed -o /media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/afl-workdir -- /media/ssd-partition/Documents/RootCauseAnalysisPruning/evaluation/test_bin/patch/patch_fuzz -o outfile -Rf
+/home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/seed/libxml2_seed -o /home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/afl-workdir -- /home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/test_bin/libxml2/xmllint_fuzz --recover @@
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 0 B.
