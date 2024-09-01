@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-/home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/seed/libxml2_seed -o /home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/afl-workdir -- /home/tenebris/Disk/Documents/RootCauseAnalysisPruning/evaluation/test_bin/libxml2/xmllint_fuzz --recover @@
+/home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/afl-fuzz/afl-fuzz -C -d -m none -i /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/seed/python_seed/ -o /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/afl-workdir -- /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/test_bin/python2.7/Python-2.7/python_fuzz @@
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 0 B.

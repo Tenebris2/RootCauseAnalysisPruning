@@ -513,7 +513,7 @@ int main(int argc, char * argv[]) {
     // Check if ASLR is disabled
     std::ifstream infile("/proc/sys/kernel/randomize_va_space");
 
-    outFile.open("hitcount.out");
+    outFile.open("hitcount.out", std::ios_base::app);
     int aslr;
     if (!infile) {
         PIN_ERROR("Unable to check whether ASLR is enabled or not. Failed to open /proc/sys/kernel/randomize_va_space");
