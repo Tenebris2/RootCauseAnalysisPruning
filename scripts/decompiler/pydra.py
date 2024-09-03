@@ -5,7 +5,6 @@ import sys
 import lib
 JUMP_FILE = "jump_instructions"
 INSTRUCTION_FILE = "instructions"
-OTHER_JUMP_FILE = "other_jump_instructions"
 TARGET = sys.argv[1]
 pyhidra.start()
 print("Starting..")

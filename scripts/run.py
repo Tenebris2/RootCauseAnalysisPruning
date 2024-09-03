@@ -5,83 +5,94 @@ import subprocess
 import sys
 from enum import Enum
 from extract_ranking import extract_ranking
+
+# Env Vars
 eval_dir = os.getenv("EVAL_DIR")
 aurora_git_dir = os.getenv("AURORA_GIT_DIR")
 afl_workdir = os.getenv("AFL_WORKDIR")
 afl_dir = os.getenv("AFL_DIR")
-
 pin_root = os.getenv("PIN_ROOT")
 method_dir = os.getenv("METHOD_DIR")
+
+# Arg: "$EVAL_DIR/mruby_trace @@"
 args = sys.argv[1]
 
 fpath = args.split("/")
+fpath = f"{eval_dir}/results/{fpath[len(fpath)  - 1]}"
 
-if len(fpath) > 1:
- fpath = f"{eval_dir}/results/{fpath[len(fpath)  - 1]}"
-
-aurora_path = f"{fpath}/aurora/"
-loc_path = f"{fpath}/loc/"
-loc_with_source_path = f"{fpath}/loc_with_source"
-basic_block_path = f"{fpath}/basic_block/"
-script_path = f"{aurora_git_dir}/tracing/scripts"
-traces_path = f"{eval_dir}/traces"
-rca_path = f"{aurora_git_dir}/root_cause_analysis"
-paths = [aurora_path, loc_path, loc_with_source_path, basic_block_path]
+AURORA_PATH = f"{fpath}/aurora/"
+LOC_PATH = f"{fpath}/loc/"
+LOC_WITH_SOURCE_PATH = f"{fpath}/loc_with_source"
+BASIC_BLOCK_PATH = f"{fpath}/basic_block/"
+SCRIPT_PATH = f"{aurora_git_dir}/tracing/scripts"
+TRACES_PATH = f"{eval_dir}/traces"
+RCA_PATH = f"{aurora_git_dir}/root_cause_analysis"
+DECOMPILING_RESULTS = f"{os.getcwd()}/decompiling_execution_time.txt"
+URANDOM_SIZE = 4
+paths = [AURORA_PATH, LOC_PATH, LOC_WITH_SOURCE_PATH, BASIC_BLOCK_PATH]
 for path in paths:
     os.makedirs(path, exist_ok=True)
-paths = [aurora_path, loc_path, loc_with_source_path, basic_block_path]
+paths = [AURORA_PATH, LOC_PATH, LOC_WITH_SOURCE_PATH, BASIC_BLOCK_PATH]
 
 class Method(Enum):
-    AURORA = "default_tracing/aurora_tracer.cpp"
-    LOC = "map_tracing/aurora_tracer.cpp"
-    BASIC_BLOCK = "jump_tracing/aurora_tracer.cpp"
+    AURORA = f"{method_dir}/default_tracing/aurora_tracer.cpp"
+    LOC = f"{method_dir}/map_tracing/aurora_tracer.cpp"
+    BASIC_BLOCK = f"{method_dir}/jump_tracing/aurora_tracer.cpp"
 
 # results -> stats from traces, predicate ranking, line ranking, rca time 
 
 # aurora 
 def run_aurora():
-    trace(aurora_path)
-    root_cause_analysis(aurora_path)
+    res_path = AURORA_PATH + f"aurora_{int.from_bytes(os.urandom(URANDOM_SIZE), byteorder='big')}"
+    os.makedirs(res_path, exist_ok=True)
+    trace(res_path, method=Method.AURORA, with_source=False)
+    root_cause_analysis(res_path)
+def run(method: Method, with_source: bool):
+    id = int.from_bytes(os.urandom(URANDOM_SIZE), byteorder='big')
+    res_path = ""
+    if method == method.AURORA:
+        res_path = AURORA_PATH + f"aurora_{id}"
+    elif method == Method.LOC:
+        if with_source == True:
+            res_path = LOC_WITH_SOURCE_PATH + f"loc_with_source_{id}"
+        else:
+            res_path = LOC_PATH + f"loc_{id}"
+    os.makedirs(res_path, exist_ok=True)
+    trace(res_path, method=method, with_source=with_source)
+    root_cause_analysis(res_path)
 
-def run_loc():
-
-    pass
-def run_loc_with_source():
-    pass
-def run_basic_block():
-    pass
-
-def trace(res_path):
+def print_res(cmd):
+    print(cmd.stdout, cmd.stderr)
+def trace(res_path, method: Method, with_source: bool):
     clean_previous_run()
+    
+    set_method(method, with_source)
+    trace_cmd = f"python3 {SCRIPT_PATH}/tracing.py {args} {eval_dir}/inputs {eval_dir}/traces"
+    trace_cmd_res = subprocess.run(trace_cmd, shell=True, text=True, capture_output=True)
+    print_res(trace_cmd_res)
 
-    trace_cmd = f"python3 {script_path}/tracing.py {args} {eval_dir}/inputs {eval_dir}/traces"
-    print(trace_cmd)
+    get_addr_cmd = f"python3 {SCRIPT_PATH}/addr_ranges.py --eval_dir {eval_dir} {TRACES_PATH}"
+    get_addr_cmd_res = subprocess.run(get_addr_cmd, shell=True, text=True, capture_output=True)
+    print_res(get_addr_cmd_res)
 
-    get_addr = f"python3 {script_path}/addr_ranges.py --eval_dir {eval_dir} {traces_path}"
-
-    print(get_addr)
     try:
-        shutil.move(f"{traces_path}/stats.txt", res_path)
-        print(f"File moved from {traces_path} to {res_path}")
+        shutil.move(f"{TRACES_PATH}/stats.txt", res_path)
+        print(f"File moved from {TRACES_PATH} to {res_path}")
     except FileNotFoundError:
-        print(f"Error: the file {traces_path} does not exist")
+        print(f"Error: the file {TRACES_PATH} does not exist")
 
 def clean_previous_run():
-    try:
-        rm_traces_cmd = f"rm -rf {traces_path}/*"
-        print(rm_traces_cmd)
-        os.remove(f"{eval_dir}/ranked_predicates_verbose.txt")
-        print("Cleaned")
-    except FileNotFoundError:
-        print("File ranked_predicates_verbose.txt not found")
+    rm_traces_cmd = f"rm -rf {TRACES_PATH}/*"
+    subprocess.run(rm_traces_cmd, shell=True)
+    print("Cleaned")
 def root_cause_analysis(res_path: str):
     clean_previous_run()
     # run rca
     rca_cmd = f"cargo run --release --bin rca -- --eval-dir {eval_dir} --trace-dir {eval_dir} --monitor --rank-predicates"
     # enrich
     addr2bin_cmd = f"cargo run --release --bin addr2line -- --eval-dir {eval_dir}"
-    result = subprocess.run(rca_cmd, shell=True, text=True, capture_output=True, cwd=rca_path)
-    subprocess.run(addr2bin_cmd, shell=True, text=True, capture_output=True,cwd=rca_path)
+    result = subprocess.run(rca_cmd, shell=True, text=True, capture_output=True, cwd=RCA_PATH)
+    subprocess.run(addr2bin_cmd, shell=True, text=True, capture_output=True,cwd=RCA_PATH)
     
     predicate_rank, line_rank = extract_ranking(f"{eval_dir}/ranked_predicates_verbose.txt", "mat5.c:4975")
 
@@ -89,18 +100,35 @@ def root_cause_analysis(res_path: str):
         file.write(result.stdout)
         file.write(result.stderr)
         file.write(f"Predicate Ranking: {predicate_rank}\n LOC Ranking: {line_rank}")
-
+    try:
+        shutil.move(f"{eval_dir}/ranked_predicates_verbose.txt", res_path)
+    except FileNotFoundError:
+        print("File ranked_predicates_verbose.txt could not be found")
 def set_method(method: Method, with_source: bool):
     setup_method_cmd = f"{method_dir}/setup_method.sh " + method.value
-    if method is Method.AURORA:
+    if method == Method.AURORA or method == Method.BASIC_BLOCK:
         print(setup_method_cmd)
-    elif method is Method.LOC:
-        if with_source is False:
-            setup_address_cmd = f"./setup.sh " + args
+    elif method == Method.LOC:
+        if with_source == False:
+            setup_address_cmd = f"./setup_decompiling.sh " + args
             print(setup_address_cmd)
         else:
             setup_address_cmd = f"./extract.sh " + args
             print(setup_address_cmd)
-            result = subprocess.run(setup_address_cmd, shell=True, text=True, capture_output=True, cwd="./source-code-extractor/")
-            print(result.stdout, result.stderr)
-set_method(Method.LOC, True)
+        set_addr_res = subprocess.run(setup_address_cmd, shell=True, text=True, capture_output=True)
+        print(set_addr_res.stdout, set_addr_res.stderr)
+    set_method_res = subprocess.run(setup_method_cmd, shell=True, text=True, capture_output=True)
+    print(f"Setting method: {set_method_res.stdout} {set_method_res.stderr}")
+def move_decompiling_results():
+    try:
+        shutil.move(DECOMPILING_RESULTS, LOC_PATH)
+        print(f"Moved {DECOMPILING_RESULTS} to {LOC_PATH}")
+    except FileNotFoundError:
+        print(f"{DECOMPILING_RESULTS} not found")
+    except shutil.Error as e:
+        print(f"Shutil error: {e}")
+
+# set_method(Method.LOC, False)
+# move_decompiling_results()
+
+run(Method.AURORA, False)

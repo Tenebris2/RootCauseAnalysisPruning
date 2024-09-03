@@ -3,7 +3,7 @@ import re
 FILE_TO_WRITE = "decompiled_code"
 OFFSET = "00"
 GLOBAL_END_INDICATOR = "END_OF_LINE"
-OTHER_JUMP_FILE = "other_jump_instructions"
+JUMP_FILE = "jump_instructions"
 START_ADDRESS = "00101000"
 END_ADDRESS = "0010136c"
 
@@ -134,13 +134,9 @@ def writeInstructionMappingToFile(function_name, markup, flat_api, AddressSet):
 
 def extractJumpSet() :
     temp = jump_set
-    with open(OTHER_JUMP_FILE, "w") as file:
+    with open(JUMP_FILE, "w") as file:
         for t in temp:
             file.write(t.toString() + "\n")
-    
-    with open("temp", "w") as file:
-        for a in address_set:
-            file.write(a.toString() + "\n")
 def definedUndefinedFunctions(currentProgram, monitor, flat_api, AddressSet, IsolatedEntrySubModel):
     set = AddressSet()
     listing = currentProgram.getListing()

@@ -32,7 +32,7 @@ def extract_jump_instruction_addresses(jump_file_path):
 
 
 file_path = 'decompiled_code'
-jump_file_path = 'other_jump_instructions'
+jump_file_path = 'jump_instructions'
 extract_hex_addresses(file_path)
 
 original_hex_addresses_len = len(hex_addresses)
