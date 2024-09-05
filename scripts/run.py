@@ -29,6 +29,7 @@ TRACES_PATH = f"{eval_dir}/traces"
 RCA_PATH = f"{aurora_git_dir}/root_cause_analysis"
 DECOMPILING_RESULTS = f"{os.getcwd()}/decompiling_execution_time.txt"
 URANDOM_SIZE = 4
+HIT_COUNT = "hitcount.out"
 paths = [AURORA_PATH, LOC_PATH, LOC_WITH_SOURCE_PATH, BASIC_BLOCK_PATH]
 for path in paths:
     os.makedirs(path, exist_ok=True)
@@ -77,6 +78,7 @@ def trace(res_path, method: Method, with_source: bool):
 
     try:
         shutil.move(f"{TRACES_PATH}/stats.txt", res_path)
+        shutil.move(HIT_COUNT, res_path)
         print(f"File moved from {TRACES_PATH} to {res_path}")
     except FileNotFoundError:
         print(f"Error: the file {TRACES_PATH} does not exist")
