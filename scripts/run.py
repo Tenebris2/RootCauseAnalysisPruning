@@ -28,7 +28,6 @@ SCRIPT_PATH = f"{aurora_git_dir}/tracing/scripts"
 TRACES_PATH = f"{eval_dir}/traces"
 RCA_PATH = f"{aurora_git_dir}/root_cause_analysis"
 DECOMPILING_RESULTS = f"{os.getcwd()}/decompiling_execution_time.txt"
-URANDOM_SIZE = 4
 HIT_COUNT = "hitcount.out"
 paths = [AURORA_PATH, LOC_PATH, LOC_WITH_SOURCE_PATH, BASIC_BLOCK_PATH]
 for path in paths:
@@ -43,13 +42,7 @@ class Method(Enum):
 # results -> stats from traces, predicate ranking, line ranking, rca time 
 
 # aurora 
-def run_aurora():
-    res_path = AURORA_PATH + f"aurora_{int.from_bytes(os.urandom(URANDOM_SIZE), byteorder='big')}"
-    os.makedirs(res_path, exist_ok=True)
-    trace(res_path, method=Method.AURORA, with_source=False)
-    root_cause_analysis(res_path)
-def run(method: Method, with_source: bool):
-    id = int.from_bytes(os.urandom(URANDOM_SIZE), byteorder='big')
+def run(method: Method, with_source: bool, id: int):
     res_path = ""
     if method == method.AURORA:
         res_path = AURORA_PATH + f"aurora_{id}"
@@ -59,16 +52,16 @@ def run(method: Method, with_source: bool):
         else:
             res_path = LOC_PATH + f"loc_{id}"
     os.makedirs(res_path, exist_ok=True)
-    trace(res_path, method=method, with_source=with_source)
+    trace(res_path, method=method, with_source=with_source, id=id)
     root_cause_analysis(res_path)
-
+    
 def print_res(cmd):
     print(cmd.stdout, cmd.stderr)
-def trace(res_path, method: Method, with_source: bool):
+def trace(res_path, method: Method, with_source: bool, id: int):
     clean_previous_run()
     
     set_method(method, with_source)
-    trace_cmd = f"python3 {SCRIPT_PATH}/tracing.py {args} {eval_dir}/inputs {eval_dir}/traces"
+    trace_cmd = f"python3 {SCRIPT_PATH}/tracing.py {args} {eval_dir}/inputs/input-{id} {eval_dir}/traces"
     trace_cmd_res = subprocess.run(trace_cmd, shell=True, text=True, capture_output=True)
     print_res(trace_cmd_res)
 
@@ -78,15 +71,18 @@ def trace(res_path, method: Method, with_source: bool):
 
     try:
         shutil.move(f"{TRACES_PATH}/stats.txt", res_path)
-        shutil.move(HIT_COUNT, res_path)
+        if method != Method.AURORA:
+            shutil.move(HIT_COUNT, res_path)
         print(f"File moved from {TRACES_PATH} to {res_path}")
     except FileNotFoundError:
         print(f"Error: the file {TRACES_PATH} does not exist")
 
 def clean_previous_run():
-    rm_traces_cmd = f"rm -rf {TRACES_PATH}/*"
-    subprocess.run(rm_traces_cmd, shell=True)
-    print("Cleaned")
+    # rm_traces_cmd = f"rm -rf {TRACES_PATH}/*"
+    # subprocess.run(rm_traces_cmd, shell=True)
+    # print("Cleaned")
+    rm_trace_ghidras = f"rm -rf {eval_dir}/*_trace_ghidra"
+    print(rm_trace_ghidras)
 def root_cause_analysis(res_path: str):
     clean_previous_run()
     # run rca
@@ -132,5 +128,6 @@ def move_decompiling_results():
 
 # set_method(Method.LOC, False)
 # move_decompiling_results()
-
-run(Method.AURORA, False)
+# for id in range(0, 5):
+#     run(Method.LOC, False, id)
+clean_previous_run()

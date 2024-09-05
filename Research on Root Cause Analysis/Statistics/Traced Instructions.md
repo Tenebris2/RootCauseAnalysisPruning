@@ -75,7 +75,7 @@
 | 4   | CVE-2018-10191    | mruby integer overflow       | 0:06              | BB        | 0:25/1607                          | 5/ off root cause by 4 lines                               | 3     |                |
 |     |                   |                              | 0:12              | LOC       | 0:25/1607                          | 10                                                         | 8     |                |
 |     |                   |                              | 0:20              | aurora    | 0:3/749                            | 1 / off root cause by 36 lines                             | 1     | 0:01           |
-|     |                   |                              | 0:05              | LOC       |                                    |                                                            | 1     |                |
+|     |                   |                              | 0:05              | LOC       |                                    | 1 / off root cause                                         | 1     |                |
 |     |                   |                              | 0:05              | LOC-DEBUG |                                    | 13/Off root cause by 35 lines                              | 11    |                |
 |     |                   |                              | 0:3               | BB        |                                    | 5/Off root case by 43                                      | 4     |                |
 | 5   | bug #5.0-2        | lua                          | 0:5               | aurora    | 0:15/1007                          | 63                                                         |       |                |
@@ -151,7 +151,6 @@ Better predicate ranking
 Aurora - LOC - BB
 
 #Predicates - #SLOC - Tracing - PA - Ranking - % Instructions
-
 Fuzz time: 1h -> Cannot Fuzz for one hour without it crashing
 CVE-2016-5636 - Python
 
