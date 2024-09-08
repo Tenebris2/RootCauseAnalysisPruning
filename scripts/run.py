@@ -18,7 +18,7 @@ method_dir = os.getenv("METHOD_DIR")
 args = sys.argv[1]
 
 fpath = args.split("/")
-fpath = f"{eval_dir}/results/{fpath[len(fpath)  - 1]}"
+fpath = f"{eval_dir}/results/{fpath[len(fpath) - 1].split(' ')[0]}"
 
 AURORA_PATH = f"{fpath}/aurora/"
 LOC_PATH = f"{fpath}/loc/"
@@ -40,7 +40,12 @@ class Method(Enum):
     BASIC_BLOCK = f"{method_dir}/jump_tracing/aurora_tracer.cpp"
 
 # results -> stats from traces, predicate ranking, line ranking, rca time 
-
+def setup():
+# arguments, binary
+    arguments = ' '.join(args.split(' ')[1:])
+    print(arguments)
+    with open(f"{eval_dir}/arguments.txt", "w") as file:
+        file.write(arguments)
 # aurora 
 def run(method: Method, with_source: bool, id: int):
     res_path = ""
@@ -60,8 +65,12 @@ def print_res(cmd):
 def trace(res_path, method: Method, with_source: bool, id: int):
     clean_previous_run()
     
+    # move input-{id} into input directory for rca monitoring
+    move_input_cmd = f"cp {eval_dir}/inputs/input-{id}/* -r {eval_dir}/inputs/" 
+    subprocess.run(move_input_cmd, shell=True, text=True, capture_output=True)
     set_method(method, with_source)
-    trace_cmd = f"python3 {SCRIPT_PATH}/tracing.py {args} {eval_dir}/inputs/input-{id} {eval_dir}/traces"
+    trace_cmd = f'python3 {SCRIPT_PATH}/tracing.py "{args}" {eval_dir}/inputs/input-{id} {eval_dir}/traces'
+    print(trace_cmd)
     trace_cmd_res = subprocess.run(trace_cmd, shell=True, text=True, capture_output=True)
     print_res(trace_cmd_res)
 
@@ -70,28 +79,35 @@ def trace(res_path, method: Method, with_source: bool, id: int):
     print_res(get_addr_cmd_res)
 
     try:
-        shutil.move(f"{TRACES_PATH}/stats.txt", res_path)
+        shutil.copy(f"{TRACES_PATH}/stats.txt", res_path)
+        move_decompiling_results(id)
         if method != Method.AURORA:
-            shutil.move(HIT_COUNT, res_path)
+            shutil.copy(HIT_COUNT, res_path)
         print(f"File moved from {TRACES_PATH} to {res_path}")
     except FileNotFoundError:
         print(f"Error: the file {TRACES_PATH} does not exist")
 
 def clean_previous_run():
-    # rm_traces_cmd = f"rm -rf {TRACES_PATH}/*"
-    # subprocess.run(rm_traces_cmd, shell=True)
-    # print("Cleaned")
+    if os.path.exists("/tmp/tm"):
+        print(f"/tmp/tm exists")
+        shutil.rmtree("/tmp/tm")
+    rm_traces_cmd = f"rm -rf {TRACES_PATH}/*"
+    subprocess.run(rm_traces_cmd, shell=True)
+    print("Cleaned")
     rm_trace_ghidras = f"rm -rf {eval_dir}/*_trace_ghidra"
-    print(rm_trace_ghidras)
+    subprocess.run(rm_trace_ghidras, shell=True)
+def cleanup():
+    rm_trace_binaries = f"rm {eval_dir}/*_trace"
+    subprocess.run(rm_trace_binaries, shell=True)
+
 def root_cause_analysis(res_path: str):
-    clean_previous_run()
     # run rca
     rca_cmd = f"cargo run --release --bin rca -- --eval-dir {eval_dir} --trace-dir {eval_dir} --monitor --rank-predicates"
     # enrich
     addr2bin_cmd = f"cargo run --release --bin addr2line -- --eval-dir {eval_dir}"
     result = subprocess.run(rca_cmd, shell=True, text=True, capture_output=True, cwd=RCA_PATH)
     subprocess.run(addr2bin_cmd, shell=True, text=True, capture_output=True,cwd=RCA_PATH)
-    
+    print_res(result)
     predicate_rank, line_rank = extract_ranking(f"{eval_dir}/ranked_predicates_verbose.txt", "mat5.c:4975")
 
     with open(f"{res_path}/rca_results.txt", "a") as file:
@@ -117,17 +133,18 @@ def set_method(method: Method, with_source: bool):
         print(set_addr_res.stdout, set_addr_res.stderr)
     set_method_res = subprocess.run(setup_method_cmd, shell=True, text=True, capture_output=True)
     print(f"Setting method: {set_method_res.stdout} {set_method_res.stderr}")
-def move_decompiling_results():
+def move_decompiling_results(id):
     try:
-        shutil.move(DECOMPILING_RESULTS, LOC_PATH)
-        print(f"Moved {DECOMPILING_RESULTS} to {LOC_PATH}")
+        shutil.move(DECOMPILING_RESULTS, f"{LOC_PATH}/loc_{id}/")
+        print(f"Moved {DECOMPILING_RESULTS} to {LOC_PATH}/loc_{id}")
     except FileNotFoundError:
         print(f"{DECOMPILING_RESULTS} not found")
     except shutil.Error as e:
         print(f"Shutil error: {e}")
 
-# set_method(Method.LOC, False)
-# move_decompiling_results()
-# for id in range(0, 5):
-#     run(Method.LOC, False, id)
-clean_previous_run()
+setup()
+for i in range(0, 5):
+    run(Method.AURORA, False, i)
+    run(Method.LOC, False, i)
+    run(Method.LOC, True, i)
+    run(Method.BASIC_BLOCK, False, i)

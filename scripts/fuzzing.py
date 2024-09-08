@@ -4,7 +4,7 @@ import threading
 import subprocess
 import sys
 import os
-TIME_OUT = 10
+TIME_OUT = 3200
 threads = []
 # env 
 afl_dir = os.getenv("AFL_DIR")
@@ -12,6 +12,8 @@ afl_workdir = os.getenv("AFL_WORKDIR")
 eval_dir = os.getenv("EVAL_DIR")
 print(afl_dir)
 print(afl_workdir)
+
+# example: python3 fuzzing.py $EVAL_DIR/seed/matio_seed/ "$EVAL_DIR/matdump_trace @@"
 seed_input = sys.argv[1]
 arg = sys.argv[2]
 

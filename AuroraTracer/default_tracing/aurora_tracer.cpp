@@ -112,7 +112,9 @@ static ADDRINT g_low_address;
 static ADDRINT g_first_ins_addr;
 static UINT64 g_reg_state[23] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 static PIN_LOCK g_lock;
-
+UINT baseCount = 0;
+UINT hitCount = 0;
+std::ofstream outFile;
 
 /**
  *  Add instruction to global instruction map
@@ -287,6 +289,8 @@ VOID Instruction(INS ins, VOID *v) {
                 + INS_Disassemble(ins) + "\n");
             return;
         }
+        hitCount++;
+        baseCount++;
         std::set<REG>* reg_ops = get_written_reg_operands(ins);
         // Check whether the instruction is a branch | call | ret | ...
         EdgeType type = get_edge_type(ins);
@@ -452,6 +456,7 @@ VOID Fini(INT32 code, VOID *v) {
     std::string data = jsonify();
     fprintf(g_trace_file, "%s", data.c_str());
     fclose(g_trace_file);
+    outFile << hitCount << " / " << baseCount << std::endl;
     parse_maps();
     LOG("[=] Completed trace.\n");
 }
@@ -486,6 +491,7 @@ INT32 Aslr() {
 int main(int argc, char * argv[]) {
     // Check if ASLR is disabled
     std::ifstream infile("/proc/sys/kernel/randomize_va_space");
+    outFile << hitCount << " / " << baseCount << std::endl;
     int aslr;
     if (!infile) {
         PIN_ERROR("Unable to check whether ASLR is enabled or not. Failed to open /proc/sys/kernel/randomize_va_space");

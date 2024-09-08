@@ -1,4 +1,4 @@
-	# Table for traced instructions to total instructions
+			# Table for traced instructions to total instructions
 
 | program                      | method    | traced_instructions | total_instructions |
 | ---------------------------- | --------- | ------------------- | ------------------ |

@@ -7,6 +7,7 @@ cp ${dir} ${path}
 
 cd $path 
 
+make clean
 make
 
 cd $OLDPWD
