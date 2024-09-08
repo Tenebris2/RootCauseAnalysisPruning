@@ -1,0 +1,170 @@
+0x0000555555592f4b -- rax min_reg_val_less 0x6 -- 0.9977777777777778 -- mov rax, qword ptr [rax+0x20] (path rank: 0.43715839411018403) //process_mips_specific at readelf.c:16187
+0x0000555555592f4f -- max_zero_flag_set -- 0.9977777777777778 -- shr rax, 0x3 (path rank: 0.438797135069193) //process_mips_specific at readelf.c:16187
+0x0000555555592f58 -- rdi min_reg_val_less 0x1 -- 0.9977777777777778 -- mov rdi, rax (path rank: 0.4523610797707491) //process_mips_specific at readelf.c:16187
+0x000055555559310a -- rax min_reg_val_less 0x6 -- 0.9977777777777778 -- mov rax, qword ptr [rax+0x20] (path rank: 0.5844460048111035) //process_mips_specific at readelf.c:16197
+0x000055555559310e -- max_sign_flag_set -- 0.9977777777777778 -- sub rax, 0x8 (path rank: 0.5865877212373428) //process_mips_specific at readelf.c:16197
+0x000055555559303e -- rdx min_reg_val_greater_or_equal 0x1a -- 0.9974305555555556 -- mov edx, eax (path rank: 0.8401228988794021) //process_mips_specific at readelf.c:16205
+0x0000555555593047 -- memory_value min_reg_val_greater_or_equal 0x1a -- 0.9974305555555556 -- mov word ptr [rax+0x2], dx (path rank: 0.8921963210520882) //process_mips_specific at readelf.c:16205
+0x000055555559306e -- memory_value min_reg_val_greater_or_equal 0x3 -- 0.9974305555555556 -- mov qword ptr [rdx+0x8], rax (path rank: 0.8982650955658773) //process_mips_specific at readelf.c:16206
+0x0000555555592f2f -- memory_value min_reg_val_greater_or_equal 0x555555617d30 -- 0.9956944444444444 -- mov qword ptr [rbp-0x1f0], rax (path rank: 0.41169319687880596) //process_mips_specific at readelf.c:16182
+0x0000555555593016 -- rdx min_reg_val_less 0x1 -- 0.9956944444444444 -- mov edx, eax (path rank: 0.756441811722233) //process_mips_specific at readelf.c:16204
+0x0000555555593079 -- rax min_reg_val_less 0x1 -- 0.9956944444444444 -- movzx eax, byte ptr [rax+0x1] (path rank: 0.8992811936914833) //process_mips_specific at readelf.c:16209
+0x00005555555930b0 -- rax min_reg_val_less 0x1 -- 0.9956944444444444 -- movzx eax, byte ptr [rax+0x1] (path rank: 0.9196271107438176) //process_mips_specific at readelf.c:16212
+0x00005555555930b4 -- rbx min_reg_val_less 0x1 -- 0.9956944444444444 -- movzx ebx, al (path rank: 0.9264090830945955) //process_mips_specific at readelf.c:16212
+0x00005555555930c6 -- rsi min_reg_val_less 0x1 -- 0.9956944444444444 -- mov esi, ebx (path rank: 0.9467550001469298) //process_mips_specific at readelf.c:16212
+0x000055555559301f -- memory_value min_reg_val_less 0x1 -- 0.9956944444444444 -- mov byte ptr [rax+0x1], dl (path rank: 1.9433237497671498) //process_mips_specific at readelf.c:16204
+0x0000555555593112 -- max_adjust_flag_set -- 0.9953472222222222 -- cmp qword ptr [rbp-0x248], rax (path rank: 0.593369693588121) //process_mips_specific at readelf.c:16197
+0x0000555555592fef -- rdx min_reg_val_less 0xff -- 0.9953472222222222 -- mov edx, eax (path rank: 0.6918003907180486) //process_mips_specific at readelf.c:16203
+0x0000555555592ff8 -- memory_value min_reg_val_less 0xff -- 0.9953472222222222 -- mov byte ptr [rax], dl (path rank: 0.7586193469173176) //process_mips_specific at readelf.c:16203
+0x000055555559307d -- max_adjust_flag_set -- 0.9953472222222222 -- cmp al, 0x7 (path rank: 0.9060631660422616) //process_mips_specific at readelf.c:16209
+0x000055555559307f -- 0x55555559307f edge_only_taken_to 0x5555555930a9 -- 0.9953472222222222 -- jbe 0x5555555930a9 (path rank: 2) //process_mips_specific at readelf.c:16209
+0x0000555555592f44 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x210] (path rank: 0.42525714158036215) //process_mips_specific at readelf.c:16187
+0x0000555555592f53 -- is_visited -- 0.995 -- mov esi, 0x10 (path rank: 0.445579107419971) //process_mips_specific at readelf.c:16187
+0x00005555555c1e57 -- 0x5555555c1e57 has_edge_to 0x555555592f60 -- 0.995 -- ret  (path rank: 0.5120099765915095) //cmalloc at dwarf.c:9577
+0x0000555555592f60 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov qword ptr [rbp-0x1e8], rax (path rank: 0.5187919489422876) //process_mips_specific at readelf.c:16187
+0x0000555555592f67 -- max_interrupt_flag_set -- 0.995 -- cmp qword ptr [rbp-0x1e8], 0x0 (path rank: 0.5255739212930656) //process_mips_specific at readelf.c:16188
+0x0000555555592f6f -- is_visited -- 0.995 -- jnz 0x555555592f97 (path rank: 0.5323558936438437) //process_mips_specific at readelf.c:16188
+0x0000555555592f97 -- is_visited -- 0.995 -- mov dword ptr [rbp-0x2f8], 0x0 (path rank: 0.5391378659946217) //process_mips_specific at readelf.c:16194
+0x0000555555592fa1 -- is_visited -- 0.995 -- mov qword ptr [rbp-0x248], 0x0 (path rank: 0.5459198383453998) //process_mips_specific at readelf.c:16194
+0x0000555555592fac -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x1e8] (path rank: 0.5527018106961779) //process_mips_specific at readelf.c:16195
+0x0000555555592fb3 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov qword ptr [rbp-0x250], rax (path rank: 0.5594837830469559) //process_mips_specific at readelf.c:16195
+0x0000555555592fba -- is_visited -- 0.995 -- jmp 0x555555593103 (path rank: 0.5662657553977339) //process_mips_specific at readelf.c:16197
+0x0000555555593103 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x210] (path rank: 0.5730477277485119) //process_mips_specific at readelf.c:16197
+0x0000555555593119 -- is_visited -- 0.995 -- jbe 0x555555592fbf (path rank: 0.6001516659388988) //process_mips_specific at readelf.c:16197
+0x0000555555592fbf -- rdx min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdx, qword ptr [rbp-0x1f0] (path rank: 0.606933638289677) //process_mips_specific at readelf.c:16201
+0x0000555555592fc6 -- rax min_reg_val_less 0xff -- 0.995 -- mov rax, qword ptr [rbp-0x248] (path rank: 0.613715610640455) //process_mips_specific at readelf.c:16201
+0x0000555555592fcd -- max_interrupt_flag_set -- 0.995 -- add rax, rdx (path rank: 0.6204975829912331) //process_mips_specific at readelf.c:16201
+0x0000555555592fd0 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov qword ptr [rbp-0x1d0], rax (path rank: 0.6272795553420112) //process_mips_specific at readelf.c:16201
+0x0000555555592fd7 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdx, qword ptr [rip+0x810ca] (path rank: 0.6340615276927892) //process_mips_specific at readelf.c:16203
+0x0000555555592fde -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x1d0] (path rank: 0.6408435000435673) //process_mips_specific at readelf.c:16203
+0x0000555555592fe5 -- is_visited -- 0.995 -- mov esi, 0x1 (path rank: 0.6476254723943452) //process_mips_specific at readelf.c:16203
+0x0000555555592fea -- rdi min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdi, rax (path rank: 0.6544074447451232) //process_mips_specific at readelf.c:16203
+0x0000555555592ff1 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x250] (path rank: 0.6985823630688266) //process_mips_specific at readelf.c:16203
+0x0000555555592ffa -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rip+0x810a7] (path rank: 0.7118613478993735) //process_mips_specific at readelf.c:16204
+0x0000555555593001 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdx, qword ptr [rbp-0x1d0] (path rank: 0.7186433202501515) //process_mips_specific at readelf.c:16204
+0x0000555555593008 -- max_interrupt_flag_set -- 0.995 -- add rdx, 0x1 (path rank: 0.7254252926009297) //process_mips_specific at readelf.c:16204
+0x000055555559300c -- is_visited -- 0.995 -- mov esi, 0x1 (path rank: 0.7322072649517077) //process_mips_specific at readelf.c:16204
+0x0000555555593011 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdi, rdx (path rank: 0.7389892373024857) //process_mips_specific at readelf.c:16204
+0x0000555555593018 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x250] (path rank: 0.7632237840730111) //process_mips_specific at readelf.c:16204
+0x0000555555593022 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rip+0x8107f] (path rank: 0.7703237260717863) //process_mips_specific at readelf.c:16205
+0x0000555555593029 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdx, qword ptr [rbp-0x1d0] (path rank: 0.7771056984225645) //process_mips_specific at readelf.c:16205
+0x0000555555593030 -- max_interrupt_flag_set -- 0.995 -- add rdx, 0x2 (path rank: 0.7838876707733424) //process_mips_specific at readelf.c:16205
+0x0000555555593034 -- is_visited -- 0.995 -- mov esi, 0x2 (path rank: 0.7906696431241205) //process_mips_specific at readelf.c:16205
+0x0000555555593039 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdi, rdx (path rank: 0.7974516154748986) //process_mips_specific at readelf.c:16205
+0x00005555555c3a26 -- 0x5555555c3a26 has_edge_to 0x55555559303e -- 0.995 -- ret  (path rank: 0.8183868615334833) //byte_get_little_endian at elfcomm.c:231
+0x0000555555593040 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x250] (path rank: 0.8318592515619165) //process_mips_specific at readelf.c:16205
+0x000055555559304b -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rip+0x81056] (path rank: 0.8451052266154755) //process_mips_specific at readelf.c:16206
+0x0000555555593052 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdx, qword ptr [rbp-0x1d0] (path rank: 0.8518871989662534) //process_mips_specific at readelf.c:16206
+0x0000555555593059 -- max_interrupt_flag_set -- 0.995 -- add rdx, 0x4 (path rank: 0.8586691713170314) //process_mips_specific at readelf.c:16206
+0x000055555559305d -- is_visited -- 0.995 -- mov esi, 0x4 (path rank: 0.8654511436678096) //process_mips_specific at readelf.c:16206
+0x0000555555593062 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdi, rdx (path rank: 0.8722331160185877) //process_mips_specific at readelf.c:16206
+0x0000555555593067 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdx, qword ptr [rbp-0x250] (path rank: 0.8790150883693658) //process_mips_specific at readelf.c:16206
+0x0000555555593072 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x250] (path rank: 0.8924992213407053) //process_mips_specific at readelf.c:16209
+0x00005555555930a9 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rax, qword ptr [rbp-0x250] (path rank: 0.9128451383930395) //process_mips_specific at readelf.c:16212
+0x00005555555930b7 -- rax min_reg_val_less 0xffffffffffffffff -- 0.995 -- lea rax, ptr [rip+0x5e472] (path rank: 0.9331910554453736) //process_mips_specific at readelf.c:16212
+0x00005555555930be -- rdi min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdi, rax (path rank: 0.9399730277961517) //process_mips_specific at readelf.c:16212
+0x00005555555930c8 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.995 -- mov rdi, rax (path rank: 0.9535369724977077) //process_mips_specific at readelf.c:16212
+0x00005555555930cb -- is_visited -- 0.995 -- mov eax, 0x0 (path rank: 0.9603189448484858) //process_mips_specific at readelf.c:16212
+0x00005555555c33b8 -- 0x5555555c33b8 has_edge_to 0x5555555930d5 -- 0.995 -- ret  (path rank: 0.9872354158100345) //error at elfcomm.c:45
+0x00005555555930d5 -- is_visited -- 0.995 -- mov eax, 0x0 (path rank: 0.9940173881608126) //process_mips_specific at readelf.c:16213
+0x000055555559303c -- 0x55555559303c edge_only_taken_to 0x5555555c36fa -- 0.995 -- call rax (path rank: 2) //process_mips_specific at readelf.c:16205
+0x0000555555592f5b -- 0x555555592f5b edge_only_taken_to 0x5555555c1e14 -- 0.995 -- call 0x5555555c1e14 (path rank: 2) //process_mips_specific at readelf.c:16187
+0x00005555555930d0 -- 0x5555555930d0 edge_only_taken_to 0x5555555c3299 -- 0.995 -- call 0x5555555c3299 (path rank: 2) //process_mips_specific at readelf.c:16212
+0x0000555555592fed -- 0x555555592fed edge_only_taken_to 0x5555555c36fa -- 0.995 -- call rdx (path rank: 2) //process_mips_specific at readelf.c:16203
+0x0000555555592f3e -- 0x555555592f3e edge_only_taken_to 0x555555592f44 -- 0.995 -- jz 0x555555593b60 (path rank: 2) //process_mips_specific at readelf.c:16184
+0x00005555555930c1 -- 0x5555555930c1 edge_only_taken_to 0x55555555c570 -- 0.995 -- call 0x55555555c570 (path rank: 2) //process_mips_specific at readelf.c:16212
+0x0000555555593065 -- 0x555555593065 edge_only_taken_to 0x5555555c36fa -- 0.995 -- call rax (path rank: 2) //process_mips_specific at readelf.c:16206
+0x0000555555593014 -- 0x555555593014 edge_only_taken_to 0x5555555c36fa -- 0.995 -- call rax (path rank: 2) //process_mips_specific at readelf.c:16204
+0x00005555555930da -- 0x5555555930da edge_only_taken_to 0x555555594e47 -- 0.995 -- jmp 0x555555594e47 (path rank: 2) //process_mips_specific at readelf.c:16213
+0x000055555555c574 -- 0x55555555c574 has_edge_to 0x5555555930c6 -- 0.995 -- bnd jmp qword ptr [rip+0xb0905] (path rank: 2) //?? ??:0
+0x00005555555c32a9 -- memory_value max_reg_val_greater_or_equal 0x5555555f14fe -- 0.9925694444444444 -- mov qword ptr [rbp-0xe8], rdi (path rank: 0.9585148474443953) //error at elfcomm.c:35
+0x00005555555c3389 -- rcx max_reg_val_greater_or_equal 0x5555555f14fe -- 0.9925694444444444 -- mov rcx, qword ptr [rbp-0xe8] (path rank: 0.9652968197951732) //error at elfcomm.c:43
+0x00005555555c3390 -- rsi max_reg_val_greater_or_equal 0x5555555f14fe -- 0.9925694444444444 -- mov rsi, rcx (path rank: 0.9720787921459513) //error at elfcomm.c:43
+0x0000555555592f05 -- rsi min_reg_val_less 0x6 -- 0.991875 -- mov rsi, qword ptr [rax+0x20] (path rank: 0.29402273468180534) //process_mips_specific at readelf.c:16182
+0x0000555555592f1a -- r8 min_reg_val_less 0x6 -- 0.991875 -- mov r8, rsi (path rank: 0.32105481923401663) //process_mips_specific at readelf.c:16182
+0x000055555556712a -- rax min_reg_val_less 0x2 -- 0.9866666666666666 -- mov rax, qword ptr [rbp-0x18] (path rank: 0.3702047701910252) //get_data at readelf.c:426
+0x000055555556712e -- rax min_reg_val_less 0x3 -- 0.9866666666666666 -- add rax, 0x1 (path rank: 0.3769454972715079) //get_data at readelf.c:426
+0x0000555555567132 -- rdi min_reg_val_less 0x3 -- 0.9866666666666666 -- mov rdi, rax (path rank: 0.38368622435199057) //get_data at readelf.c:426
+0x000055555556719c -- rax min_reg_val_less 0x2 -- 0.9866666666666666 -- mov rax, qword ptr [rbp-0x18] (path rank: 0.3904269514324733) //get_data at readelf.c:436
+0x00005555555c85fd -- num_successors_equal 2 -- 0.985625 -- jnz 0x5555555c8607 (path rank: 2) //xmalloc at xmalloc.c:145
+0x0000555555592f09 -- rdx min_reg_val_less 0xff -- 0.9838888888888888 -- mov rdx, qword ptr [rbp-0x2b8] (path rank: 0.29539801230083657) //process_mips_specific at readelf.c:16182
+0x0000555555566f92 -- rax min_reg_val_less 0x2 -- 0.9814583333333332 -- mov rax, qword ptr [rbp-0x18] (path rank: 0.3510510407296252) //get_data at readelf.c:392
+0x0000555555567024 -- rax min_reg_val_less 0x2 -- 0.9814583333333332 -- mov rax, qword ptr [rbp-0x18] (path rank: 0.3577917678101078) //get_data at readelf.c:404
+0x0000555555567a31 -- min_sign_flag_set -- 0.9807638888888888 -- cmp dword ptr [rbp-0xc], eax (path rank: 0.18694321908770847) //find_section_by_type at readelf.c:702 (discriminator 1)
+0x0000555555567a1e -- 0x555555567a1e has_edge_to 0x555555567a20 -- 0.9807638888888888 -- jnz 0x555555567a26 (path rank: 0.24116618470733742) //find_section_by_type at readelf.c:706
+0x0000555555567a20 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.2479481570581155) //find_section_by_type at readelf.c:707
+0x0000555555592eb5 -- memory_value min_reg_val_greater_or_equal 0x2aaaaab0be38 -- 0.9807638888888888 -- mov qword ptr [rbp-0x210], rax (path rank: 0.2547301294088935) //process_mips_specific at readelf.c:16174
+0x0000555555592eec -- rax min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- lea rax, ptr [rip+0x5e5f6] (path rank: 0.2615121017596716) //process_mips_specific at readelf.c:16183
+0x0000555555592ef3 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- mov rdi, rax (path rank: 0.2682940741104496) //process_mips_specific at readelf.c:16183
+0x0000555555592efb -- max_interrupt_flag_set -- 0.9807638888888888 -- mov rcx, rax (path rank: 0.2750760464612277) //process_mips_specific at readelf.c:16183
+0x0000555555592efe -- rax min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- mov rax, qword ptr [rbp-0x210] (path rank: 0.28185801881200573) //process_mips_specific at readelf.c:16182
+0x0000555555592f10 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- mov rax, qword ptr [rbp-0x318] (path rank: 0.3021799846516146) //process_mips_specific at readelf.c:16182
+0x0000555555592f17 -- r9 min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- mov r9, rcx (path rank: 0.30896195700239265) //process_mips_specific at readelf.c:16182
+0x0000555555592f1d -- is_visited -- 0.9807638888888888 -- mov ecx, 0x1 (path rank: 0.32250195049122354) //process_mips_specific at readelf.c:16182
+0x0000555555592f22 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9807638888888888 -- mov rsi, rax (path rank: 0.3292839228420016) //process_mips_specific at readelf.c:16182
+0x0000555555592f25 -- is_visited -- 0.9807638888888888 -- mov edi, 0x0 (path rank: 0.33606589519277963) //process_mips_specific at readelf.c:16182
+0x0000555555566f69 -- memory_value max_reg_val_greater_or_equal 0x5555555f111f -- 0.9807638888888888 -- mov qword ptr [rbp-0x50], r9 (path rank: 0.34284786754355767) //get_data at readelf.c:370
+0x000055555556723a -- 0x55555556723a has_edge_to 0x555555592f2f -- 0.9807638888888888 -- ret  (path rank: 0.40491122452802797) //get_data at readelf.c:450
+0x0000555555592f36 -- max_interrupt_flag_set -- 0.9807638888888888 -- cmp qword ptr [rbp-0x1f0], 0x0 (path rank: 0.41847516922958405) //process_mips_specific at readelf.c:16184
+0x0000555555567a34 -- 0x555555567a34 edge_only_taken_to 0x5555555679f4 -- 0.9807638888888888 -- jb 0x5555555679f4 (path rank: 2) //find_section_by_type at readelf.c:702 (discriminator 1)
+0x0000555555592ef6 -- 0x555555592ef6 edge_only_taken_to 0x55555555c570 -- 0.9807638888888888 -- call 0x55555555c570 (path rank: 2) //process_mips_specific at readelf.c:16183
+0x0000555555592ec4 -- 0x555555592ec4 edge_only_taken_to 0x555555592eec -- 0.9807638888888888 -- jnz 0x555555592eec (path rank: 2) //process_mips_specific at readelf.c:16176
+0x0000555555567a24 -- 0x555555567a24 edge_only_taken_to 0x555555567a3b -- 0.9807638888888888 -- jmp 0x555555567a3b (path rank: 2) //find_section_by_type at readelf.c:707
+0x0000555555592f2a -- 0x555555592f2a edge_only_taken_to 0x555555566f46 -- 0.9807638888888888 -- call 0x555555566f46 (path rank: 2) //process_mips_specific at readelf.c:16182
+0x0000555555567a26 -- memory_value max_reg_val_less 0x4 -- 0.9730555555555556 -- add dword ptr [rbp-0xc], 0x1 (path rank: 0.236784490902684) //find_section_by_type at readelf.c:702 (discriminator 2)
+0x0000555555566f71 -- rax min_reg_val_less 0x2 -- 0.9703472222222222 -- imul rax, qword ptr [rbp-0x48] (path rank: 0.3237968209973331) //get_data at readelf.c:372
+0x0000555555566f76 -- memory_value min_reg_val_less 0x2 -- 0.9703472222222222 -- mov qword ptr [rbp-0x18], rax (path rank: 0.33053754807781577) //get_data at readelf.c:372
+0x00005555555679fc -- rdx max_reg_val_less 0x3 -- 0.9667361111111112 -- mov edx, dword ptr [rbp-0xc] (path rank: 0.19372519143848652) //find_section_by_type at readelf.c:704
+0x00005555555679ff -- rax max_reg_val_less 0x3 -- 0.9667361111111112 -- mov rax, rdx (path rank: 0.20050716378926453) //find_section_by_type at readelf.c:704
+0x0000555555567a02 -- rax max_reg_val_less 0xa -- 0.9667361111111112 -- shl rax, 0x2 (path rank: 0.2072891361400426) //find_section_by_type at readelf.c:704
+0x0000555555567a06 -- rax max_reg_val_less 0xd -- 0.9667361111111112 -- add rax, rdx (path rank: 0.2140711084908207) //find_section_by_type at readelf.c:704
+0x0000555555567a09 -- rax max_reg_val_less 0xc8 -- 0.9667361111111112 -- shl rax, 0x4 (path rank: 0.22085308084159871) //find_section_by_type at readelf.c:704
+0x00005555555c1e20 -- memory_value min_reg_val_less 0x1 -- 0.9616666666666668 -- mov qword ptr [rbp-0x8], rdi (path rank: 0.45059736717958143) //cmalloc at dwarf.c:9571
+0x00005555555c1e45 -- rax min_reg_val_less 0x1 -- 0.9616666666666668 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.45737933953035953) //cmalloc at dwarf.c:9576
+0x00005555555c1e49 -- rax min_reg_val_less 0x2 -- 0.9616666666666668 -- imul rax, qword ptr [rbp-0x10] (path rank: 0.4641613118811375) //cmalloc at dwarf.c:9576
+0x00005555555c1e4e -- rdi min_reg_val_less 0x2 -- 0.9616666666666668 -- mov rdi, rax (path rank: 0.4709432842319156) //cmalloc at dwarf.c:9576
+0x00005555555c85f4 -- memory_value min_reg_val_less 0x1 -- 0.9616666666666668 -- mov qword ptr [rbp-0x18], rdi (path rank: 0.4777252565826937) //xmalloc at xmalloc.c:142
+0x00005555555c85f8 -- max_zero_flag_set -- 0.9616666666666668 -- cmp qword ptr [rbp-0x18], 0x0 (path rank: 0.48450722893347176) //xmalloc at xmalloc.c:145
+0x00005555555c85ff -- 0x5555555c85ff edge_only_taken_to 0x5555555c8607 -- 0.9616666666666668 -- mov qword ptr [rbp-0x18], 0x1 (path rank: 2) //xmalloc at xmalloc.c:146
+0x00005555555c8607 -- rax min_reg_val_less 0x2 -- 0.9613194444444444 -- mov rax, qword ptr [rbp-0x18] (path rank: 0.49128920128424974) //xmalloc at xmalloc.c:147
+0x00005555555c860b -- rdi min_reg_val_less 0x2 -- 0.9613194444444444 -- mov rdi, rax (path rank: 0.49807117363502784) //xmalloc at xmalloc.c:147
+0x00005555555c373f -- rax min_reg_val_less 0x2 -- 0.9613194444444444 -- movzx eax, byte ptr [rax] (path rank: 0.6335919487126697) //byte_get_little_endian at elfcomm.c:136
+0x00005555555c3742 -- rax min_reg_val_less 0x2 -- 0.9613194444444444 -- movzx eax, al (path rank: 0.6403739210634477) //byte_get_little_endian at elfcomm.c:136
+0x0000555555567028 -- rdx min_reg_val_less 0x3a -- 0.9538888888888888 -- add rdx, rax (path rank: 0.3450118422592342) //get_data at readelf.c:404
+0x00005555555c374a -- rax min_reg_val_less 0x5555556188c8 -- 0.9345833333333332 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.7048916501384968) //byte_get_little_endian at elfcomm.c:139
+0x00005555555c3754 -- rax min_reg_val_less 0x5555556188c8 -- 0.9345833333333332 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.7112634843992804) //byte_get_little_endian at elfcomm.c:140
+0x00005555555c3758 -- rax min_reg_val_less 0x5555556188c9 -- 0.9345833333333332 -- add rax, 0x1 (path rank: 0.7176353186600644) //byte_get_little_endian at elfcomm.c:140
+0x00005555555c370a -- memory_value min_reg_val_less 0x2 -- 0.9338888888888888 -- mov dword ptr [rbp-0xc], esi (path rank: 0) //byte_get_little_endian at elfcomm.c:132
+0x00005555555c3717 -- rax min_reg_val_less 0x2 -- 0.9338888888888888 -- mov eax, dword ptr [rbp-0xc] (path rank: 0.5152272211660655) //byte_get_little_endian at elfcomm.c:133
+0x00005555555c371a -- rdx min_reg_val_less 0x6 -- 0.9338888888888888 -- lea rdx, ptr [rax*4] (path rank: 0.5220091935168435) //byte_get_little_endian at elfcomm.c:133
+0x00005555555c3729 -- rax min_reg_val_less 0xfffc6863 -- 0.9338888888888888 -- mov eax, dword ptr [rdx+rax*1] (path rank: 0.5287911658676215) //byte_get_little_endian at elfcomm.c:133
+0x00005555555c3735 -- rax min_reg_val_less 0x5555555c3743 -- 0.9338888888888888 -- add rax, rdx (path rank: 0.5355731382183996) //byte_get_little_endian at elfcomm.c:133
+0x00005555555c3738 -- 0x5555555c3738 has_edge_to 0x5555555c373b -- 0.9338888888888888 -- jmp rax (path rank: 0.5423551105691776) //byte_get_little_endian at elfcomm.c:133
+0x00005555555c373b -- rax min_reg_val_less 0xffffffffffffffff -- 0.9338888888888888 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.5491370829199557) //byte_get_little_endian at elfcomm.c:136
+0x00005555555c3745 -- 0x5555555c3745 edge_only_taken_to 0x5555555c3a25 -- 0.9338888888888888 -- jmp 0x5555555c3a25 (path rank: 2) //byte_get_little_endian at elfcomm.c:136
+0x0000555555567a18 -- rax max_reg_val_greater_or_equal 0x70000006 -- 0.9272916666666666 -- mov eax, dword ptr [rax+0x4] (path rank: 0.23382114010797836) //find_section_by_type at readelf.c:706
+0x00005555555c339b -- max_parity_flag_set -- 0.9245138888888887 -- nop (path rank: 0.6773630303655953) //error at elfcomm.c:45
+0x0000555555571d43 -- 0x555555571d43 has_edge_to 0x555555571dd6 -- 0.918611111111111 -- jmp rax (path rank: 0.11530400298926007) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571dd6 -- rax min_reg_val_less 0xffffffffffffffff -- 0.918611111111111 -- lea rax, ptr [rip+0x737ce] (path rank: 0.12208597534003812) //get_mips_section_type_name at readelf.c:4043
+0x0000555555571ddd -- 0x555555571ddd edge_only_taken_to 0x555555571f02 -- 0.918611111111111 -- jmp 0x555555571f02 (path rank: 2) //get_mips_section_type_name at readelf.c:4043
+0x0000555555572789 -- rax min_reg_val_less 0x5555555e7195 -- 0.9161805555555556 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.14237248046245674) //get_section_type_name at readelf.c:4306
+0x0000555555578c2f -- rdx min_reg_val_less 0x5555555e58f3 -- 0.9161805555555556 -- mov rdx, rax (path rank: 0.1491544528132348) //process_section_headers at readelf.c:6451
+0x0000555555578c4c -- rsi min_reg_val_less 0x5555555e58f3 -- 0.9161805555555556 -- mov rsi, rdx (path rank: 0.15593642516401285) //process_section_headers at readelf.c:6451 (discriminator 4)
+0x0000555555571d23 -- rax max_reg_val_greater_or_equal 0xd -- 0.915138888888889 -- mov eax, eax (path rank: 0.06784639978742704) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d25 -- rdx max_reg_val_greater_or_equal 0x32 -- 0.915138888888889 -- lea rdx, ptr [rax*4] (path rank: 0.07462837213820508) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d34 -- rax max_reg_val_greater_or_equal 0xfff88ea0 -- 0.915138888888889 -- mov eax, dword ptr [rdx+rax*1] (path rank: 0.0881869157552234) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d40 -- rax max_reg_val_greater_or_equal 0x555555571dd0 -- 0.915138888888889 -- add rax, rdx (path rank: 0.10852203063848201) //get_mips_section_type_name at readelf.c:4029
+0x00005555555726b9 -- rax min_reg_val_less 0x7000000f -- 0.9140972222222222 -- mov eax, dword ptr [rbp-0x1c] (path rank: 0.02039981920709966) //get_section_type_name at readelf.c:4264
+0x00005555555726bc -- rdi min_reg_val_less 0x7000000f -- 0.9140972222222222 -- mov edi, eax (path rank: 0.027181791557877713) //get_section_type_name at readelf.c:4264
+0x0000555555571d0f -- memory_value min_reg_val_less 0x7000000f -- 0.9140972222222222 -- mov dword ptr [rbp-0x4], edi (path rank: 0.03376866350800552) //get_mips_section_type_name at readelf.c:4028
+0x0000555555571d12 -- rax min_reg_val_less 0x7000000f -- 0.9140972222222222 -- mov eax, dword ptr [rbp-0x4] (path rank: 0.0406807027925504) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d15 -- rax min_reg_val_less 0xf -- 0.9140972222222222 -- sub eax, 0x70000000 (path rank: 0.04746267514332845) //get_mips_section_type_name at readelf.c:4029
+0x00005555555726c3 -- memory_value max_reg_val_greater_or_equal 0x5555555e54c1 -- 0.9130555555555556 -- mov qword ptr [rbp-0x8], rax (path rank: 0.12886794769081616) //get_section_type_name at readelf.c:4264
+0x0000555555571d1a -- max_sign_flag_set -- 0.910625 -- cmp eax, 0x2a (path rank: 0.0542446474941065) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d1d -- 0x555555571d1d has_edge_to 0x555555571d23 -- 0.910625 -- jnbe 0x555555571efc (path rank: 0.06102661984488454) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d2d -- rax min_reg_val_less 0xffffffffffffffff -- 0.910625 -- lea rax, ptr [rip+0x771fc] (path rank: 0.08136173472814316) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d37 -- rax min_reg_val_less 0xffffffffffffffff -- 0.910625 -- cdqe  (path rank: 0.09492027834516148) //get_mips_section_type_name at readelf.c:4029
+0x0000555555571d39 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.910625 -- lea rdx, ptr [rip+0x771f0] (path rank: 0.10170225069593954) //get_mips_section_type_name at readelf.c:4029
+0x0000555555572787 -- 0x555555572787 has_edge_to 0x555555572789 -- 0.9102777777777776 -- jz 0x555555572792 (path rank: 0.1355905081116787) //get_section_type_name at readelf.c:4305
+0x000055555557278d -- 0x55555557278d edge_only_taken_to 0x555555572984 -- 0.9102777777777776 -- jmp 0x555555572984 (path rank: 2) //get_section_type_name at readelf.c:4306
+0x00005555555928c5 -- memory_value min_reg_val_less 0xb9 -- 0.9002083333333333 -- mov qword ptr [rbp-0x2b8], rax (path rank: 0.1801612467369304) //process_mips_specific at readelf.c:16041

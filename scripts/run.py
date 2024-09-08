@@ -14,15 +14,15 @@ afl_dir = os.getenv("AFL_DIR")
 pin_root = os.getenv("PIN_ROOT")
 method_dir = os.getenv("METHOD_DIR")
 
-# Arg: "$EVAL_DIR/mruby_trace @@"
+# Arg: "$EVAL_DIR/readelf_trace readelf.c:16197"
 args = sys.argv[1]
-
+target = sys.argv[2]
 fpath = args.split("/")
 fpath = f"{eval_dir}/results/{fpath[len(fpath) - 1].split(' ')[0]}"
 
 AURORA_PATH = f"{fpath}/aurora/"
 LOC_PATH = f"{fpath}/loc/"
-LOC_WITH_SOURCE_PATH = f"{fpath}/loc_with_source"
+LOC_WITH_SOURCE_PATH = f"{fpath}/loc_with_source/"
 BASIC_BLOCK_PATH = f"{fpath}/basic_block/"
 SCRIPT_PATH = f"{aurora_git_dir}/tracing/scripts"
 TRACES_PATH = f"{eval_dir}/traces"
@@ -56,6 +56,8 @@ def run(method: Method, with_source: bool, id: int):
             res_path = LOC_WITH_SOURCE_PATH + f"loc_with_source_{id}"
         else:
             res_path = LOC_PATH + f"loc_{id}"
+    elif method == Method.BASIC_BLOCK:
+        res_path = BASIC_BLOCK_PATH + f"basic_block_{id}"
     os.makedirs(res_path, exist_ok=True)
     trace(res_path, method=method, with_source=with_source, id=id)
     root_cause_analysis(res_path)
@@ -108,14 +110,14 @@ def root_cause_analysis(res_path: str):
     result = subprocess.run(rca_cmd, shell=True, text=True, capture_output=True, cwd=RCA_PATH)
     subprocess.run(addr2bin_cmd, shell=True, text=True, capture_output=True,cwd=RCA_PATH)
     print_res(result)
-    predicate_rank, line_rank = extract_ranking(f"{eval_dir}/ranked_predicates_verbose.txt", "mat5.c:4975")
+    predicate_rank, line_rank = extract_ranking(f"{eval_dir}/ranked_predicates_verbose.txt", target)
 
     with open(f"{res_path}/rca_results.txt", "a") as file:
         file.write(result.stdout)
         file.write(result.stderr)
         file.write(f"Predicate Ranking: {predicate_rank}\n LOC Ranking: {line_rank}")
     try:
-        shutil.move(f"{eval_dir}/ranked_predicates_verbose.txt", res_path)
+        shutil.copy(f"{eval_dir}/ranked_predicates_verbose.txt", res_path)
     except FileNotFoundError:
         print("File ranked_predicates_verbose.txt could not be found")
 def set_method(method: Method, with_source: bool):
@@ -124,18 +126,22 @@ def set_method(method: Method, with_source: bool):
         print(setup_method_cmd)
     elif method == Method.LOC:
         if with_source == False:
-            setup_address_cmd = f"./setup_decompiling.sh " + args
+            setup_address_cmd = f"./setup_decompiling.sh {eval_dir}/*_trace"
             print(setup_address_cmd)
+
+            set_addr_res = subprocess.run(setup_address_cmd, shell=True, text=True, capture_output=True, cwd=f"{os.getcwd()}")
+            print(set_addr_res.stdout, set_addr_res.stderr)
         else:
-            setup_address_cmd = f"./extract.sh " + args
+            setup_address_cmd = f"./extract.sh {eval_dir}/*_trace"
+            print(args)
             print(setup_address_cmd)
-        set_addr_res = subprocess.run(setup_address_cmd, shell=True, text=True, capture_output=True)
-        print(set_addr_res.stdout, set_addr_res.stderr)
+            set_addr_res = subprocess.run(setup_address_cmd, shell=True, text=True, capture_output=True, cwd=f"{os.getcwd()}/source-code-extractor/")
+            print(set_addr_res.stdout, set_addr_res.stderr)
     set_method_res = subprocess.run(setup_method_cmd, shell=True, text=True, capture_output=True)
     print(f"Setting method: {set_method_res.stdout} {set_method_res.stderr}")
 def move_decompiling_results(id):
     try:
-        shutil.move(DECOMPILING_RESULTS, f"{LOC_PATH}/loc_{id}/")
+        shutil.copy(DECOMPILING_RESULTS, f"{LOC_PATH}/loc_{id}/")
         print(f"Moved {DECOMPILING_RESULTS} to {LOC_PATH}/loc_{id}")
     except FileNotFoundError:
         print(f"{DECOMPILING_RESULTS} not found")
@@ -144,7 +150,7 @@ def move_decompiling_results(id):
 
 setup()
 for i in range(0, 5):
-    run(Method.AURORA, False, i)
+    # run(Method.AURORA, False, i)
     run(Method.LOC, False, i)
-    run(Method.LOC, True, i)
-    run(Method.BASIC_BLOCK, False, i)
+    # run(Method.LOC, True, i)
+    # run(Method.BASIC_BLOCK, False, i)
