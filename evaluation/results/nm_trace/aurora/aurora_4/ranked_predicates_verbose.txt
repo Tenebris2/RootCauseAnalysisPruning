@@ -1,0 +1,10 @@
+0x00005555555a22a8 -- rax min_reg_val_less 0x5 -- 0.9487147800296588 -- movzx eax, byte ptr [rax] (path rank: 0.359375) //getvalue at tekhex.c:276
+0x00005555555a22ab -- rax min_reg_val_less 0x5 -- 0.9487147800296588 -- movzx eax, al (path rank: 0.4765625) //getvalue at tekhex.c:276
+0x00005555555a22ae -- rax min_reg_val_less 0x5 -- 0.9487147800296588 -- cdqe  (path rank: 0.59375) //getvalue at tekhex.c:276
+0x00005555555a22bd -- num_successors_equal 2 -- 0.9227632229362333 -- jnz 0x5555555a22c9 (path rank: 2) //getvalue at tekhex.c:276
+0x00005555555a22b7 -- rax max_reg_val_greater_or_equal 0x39 -- 0.921033119130005 -- movzx eax, byte ptr [rax+rdx*1] (path rank: 0.6109375) //getvalue at tekhex.c:276
+0x00005555555a22bb -- min_zero_flag_set -- 0.921033119130005 -- cmp al, 0x63 (path rank: 0.740625) //getvalue at tekhex.c:276
+0x00005555555a22bf -- is_visited -- 0.921033119130005 -- mov eax, 0x0 (path rank: 0.8703125000000002) //getvalue at tekhex.c:277
+0x00005555555a22c4 -- 0x5555555a22c4 edge_only_taken_to 0x5555555a238a -- 0.921033119130005 -- jmp 0x5555555a238a (path rank: 2) //getvalue at tekhex.c:277
+0x00005555555a2426 -- memory_value min_reg_val_less 0x1 -- 0.9037320810677212 -- mov byte ptr [rdx], al (path rank: 0) //getsym at tekhex.c:308 (discriminator 4)
+0x00005555555a2423 -- rax min_reg_val_less 0x1 -- 0.9037320810677212 -- movzx eax, byte ptr [rax] (path rank: 0.12968749999999998) //getsym at tekhex.c:308 (discriminator 4)

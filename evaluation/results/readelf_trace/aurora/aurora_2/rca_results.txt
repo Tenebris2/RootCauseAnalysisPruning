@@ -50,4 +50,56 @@ warning: `trace_analysis` (lib) generated 2 warnings
     Finished `release` profile [optimized] target(s) in 0.05s
      Running `target/release/rca --eval-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --trace-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --monitor --rank-predicates`
 Predicate Ranking: 4
+ LOC Ranking: 2analyzing traces
+reading crashes
+reading non-crashes
+235 crashes and 1395 non-crashes
+filling cfg
+calculating scores
+dumping linear scores
+found 171 predicates with score better than 0.9
+trace analysis time: 45.770126642 seconds
+monitoring predicates
+monitoring time: 14.060761686 seconds
+ranking predicates
+ranking time: 0.133262027 seconds
+total time: 59.964171896 seconds
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/predicate_monitoring/Cargo.toml
+workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/trace_analysis/Cargo.toml
+workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/root_cause_analysis/Cargo.toml
+workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
+warning: use of deprecated method `zip::read::ZipFile::<'a>::sanitized_name`: by stripping `..`s from the path, the meaning of paths can change.
+                         `mangled_name` can be used if this behaviour is desirable
+   --> trace_analysis/src/trace.rs:282:42
+    |
+282 |         let trace_file_path = trace_file.sanitized_name().to_str().unwrap().to_string();
+    |                                          ^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: for loop over an `Option`. This is more readably written as an `if let` statement
+   --> trace_analysis/src/control_flow_graph.rs:178:31
+    |
+178 |             for successors in self.successors.get(&node) {
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(for_loops_over_fallibles)]` on by default
+help: to check pattern in a loop use `while let`
+    |
+178 |             while let Some(successors) = self.successors.get(&node) {
+    |             ~~~~~~~~~~~~~~~          ~~~
+help: consider using `if let` to clear intent
+    |
+178 |             if let Some(successors) = self.successors.get(&node) {
+    |             ~~~~~~~~~~~~          ~~~
+
+warning: `trace_analysis` (lib) generated 2 warnings
+    Finished `release` profile [optimized] target(s) in 0.05s
+     Running `target/release/rca --eval-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --trace-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --monitor --rank-predicates`
+Predicate Ranking: 4
  LOC Ranking: 2

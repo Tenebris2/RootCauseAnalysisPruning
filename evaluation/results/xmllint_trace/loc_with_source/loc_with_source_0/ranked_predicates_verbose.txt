@@ -1,0 +1,254 @@
+0x00005555555c6e58 -- rdx min_reg_val_less 0xff -- 1 -- jnz 0x5555555c6e70 (path rank: 0.023478721954067625) //xmlCreateURI at uri.c:1016
+0x00005555555c5aa9 -- min_adjust_flag_set -- 1 -- jle 0x5555555c5ccd (path rank: 0.07043616586220287) //xmlParse3986Segment at uri.c:555 (discriminator 2)
+0x00005555555c5d42 -- min_sign_flag_set -- 1 -- jz 0x5555555c5eb9 (path rank: 0.0939148878162705) //xmlParse3986Segment at uri.c:560 (discriminator 16)
+0x00005555555c5cfb -- min_sign_flag_set -- 1 -- jle 0x5555555c5eb9 (path rank: 0.11739360977033812) //xmlParse3986Segment at uri.c:560 (discriminator 5)
+0x00005555556a74f2 -- r11 min_reg_val_less 0xffffffffffffffff -- 1 -- jnz 0x5555556a74fe (path rank: 0.18784073549751545) //xmlDictAddString at dict.c:271
+0x00005555555831a5 -- max_parity_flag_set -- 1 -- jz 0x5555555831c7 (path rank: 0.23548865089904195) //xmlDetectSAX2 at parser.c:1080
+0x00005555555c8860 -- rdx max_reg_val_greater_or_equal 0x555555724 -- 1 -- ret  (path rank: 0.40156745976007263) //xmlFreeURI at uri.c:1392
+0x0000555555580278 -- rcx min_reg_val_less 0x5 -- 1 -- jz 0x55555558028e (path rank: 0.6549908667606504) //xmlFreeInputStream at parserInternals.c:1338
+0x000055555558139d -- rdx min_reg_val_less 0x555000261bb3 -- 1 -- jz 0x5555555813b6 (path rank: 0.7957696369494015) //xmlFreeParserCtxt at parserInternals.c:1795
+0x00005555555737a7 -- 0x5555555737a7 edge_only_taken_to 0x5555555730b1 -- 0.9983050847457628 -- jl 0x55555557308d (path rank: 0) //main at xmllint.c:3663 (discriminator 1)
+0x000055555557d6e2 -- 0x55555557d6e2 edge_only_taken_to 0x55555557c2e6 -- 0.9983050847457628 -- ret  (path rank: 0.5059054393769523) //xmlResetError at error.c:891
+0x0000555555580257 -- max_interrupt_flag_set -- 0.9983050847457628 -- jz 0x55555558026d (path rank: 0.6315121448065827) //xmlFreeInputStream at parserInternals.c:1337
+0x00005555556a8482 -- 0x5555556a8482 edge_only_taken_to 0x5555556a848e -- 0.9983050847457628 -- jle 0x5555556a8498 (path rank: 0.8192483589034691) //xmlDictFree at dict.c:781
+0x00005555556b72c6 -- 0x5555556b72c6 edge_only_taken_to 0x5555556b7268 -- 0.9983050847457628 -- jnz 0x5555556b7264 (path rank: 1.8637376499709717) //xmlDocContentDumpOutput at xmlsave.c:1227
+0x00005555556b624e -- 0x5555556b624e edge_only_taken_to 0x5555556b6199 -- 0.9983050847457628 -- jnz 0x5555556b618f (path rank: 1.8653513588495039) //xmlNodeListDumpOutput at xmlsave.c:816
+0x00005555556a8478 -- memory_value min_reg_val_greater_or_equal 0x1 -- 0.9983050847457628 -- mov dword ptr [rax], edx (path rank: 2) //xmlDictFree at dict.c:780
+0x0000555555631ab1 -- rdx min_reg_val_greater_or_equal 0xff6 -- 0.9956217215972832 -- jz 0x555555631ad2 (path rank: 0.14088329158938023) //xmlBufUse at buf.c:691
+0x0000555555630d48 -- 0x555555630d48 edge_only_taken_to 0x555555630d77 -- 0.9956217215972832 -- jnz 0x555555630d6d (path rank: 0.6783519355958944) //xmlBufFree at buf.c:338
+0x00005555556a85da -- 0x5555556a85da edge_only_taken_to 0x55555558140e -- 0.9956217215972832 -- ret  (path rank: 0.8427270808575368) //xmlDictFree at dict.c:816
+0x00005555555989c9 -- memory_value min_reg_val_less 0x555555723e5d -- 0.9942800400230436 -- mov qword ptr [rax+0x158], rdx (path rank: 1.7753733468265602) //xmlParseDocTypeDecl at parser.c:8421
+0x0000555555598a8a -- rsi min_reg_val_less 0x555555723e5d -- 0.9942800400230436 -- call r8 (path rank: 1.7759303320671123) //xmlParseDocTypeDecl at parser.c:8443
+0x00005555555a028d -- rsi min_reg_val_less 0x555555723e5d -- 0.9942800400230436 -- call r8 (path rank: 1.8519534428281874) //xmlParseDocument at parser.c:10896
+0x00005555555cc89d -- max_parity_flag_set -- 0.9932203389830508 -- jz 0x5555555cc8ae (path rank: 1.8803360012476036) //xmlDumpElementContent at valid.c:1175
+0x00005555555cc8a9 -- min_zero_flag_set -- 0.9932203389830508 -- cmp eax, 0x3 (path rank: 1.880904336351058) //xmlDumpElementContent at valid.c:1175 (discriminator 1)
+0x00005555555cc8ac -- 0x5555555cc8ac has_edge_to 0x5555555cc8c5 -- 0.9932203389830508 -- jnz 0x5555555cc8cc (path rank: 2) //xmlDumpElementContent at valid.c:1175 (discriminator 1)
+0x00005555556a7473 -- min_parity_flag_set -- 0.992844364937388 -- jnz 0x5555556a741e (path rank: 0.16436201354344784) //xmlDictAddString at dict.c:251
+0x000055555557d6cb -- rdi min_reg_val_greater_or_equal 0x555555717fd4 -- 0.9915254237288136 -- call 0x555555569710 (path rank: 1.8311649869935436) //xmlResetError at error.c:889
+0x00005555555aca5c -- max_parity_flag_set -- 0.984275795154786 -- jz 0x5555555acaa8 (path rank: 1.7802966738015342) //xmlCreateIntSubset at tree.c:969
+0x0000555555630dac -- 0x555555630dac edge_only_taken_to 0x5555555c10b8 -- 0.9842045420090356 -- ret  (path rank: 0.7253093795040296) //xmlBufFree at buf.c:346
+0x00005555555cc8c5 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9838285679633728 -- call 0x5555555cc7a8 (path rank: 1.8814267987164972) //xmlDumpElementContent at valid.c:1177
+0x00005555555c6cb9 -- max_interrupt_flag_set -- 0.9813559322033898 -- jnz 0x5555555c6cc2 (path rank: 0.04695744390813525) //xmlParse3986URIReference at uri.c:901
+0x0000555555593e91 -- max_parity_flag_set -- 0.9783678481549984 -- cmp eax, 0x2 (path rank: 1.8432048073412228) //xmlParseElementChildrenContentDeclPriv at parser.c:6565 (discriminator 1)
+0x0000555555593ec0 -- max_interrupt_flag_set -- 0.9783678481549984 -- jz 0x555555593ef1 (path rank: 1.8442634047011992) //xmlParseElementChildrenContentDeclPriv at parser.c:6569
+0x0000555555593f02 -- max_interrupt_flag_set -- 0.9779206209635852 -- jz 0x555555593f13 (path rank: 1.8415178244754755) //xmlParseElementChildrenContentDeclPriv at parser.c:6564
+0x0000555555593f0a -- min_zero_flag_set -- 0.9779206209635852 -- cmp eax, 0x4 (path rank: 1.8420741144691117) //xmlParseElementChildrenContentDeclPriv at parser.c:6564 (discriminator 1)
+0x0000555555593e84 -- max_interrupt_flag_set -- 0.9779206209635852 -- jz 0x555555593eb5 (path rank: 1.8426244410068062) //xmlParseElementChildrenContentDeclPriv at parser.c:6565
+0x0000555555593ecd -- max_interrupt_flag_set -- 0.9779206209635852 -- cmp eax, 0x2 (path rank: 1.8448137312388935) //xmlParseElementChildrenContentDeclPriv at parser.c:6569 (discriminator 1)
+0x0000555555593ed0 -- is_visited -- 0.9779206209635852 -- jz 0x555555593ee2 (path rank: 1.8453640577765875) //xmlParseElementChildrenContentDeclPriv at parser.c:6569 (discriminator 1)
+0x0000555555593edd -- max_interrupt_flag_set -- 0.9779206209635852 -- cmp eax, 0x3 (path rank: 1.8459143843142818) //xmlParseElementChildrenContentDeclPriv at parser.c:6570
+0x0000555555593ef5 -- 0x555555593ef5 edge_only_taken_to 0x555555593f02 -- 0.9779206209635852 -- mov rax, qword ptr [rax+0x18] (path rank: 1.846464710851976) //xmlParseElementChildrenContentDeclPriv at parser.c:6573
+0x0000555555593f0d -- 0x555555593f0d has_edge_to 0x555555593e84 -- 0.9779206209635852 -- jz 0x555555593e79 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6564 (discriminator 1)
+0x0000555555593ee0 -- 0x555555593ee0 has_edge_to 0x555555593ef5 -- 0.9779206209635852 -- jnz 0x555555593ef1 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6570
+0x0000555555593e94 -- num_successors_greater 0 -- 0.9779206209635852 -- jz 0x555555593ea6 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6565 (discriminator 1)
+0x0000555555593e50 -- num_successors_equal 2 -- 0.977473393772172 -- jnz 0x555555593f24 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6556
+0x000055555557c033 -- rsi min_reg_val_less 0x4 -- 0.976932173069343 -- js 0x55555557c05d (path rank: 1.8311262932227363) //__xmlRaiseError at error.c:501 (discriminator 15)
+0x0000555555582ae4 -- memory_value max_reg_val_greater_or_equal 0x26 -- 0.976932173069343 -- mov dword ptr [rax+0x88], edx (path rank: 2) //xmlFatalErrMsgInt at parser.c:680
+0x0000555555593e5b -- max_interrupt_flag_set -- 0.9765789393893454 -- jz 0x555555593f13 (path rank: 1.8398668448623934) //xmlParseElementChildrenContentDeclPriv at parser.c:6557
+0x0000555555593e65 -- is_visited -- 0.9765789393893454 -- mov dword ptr [rax+0x4], 0x3 (path rank: 1.8404171714000874) //xmlParseElementChildrenContentDeclPriv at parser.c:6558
+0x0000555555593e74 -- 0x555555593e74 edge_only_taken_to 0x555555593f02 -- 0.9765789393893454 -- jmp 0x555555593efd (path rank: 1.8409674979377817) //xmlParseElementChildrenContentDeclPriv at parser.c:6564
+0x0000555555593f1a -- 0x555555593f1a edge_only_taken_to 0x55555557e338 -- 0.9765789393893454 -- call 0x55555557e322 (path rank: 1.8469912280693046) //xmlParseElementChildrenContentDeclPriv at parser.c:6576
+0x0000555555593ea1 -- max_sign_flag_set -- 0.9749780176465236 -- cmp eax, 0x3 (path rank: 1.8448064822608088) //xmlParseElementChildrenContentDeclPriv at parser.c:6566
+0x0000555555593ea4 -- 0x555555593ea4 has_edge_to 0x555555593ec0 -- 0.9745307904551106 -- jnz 0x555555593eb5 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6566
+0x000055555559374f -- 0x55555559374f edge_only_taken_to 0x555555582ab3 -- 0.9744367969436948 -- call 0x555555582a94 (path rank: 1.8319226446885277) //xmlParseElementChildrenContentDeclPriv at parser.c:6413
+0x0000555555593763 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9744367969436948 -- jz 0x55555559377c (path rank: 1.8335066882672437) //xmlParseElementChildrenContentDeclPriv at parser.c:6416 (discriminator 1)
+0x0000555555593777 -- 0x555555593777 edge_only_taken_to 0x5555555cc613 -- 0.9744367969436948 -- call 0x5555555cc5ff (path rank: 1.8340530044564511) //xmlParseElementChildrenContentDeclPriv at parser.c:6417
+0x0000555555593781 -- max_interrupt_flag_set -- 0.9744367969436948 -- jz 0x55555559379a (path rank: 1.8354462993672296) //xmlParseElementChildrenContentDeclPriv at parser.c:6418
+0x0000555555593795 -- 0x555555593795 edge_only_taken_to 0x5555555cc613 -- 0.9744367969436948 -- call 0x5555555cc5ff (path rank: 1.8359926155564363) //xmlParseElementChildrenContentDeclPriv at parser.c:6419
+0x0000555555593759 -- 0x555555593759 has_edge_to 0x555555593763 -- 0.9744367969436948 -- jz 0x55555559377c (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6416
+0x0000555555582b6d -- 0x555555582b6d has_edge_to 0x555555593759 -- 0.9744367969436948 -- ret  (path rank: 2) //xmlFatalErrMsgInt at parser.c:689
+0x00005555555cc783 -- 0x5555555cc783 has_edge_to 0x555555593781 -- 0.9744367969436948 -- ret  (path rank: 2) //xmlFreeDocElementContent at valid.c:1135
+0x0000555555593734 -- 0x555555593734 has_edge_to 0x55555559374f -- 0.9744367969436948 -- jz 0x5555555937a4 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6412
+0x000055555557d927 -- memory_value max_reg_val_greater_or_equal 0x2b -- 0.9738015827294504 -- mov dword ptr [rax+0x40], edx (path rank: 1.8521415672789125) //xmlCopyError at error.c:984
+0x000055555557c554 -- memory_value max_reg_val_greater_or_equal 0x2b -- 0.9738015827294504 -- mov dword ptr [rax+0x40], edx (path rank: 2) //__xmlRaiseError at error.c:595
+0x00005555555cd4f9 -- rsi max_reg_val_greater_or_equal 0x555555728748 -- 0.97238864800946 -- jnz 0x5555555cd54b (path rank: 1.889913595537808) //xmlAddElementDecl at valid.c:1509
+0x0000555555593bbb -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9707649859009732 -- call 0x5555555850a8 (path rank: 1.8351570228692544) //xmlParseElementChildrenContentDeclPriv at parser.c:6505
+0x00005555555aacae -- rax max_reg_val_greater_or_equal 0x66 -- 0.9696112913495648 -- jnz 0x5555555aacbb (path rank: 1.8401068662751265) //xmlSplitQName3 at tree.c:329
+0x00005555556b6da1 -- 0x5555556b6da1 edge_only_taken_to 0x5555556b6223 -- 0.9661016949152542 -- ret  (path rank: 1.8681244032009308) //xmlNodeDumpOutputInternal at xmlsave.c:1093
+0x0000555555593bab -- rdx min_reg_val_less 0x3 -- 0.9652102725811832 -- call 0x555555593350 (path rank: 1.8281329881032964) //xmlParseElementChildrenContentDeclPriv at parser.c:6503
+0x00005555555aa0d4 -- rax min_reg_val_less 0x555555724270 -- 0.965113247021012 -- mov rax, qword ptr [rax+0x10] (path rank: 0.617392609769) //xmlDoRead at parser.c:15398
+0x00005555555aaccd -- rax max_reg_val_greater_or_equal 0x6b -- 0.9648570389011856 -- jz 0x5555555aace3 (path rank: 1.8294597262532664) //xmlSplitQName3 at tree.c:336
+0x000055555559404c -- rax max_reg_val_greater_or_equal 0x5555557286d0 -- 0.9647145326096844 -- ret  (path rank: 1.8463091692016225) //xmlParseElementChildrenContentDeclPriv at parser.c:6612
+0x0000555555593b7b -- rax min_reg_val_less 0xff -- 0.9643158181983568 -- mov eax, dword ptr [rax+0x64] (path rank: 1.8264620323816394) //xmlParseElementChildrenContentDeclPriv at parser.c:6499
+0x0000555555593b88 -- 0x555555593b88 edge_only_taken_to 0x55555557e338 -- 0.9643158181983568 -- call 0x55555557e322 (path rank: 1.8270190176221919) //xmlParseElementChildrenContentDeclPriv at parser.c:6501
+0x0000555555593b94 -- 0x555555593b94 edge_only_taken_to 0x5555555850b8 -- 0.9643158181983568 -- call 0x5555555850a8 (path rank: 1.8275760028627435) //xmlParseElementChildrenContentDeclPriv at parser.c:6502
+0x000055555557eb06 -- 0x55555557eb06 has_edge_to 0x555555593b94 -- 0.9643158181983568 -- ret  (path rank: 2) //xmlNextChar at parserInternals.c:576
+0x00005555555852c9 -- 0x5555555852c9 has_edge_to 0x555555593bab -- 0.9643158181983568 -- ret  (path rank: 2) //xmlSkipBlankChars at parser.c:2195
+0x0000555555593b71 -- 0x555555593b71 has_edge_to 0x555555593b7b -- 0.9643158181983568 -- jnz 0x555555593bc5 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6498
+0x0000555555593dfc -- max_parity_flag_set -- 0.9637260847154424 -- jz 0x555555593e2e (path rank: 1.8367037060959461) //xmlParseElementChildrenContentDeclPriv at parser.c:6548
+0x0000555555594945 -- rax max_reg_val_greater_or_equal 0x555555728438 -- 0.962478396652618 -- jz 0x555555594953 (path rank: 1.8438873630563393) //xmlParseElementDecl at parser.c:6791
+0x0000555555594974 -- rcx max_reg_val_greater_or_equal 0x555555728438 -- 0.962478396652618 -- call r8 (path rank: 1.8444134558837801) //xmlParseElementDecl at parser.c:6793
+0x00005555556aaa53 -- r8 max_reg_val_greater_or_equal 0x555555728438 -- 0.962478396652618 -- call 0x5555555cd114 (path rank: 1.8449395487112212) //xmlSAX2ElementDecl at SAX2.c:816
+0x0000555555589028 -- memory_value max_reg_val_greater_or_equal 0x15a -- 0.9622904096297868 -- mov qword ptr [rax+0x138], rdx (path rank: 1.8359743448876837) //xmlParseName at parser.c:3487
+0x000055555559439a -- memory_value max_reg_val_greater_or_equal 0x136 -- 0.9621964161183711 -- mov qword ptr [rax+0x138], rdx (path rank: 1.830670883198301) //xmlParseElementDecl at parser.c:6719
+0x00005555556a89d7 -- rsi min_reg_val_less 0x555555724240 -- 0.9615384615384616 -- jnz 0x5555556a89e3 (path rank: 0.2113194574515831) //xmlDictLookup at dict.c:933
+0x00005555555936ad -- rax max_reg_val_greater_or_equal 0x17b -- 0.9608547345441316 -- jle 0x555555593d44 (path rank: 1.8318828972639583) //xmlParseElementChildrenContentDeclPriv at parser.c:6401 (discriminator 1)
+0x0000555555594256 -- memory_value max_reg_val_greater_or_equal 0x555555728438 -- 0.960242260695552 -- mov qword ptr [rax], rdx (path rank: 1.8431975911203946) //xmlParseElementContentDecl at parser.c:6692
+0x0000555555593e08 -- rax max_reg_val_less 0x2 -- 0.959678299627058 -- jz 0x555555593e16 (path rank: 1.8246130392993685) //xmlParseElementChildrenContentDeclPriv at parser.c:6549
+0x0000555555593e14 -- 0x555555593e14 edge_only_taken_to 0x555555593e27 -- 0.959678299627058 -- jnz 0x555555593e23 (path rank: 1.8251593554885759) //xmlParseElementChildrenContentDeclPriv at parser.c:6549 (discriminator 1)
+0x00005555555cd718 -- rax max_reg_val_greater_or_equal 0x555555728338 -- 0.9593478063127254 -- jnz 0x5555555cd738 (path rank: 1.848748353401549) //xmlAddElementDecl at valid.c:1584
+0x0000555555593e27 -- 0x555555593e27 edge_only_taken_to 0x555555593e35 -- 0.9592310724356448 -- mov dword ptr [rax+0x4], 0x2 (path rank: 1.825705671677783) //xmlParseElementChildrenContentDeclPriv at parser.c:6553
+0x0000555555593e35 -- 0x555555593e35 edge_only_taken_to 0x55555557e338 -- 0.9592310724356448 -- call 0x55555557e322 (path rank: 1.82625198786699) //xmlParseElementChildrenContentDeclPriv at parser.c:6555
+0x0000555555593df5 -- 0x555555593df5 has_edge_to 0x555555593dfc -- 0.9592310724356448 -- jnz 0x555555593e3f (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6547
+0x00005555555cc061 -- max_parity_flag_set -- 0.9588293259755616 -- jz 0x5555555cc072 (path rank: 1.7883298478467755) //xmlNewDocElementContent at valid.c:926
+0x00005555555cd2e2 -- max_parity_flag_set -- 0.9588293259755616 -- jz 0x5555555cd2f7 (path rank: 1.7964676622314861) //xmlAddElementDecl at valid.c:1453
+0x0000555555593b2c -- rax min_reg_val_less 0xff -- 0.9585958582214004 -- jnz 0x555555593b60 (path rank: 1.7834362701594688) //xmlParseElementChildrenContentDeclPriv at parser.c:6497
+0x00005555555cc11b -- rsi max_reg_val_greater_or_equal 0x555555728870 -- 0.9581001182499016 -- jnz 0x5555555cc13b (path rank: 1.845168053623309) //xmlNewDocElementContent at valid.c:953
+0x00005555555939f2 -- memory_value max_reg_val_greater_or_equal 0x555555728098 -- 0.957889390861405 -- mov qword ptr [rax+0x10], rdx (path rank: 1.823909232841811) //xmlParseElementChildrenContentDeclPriv at parser.c:6473
+0x0000555555593b52 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9577014038385736 -- jnle 0x555555593b60 (path rank: 1.7839932554000208) //xmlParseElementChildrenContentDeclPriv at parser.c:6497 (discriminator 1)
+0x00005555556321ba -- rdi max_reg_val_less 0x5555557242f8 -- 0.95722840423274 -- call 0x55555562f87e (path rank: 0.9211244062779593) //xmlBufAdd at buf.c:886
+0x00005555555cc620 -- max_parity_flag_set -- 0.9571344107213244 -- jz 0x5555555cc777 (path rank: 1.8363151393643844) //xmlFreeDocElementContent at valid.c:1105
+0x00005555555cd6b9 -- memory_value max_reg_val_greater_or_equal 0x555555728438 -- 0.955698735635669 -- mov qword ptr [rax+0x50], rdx (path rank: 1.8472799662993498) //xmlAddElementDecl at valid.c:1572
+0x0000555555593433 -- rax max_reg_val_greater_or_equal 0x65 -- 0.9536505867014342 -- jnz 0x5555555934db (path rank: 1.8387103469209563) //xmlParseElementChildrenContentDeclPriv at parser.c:6364
+0x00005555555cd160 -- max_parity_flag_set -- 0.9528728661956885 -- jnz 0x5555555cd16c (path rank: 1.7877153142489257) //xmlAddElementDecl at valid.c:1395
+0x0000555555593cd8 -- is_visited -- 0.9520754373730328 -- mov dword ptr [rax+0x4], 0x4 (path rank: 1.8196941430509965) //xmlParseElementChildrenContentDeclPriv at parser.c:6527
+0x0000555555593ce6 -- 0x555555593ce6 edge_only_taken_to 0x55555557e338 -- 0.9520754373730328 -- call 0x55555557e322 (path rank: 1.8202404592402035) //xmlParseElementChildrenContentDeclPriv at parser.c:6528
+0x0000555555593cd2 -- 0x555555593cd2 has_edge_to 0x555555593cd8 -- 0.9520754373730328 -- jnz 0x555555593ced (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6526
+0x00005555556a75c5 -- memory_value max_reg_val_greater_or_equal 0x11 -- 0.9520041842272824 -- mov qword ptr [rax+0x20], rdx (path rank: 1.8492246201214795) //xmlDictAddString at dict.c:288
+0x00005555556a8a3b -- memory_value max_reg_val_greater_or_equal 0x11 -- 0.9520041842272824 -- mov dword ptr [rax+0x18], edx (path rank: 2) //xmlDictLookup at dict.c:946
+0x0000555555589047 -- rcx max_reg_val_greater_or_equal 0x2b -- 0.9519814438616172 -- mov dword ptr [rax+0x38], edx (path rank: 1.828508185832996) //xmlParseName at parser.c:3488
+0x00005555555aca1b -- rsi min_reg_val_less 0x555555724400 -- 0.9511779509414512 -- jnz 0x5555555aca36 (path rank: 1.8025826074519156) //xmlCreateIntSubset at tree.c:962
+0x000055555558030d -- rdx min_reg_val_less 0x555000274ca3 -- 0.9508474576271186 -- ret  (path rank: 0.762755683360409) //xmlFreeInputStream at parserInternals.c:1345
+0x00005555555ac9e7 -- max_parity_flag_set -- 0.9503320093387102 -- jz 0x5555555aca04 (path rank: 1.7862025910856614) //xmlCreateIntSubset at tree.c:948
+0x00005555555acbb6 -- max_parity_flag_set -- 0.9503320093387102 -- jz 0x5555555acd0c (path rank: 1.7877531949209116) //xmlCreateIntSubset at tree.c:999
+0x000055555559e01b -- max_interrupt_flag_set -- 0.9490585488614656 -- jnz 0x55555559e038 (path rank: 1.7897854666519093) //xmlParseVersionNum at parser.c:10283
+0x00005555555cc683 -- rax max_reg_val_greater_or_equal 0x555555728218 -- 0.9468027045874898 -- jz 0x5555555cc69c (path rank: 1.8377820749605094) //xmlFreeDocElementContent at valid.c:1122
+0x000055555559e0de -- max_parity_flag_set -- 0.9457627118644067 -- mov byte ptr [rdx], al (path rank: 1.792647447087372) //xmlParseVersionNum at parser.c:10299
+0x00005555556a870b -- num_successors_equal 2 -- 0.9452017828446682 -- jnz 0x5555556a8744 (path rank: 2) //xmlDictLookup at dict.c:859
+0x000055555559365d -- rdx min_reg_val_less 0xffffffffffffffff -- 0.944518055850338 -- jnle 0x55555559366b (path rank: 1.7802846821943223) //xmlParseElementChildrenContentDeclPriv at parser.c:6398 (discriminator 1)
+0x0000555555593d10 -- rax min_reg_val_less 0xff -- 0.9441193414390104 -- jnz 0x555555593d44 (path rank: 1.7854800716868044) //xmlParseElementChildrenContentDeclPriv at parser.c:6534
+0x000055555559e17c -- min_parity_flag_set -- 0.9440677966101696 -- mov byte ptr [rdx], al (path rank: 1.7939295379414821) //xmlParseVersionNum at parser.c:10315
+0x0000555555593861 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9429429065219368 -- mov qword ptr [rax+0x18], rdx (path rank: 1.812431960740645) //xmlParseElementChildrenContentDeclPriv at parser.c:6437
+0x000055555559386a -- is_visited -- 0.9429429065219368 -- jz 0x555555593878 (path rank: 1.8129842848891968) //xmlParseElementChildrenContentDeclPriv at parser.c:6438
+0x0000555555593874 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9429429065219368 -- mov qword ptr [rax+0x20], rdx (path rank: 1.8135366090377483) //xmlParseElementChildrenContentDeclPriv at parser.c:6439
+0x0000555555593880 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9429429065219368 -- mov qword ptr [rax+0x10], rdx (path rank: 1.8140889331862997) //xmlParseElementChildrenContentDeclPriv at parser.c:6440
+0x0000555555593889 -- is_visited -- 0.9429429065219368 -- jz 0x555555593897 (path rank: 1.8146412573348512) //xmlParseElementChildrenContentDeclPriv at parser.c:6441
+0x0000555555593893 -- 0x555555593893 edge_only_taken_to 0x555555593ad4 -- 0.9429429065219368 -- mov qword ptr [rax+0x20], rdx (path rank: 1.8151935814834026) //xmlParseElementChildrenContentDeclPriv at parser.c:6442
+0x0000555555593823 -- 0x555555593823 has_edge_to 0x555555593861 -- 0.9429429065219368 -- jnz 0x555555593859 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6431
+0x0000555555593709 -- max_interrupt_flag_set -- 0.9424956793305236 -- jnz 0x555555593722 (path rank: 1.7815137256701048) //xmlParseElementChildrenContentDeclPriv at parser.c:6407
+0x00005555555bd4b4 -- memory_value max_reg_val_greater_or_equal 0xa -- 0.9419286862132744 -- mov dword ptr [rax+0xc], edx (path rank: 2) //xmlHashAddEntry3 at hash.c:609
+0x0000555555593c7a -- rax min_reg_val_less 0x24 -- 0.9416239653133622 -- jnz 0x555555593c95 (path rank: 1.8225150563496346) //xmlParseElementChildrenContentDeclPriv at parser.c:6520
+0x0000555555593c80 -- is_visited -- 0.9409887510991176 -- mov dword ptr [rax+0x4], 0x2 (path rank: 1.817975018521463) //xmlParseElementChildrenContentDeclPriv at parser.c:6521
+0x0000555555593c8e -- 0x555555593c8e edge_only_taken_to 0x55555557e338 -- 0.9409887510991176 -- call 0x55555557e322 (path rank: 1.8185212436393443) //xmlParseElementChildrenContentDeclPriv at parser.c:6522
+0x00005555556a8744 -- max_interrupt_flag_set -- 0.9402595433734576 -- add qword ptr [rbp-0x38], 0x1 (path rank: 1.8344435114482058) //xmlDictLookup at dict.c:868
+0x0000555555593cac -- is_visited -- 0.939128589187714 -- mov dword ptr [rax+0x4], 0x3 (path rank: 1.8216156141312065) //xmlParseElementChildrenContentDeclPriv at parser.c:6524
+0x0000555555593cba -- 0x555555593cba edge_only_taken_to 0x55555557e338 -- 0.939128589187714 -- call 0x55555557e322 (path rank: 1.8221517493438248) //xmlParseElementChildrenContentDeclPriv at parser.c:6525
+0x0000555555593ca6 -- 0x555555593ca6 has_edge_to 0x555555593cac -- 0.939128589187714 -- jnz 0x555555593cc1 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6523
+0x000055555559382d -- memory_value min_reg_val_less 0x555555724430 -- 0.9376186289075528 -- mov qword ptr [rax+0x10], rdx (path rank: 1.8046890689446387) //xmlParseElementChildrenContentDeclPriv at parser.c:6432
+0x00005555555939fb -- max_parity_flag_set -- 0.9370576998878142 -- jz 0x555555593a09 (path rank: 1.8159838166632507) //xmlParseElementChildrenContentDeclPriv at parser.c:6474
+0x00005555556b5de3 -- rsi min_reg_val_less 0x555555724410 -- 0.9366529213789758 -- call 0x5555555c2b9c (path rank: 1.8805347144688758) //xmlDtdDumpOutput at xmlsave.c:717
+0x0000555555593683 -- rax min_reg_val_less 0xff -- 0.9365164791849854 -- jnz 0x555555593d44 (path rank: 1.7808416674348744) //xmlParseElementChildrenContentDeclPriv at parser.c:6401
+0x00005555555bc884 -- max_interrupt_flag_set -- 0.9361374730905672 -- jz 0x5555555bc8c2 (path rank: 1.7891418503623937) //xmlHashCreate at hash.c:186
+0x00005555555bc8ab -- max_interrupt_flag_set -- 0.9361374730905672 -- call 0x555555569710 (path rank: 1.7896988356029457) //xmlHashCreate at hash.c:187
+0x00005555555cd37a -- max_parity_flag_set -- 0.935288499439071 -- jz 0x5555555cd417 (path rank: 1.7995988078089682) //xmlAddElementDecl at valid.c:1472
+0x00005555555935ad -- rax min_reg_val_less 0x23 -- 0.9349155574421636 -- jnz 0x5555555935c8 (path rank: 1.8135401665984883) //xmlParseElementChildrenContentDeclPriv at parser.c:6386
+0x00005555556b64e0 -- max_parity_flag_set -- 0.9333373760650072 -- jz 0x5555556b6500 (path rank: 1.8698770128725328) //xmlNodeDumpOutputInternal at xmlsave.c:922 (discriminator 1)
+0x00005555556a7437 -- rdx min_reg_val_less 0x384 -- 0.9332206421879264 -- jnle 0x5555556a755e (path rank: 1.8472800505715274) //xmlDictAddString at dict.c:252
+0x00005555555cc97b -- rax max_reg_val_greater_or_equal 0x2 -- 0.9328446681422636 -- jz 0x5555555cc98c (path rank: 1.871524754182149) //xmlDumpElementContent at valid.c:1189
+0x00005555555cc987 -- max_parity_flag_set -- 0.9328446681422636 -- cmp eax, 0x3 (path rank: 1.872071070371356) //xmlDumpElementContent at valid.c:1189 (discriminator 1)
+0x00005555555938f2 -- min_zero_flag_set -- 0.9309617658651952 -- jz 0x555555593962 (path rank: 1.8079891430902848) //xmlParseElementChildrenContentDeclPriv at parser.c:6452
+0x0000555555593a26 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9309617658651952 -- mov qword ptr [rax+0x18], rdx (path rank: 1.8087660440663265) //xmlParseElementChildrenContentDeclPriv at parser.c:6478
+0x0000555555593a2f -- is_visited -- 0.9309617658651952 -- jz 0x555555593a3d (path rank: 1.8093161880266844) //xmlParseElementChildrenContentDeclPriv at parser.c:6479
+0x0000555555593a39 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9309617658651952 -- mov qword ptr [rax+0x20], rdx (path rank: 1.809866331987042) //xmlParseElementChildrenContentDeclPriv at parser.c:6480
+0x0000555555593a45 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9309617658651952 -- mov qword ptr [rax+0x10], rdx (path rank: 1.8104164759474) //xmlParseElementChildrenContentDeclPriv at parser.c:6481
+0x0000555555593a4e -- is_visited -- 0.9309617658651952 -- jz 0x555555593a5c (path rank: 1.8109666199077576) //xmlParseElementChildrenContentDeclPriv at parser.c:6482
+0x0000555555593a58 -- 0x555555593a58 edge_only_taken_to 0x555555593ad4 -- 0.9309617658651952 -- mov qword ptr [rax+0x20], rdx (path rank: 1.811516763868115) //xmlParseElementChildrenContentDeclPriv at parser.c:6483
+0x00005555555939e8 -- 0x5555555939e8 has_edge_to 0x555555593a26 -- 0.9309617658651952 -- jnz 0x555555593a1e (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6472
+0x0000555555593991 -- max_parity_flag_set -- 0.9308677723537796 -- jnz 0x5555555939e3 (path rank: 1.80628068224343) //xmlParseElementChildrenContentDeclPriv at parser.c:6465
+0x00005555555938c7 -- num_successors_equal 2 -- 0.930514538673782 -- jnz 0x5555555938e0 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6447
+0x00005555555cc9e9 -- rax max_reg_val_greater_or_equal 0x3 -- 0.9304432855280312 -- jz 0x5555555cca0a (path rank: 1.873887323669987) //xmlDumpElementContent at valid.c:1195
+0x00005555555cc9f5 -- min_zero_flag_set -- 0.9304432855280312 -- cmp eax, 0x4 (path rank: 1.874427687438404) //xmlDumpElementContent at valid.c:1195 (discriminator 1)
+0x00005555555cca05 -- max_interrupt_flag_set -- 0.9304432855280312 -- cmp eax, 0x1 (path rank: 1.8749680512068214) //xmlDumpElementContent at valid.c:1196
+0x00005555555cca08 -- 0x5555555cca08 edge_only_taken_to 0x5555555cca3f -- 0.9304432855280312 -- jz 0x5555555cca28 (path rank: 1.8755084149752388) //xmlDumpElementContent at valid.c:1196
+0x00005555555cc9f8 -- 0x5555555cc9f8 has_edge_to 0x5555555cca05 -- 0.9304432855280312 -- jnz 0x5555555cca28 (path rank: 2) //xmlDumpElementContent at valid.c:1195 (discriminator 1)
+0x00005555555b7bfd -- rdx max_reg_val_greater_or_equal 0x19 -- 0.9298080713137868 -- add eax, 0x2 (path rank: 1.8751525265279145) //xmlBufferAdd at tree.c:7513
+0x00005555555bda11 -- max_parity_flag_set -- 0.9289818380279556 -- jnz 0x5555555bda1d (path rank: 1.7930202012181182) //xmlHashLookup3 at hash.c:762
+0x00005555555bd0a9 -- max_parity_flag_set -- 0.9289818380279556 -- jnz 0x5555555bd0b5 (path rank: 1.7940990869036355) //xmlHashAddEntry3 at hash.c:524 (discriminator 1)
+0x0000555555633081 -- rdx max_reg_val_greater_or_equal 0x1e -- 0.9289136169309602 -- call 0x5555556320d3 (path rank: 1.8771103126661204) //xmlBufMergeBuffer at buf.c:1267
+0x0000555555593a05 -- 0x555555593a05 edge_only_taken_to 0x555555593ad4 -- 0.9286316363967132 -- mov qword ptr [rax+0x20], rdx (path rank: 1.80582267412337) //xmlParseElementChildrenContentDeclPriv at parser.c:6475
+0x00005555555b7f59 -- rdx max_reg_val_greater_or_equal 0x27 -- 0.9284663897395472 -- jb 0x5555555b7f8d (path rank: 1.87541958895164) //xmlBufferCCat at tree.c:7640
+0x00005555555b7f9f -- rax max_reg_val_greater_or_equal 0x1d -- 0.9284663897395472 -- mov eax, dword ptr [rax+0x8] (path rank: 1.8759637249526533) //xmlBufferCCat at tree.c:7646 (discriminator 2)
+0x0000555555633065 -- rax max_reg_val_greater_or_equal 0x1e -- 0.9284663897395472 -- jz 0x555555633089 (path rank: 1.8765661766651076) //xmlBufMergeBuffer at buf.c:1265 (discriminator 2)
+0x00005555555b7fa9 -- memory_value max_reg_val_greater_or_equal 0x1e -- 0.9284663897395472 -- mov dword ptr [rdx+0x8], ecx (path rank: 2) //xmlBufferCCat at tree.c:7646 (discriminator 2)
+0x00005555555b7c72 -- memory_value max_reg_val_greater_or_equal 0x1a -- 0.9284663897395472 -- mov dword ptr [rax+0x8], edx (path rank: 2) //xmlBufferAdd at tree.c:7522
+0x00005555555938d5 -- 0x5555555938d5 edge_only_taken_to 0x555555593969 -- 0.9281844092053 -- movzx eax, byte ptr [rax] (path rank: 1.8033853172415866) //xmlParseElementChildrenContentDeclPriv at parser.c:6447 (discriminator 1)
+0x0000555555593969 -- 0x555555593969 edge_only_taken_to 0x55555557e338 -- 0.9281844092053 -- call 0x55555557e322 (path rank: 1.8039376413901385) //xmlParseElementChildrenContentDeclPriv at parser.c:6462
+0x0000555555593983 -- 0x555555593983 edge_only_taken_to 0x5555555cc045 -- 0.9281844092053 -- call 0x5555555cc02e (path rank: 1.8044899655386895) //xmlParseElementChildrenContentDeclPriv at parser.c:6464
+0x00005555555cc25d -- 0x5555555cc25d has_edge_to 0x555555593991 -- 0.9281844092053 -- ret  (path rank: 2) //xmlNewDocElementContent at valid.c:981
+0x0000555555593d55 -- rax max_reg_val_greater_or_equal 0x71 -- 0.9277371820138868 -- jz 0x555555593d6a (path rank: 1.801698304999209) //xmlParseElementChildrenContentDeclPriv at parser.c:6402
+0x00005555555936ff -- rax max_reg_val_greater_or_equal 0x71 -- 0.9277371820138868 -- jnz 0x5555555938ac (path rank: 1.8022506291477605) //xmlParseElementChildrenContentDeclPriv at parser.c:6406
+0x00005555555938bd -- min_zero_flag_set -- 0.9277371820138868 -- jnz 0x555555593a6e (path rank: 1.8028029532963123) //xmlParseElementChildrenContentDeclPriv at parser.c:6446
+0x000055555562f34b -- max_parity_flag_set -- 0.9268851763136352 -- jnz 0x55555562f354 (path rank: 1.7897103735834017) //xmlStrEqual at xmlstring.c:160
+0x0000555555630da6 -- rcx max_reg_val_less 0x83a9 -- 0.9267487341196446 -- call rdx (path rank: 0.701830657549962) //xmlBufFree at buf.c:345
+0x00005555556a8682 -- rdi max_reg_val_greater_or_equal 0x55555571a0ca -- 0.926677480973894 -- call 0x5555556a799c (path rank: 1.7794448199684723) //xmlDictLookup at dict.c:851 (discriminator 1)
+0x00005555555bc871 -- max_interrupt_flag_set -- 0.9256632606652316 -- call rdx (path rank: 1.7885848651218412) //xmlHashCreate at hash.c:185
+0x00005555555bc8ff -- max_interrupt_flag_set -- 0.9256632606652316 -- jz 0x5555555bc919 (path rank: 1.7902558208434978) //xmlHashCreateDict at hash.c:212
+0x00005555555bda00 -- max_interrupt_flag_set -- 0.9256632606652316 -- jnz 0x5555555bda0c (path rank: 1.791345094855211) //xmlHashLookup3 at hash.c:760
+0x00005555555bd0a2 -- max_interrupt_flag_set -- 0.9256632606652316 -- jz 0x5555555bd0ab (path rank: 1.792437964978854) //xmlHashAddEntry3 at hash.c:524
+0x00005555555acfcb -- max_parity_flag_set -- 0.9243928322367424 -- jnz 0x5555555acfe6 (path rank: 0.29369966173581086) //xmlNewDoc at tree.c:1166
+0x0000555555592fa6 -- min_parity_flag_set -- 0.9235665989509112 -- jnz 0x555555593163 (path rank: 1.8174548486320155) //xmlParseElementMixedContentDecl at parser.c:6256
+0x00005555556ab07e -- rdi min_reg_val_less 0x555555724250 -- 0.9230769230769232 -- call 0x5555555acf92 (path rank: 0.26088977595855983) //xmlSAX2StartDocument at SAX2.c:1012
+0x00005555555ad00e -- rdi min_reg_val_less 0x555555724250 -- 0.9230769230769232 -- call 0x55555562f130 (path rank: 0.30782252339730376) //xmlNewDoc at tree.c:1173
+0x000055555557d800 -- rdi max_reg_val_greater_or_equal 0x555555728da0 -- 0.9228373912252508 -- call 0x55555562f130 (path rank: 1.867477220840937) //xmlCopyError at error.c:965
+0x00005555555aabac -- max_carry_flag_set -- 0.9228176829083412 -- jnz 0x5555555aab82 (path rank: 1.800434189016436) //xmlSplitQName2 at tree.c:285 (discriminator 1)
+0x00005555556a759a -- rcx min_reg_val_less 0x30d958db -- 0.922111215548346 -- mov qword ptr [rax+0x8], rdx (path rank: 1.7989130200185268) //xmlDictAddString at dict.c:286
+0x0000555555588eec -- max_adjust_flag_set -- 0.9219459688911796 -- add qword ptr [rbp-0x10], 0x1 (path rank: 1.8085907276619082) //xmlParseName at parser.c:3471
+0x00005555555935d9 -- max_sign_flag_set -- 0.9211227676541038 -- jnz 0x5555555935f4 (path rank: 1.7994523510188825) //xmlParseElementChildrenContentDeclPriv at parser.c:6389
+0x00005555556b65f4 -- max_parity_flag_set -- 0.920863527485522 -- jnz 0x5555556b665e (path rank: 1.8693843805186543) //xmlNodeDumpOutputInternal at xmlsave.c:950
+0x00005555556b6799 -- 0x5555556b6799 edge_only_taken_to 0x5555556b67a6 -- 0.920863527485522 -- jnz 0x5555556b67f8 (path rank: 1.869928638256064) //xmlNodeDumpOutputInternal at xmlsave.c:985
+0x0000555555593605 -- max_sign_flag_set -- 0.9206755404626908 -- jnz 0x555555593620 (path rank: 1.800004675167434) //xmlParseElementChildrenContentDeclPriv at parser.c:6392
+0x0000555555588f38 -- num_successors_equal 2 -- 0.920581546951275 -- jbe 0x555555588ef3 (path rank: 2) //xmlParseName at parser.c:3474
+0x00005555555812b3 -- rax min_reg_val_less 0x555555724250 -- 0.9203935599284436 -- jz 0x5555555812c9 (path rank: 0.772290914995334) //xmlFreeParserCtxt at parserInternals.c:1783
+0x0000555555581597 -- r8 min_reg_val_greater_or_equal 0x555555728d88 -- 0.9203450471483582 -- jz 0x5555555815b0 (path rank: 1.8666762247937454) //xmlFreeParserCtxt at parserInternals.c:1830
+0x00005555555aab98 -- rdx max_reg_val_greater_or_equal 0x6 -- 0.9201343197598616 -- jz 0x5555555aabae (path rank: 1.8009865131649874) //xmlSplitQName2 at tree.c:285
+0x000055555557d978 -- memory_value max_reg_val_greater_or_equal 0x555555728df8 -- 0.9200600345653558 -- mov qword ptr [rax+0x28], rdx (path rank: 1.8656529743634347) //xmlCopyError at error.c:990
+0x0000555555633028 -- rdx max_reg_val_greater_or_equal 0xc6 -- 0.9199690731026956 -- jz 0x555555633049 (path rank: 1.8718614252787238) //xmlBufMergeBuffer at buf.c:1264 (discriminator 5)
+0x00005555555bc49c -- rdx max_reg_val_greater_or_equal 0x4098d90ded8b200 -- 0.9196870925684484 -- xor qword ptr [rbp-0x8], rax (path rank: 1.801596641184448) //xmlHashComputeKey at hash.c:96
+0x0000555555593d76 -- num_successors_equal 2 -- 0.919615839422698 -- jz 0x555555593d97 (path rank: 2) //xmlParseElementChildrenContentDeclPriv at parser.c:6536 (discriminator 1)
+0x000055555557c0ac -- rsi min_reg_val_less 0x10209 -- 0.9194505927655316 -- jz 0x55555557c0cc (path rank: 1.8568187426229008) //__xmlRaiseError at error.c:501 (discriminator 12)
+0x00005555555a0000 -- max_interrupt_flag_set -- 0.9180376580455414 -- jz 0x5555555a003d (path rank: 0.4486098058485612) //xmlParseDocument at parser.c:10863 (discriminator 1)
+0x00005555555b7bd5 -- max_parity_flag_set -- 0.9178981838027956 -- jns 0x5555555b7be1 (path rank: 1.8690867020707673) //xmlBufferAdd at tree.c:7510
+0x00005555555cc886 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9175676904884632 -- call 0x5555555b7fe2 (path rank: 1.8667999323912345) //xmlDumpElementContent at valid.c:1172
+0x00005555555b7c5d -- rdx max_reg_val_greater_or_equal 0x6 -- 0.9174509566113824 -- call 0x555555569a70 (path rank: 1.8694724391124269) //xmlBufferAdd at tree.c:7521
+0x00005555556ab197 -- max_parity_flag_set -- 0.9167899699827172 -- jz 0x5555556ab21f (path rank: 0.38751576367451623) //xmlSAX2StartDocument at SAX2.c:1032
+0x00005555556ab09c -- max_parity_flag_set -- 0.916342742791304 -- jz 0x5555556ab141 (path rank: 0.34060771270516355) //xmlSAX2StartDocument at SAX2.c:1013
+0x00005555556ab161 -- max_interrupt_flag_set -- 0.916342742791304 -- jz 0x5555556ab18c (path rank: 0.35475527083604774) //xmlSAX2StartDocument at SAX2.c:1027 (discriminator 1)
+0x000055555559fff3 -- max_parity_flag_set -- 0.916342742791304 -- jz 0x5555555a003d (path rank: 0.43441285477889446) //xmlParseDocument at parser.c:10863
+0x00005555555a03f4 -- max_interrupt_flag_set -- 0.916342742791304 -- jz 0x5555555a0434 (path rank: 0.5747731706499059) //xmlParseDocument at parser.c:10941
+0x00005555555ac980 -- max_parity_flag_set -- 0.916342742791304 -- jnz 0x5555555ac989 (path rank: 0.8590482400796837) //xmlGetIntSubset at tree.c:922
+0x00005555555937d3 -- max_parity_flag_set -- 0.9155680543343137 -- jnz 0x55555559381e (path rank: 1.7834878515803094) //xmlParseElementChildrenContentDeclPriv at parser.c:6425
+0x00005555556a875e -- rax max_reg_val_greater_or_equal 0x5555557279a8 -- 0.9154968011885632 -- jnz 0x5555556a86ff (path rank: 1.842000577551549) //xmlDictLookup at dict.c:856 (discriminator 1)
+0x00005555556a8733 -- rcx max_reg_val_greater_or_equal 0x62 -- 0.9152375610199812 -- test eax, eax (path rank: 1.8103974843414063) //xmlDictLookup at dict.c:860
+0x00005555555cc773 -- r11 min_reg_val_greater_or_equal 0x1cd312bf45e5d20 -- 0.9138731390800764 -- mov qword ptr [rbp-0x20], rax (path rank: 1.8318218149002419) //xmlFreeDocElementContent at valid.c:1133
+0x000055555556e61b -- max_parity_flag_set -- 0.9136593796428246 -- jnz 0x55555556e62c (path rank: 0.8723721476103743) //parseAndPrintFile at xmllint.c:2416
+0x00005555555bc82d -- rsi min_reg_val_less 0x555555724510 -- 0.9132546011339862 -- jz 0x5555555bc8d2 (path rank: 1.8181033673448987) //xmlHashCreate at hash.c:181
+0x000055555557d87e -- rax max_reg_val_greater_or_equal 0x555555728da8 -- 0.9111382311027562 -- jz 0x55555557d894 (path rank: 1.8681055084431157) //xmlCopyError at error.c:973
+0x000055555557d662 -- rax max_reg_val_greater_or_equal 0x555555728da0 -- 0.9108789909341742 -- jz 0x55555557d678 (path rank: 1.8710674648033772) //xmlResetError at error.c:883
+0x000055555559360b -- is_visited -- 0.9103605105970104 -- mov dword ptr [rax+0x4], 0x4 (path rank: 1.840953483677445) //xmlParseElementChildrenContentDeclPriv at parser.c:6393
+0x0000555555593619 -- 0x555555593619 edge_only_taken_to 0x55555557e338 -- 0.9103605105970104 -- call 0x55555557e322 (path rank: 1.841437810579536) //xmlParseElementChildrenContentDeclPriv at parser.c:6394
+0x00005555556a93fe -- min_parity_flag_set -- 0.9097541008459415 -- jnz 0x5555556a93cb (path rank: 0.8892430112307965) //xmlDictOwns at dict.c:1188
+0x0000555555593208 -- max_interrupt_flag_set -- 0.9088763227312696 -- jz 0x555555593215 (path rank: 1.8023766155981393) //xmlParseElementMixedContentDecl at parser.c:6296
+0x00005555556a8986 -- rsi max_reg_val_greater_or_equal 0x55555571a0b3 -- 0.9082471726145356 -- call 0x5555556a73e9 (path rank: 1.837519880759665) //xmlDictLookup at dict.c:926
+0x0000555555588ef8 -- max_adjust_flag_set -- 0.9081759194687852 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.8000558721379962) //xmlParseName at parser.c:3472
+0x0000555555588f6f -- max_parity_flag_set -- 0.9061990236803008 -- jz 0x555555589068 (path rank: 1.8144992984027195) //xmlParseName at parser.c:3478
+0x00005555556b6dc1 -- max_interrupt_flag_set -- 0.905962523877384 -- mov rax, qword ptr [rax+0x70] (path rank: 0.8901903269675803) //xmlDocContentDumpOutput at xmlsave.c:1107
+0x00005555555cd23c -- max_parity_flag_set -- 0.9057290561232224 -- jnz 0x5555555cd295 (path rank: 1.7881712356222117) //xmlAddElementDecl at valid.c:1425
+0x00005555555cca94 -- max_sign_flag_set -- 0.9045465571086384 -- jz 0x5555555ccabd (path rank: 1.8673392396696502) //xmlDumpElementContent at valid.c:1209
+0x00005555555cca9e -- 0x5555555cca9e has_edge_to 0x5555555ccaa0 -- 0.9045465571086384 -- jz 0x5555555ccaf0 (path rank: 1.8906123757251643) //xmlDumpElementContent at valid.c:1209
+0x00005555555ccaa0 -- max_interrupt_flag_set -- 0.9045465571086384 -- cmp eax, 0x2 (path rank: 1.891096595284259) //xmlDumpElementContent at valid.c:1209
+0x00005555555ccaa3 -- is_visited -- 0.9045465571086384 -- jnz 0x5555555ccaf1 (path rank: 1.891580814843353) //xmlDumpElementContent at valid.c:1209
+0x00005555555ccab6 -- 0x5555555ccab6 edge_only_taken_to 0x5555555b803d -- 0.9045465571086384 -- call 0x5555555b8024 (path rank: 1.8920650344024474) //xmlDumpElementContent at valid.c:1213
+0x00005555556a7a78 -- rax max_reg_val_greater_or_equal 0x55555571a0aa -- 0.9042221278918166 -- mov rax, qword ptr [rbp-0x18] (path rank: 1.8368417826462353) //xmlDictComputeFastKey at dict.c:459
+0x000055555562f32f -- min_parity_flag_set -- 0.9040083684545648 -- jnz 0x55555562f338 (path rank: 1.3221305829674503) //xmlStrEqual at xmlstring.c:158
+0x00005555556af16a -- min_zero_flag_set -- 0.9034216670204056 -- jnz 0x5555556af18c (path rank: 1.7982358689830928) //xmlSAX2Comment at SAX2.c:2748
+0x00005555556af182 -- 0x5555556af182 edge_only_taken_to 0x5555555b08a0 -- 0.9034216670204056 -- call 0x5555555b0887 (path rank: 1.7987801267205024) //xmlSAX2Comment at SAX2.c:2749
+0x000055555559e47e -- rax min_reg_val_less 0x555555724250 -- 0.9027606803917408 -- ret  (path rank: 1.781049428069684) //xmlParseVersionInfo at parser.c:10368
+0x00005555555cca84 -- rax max_reg_val_greater_or_equal 0x4 -- 0.9027576483429852 -- mov eax, dword ptr [rax+0x4] (path rank: 1.8924821524859452) //xmlDumpElementContent at valid.c:1209
+0x00005555555ccae6 -- 0x5555555ccae6 edge_only_taken_to 0x5555555b803d -- 0.9027576483429852 -- call 0x5555555b8024 (path rank: 1.8929663720450394) //xmlDumpElementContent at valid.c:1219
+0x00005555555cca8a -- 0x5555555cca8a has_edge_to 0x5555555ccae6 -- 0.9027576483429852 -- jz 0x5555555ccad5 (path rank: 2) //xmlDumpElementContent at valid.c:1209
+0x00005555556a7a8a -- rax max_reg_val_greater_or_equal 0x55555571a0c3 -- 0.9022679724689971 -- mov rax, qword ptr [rbp-0x18] (path rank: 1.8499713790389491) //xmlDictComputeFastKey at dict.c:460
+0x0000555555588f43 -- min_parity_flag_set -- 0.901798004911919 -- jz 0x555555588ef3 (path rank: 1.7849081571165526) //xmlParseName at parser.c:3474 (discriminator 1)
+0x0000555555588f0c -- num_successors_equal 2 -- 0.901798004911919 -- jbe 0x555555588ef3 (path rank: 2) //xmlParseName at parser.c:3472
+0x0000555555593d6f -- max_parity_flag_set -- 0.9017040114005032 -- jz 0x555555593d97 (path rank: 1.7882577226386636) //xmlParseElementChildrenContentDeclPriv at parser.c:6536
+0x0000555555593836 -- max_parity_flag_set -- 0.9005472848003395 -- jz 0x555555593844 (path rank: 1.8007336026268403) //xmlParseElementChildrenContentDeclPriv at parser.c:6433
+0x00005555556a8717 -- rax min_reg_val_less 0x3 -- 0.9000318365119311 -- jnz 0x5555556a8744 (path rank: 1.8017955188481272) //xmlDictLookup at dict.c:859 (discriminator 1)

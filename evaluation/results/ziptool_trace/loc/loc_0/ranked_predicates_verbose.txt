@@ -1,0 +1,14 @@
+0x0000555555565f15 -- num_successors_equal 1 -- 0.9984520123839008 -- jnz 0x555555565dab (path rank: 2) //_zip_find_central_dir at zip_open.c:611
+0x0000555555574374 -- rsi min_reg_val_greater_or_equal 0x2aaaaaac0008 -- 0.9938080495356036 -- call 0x5555555573f0 (path rank: 1.1538622771625604) //_zip_buffer_free at zip_buffer.c:57
+0x0000555555569ac2 -- rax min_reg_val_greater_or_equal 0x555555569c4e -- 0.9838709677419356 -- jmp rax (path rank: 0.35252954473917647) //read_file at zip_source_filep.c:277
+0x000055555556602a -- rax min_reg_val_greater_or_equal 0x555555591702 -- 0.9838709677419356 -- jnz 0x555555565fb7 (path rank: 1.7358271096231437) //_zip_memmem at zip_open.c:665
+0x000055555555f2b0 -- rcx min_reg_val_less 0xff -- 0.9838709677419356 -- call 0x555555560fff (path rank: 1.9810999513549088) //_zip_dirent_process_winzip_aes at zip_dirent.c:643
+0x000055555555f0a0 -- 0x55555555f0a0 edge_only_taken_to 0x55555555f0ac -- 0.9838709677419356 -- jz 0x55555555f0b1 (path rank: 1.9822838870289297) //_zip_dirent_read at zip_dirent.c:581
+0x000055555557435b -- rax max_reg_val_greater_or_equal 0x22 -- 0.9838709677419356 -- jz 0x55555557436d (path rank: 1.98346782270295) //_zip_buffer_free at zip_buffer.c:53
+0x0000555555574368 -- rdi max_reg_val_greater_or_equal 0x5d8e1405ae0b40 -- 0.9838709677419356 -- call 0x5555555573f0 (path rank: 1.9846517583769707) //_zip_buffer_free at zip_buffer.c:54
+0x000055555555f034 -- max_interrupt_flag_set -- 0.9204034754818736 -- jz 0x55555555f045 (path rank: 1.978220591180931) //_zip_dirent_read at zip_dirent.c:570
+0x000055555555f040 -- 0x55555555f040 edge_only_taken_to 0x55555557434f -- 0.9204034754818736 -- call 0x55555557433a (path rank: 1.9794045268549518) //_zip_dirent_read at zip_dirent.c:571
+0x000055555557437d -- 0x55555557437d has_edge_to 0x55555555f053 -- 0.9204034754818736 -- ret  (path rank: 2) //_zip_buffer_free at zip_buffer.c:58
+0x000055555555ea0d -- rsi max_reg_val_less 0x1d -- 0.905822430839908 -- call 0x55555557473b (path rank: 1.9773371104815864) //_zip_dirent_read at zip_dirent.c:443
+0x0000555555557654 -- rax min_reg_val_less 0x1d -- 0.904274443223809 -- bnd jmp qword ptr [rip+0x278c5] (path rank: 0) //?? ??:0
+0x0000555555565fdc -- rdx max_reg_val_less 0x5 -- 0.9024767801857584 -- jnz 0x555555565fe4 (path rank: 1.7758763270094715) //_zip_memmem at zip_open.c:666

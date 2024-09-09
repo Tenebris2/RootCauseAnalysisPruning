@@ -28,6 +28,7 @@ SCRIPT_PATH = f"{aurora_git_dir}/tracing/scripts"
 TRACES_PATH = f"{eval_dir}/traces"
 RCA_PATH = f"{aurora_git_dir}/root_cause_analysis"
 DECOMPILING_RESULTS = f"{os.getcwd()}/decompiling_execution_time.txt"
+SOURCE_CODE_EXTRACTION_RESULTS = f"{os.getcwd()}/source-code-extractor/source_code_extraction_time.txt"
 HIT_COUNT = "hitcount.out"
 paths = [AURORA_PATH, LOC_PATH, LOC_WITH_SOURCE_PATH, BASIC_BLOCK_PATH]
 for path in paths:
@@ -82,9 +83,11 @@ def trace(res_path, method: Method, with_source: bool, id: int):
 
     try:
         shutil.copy(f"{TRACES_PATH}/stats.txt", res_path)
-        move_decompiling_results(id)
-        if method != Method.AURORA:
-            shutil.copy(HIT_COUNT, res_path)
+        if method == Method.LOC and with_source == False:
+            move_decompiling_results(id)
+        elif method == Method.LOC and with_source == True:
+            move_source_code_extraction_results(id)
+        shutil.copy(HIT_COUNT, res_path)
         print(f"File moved from {TRACES_PATH} to {res_path}")
     except FileNotFoundError:
         print(f"Error: the file {TRACES_PATH} does not exist")
@@ -147,10 +150,18 @@ def move_decompiling_results(id):
         print(f"{DECOMPILING_RESULTS} not found")
     except shutil.Error as e:
         print(f"Shutil error: {e}")
+def move_source_code_extraction_results(id):
+    try:
+        shutil.copy(SOURCE_CODE_EXTRACTION_RESULTS, f"{LOC_WITH_SOURCE_PATH}/loc_with_source_{id}/")
+        print(f"Moved {SOURCE_CODE_EXTRACTION_RESULTS} to {LOC_WITH_SOURCE_PATH}/loc_with_source_{id}")
+    except FileNotFoundError:
+        print(f"{SOURCE_CODE_EXTRACTION_RESULTS} not found")
+    except shutil.Error as e:
+        print(f"Shutil error: {e}")
 
 setup()
 for i in range(0, 5):
-    # run(Method.AURORA, False, i)
+    run(Method.AURORA, False, i)
     run(Method.LOC, False, i)
-    # run(Method.LOC, True, i)
-    # run(Method.BASIC_BLOCK, False, i)
+    run(Method.LOC, True, i)
+    run(Method.BASIC_BLOCK, False, i)

@@ -1,0 +1,221 @@
+0x0000555555560ab9 -- min_parity_flag_set -- 0.9930555555555556 -- jmp 0x555555560b07 (path rank: 1.991821120801883) //sweepstrings at lgc.c:384
+0x000055555556165d -- rdi min_reg_val_less 0xffffffffffffffff -- 0.990068697729988 -- jz 0x55555556197e (path rank: 0.4159867915798742) //luaO_pushvfstring at lobject.c:116
+0x000055555555e77c -- max_interrupt_flag_set -- 0.990068697729988 -- jnz 0x55555555e7f3 (path rank: 1.827098584690175) //resume at ldo.c:324
+0x000055555555e7ff -- max_interrupt_flag_set -- 0.990068697729988 -- jz 0x55555555e88e (path rank: 1.8379898883572228) //resume at ldo.c:329
+0x0000555555559fe9 -- rdx max_reg_val_greater_or_equal 0x5555555a1298 -- 0.9894713261648748 -- jnbe 0x555555559fac (path rank: 1.8821290669001352) //lua_insert at lapi.c:193 (discriminator 1)
+0x0000555555559c76 -- rdx min_reg_val_less 0x238 -- 0.9888739545997612 -- jnle 0x555555559c89 (path rank: 1.8371264126915956) //lua_checkstack at lapi.c:105
+0x000055555555d5e9 -- rsi max_reg_val_greater_or_equal 0x55555557c681 -- 0.9888739545997612 -- jz 0x55555555d60b (path rank: 1.8388533640228502) //luaG_runerror at ldebug.c:578
+0x0000555555558774 -- rsi max_reg_val_less 0x555555565c95 -- 0.9861111111111112 -- bnd jmp qword ptr [rip+0x2e6fd] (path rank: 0) //?? ??:0
+0x000055555556123d -- r8 min_reg_val_greater_or_equal 0x555555588618 -- 0.9861111111111112 -- jmp 0x5555555612ac (path rank: 0.10399335957641286) //luaM_realloc at lmem.c:70
+0x000055555555a6f4 -- min_parity_flag_set -- 0.9861111111111112 -- jnz 0x55555555a6fd (path rank: 0.1247920314916954) //lua_touserdata at lapi.c:351
+0x000055555555a706 -- min_zero_flag_set -- 0.9861111111111112 -- jz 0x55555555a71b (path rank: 0.145590703406978) //lua_touserdata at lapi.c:352
+0x00005555555613fa -- min_sign_flag_set -- 0.9861111111111112 -- jz 0x555555561406 (path rank: 0.2079867191528257) //luaO_rawequalObj at lobject.c:75
+0x000055555556765c -- 0x55555556765c edge_only_taken_to 0x555555567679 -- 0.9861111111111112 -- jz 0x555555567668 (path rank: 0.22878539106810825) //luaH_getany at ltable.c:426
+0x0000555555567acb -- 0x555555567acb edge_only_taken_to 0x55555555fe4a -- 0.9861111111111112 -- jnz 0x555555567af3 (path rank: 0.27038273489867337) //luaT_gettm at ltm.c:51
+0x000055555555fc98 -- 0x55555555fc98 edge_only_taken_to 0x55555555fcb4 -- 0.9861111111111112 -- jnz 0x55555555fcac (path rank: 0.291181406813956) //luaC_separateudata at lgc.c:120
+0x000055555555fd89 -- 0x55555555fd89 edge_only_taken_to 0x55555555fc05 -- 0.9861111111111112 -- jz 0x55555555fd90 (path rank: 0.3119800787292385) //luaC_separateudata at lgc.c:137
+0x0000555555560e3e -- rsi max_reg_val_less 0x1 -- 0.9861111111111112 -- jz 0x555555560e47 (path rank: 0.3327787506445211) //luaC_sweep at lgc.c:436
+0x0000555555560a33 -- rdx max_reg_val_less 0xff -- 0.9861111111111112 -- jmp 0x555555560a88 (path rank: 0.3535774225598036) //sweeplist at lgc.c:367
+0x0000555555560b15 -- rdx min_reg_val_greater_or_equal 0x44 -- 0.9861111111111112 -- jl 0x555555560abb (path rank: 0.37438944774930905) //sweepstrings at lgc.c:384 (discriminator 1)
+0x0000555555560dff -- min_zero_flag_set -- 0.9861111111111112 -- jnz 0x555555560d41 (path rank: 0.39518811966459166) //luaC_callGCTM at lgc.c:419
+0x0000555555559b38 -- rcx min_reg_val_greater_or_equal 0x2aaaaaac7e89 -- 0.9861111111111112 -- jle 0x555555559b71 (path rank: 0.6863695264785477) //luaA_indexAcceptable at lapi.c:82
+0x000055555555a586 -- 0x55555555a586 edge_only_taken_to 0x55555555b60c -- 0.9861111111111112 -- jmp 0x55555555a5e3 (path rank: 0.70716819839383) //lua_tostring at lapi.c:315
+0x000055555555e6e1 -- 0x55555555e6e1 edge_only_taken_to 0x555555569ffa -- 0.9861111111111112 -- jnz 0x55555555e6f3 (path rank: 0.8200094628697874) //luaD_call at ldo.c:312
+0x000055555555e632 -- 0x55555555e632 edge_only_taken_to 0x55555556bba6 -- 0.9861111111111112 -- jnle 0x55555555e615 (path rank: 0.8600436655097625) //luaD_poscall at ldo.c:290
+0x000055555555f789 -- 0x55555555f789 edge_only_taken_to 0x55555555d6c3 -- 0.9861111111111112 -- jz 0x55555555f79d (path rank: 0.9122474950023555) //luaF_close at lfunc.c:68
+0x00005555555587a4 -- 0x5555555587a4 edge_only_taken_to 0x555555558d1c -- 0.9861111111111112 -- bnd jmp qword ptr [rip+0x2e6e5] (path rank: 1.7959839567114924) //?? ??:0
+0x000055555555d3fd -- max_interrupt_flag_set -- 0.98528972520908 -- jnz 0x55555555d45c (path rank: 1.8431707423509867) //addinfo at ldebug.c:556
+0x000055555555d46a -- max_interrupt_flag_set -- 0.98528972520908 -- jz 0x55555555d471 (path rank: 1.8440342180166136) //addinfo at ldebug.c:562
+0x000055555555d922 -- 0x55555555d922 edge_only_taken_to 0x555555573f67 -- 0.9819295101553166 -- jbe 0x55555555d96c (path rank: 1.851805499007259) //restore_stack_limit at ldo.c:96
+0x000055555555d491 -- 0x55555555d491 edge_only_taken_to 0x55555555d7c7 -- 0.9807347670250895 -- jz 0x55555555d59a (path rank: 1.844897693682241) //luaG_errormsg at ldebug.c:566
+0x000055555555e20e -- rsi max_reg_val_greater_or_equal 0x55555558c110 -- 0.980510752688172 -- jz 0x55555555e227 (path rank: 1.8288255360214292) //luaD_precall at ldo.c:224
+0x000055555556a3ed -- rax max_reg_val_greater_or_equal 0x55555558c120 -- 0.9793160095579452 -- jmp 0x55555556c7b5 (path rank: 1.8340063900151933) //luaV_execute at lvm.c:468 (discriminator 1)
+0x000055555555a764 -- max_zero_flag_set -- 0.9787186379928317 -- jnz 0x55555555a770 (path rank: 1.8219177306964112) //lua_tothread at lapi.c:362 (discriminator 1)
+0x000055555557400c -- 0x55555557400c edge_only_taken_to 0x555555559c4a -- 0.9787186379928317 -- jnz 0x555555574026 (path rank: 1.823644682027666) //luaB_coresume at lbaselib.c:566
+0x0000555555559cac -- 0x555555559cac edge_only_taken_to 0x555555573f1c -- 0.9787186379928317 -- jnb 0x555555559cd1 (path rank: 1.8253716333589203) //lua_checkstack at lapi.c:106
+0x000055555555e917 -- 0x55555555e917 edge_only_taken_to 0x55555555f705 -- 0.9787186379928317 -- jz 0x55555555e98d (path rank: 1.8474881206791227) //lua_resume at ldo.c:359
+0x0000555555573f67 -- 0x555555573f67 edge_only_taken_to 0x555555559d16 -- 0.9787186379928317 -- jnz 0x555555573fc3 (path rank: 1.8526689746728864) //auxresume at lbaselib.c:549
+0x0000555555559c4a -- rdx min_reg_val_greater_or_equal 0x1 -- 0.978121266427718 -- jle 0x555555559c58 (path rank: 1.824508157693293) //lua_checkstack at lapi.c:102
+0x000055555555e7a1 -- 0x55555555e7a1 edge_only_taken_to 0x55555555e20e -- 0.978121266427718 -- jl 0x55555555e7be (path rank: 1.827962060355802) //resume at ldo.c:325
+0x00005555555615d5 -- rdx max_reg_val_greater_or_equal 0x55555558c338 -- 0.975731780167264 -- jnle 0x5555555615e8 (path rank: 1.8397168396884775) //pushstr at lobject.c:106
+0x0000555555558674 -- rdx max_reg_val_greater_or_equal 0x55555558c180 -- 0.975731780167264 -- bnd jmp qword ptr [rip+0x2e77d] (path rank: 1.8405803153541047) //?? ??:0
+0x0000555555569a3e -- rdx max_reg_val_greater_or_equal 0x55555558c138 -- 0.975731780167264 -- jz 0x555555569a5b (path rank: 1.841443791019732) //luaV_concat at lvm.c:319
+0x0000555555569cb8 -- rdx max_reg_val_greater_or_equal 0x55555558c170 -- 0.975731780167264 -- jnle 0x555555569a0e (path rank: 1.8423072666853593) //luaV_concat at lvm.c:344
+0x000055555557404f -- max_interrupt_flag_set -- 0.975731780167264 -- jns 0x55555557407a (path rank: 1.8535324503385138) //luaB_coresume at lbaselib.c:568
+0x0000555555574078 -- 0x555555574078 edge_only_taken_to 0x55555556bb2d -- 0.975731780167264 -- jmp 0x5555555740a6 (path rank: 1.854989008672566) //luaB_coresume at lbaselib.c:571
+0x0000555555559d76 -- 0x555555559d76 has_edge_to 0x55555557404f -- 0.975731780167264 -- jl 0x555555559d18 (path rank: 2) //lua_xmove at lapi.c:120 (discriminator 1)
+0x000055555556a49f -- rax min_reg_val_less 0xfc -- 0.9751344086021504 -- jnle 0x55555556a4c6 (path rank: 1.8488589604949635) //luaV_execute at lvm.c:472
+0x0000555555569b4d -- rax max_reg_val_less 0x8 -- 0.974537037037037 -- jnl 0x555555569b9d (path rank: 0.5823761669021348) //luaV_concat at lvm.c:328
+0x0000555555569bf0 -- rax max_reg_val_less 0x8 -- 0.974537037037037 -- jmp 0x555555569c59 (path rank: 0.6447721826479823) //luaV_concat at lvm.c:335
+0x000055555555d7c7 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.974537037037037 -- jz 0x55555555d7f9 (path rank: 0.8290528073412251) //luaD_throw at ldo.c:71
+0x0000555555559d16 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.974537037037037 -- jmp 0x555555559d70 (path rank: 1.8117885619719312) //lua_xmove at lapi.c:120
+0x000055555555a76e -- 0x55555555a76e edge_only_taken_to 0x55555557400c -- 0.974537037037037 -- jmp 0x55555555a775 (path rank: 1.8227812063620386) //lua_tothread at lapi.c:362 (discriminator 3)
+0x0000555555573f1c -- max_interrupt_flag_set -- 0.974537037037037 -- jnz 0x555555573f39 (path rank: 1.8262351090245479) //auxresume at lbaselib.c:545
+0x000055555555e23e -- rdx max_reg_val_greater_or_equal 0x55555558c2e0 -- 0.974537037037037 -- jnz 0x55555555e24c (path rank: 1.8296890116870568) //luaD_precall at ldo.c:226
+0x000055555555e2c7 -- rdx max_reg_val_greater_or_equal 0x240 -- 0.974537037037037 -- jnle 0x55555555e2e2 (path rank: 1.830552487352684) //luaD_precall at ldo.c:234
+0x000055555555e373 -- rcx min_reg_val_less 0x30 -- 0.974537037037037 -- jmp 0x55555555e38f (path rank: 1.831415963018311) //luaD_precall at ldo.c:241
+0x000055555555e3a2 -- rdx max_reg_val_greater_or_equal 0x55555558c138 -- 0.974537037037037 -- jb 0x55555555e375 (path rank: 1.8322794386839387) //luaD_precall at ldo.c:241
+0x000055555555e7ee -- 0x55555555e7ee edge_only_taken_to 0x555555569ffa -- 0.974537037037037 -- jmp 0x55555555e8a9 (path rank: 1.8331429143495659) //resume at ldo.c:327
+0x000055555555d8d9 -- 0x55555555d8d9 has_edge_to 0x55555555e917 -- 0.974537037037037 -- jz 0x55555555d8e0 (path rank: 2) //luaD_rawrunprotected at ldo.c:91
+0x000055555555e3b9 -- 0x55555555e3b9 has_edge_to 0x55555555e7ee -- 0.974537037037037 -- jmp 0x55555555e4b7 (path rank: 2) //luaD_precall at ldo.c:244
+0x000055555555d895 -- 0x55555555d895 has_edge_to 0x55555555e77c -- 0.974537037037037 -- jnz 0x55555555d8b4 (path rank: 2) //luaD_rawrunprotected at ldo.c:87
+0x0000555555559ddd -- rdx min_reg_val_greater_or_equal 0x62f0 -- 0.972968936678614 -- jb 0x555555559deb (path rank: 1.8058016189808184) //lua_newthread at lapi.c:141
+0x00005555555657b2 -- rdx min_reg_val_greater_or_equal 0x6390 -- 0.972968936678614 -- jnz 0x5555555657bb (path rank: 1.8066594451842746) //mallocstate at lstate.c:50
+0x000055555555e603 -- rdx min_reg_val_greater_or_equal 0x555555590e80 -- 0.9725955794504182 -- jz 0x55555555e627 (path rank: 1.8212460294767487) //luaD_poscall at ldo.c:286
+0x0000555555558644 -- rcx min_reg_val_greater_or_equal 0x2aaaaaabe2ca -- 0.9711768219832736 -- bnd jmp qword ptr [rip+0x2e795] (path rank: 0.08319468766113028) //?? ??:0
+0x00005555555616b9 -- rax min_reg_val_greater_or_equal 0x238 -- 0.9711768219832736 -- jnle 0x5555555616cc (path rank: 0.4367854634951568) //luaO_pushvfstring at lobject.c:118
+0x000055555556a3bc -- rax max_reg_val_greater_or_equal 0x7 -- 0.970952807646356 -- jz 0x55555556a3f2 (path rank: 1.8201907793651564) //luaV_execute at lvm.c:465
+0x0000555555566377 -- rsi max_reg_val_less 0x6aaaaaac2cd8 -- 0.9699820788530468 -- jmp 0x5555555663ab (path rank: 0.02079867191528257) //luaS_newlstr at lstring.c:77
+0x0000555555566312 -- rsi min_reg_val_greater_or_equal 0x204e -- 0.9699820788530468 -- jle 0x55555556633a (path rank: 0.0623960157458477) //newlstr at lstring.c:66
+0x00005555555616f1 -- max_zero_flag_set -- 0.9699820788530468 -- jz 0x555555561733 (path rank: 0.45758413541043935) //luaO_pushvfstring at lobject.c:119 (discriminator 3)
+0x0000555555569c5d -- rcx min_reg_val_greater_or_equal 0x62caef61 -- 0.9699820788530468 -- jnle 0x555555569bf2 (path rank: 0.6655708545632651) //luaV_concat at lvm.c:335 (discriminator 1)
+0x000055555556173c -- rax max_reg_val_less 0x1c -- 0.9693847072879332 -- jnbe 0x555555561762 (path rank: 0.4783828073257219) //luaO_pushvfstring at lobject.c:121
+0x0000555555561760 -- rcx max_reg_val_less 0x24 -- 0.9693847072879332 -- jmp 0x555555561776 (path rank: 0.4991814792410044) //luaO_pushvfstring at lobject.c:121
+0x0000555555569b6e -- max_zero_flag_set -- 0.9693847072879332 -- jz 0x555555569b1d (path rank: 0.6031748388174173) //luaV_concat at lvm.c:328 (discriminator 1)
+0x000055555555a759 -- max_interrupt_flag_set -- 0.968563321385902 -- jz 0x55555555a770 (path rank: 1.821054255030784) //lua_tothread at lapi.c:362
+0x0000555555559b6f -- 0x555555559b6f has_edge_to 0x55555555a759 -- 0.968563321385902 -- jmp 0x555555559b82 (path rank: 2) //luaA_indexAcceptable at lapi.c:86
+0x000055555556a17d -- rdx max_reg_val_greater_or_equal 0x18 -- 0.9679659498207884 -- jnbe 0x55555556a070 (path rank: 1.8356632828485824) //luaV_execute at lvm.c:434
+0x0000555555559e72 -- rdx min_reg_val_greater_or_equal 0x7fffffff -- 0.9675925925925926 -- js 0x555555559ecf (path rank: 0.18718804723754312) //lua_settop at lapi.c:164
+0x0000555555569b1b -- rdx min_reg_val_greater_or_equal 0x4 -- 0.9675925925925926 -- jmp 0x555555569b47 (path rank: 0.5615774949868522) //luaV_concat at lvm.c:328
+0x000055555556bbc6 -- rdx min_reg_val_less 0x5555555884e8 -- 0.9607974910394266 -- jmp 0x55555556c7a8 (path rank: 1.907420347207377) //luaV_execute at lvm.c:659 (discriminator 1)
+0x000055555556c77d -- rdx min_reg_val_greater_or_equal 0x842c -- 0.9604988052568696 -- jb 0x55555556c7b4 (path rank: 1.8356366000553612) //luaV_execute at lvm.c:774
+0x000055555555e56d -- rsi max_reg_val_greater_or_equal 0x1 -- 0.9596027479091996 -- jz 0x55555555e586 (path rank: 1.8143789889688127) //luaD_poscall at ldo.c:280
+0x000055555556bba6 -- max_interrupt_flag_set -- 0.9596027479091996 -- js 0x55555556c7a8 (path rank: 1.817809914433067) //luaV_execute at lvm.c:635
+0x000055555556bb2d -- 0x55555556bb2d edge_only_taken_to 0x55555556bb45 -- 0.9584080047789724 -- jz 0x55555556bbcb (path rank: 1.8126520376375583) //luaV_execute at lvm.c:626
+0x00005555555673ad -- rax min_reg_val_greater_or_equal 0x2 -- 0.9583333333333331 -- jz 0x5555555673f2 (path rank: 0.9962078536226162) //luaH_free at ltable.c:344
+0x00005555555609b6 -- rdx min_reg_val_greater_or_equal 0x7b0c -- 0.9583333333333331 -- jmp 0x555555560a12 (path rank: 1.8738696124371041) //freeobj at lgc.c:345
+0x0000555555574184 -- max_zero_flag_set -- 0.9578106332138592 -- jnz 0x55555557419b (path rank: 1.8074711836437944) //luaB_cocreate at lbaselib.c:598
+0x000055555555a125 -- rax max_reg_val_greater_or_equal 0x6 -- 0.9572132616487457 -- jmp 0x55555555a12c (path rank: 1.8066077079781673) //lua_type at lapi.c:224 (discriminator 1)
+0x000055555555a193 -- max_interrupt_flag_set -- 0.9572132616487457 -- jz 0x55555555a1b7 (path rank: 1.8083346593094216) //lua_iscfunction at lapi.c:236
+0x000055555555a19e -- max_interrupt_flag_set -- 0.9572132616487457 -- jnz 0x55555555a1b7 (path rank: 1.809198134975049) //lua_iscfunction at lapi.c:236 (discriminator 1)
+0x000055555555a1ae -- rax min_reg_val_less 0xff -- 0.9572132616487457 -- jz 0x55555555a1b7 (path rank: 1.8100616106406764) //lua_iscfunction at lapi.c:236 (discriminator 3)
+0x0000555555574199 -- 0x555555574199 edge_only_taken_to 0x555555559aea -- 0.9572132616487457 -- jz 0x5555555741b3 (path rank: 1.8109250863063036) //luaB_cocreate at lbaselib.c:598 (discriminator 2)
+0x000055555556bb45 -- max_interrupt_flag_set -- 0.9572132616487457 -- jbe 0x55555556bb81 (path rank: 1.8135155133031853) //luaV_execute at lvm.c:627
+0x000055555556c7a9 -- 0x55555556c7a9 edge_only_taken_to 0x55555556a09f -- 0.9572132616487457 -- jmp 0x55555556a070 (path rank: 1.818907077110651) //luaV_execute at lvm.c:659
+0x0000555555559b04 -- 0x555555559b04 has_edge_to 0x555555559d16 -- 0.9572132616487457 -- jmp 0x555555559b1f (path rank: 2) //luaA_index at lapi.c:71
+0x000055555555a8c3 -- rdx max_reg_val_greater_or_equal 0x7e49 -- 0.9569145758661888 -- jb 0x55555555a8d1 (path rank: 1.8126520376120583) //lua_pushlstring at lapi.c:407
+0x000055555555e5bd -- rdx max_reg_val_greater_or_equal 0x555555588f30 -- 0.9565412186379928 -- jmp 0x55555555e5ff (path rank: 1.8897137864629077) //luaD_poscall at ldo.c:286
+0x000055555556014c -- rax min_reg_val_greater_or_equal 0x6 -- 0.955346475507766 -- jl 0x5555555600e9 (path rank: 1.865515936857884) //traverseproto at lgc.c:190 (discriminator 1)
+0x000055555556ca41 -- rax max_reg_val_less 0x81 -- 0.9550477897252092 -- jbe 0x55555556ca84 (path rank: 0.6239735107326999) //luaZ_openspace at lzio.c:73
+0x000055555556a500 -- rdx max_reg_val_greater_or_equal 0x48 -- 0.9546744324970132 -- jnz 0x55555556a5ff (path rank: 1.942925329049649) //luaV_execute at lvm.c:473 (discriminator 4)
+0x00005555555601cb -- min_zero_flag_set -- 0.9541517323775388 -- jnz 0x5555555601f3 (path rank: 1.8752742971589225) //traverseproto at lgc.c:197
+0x00005555555678a1 -- 0x5555555678a1 edge_only_taken_to 0x555555569192 -- 0.9537037037037036 -- jmp 0x555555567928 (path rank: 1.9255204417892742) //luaH_set at ltable.c:489
+0x0000555555560d3c -- rcx min_reg_val_greater_or_equal 0x8fb4 -- 0.9535543608124252 -- jmp 0x555555560df0 (path rank: 0.9655377211070425) //luaC_callGCTM at lgc.c:419
+0x0000555555560201 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9535543608124252 -- jl 0x5555555601a8 (path rank: 1.8680663285881831) //traverseproto at lgc.c:196 (discriminator 1)
+0x000055555555fbdf -- 0x55555555fbdf has_edge_to 0x555555560201 -- 0.9535543608124252 -- jmp 0x55555555fbe2 (path rank: 2) //reallymarkobject at lgc.c:96
+0x000055555556a538 -- 0x55555556a538 edge_only_taken_to 0x55555556a57e -- 0.953031660692951 -- jz 0x55555556a583 (path rank: 1.8023016285743731) //luaV_execute at lvm.c:475
+0x0000555555560351 -- 0x555555560351 edge_only_taken_to 0x55555555fb12 -- 0.9523596176821982 -- jnz 0x55555556036a (path rank: 1.8624822129802934) //traverseclosure at lgc.c:215
+0x0000555555560b53 -- rdx max_reg_val_greater_or_equal 0xb0 -- 0.9517622461170848 -- jnl 0x555555560b89 (path rank: 1.8743693829925359) //checkSizes at lgc.c:392
+0x000055555556092e -- rax min_reg_val_greater_or_equal 0x1 -- 0.9513888888888888 -- jnbe 0x555555560a12 (path rank: 0.9751778581139433) //freeobj at lgc.c:341
+0x0000555555560a43 -- min_zero_flag_set -- 0.9513888888888888 -- jnl 0x555555560a63 (path rank: 1.8701099243415054) //sweeplist at lgc.c:368
+0x0000555555560954 -- num_successors_equal 2 -- 0.9513888888888888 -- jmp rax (path rank: 2) //freeobj at lgc.c:341
+0x0000555555560252 -- max_interrupt_flag_set -- 0.9511648745519712 -- jl 0x55555556020c (path rank: 1.869562792006049) //traverseproto at lgc.c:198 (discriminator 1)
+0x000055555555f705 -- rsi max_reg_val_greater_or_equal 0x55555558c0e8 -- 0.9506421744324972 -- jmp 0x55555555f775 (path rank: 1.84835159634475) //luaF_close at lfunc.c:68
+0x000055555555e468 -- 0x55555555e468 has_edge_to 0x555555559ddd -- 0.9506421744324972 -- jz 0x55555555e480 (path rank: 2) //luaD_precall at ldo.c:254
+0x00005555555612b1 -- 0x5555555612b1 has_edge_to 0x555555559b38 -- 0.9506421744324972 -- jz 0x5555555612ee (path rank: 2) //luaM_realloc at lmem.c:84
+0x0000555555560715 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.950567502986858 -- jnz 0x55555556060d (path rank: 0.2495840629833908) //propagatemarks at lgc.c:259
+0x0000555555560324 -- max_interrupt_flag_set -- 0.950567502986858 -- jnz 0x55555556033d (path rank: 1.8619721346342335) //traverseclosure at lgc.c:214
+0x000055555555fb38 -- max_adjust_flag_set -- 0.950567502986858 -- jmp rax (path rank: 1.8629087703609652) //reallymarkobject at lgc.c:73
+0x0000555555560371 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.950567502986858 -- jmp 0x5555555603da (path rank: 1.8634756234736445) //traverseclosure at lgc.c:216
+0x00005555555603e8 -- max_interrupt_flag_set -- 0.950567502986858 -- jl 0x555555560373 (path rank: 1.8639857018197044) //traverseclosure at lgc.c:216 (discriminator 1)
+0x000055555556061e -- min_zero_flag_set -- 0.950567502986858 -- jz 0x5555555606dd (path rank: 1.8644957801657642) //propagatemarks at lgc.c:260
+0x00005555555600e7 -- max_interrupt_flag_set -- 0.950567502986858 -- jmp 0x555555560142 (path rank: 1.8650058585118239) //traverseproto at lgc.c:190
+0x0000555555560102 -- max_interrupt_flag_set -- 0.950567502986858 -- jnz 0x55555556013e (path rank: 1.8660260152039438) //traverseproto at lgc.c:191
+0x0000555555560155 -- is_visited -- 0.950567502986858 -- jmp 0x555555560193 (path rank: 1.8665360935500037) //traverseproto at lgc.c:194
+0x000055555556019d -- rax min_reg_val_less 0xff -- 0.950567502986858 -- jl 0x555555560157 (path rank: 1.8670461718960636) //traverseproto at lgc.c:194 (discriminator 1)
+0x00005555555601a6 -- 0x5555555601a6 edge_only_taken_to 0x555555560201 -- 0.950567502986858 -- jmp 0x5555555601f7 (path rank: 1.8675562502421235) //traverseproto at lgc.c:196
+0x000055555556020a -- 0x55555556020a edge_only_taken_to 0x555555560252 -- 0.950567502986858 -- jmp 0x555555560248 (path rank: 1.8690527136599893) //traverseproto at lgc.c:198
+0x0000555555560276 -- 0x555555560276 has_edge_to 0x555555560324 -- 0.950567502986858 -- jz 0x555555560310 (path rank: 2) //traverseclosure at lgc.c:206
+0x00005555555609ee -- rdx min_reg_val_greater_or_equal 0x8e07 -- 0.948999402628435 -- jmp 0x555555560a12 (path rank: 1.8752455378988857) //freeobj at lgc.c:353
+0x000055555556789b -- max_interrupt_flag_set -- 0.9489247311827956 -- jz 0x5555555678a6 (path rank: 0.16638937532226056) //luaH_set at ltable.c:488
+0x000055555556381c -- rax max_reg_val_greater_or_equal 0x9 -- 0.9453405017921148 -- jz 0x555555563834 (path rank: 1.7660006186025214) //funcargs at lparser.c:582
+0x000055555556920c -- rdx min_reg_val_less 0xff -- 0.9453405017921148 -- jmp 0x5555555692ae (path rank: 1.94610236471631) //luaV_settable at lvm.c:179
+0x000055555556a57e -- 0x55555556a57e edge_only_taken_to 0x55555556c7b5 -- 0.943473715651135 -- jmp 0x55555556c7b5 (path rank: 2) //luaV_execute at lvm.c:481 (discriminator 1)
+0x0000555555561cb0 -- rdx max_reg_val_greater_or_equal 0xb -- 0.9424283154121864 -- jz 0x555555561cd7 (path rank: 1.7741638223742933) //next at lparser.c:59
+0x000055555556399b -- rsi max_reg_val_greater_or_equal 0xb -- 0.9424283154121864 -- jz 0x5555555639a2 (path rank: 1.7771858610715145) //funcargs at lparser.c:621
+0x000055555556c86a -- num_successors_greater 2 -- 0.9419802867383512 -- jz 0x55555556c871 (path rank: 2) //luaZ_fill at lzio.c:26 (discriminator 1)
+0x0000555555567801 -- 0x555555567801 has_edge_to 0x55555556a538 -- 0.9357078853046596 -- jmp 0x555555567857 (path rank: 2) //luaH_get at ltable.c:472
+0x000055555556bac6 -- rax max_reg_val_less 0x3 -- 0.9345131421744326 -- jz 0x55555556baec (path rank: 1.8031651042400005) //luaV_execute at lvm.c:623
+0x000055555556a1a3 -- 0x55555556a1a3 has_edge_to 0x55555556bac6 -- 0.932721027479092 -- jmp rax (path rank: 2) //luaV_execute at lvm.c:434
+0x000055555556ea97 -- rsi max_reg_val_greater_or_equal 0xa -- 0.9321983273596176 -- jle 0x55555556ead3 (path rank: 1.7648669199042417) //luaX_checklimit at llex.c:55
+0x00005555555708c7 -- rcx min_reg_val_less 0x7 -- 0.9306302270011948 -- jz 0x5555555708e5 (path rank: 1.7965755050440293) //luaX_lex at llex.c:368
+0x0000555555563906 -- rax max_reg_val_greater_or_equal 0x9 -- 0.9292861409796892 -- jnz 0x555555563911 (path rank: 1.9297930884269192) //funcargs at lparser.c:610
+0x00005555555677a5 -- 0x5555555677a5 has_edge_to 0x55555556a3bc -- 0.9291367980884112 -- jmp 0x5555555677c1 (path rank: 2) //luaH_getstr at ltable.c:460
+0x000055555556db03 -- num_successors_equal 2 -- 0.9284647550776584 -- jmp 0x55555556db54 (path rank: 2) //luaK_exp2anyreg at lcode.c:377 (discriminator 1)
+0x000055555556dd3d -- rcx max_reg_val_greater_or_equal 0x9 -- 0.9254032258064516 -- jmp 0x55555556dd7d (path rank: 1.764969005557105) //luaK_storevar at lcode.c:434
+0x0000555555567248 -- rdx max_reg_val_greater_or_equal 0x10574 -- 0.9251045400238948 -- jz 0x55555556724f (path rank: 1.9221679650134047) //resize at ltable.c:311
+0x0000555555566e9d -- rcx max_reg_val_greater_or_equal 0x10434 -- 0.9251045400238948 -- jmp 0x555555566f15 (path rank: 1.9246154061206258) //setnodevector at ltable.c:261
+0x000055555556eefc -- rax max_reg_val_greater_or_equal 0x1da8 -- 0.9228643966547192 -- jbe 0x55555556ef21 (path rank: 1.915673496377666) //readname at llex.c:163
+0x0000555555561788 -- rdx max_reg_val_less 0x5555555884d8 -- 0.9225657108721624 -- jmp 0x555555561969 (path rank: 0.519980151156287) //luaO_pushvfstring at lobject.c:122
+0x0000555555561979 -- rax min_reg_val_greater_or_equal 0x55555557d5c1 -- 0.9225657108721624 -- jmp 0x555555561643 (path rank: 0.5407788230715697) //luaO_pushvfstring at lobject.c:114
+0x0000555555561a05 -- 0x555555561a05 has_edge_to 0x55555555d3fd -- 0.9225657108721624 -- jz 0x555555561a0c (path rank: 2) //luaO_pushvfstring at lobject.c:150
+0x000055555556d51a -- rax max_reg_val_greater_or_equal 0x555555591d4c -- 0.9204749103942652 -- jnz 0x55555556d551 (path rank: 1.7830464057626485) //luaK_setcallreturns at lcode.c:251
+0x000055555556ed40 -- rcx min_reg_val_less 0x9 -- 0.9191308243727598 -- jz 0x55555556ed5e (path rank: 1.9245310158677846) //inclinenumber at llex.c:113
+0x000055555556e8c7 -- rcx max_reg_val_greater_or_equal 0xa78d -- 0.9168906810035842 -- jl 0x55555556e903 (path rank: 1.8950877615374233) //luaK_code at lcode.c:697
+0x000055555556ceb3 -- r9 min_reg_val_less 0x3 -- 0.9167413381123058 -- jmp 0x55555556cf6c (path rank: 1.8004016669730067) //luaK_patchlistaux at lcode.c:119
+0x0000555555563916 -- max_parity_flag_set -- 0.9167413381123058 -- jz 0x55555556392b (path rank: 1.939049877968146) //funcargs at lparser.c:613
+0x0000555555561167 -- rsi max_reg_val_greater_or_equal 0x555555593768 -- 0.9156959378733572 -- jnle 0x555555561172 (path rank: 1.8226418193591425) //luaM_growaux at lmem.c:47
+0x000055555556e4b3 -- rax max_reg_val_less 0x6 -- 0.9155465949820788 -- jmp 0x55555556e4c2 (path rank: 1.790237376845199) //codebinop at lcode.c:631
+0x000055555556a6c6 -- 0x55555556a6c6 edge_only_taken_to 0x55555556c7b5 -- 0.9153972520908004 -- jmp 0x55555556c7b5 (path rank: 2) //luaV_execute at lvm.c:486
+0x000055555556a45b -- max_parity_flag_set -- 0.9148745519713262 -- jmp 0x55555556c7b5 (path rank: 1.9177493900633622) //luaV_execute at lvm.c:468
+0x000055555556ef38 -- rdx max_reg_val_greater_or_equal 0x1d99 -- 0.9145011947431304 -- jbe 0x55555556ef5d (path rank: 1.9142965309292017) //readname at llex.c:165
+0x000055555556cddb -- rsi min_reg_val_greater_or_equal 0x8 -- 0.9137544802867384 -- jmp 0x55555556ce2e (path rank: 1.7937850776372863) //need_value at lcode.c:103
+0x000055555556cca3 -- rcx min_reg_val_greater_or_equal 0x8 -- 0.9137544802867384 -- jle 0x55555556ccbf (path rank: 1.8038464031013557) //luaK_fixjump at lcode.c:64
+0x000055555556c65c -- rbp min_reg_val_less 0xffffffffffffffff -- 0.91360513739546 -- jmp 0x55555556c71d (path rank: 1.7985743837083743) //luaV_execute at lvm.c:765
+0x000055555556c729 -- max_interrupt_flag_set -- 0.91360513739546 -- jl 0x55555556c661 (path rank: 1.7994378593740015) //luaV_execute at lvm.c:765 (discriminator 1)
+0x000055555556d1ac -- rsi max_reg_val_greater_or_equal 0x101 -- 0.9122610513739546 -- jl 0x55555556d1c8 (path rank: 1.7625103738177752) //freereg at lcode.c:196
+0x0000555555565755 -- num_successors_greater 2 -- 0.9118130227001195 -- jz 0x555555565709 (path rank: 2) //chunk at lparser.c:1320 (discriminator 1)
+0x00005555555705e1 -- rcx max_reg_val_less 0x42 -- 0.9107676224611708 -- jz 0x5555555705ff (path rank: 1.7831175502387666) //luaX_lex at llex.c:343
+0x000055555555e611 -- min_sign_flag_set -- 0.9106182795698924 -- jb 0x55555555e5bf (path rank: 1.81524246463444) //luaD_poscall at ldo.c:286 (discriminator 1)
+0x000055555556cdb3 -- rdx min_reg_val_less 0x17 -- 0.9101702508960574 -- jns 0x55555556cdbf (path rank: 1.7959071199620351) //getjumpcontrol at lcode.c:91 (discriminator 1)
+0x000055555556cdff -- rax min_reg_val_less 0x17 -- 0.9101702508960574 -- jnz 0x55555556ce13 (path rank: 1.7973530032183076) //need_value at lcode.c:105
+0x000055555556ceee -- rax min_reg_val_less 0x17 -- 0.9101702508960574 -- jz 0x55555556cf06 (path rank: 1.8031234614732197) //luaK_patchlistaux at lcode.c:122
+0x000055555555d6e3 -- 0x55555555d6e3 edge_only_taken_to 0x55555555d922 -- 0.910020908004779 -- jz 0x55555555d75e (path rank: 0.854168857584644) //seterrorobj at ldo.c:51
+0x000055555556d8f1 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.909572879330944 -- jz 0x55555556da1d (path rank: 1.7446976862290988) //luaK_exp2reg at lcode.c:344
+0x000055555556d8c1 -- max_zero_flag_set -- 0.909572879330944 -- jnz 0x55555556d8e1 (path rank: 1.791616252752877) //luaK_exp2reg at lcode.c:342
+0x000055555556d0ab -- 0x55555556d0ab edge_only_taken_to 0x55555556d8f1 -- 0.909572879330944 -- jmp 0x55555556d0ef (path rank: 1.7930621360091499) //luaK_concat at lcode.c:168
+0x000055555556ce18 -- 0x55555556ce18 edge_only_taken_to 0x55555556d921 -- 0.909572879330944 -- jmp 0x55555556ce39 (path rank: 1.798075944846444) //need_value at lcode.c:105 (discriminator 3)
+0x000055555556d921 -- max_interrupt_flag_set -- 0.909572879330944 -- jnz 0x55555556d941 (path rank: 1.7987988864745803) //luaK_exp2reg at lcode.c:348
+0x000055555556ce32 -- max_adjust_flag_set -- 0.909572879330944 -- jnz 0x55555556cddd (path rank: 1.7988224986724946) //need_value at lcode.c:103 (discriminator 1)
+0x0000555555570743 -- rdx max_reg_val_greater_or_equal 0x996 -- 0.909572879330944 -- jz 0x555555570761 (path rank: 1.7992603368366769) //luaX_lex at llex.c:353
+0x000055555556d951 -- max_interrupt_flag_set -- 0.909572879330944 -- jz 0x55555556d962 (path rank: 1.799521828102717) //luaK_exp2reg at lcode.c:350
+0x000055555556cd57 -- 0x55555556cd57 edge_only_taken_to 0x55555556cd94 -- 0.909572879330944 -- jmp 0x55555556cd64 (path rank: 1.802400519845083) //luaK_getjump at lcode.c:83
+0x000055555556cf04 -- max_interrupt_flag_set -- 0.909572879330944 -- jmp 0x55555556cf66 (path rank: 1.804569344729492) //luaK_patchlistaux at lcode.c:124
+0x000055555556d095 -- 0x55555556d095 has_edge_to 0x55555556ceb3 -- 0.909572879330944 -- jz 0x55555556d0ee (path rank: 2) //luaK_concat at lcode.c:166
+0x000055555556d73f -- 0x55555556d73f has_edge_to 0x55555556d8c1 -- 0.909572879330944 -- jmp rax (path rank: 2) //discharge2reg at lcode.c:299
+0x000055555555e3da -- rax min_reg_val_less 0x220 -- 0.9094235364396654 -- jnle 0x55555555e3ed (path rank: 1.8040285799056277) //luaD_precall at ldo.c:249
+0x000055555556d619 -- rcx max_reg_val_greater_or_equal 0x15 -- 0.9093488649940262 -- jmp 0x55555556d69f (path rank: 1.76854368654058) //luaK_dischargevars at lcode.c:273
+0x000055555556dc25 -- rax max_reg_val_greater_or_equal 0x7 -- 0.9092741935483872 -- jnle 0x55555556dc38 (path rank: 1.7607171140246394) //luaK_exp2RK at lcode.c:408
+0x000055555556dc33 -- rax max_reg_val_greater_or_equal 0x101 -- 0.9092741935483872 -- jmp 0x55555556dc4c (path rank: 1.7615642032329009) //luaK_exp2RK at lcode.c:409
+0x000055555556cd94 -- max_interrupt_flag_set -- 0.9089755077658304 -- jle 0x55555556cdbf (path rank: 1.7951841783338984) //getjumpcontrol at lcode.c:91
+0x000055555556cdbd -- max_interrupt_flag_set -- 0.9089755077658304 -- jmp 0x55555556cdc3 (path rank: 1.7966300615901714) //getjumpcontrol at lcode.c:92
+0x000055555556cf70 -- min_carry_flag_set -- 0.9089755077658304 -- jnz 0x55555556ceb8 (path rank: 1.80095463658881) //luaK_patchlistaux at lcode.c:119
+0x000055555556cd50 -- max_interrupt_flag_set -- 0.9089755077658304 -- jnz 0x55555556cd59 (path rank: 1.8016775782169465) //luaK_getjump at lcode.c:82
+0x000055555555edd4 -- max_zero_flag_set -- 0.908826164874552 -- jz 0x55555555edfe (path rank: 1.7834969504225238) //luaD_protectedparser at ldo.c:451
+0x000055555556a09f -- max_interrupt_flag_set -- 0.908826164874552 -- jz 0x55555556a139 (path rank: 1.797710908042747) //luaV_execute at lvm.c:416
+0x000055555556c7b5 -- 0x55555556c7b5 edge_only_taken_to 0x55555556a09f -- 0.908826164874552 -- jmp 0x55555556a070 (path rank: 1.800986798769913) //luaV_execute at lvm.c:413 (discriminator 21)
+0x00005555555588c4 -- rdx min_reg_val_less 0x2 -- 0.908826164874552 -- bnd jmp qword ptr [rip+0x2e655] (path rank: 1.8466246450134955) //?? ??:0
+0x000055555555d6c3 -- max_parity_flag_set -- 0.908826164874552 -- jz 0x55555555d727 (path rank: 1.8500785476760047) //seterrorobj at ldo.c:51
+0x000055555556d682 -- rcx max_reg_val_greater_or_equal 0xf -- 0.9086768219832736 -- jmp 0x55555556d69f (path rank: 1.764392101650383) //luaK_dischargevars at lcode.c:280
+0x00005555555677b8 -- 0x5555555677b8 has_edge_to 0x55555556a3bc -- 0.9074820788530468 -- jnz 0x555555567784 (path rank: 2) //luaH_getstr at ltable.c:462
+0x00005555555663b3 -- rcx max_reg_val_greater_or_equal 0x1d94 -- 0.9073327359617682 -- jnb 0x555555566379 (path rank: 0.04159734383056514) //luaS_newlstr at lstring.c:77 (discriminator 1)
+0x00005555555587f4 -- rdx max_reg_val_greater_or_equal 0x1d95 -- 0.9073327359617682 -- bnd jmp qword ptr [rip+0x2e6bd] (path rank: 1.91469285464737) //?? ??:0
+0x000055555556cc06 -- rax min_reg_val_greater_or_equal 0x8 -- 0.9071833930704898 -- jz 0x55555556cc0d (path rank: 1.7907398356400877) //luaK_jump at lcode.c:51
+0x000055555557075f -- rax min_reg_val_greater_or_equal 0x6c -- 0.9071833930704898 -- jmp 0x555555570771 (path rank: 1.8300278188348302) //luaX_lex at llex.c:353 (discriminator 1)
+0x000055555556d0a0 -- max_interrupt_flag_set -- 0.9065860215053764 -- jnz 0x55555556d0ad (path rank: 1.7923391943810134) //luaK_concat at lcode.c:167
+0x0000555555567511 -- rcx min_reg_val_less 0x4 -- 0.9063620071684588 -- jmp 0x555555567537 (path rank: 1.7707213618388664) //newkey at ltable.c:391
+0x000055555556e457 -- rdx max_reg_val_greater_or_equal 0x9 -- 0.9059886499402628 -- jnbe 0x55555556e494 (path rank: 1.7895144352170622) //codebinop at lcode.c:621
+0x000055555556e49f -- 0x55555556e49f has_edge_to 0x55555556e4b3 -- 0.9059886499402628 -- jbe 0x55555556e4b5 (path rank: 2) //codebinop at lcode.c:629
+0x000055555556e527 -- rsi max_reg_val_greater_or_equal 0x9 -- 0.9053912783751492 -- jz 0x55555556e5b7 (path rank: 1.7885477153222373) //luaK_posfix at lcode.c:641
+0x00005555555588a4 -- rdi max_reg_val_greater_or_equal 0x555555595cf8 -- 0.9051672640382318 -- bnd jmp qword ptr [rip+0x2e665] (path rank: 1.8471919293694299) //?? ??:0
+0x0000555555563e99 -- 0x555555563e99 edge_only_taken_to 0x555555563f8c -- 0.9035991636798087 -- jmp 0x555555563eb5 (path rank: 1.7838572214494317) //getbinopr at lparser.c:772
+0x0000555555563e37 -- 0x555555563e37 has_edge_to 0x555555563e99 -- 0.9035991636798087 -- jmp rax (path rank: 2) //getbinopr at lparser.c:761
+0x000055555556ef96 -- max_zero_flag_set -- 0.9031511350059738 -- jz 0x55555556efb4 (path rank: 1.870573885250574) //readname at llex.c:166
+0x0000555555568f96 -- num_successors_equal 2 -- 0.902927120669056 -- jmp 0x555555568fdc (path rank: 2) //luaV_index at lvm.c:126 (discriminator 1)
+0x0000555555570787 -- 0x555555570787 has_edge_to 0x5555555624ee -- 0.9026284348864994 -- jmp 0x555555570c1e (path rank: 2) //luaX_lex at llex.c:354 (discriminator 1)
+0x0000555555564003 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9024044205495818 -- jz 0x555555564023 (path rank: 1.7455649042136165) //subexpr at lparser.c:812
+0x0000555555570780 -- 0x555555570780 edge_only_taken_to 0x555555570787 -- 0.9018070489844684 -- jz 0x55555557078c (path rank: 1.783073813853465) //luaX_lex at llex.c:354 (discriminator 4)
+0x0000555555570381 -- min_zero_flag_set -- 0.9000149342891278 -- jnbe 0x555555570a13 (path rank: 1.7811694431255172) //luaX_lex at llex.c:316
+0x000055555556401d -- rdx max_reg_val_greater_or_equal 0x12 -- 0.9000149342891278 -- jl 0x555555563f8e (path rank: 1.784580163077568) //subexpr at lparser.c:812 (discriminator 1)
+0x000055555556e387 -- rsi max_reg_val_greater_or_equal 0x9 -- 0.9000149342891278 -- jz 0x55555556e3d4 (path rank: 1.785523855054427) //luaK_infix at lcode.c:594
+0x00005555555703a7 -- 0x5555555703a7 has_edge_to 0x555555570743 -- 0.9000149342891278 -- jmp rax (path rank: 2) //luaX_lex at llex.c:316
