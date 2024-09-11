@@ -1,4 +1,4 @@
-			# Table for traced instructions to total instructions
+1			# Table for traced instructions to total instructions
 
 | program                      | method    | traced_instructions | total_instructions |
 | ---------------------------- | --------- | ------------------- | ------------------ |
@@ -154,7 +154,9 @@ Aurora - LOC - BB
 Fuzz time: 1h -> Cannot Fuzz for one hour without it crashing
 CVE-2016-5636 - Python
 
+
 ![[Pasted image 20240830175428.png]]
 ![[Pasted image 20240830175359.png]]
+![[Pasted image 20240910110924.png]]
 
 

@@ -1,0 +1,340 @@
+0x000055555557c89c -- memory_value min_reg_val_greater_or_equal 0x2aaaaaaeb300 -- 0.9444444444444444 -- mov qword ptr [rbp-0x10], rsi (path rank: 0.2993685695633822) //sixel_allocator_free at allocator.c:194
+0x000055555557c90c -- rax min_reg_val_greater_or_equal 0x2aaaaaaeb300 -- 0.9444444444444444 -- mov rax, qword ptr [rbp-0x10] (path rank: 0.39915809275117636) //sixel_allocator_free at allocator.c:199
+0x000055555557c910 -- rdi min_reg_val_greater_or_equal 0x2aaaaaaeb300 -- 0.9444444444444444 -- mov rdi, rax (path rank: 0.4989476159389704) //sixel_allocator_free at allocator.c:199
+0x000055555557c915 -- rsi max_reg_val_less 0xffffffff -- 0.9444444444444444 -- nop (path rank: 0.6167158915103111) //sixel_allocator_free at allocator.c:200
+0x000055555557c917 -- 0x55555557c917 edge_only_taken_to 0x555555586a5c -- 0.9444444444444444 -- ret  (path rank: 0.9023971669844729) //sixel_allocator_free at allocator.c:200
+0x0000555555586d23 -- rax min_reg_val_greater_or_equal 0x18ff -- 0.9444444444444444 -- imul eax, dword ptr [rbp-0x8] (path rank: 1.9963890241007276) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x0000555555586d27 -- rax min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- imul eax, dword ptr [rbp-0xc] (path rank: 1.9963964715598375) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x0000555555586d30 -- rdi min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- mov edi, eax (path rank: 1.9964188139371668) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x000055555559d3e5 -- rsi min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov esi, dword ptr [rbp-0x14] (path rank: 1.9966273427922412) //stbi__pic_load at stb_image.h:6107
+0x0000555555586e41 -- rsi min_reg_val_greater_or_equal 0x855 -- 0.9444444444444444 -- mov esi, dword ptr [rbp-0x8] (path rank: 1.9967139136165675) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586e5c -- rax min_reg_val_greater_or_equal 0x18ff -- 0.9444444444444444 -- imul eax, dword ptr [rbp-0x8] (path rank: 1.9967660458303362) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586e60 -- rax min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- imul eax, dword ptr [rbp-0xc] (path rank: 1.9967734932894459) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586e64 -- rdx min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- mov edx, eax (path rank: 1.9967809407485557) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586e69 -- rax min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- add eax, edx (path rank: 1.9967958356667754) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586e6b -- rax min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- cdqe  (path rank: 1.996803283125885) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586e6d -- rdi min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- mov rdi, rax (path rank: 1.996810730584995) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586c0f -- memory_value max_reg_val_greater_or_equal 0x13ff4378 -- 0.9444444444444444 -- mov qword ptr [rbp-0x8], rdi (path rank: 1.9968181780441048) //stbi__malloc at stb_image.h:860
+0x0000555555586c13 -- rax max_reg_val_greater_or_equal 0x13ff4378 -- 0.9444444444444444 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9968256255032144) //stbi__malloc at stb_image.h:861
+0x0000555555586c17 -- rdi max_reg_val_greater_or_equal 0x13ff4378 -- 0.9444444444444444 -- mov rdi, rax (path rank: 1.9968330729623243) //stbi__malloc at stb_image.h:861
+0x00005555555869ea -- memory_value max_reg_val_greater_or_equal 0x13ff4378 -- 0.9444444444444444 -- mov qword ptr [rbp-0x8], rdi (path rank: 1.996840520421434) //stbi_malloc at loader.c:75
+0x00005555555869f5 -- rdx max_reg_val_greater_or_equal 0x13ff4378 -- 0.9444444444444444 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.996847967880544) //stbi_malloc at loader.c:76
+0x00005555555869f9 -- rsi max_reg_val_greater_or_equal 0x13ff4378 -- 0.9444444444444444 -- mov rsi, rdx (path rank: 1.9968554153396536) //stbi_malloc at loader.c:76
+0x000055555557c6c8 -- memory_value max_reg_val_greater_or_equal 0x13ff5f60 -- 0.9444444444444444 -- mov qword ptr [rbp-0x10], rsi (path rank: 1.9968628627987637) //sixel_allocator_malloc at allocator.c:145
+0x000055555557c755 -- rax max_reg_val_greater_or_equal 0x13ff5f60 -- 0.9444444444444444 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.996870310257873) //sixel_allocator_malloc at allocator.c:155
+0x000055555557c759 -- rdi max_reg_val_greater_or_equal 0x13ff5f60 -- 0.9444444444444444 -- mov rdi, rax (path rank: 1.9968777577169832) //sixel_allocator_malloc at allocator.c:155
+0x000055555559d3fc -- memory_value min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov qword ptr [rbp-0x10], rax (path rank: 1.9969075475534221) //stbi__pic_load at stb_image.h:6107
+0x000055555559d403 -- rax min_reg_val_greater_or_equal 0x4ffc7cd -- 0.9444444444444444 -- imul eax, dword ptr [rbp-0x14] (path rank: 1.9969224424716419) //stbi__pic_load at stb_image.h:6108
+0x000055555559d407 -- rax min_reg_val_greater_or_equal 0x13ff1f34 -- 0.9444444444444444 -- shl eax, 0x2 (path rank: 1.9969298899307515) //stbi__pic_load at stb_image.h:6108
+0x000055555559d40a -- rdx min_reg_val_greater_or_equal 0x13ff1f34 -- 0.9444444444444444 -- movsxd rdx, eax (path rank: 1.9969373373898613) //stbi__pic_load at stb_image.h:6108
+0x000055555559d40d -- rax min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.9969447848489714) //stbi__pic_load at stb_image.h:6108
+0x000055555559d416 -- rdi min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov rdi, rax (path rank: 1.996959679767191) //stbi__pic_load at stb_image.h:6108
+0x000055555559d41e -- rcx min_reg_val_less 0xff -- 0.9444444444444444 -- mov rdi, qword ptr [rbp-0x10] (path rank: 1.9969671272263008) //stbi__pic_load at stb_image.h:6110
+0x000055555559d426 -- rdx min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov edx, dword ptr [rbp-0x14] (path rank: 1.9969820221445203) //stbi__pic_load at stb_image.h:6110
+0x000055555559d430 -- r8 min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov r8, rdi (path rank: 1.9970043645218496) //stbi__pic_load at stb_image.h:6110
+0x000055555559ce32 -- memory_value min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov qword ptr [rbp-0xa0], r8 (path rank: 1.9970788391129477) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559d440 -- rax min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.9974409368722432) //stbi__pic_load at stb_image.h:6111
+0x000055555559d444 -- rdi min_reg_val_greater_or_equal 0x3fffd5300008 -- 0.9444444444444444 -- mov rdi, rax (path rank: 1.997448384331353) //stbi__pic_load at stb_image.h:6111
+0x0000555555586a42 -- memory_value max_reg_val_greater_or_equal 0x6aaa7fdeb308 -- 0.9444444444444444 -- mov qword ptr [rbp-0x8], rdi (path rank: 1.9974558317904627) //stbi_free at loader.c:87
+0x0000555555586a4d -- rdx max_reg_val_greater_or_equal 0x6aaa7fdeb308 -- 0.9444444444444444 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.9974632792495726) //stbi_free at loader.c:88
+0x0000555555586a51 -- rsi max_reg_val_greater_or_equal 0x6aaa7fdeb308 -- 0.9444444444444444 -- mov rsi, rdx (path rank: 1.9974707267086822) //stbi_free at loader.c:88
+0x000055555559d461 -- rdx min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov edx, dword ptr [rbp-0x14] (path rank: 1.997522858922451) //stbi__pic_load at stb_image.h:6115
+0x000055555559d464 -- memory_value min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov dword ptr [rax], edx (path rank: 1.9975303063815608) //stbi__pic_load at stb_image.h:6115
+0x000055555559d475 -- rsi min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov esi, dword ptr [rbp-0x14] (path rank: 1.9975526487588902) //stbi__pic_load at stb_image.h:6117
+0x000055555559d482 -- r8 min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov r8d, esi (path rank: 1.9975824385953294) //stbi__pic_load at stb_image.h:6117
+0x0000555555586cf0 -- memory_value max_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov dword ptr [rbp-0xc], edx (path rank: 1.997622719509391) //stbi__mad3sizes_valid at stb_image.h:904
+0x00005555555882c8 -- rdx min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov edx, dword ptr [rbp-0x38] (path rank: 1.9977164928593056) //stbi__convert_format at stb_image.h:1531
+0x0000555555586e32 -- memory_value min_reg_val_greater_or_equal 0x855 -- 0.9444444444444444 -- mov dword ptr [rbp-0x8], esi (path rank: 1.9977537301548547) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586e3e -- rdx max_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.9977611776139645) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586d10 -- rdx max_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.9977909674504037) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x0000555555586d13 -- rsi max_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov esi, edx (path rank: 1.9977984149095136) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x00005555555882dd -- memory_value min_reg_val_greater_or_equal 0x3fffdc400008 -- 0.9444444444444444 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9978058623686232) //stbi__convert_format at stb_image.h:1531
+0x0000555555586e35 -- memory_value max_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov dword ptr [rbp-0xc], edx (path rank: 1.9979341873753365) //stbi__malloc_mad3 at stb_image.h:926
+0x00005555555882e6 -- 0x5555555882e6 edge_only_taken_to 0x55555558830d -- 0.9444444444444444 -- jnz 0x55555558830d (path rank: 2) //stbi__convert_format at stb_image.h:1532
+0x000055555558827f -- memory_value min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov dword ptr [rbp-0x38], r8d (path rank: 2) //stbi__convert_format at stb_image.h:1524
+0x000055555559ce25 -- memory_value min_reg_val_greater_or_equal 0x1708 -- 0.9444444444444444 -- mov dword ptr [rbp-0x90], edx (path rank: 2) //stbi__pic_load_core at stb_image.h:5977
+0x0000555555586c29 -- memory_value min_reg_val_greater_or_equal 0xeff5767 -- 0.9444444444444444 -- mov dword ptr [rbp-0x4], edi (path rank: 2) //stbi__addsizes_valid at stb_image.h:877
+0x0000555555586ced -- memory_value max_reg_val_less 0xa0cd -- 0.9381944444444444 -- mov dword ptr [rbp-0x8], esi (path rank: 1.9961907413897542) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586cf6 -- rdx max_reg_val_less 0xa0cd -- 0.9381944444444444 -- mov edx, dword ptr [rbp-0x8] (path rank: 1.9962102850820924) //stbi__mad3sizes_valid at stb_image.h:905
+0x0000555555586cfc -- rsi max_reg_val_less 0xa0cd -- 0.9381944444444444 -- mov esi, edx (path rank: 1.9962177325412025) //stbi__mad3sizes_valid at stb_image.h:905
+0x0000555555586c5a -- memory_value max_reg_val_less 0xa0cd -- 0.9381944444444444 -- mov dword ptr [rbp-0x8], esi (path rank: 1.9962475223776415) //stbi__mul2sizes_valid at stb_image.h:889
+0x0000555555586c83 -- rax min_reg_val_greater_or_equal 0xcc31 -- 0.9381944444444444 -- idiv dword ptr [rbp-0x8] (path rank: 1.9963071020505196) //stbi__mul2sizes_valid at stb_image.h:893
+0x0000555555586c89 -- rax min_reg_val_greater_or_equal 0xcc01 -- 0.9381944444444444 -- setle al (path rank: 1.9963219969687394) //stbi__mul2sizes_valid at stb_image.h:893
+0x0000555555586d0c -- rax min_reg_val_greater_or_equal 0x18ff -- 0.9381944444444444 -- imul eax, dword ptr [rbp-0x8] (path rank: 1.9963517868051786) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x0000555555586d15 -- rdi min_reg_val_greater_or_equal 0x18ff -- 0.9381944444444444 -- mov edi, eax (path rank: 1.9963592342642884) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x0000555555586d20 -- rax min_reg_val_greater_or_equal 0x2 -- 0.9381944444444444 -- mov eax, dword ptr [rbp-0x4] (path rank: 1.9963815766416177) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x000055555559d3e8 -- rax min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov eax, dword ptr [rbp-0x18] (path rank: 1.9966347902513508) //stbi__pic_load at stb_image.h:6107
+0x000055555559d3f5 -- rdi min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov edi, eax (path rank: 1.9966571326286806) //stbi__pic_load at stb_image.h:6107
+0x0000555555586e44 -- rax min_reg_val_greater_or_equal 0x2 -- 0.9381944444444444 -- mov eax, dword ptr [rbp-0x4] (path rank: 1.9967213610756773) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586e47 -- rdi min_reg_val_greater_or_equal 0x2 -- 0.9381944444444444 -- mov edi, eax (path rank: 1.9967288085347872) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586e59 -- rax min_reg_val_greater_or_equal 0x2 -- 0.9381944444444444 -- mov eax, dword ptr [rbp-0x4] (path rank: 1.9967585983712262) //stbi__malloc_mad3 at stb_image.h:928
+0x000055555559d400 -- rax min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov eax, dword ptr [rbp-0x18] (path rank: 1.996914995012532) //stbi__pic_load at stb_image.h:6108
+0x000055555559d429 -- rsi min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov esi, dword ptr [rbp-0x18] (path rank: 1.99698946960363) //stbi__pic_load at stb_image.h:6110
+0x000055555559ce1f -- memory_value min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov dword ptr [rbp-0x8c], esi (path rank: 1.997063944194728) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce39 -- rax min_reg_val_greater_or_equal 0x1fc45d902080ed00 -- 0.9381944444444444 -- mov rax, qword ptr fs:[0x28] (path rank: 1.9974491794979075) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce42 -- memory_value min_reg_val_greater_or_equal 0x1fc45d902080ed00 -- 0.9381944444444444 -- mov qword ptr [rbp-0x8], rax (path rank: 1.997455684377989) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559d458 -- rdx min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov edx, dword ptr [rbp-0x18] (path rank: 1.9975005165451216) //stbi__pic_load at stb_image.h:6114
+0x000055555559d45b -- memory_value min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov dword ptr [rax], edx (path rank: 1.9975079640042313) //stbi__pic_load at stb_image.h:6114
+0x000055555559d478 -- rcx min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov ecx, dword ptr [rbp-0x18] (path rank: 1.9975600962179998) //stbi__pic_load at stb_image.h:6117
+0x000055555559d2cf -- rdx min_reg_val_greater_or_equal 0x1fc45d902080ed00 -- 0.9381944444444444 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.9977158795812537) //stbi__pic_load_core at stb_image.h:6084 (discriminator 2)
+0x00005555555882cb -- rsi min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov esi, dword ptr [rbp-0x34] (path rank: 1.9977239403184155) //stbi__convert_format at stb_image.h:1531
+0x0000555555586c57 -- memory_value max_reg_val_greater_or_equal 0x50123d2 -- 0.9381944444444444 -- mov dword ptr [rbp-0x4], edi (path rank: 2) //stbi__mul2sizes_valid at stb_image.h:889
+0x000055555558827c -- memory_value min_reg_val_less 0xc082 -- 0.9381944444444444 -- mov dword ptr [rbp-0x34], ecx (path rank: 2) //stbi__convert_format at stb_image.h:1524
+0x000055555559ce8e -- max_parity_flag_set -- 0.9381944444444444 -- add rax, rcx (path rank: 2) //stbi__pic_load_core at stb_image.h:5989
+0x0000555555586e2f -- memory_value min_reg_val_greater_or_equal 0x2 -- 0.9381944444444444 -- mov dword ptr [rbp-0x4], edi (path rank: 2) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586bed -- memory_value min_reg_val_greater_or_equal 0x5555555b03c3 -- 0.9319444444444444 -- mov qword ptr [rbp-0x8], rdi (path rank: 0) //stbi__err at stb_image.h:854
+0x0000555555586bf1 -- rax min_reg_val_greater_or_equal 0x5555555b03c3 -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.09978952318779409) //stbi__err at stb_image.h:855
+0x0000555555586bf5 -- memory_value min_reg_val_greater_or_equal 0x5555555b03c3 -- 0.9319444444444444 -- mov qword ptr [rip+0x46e4c], rax (path rank: 0.19957904637558818) //stbi__err at stb_image.h:855
+0x000055555559d38d -- rsi min_reg_val_less 0xa0cd -- 0.9319444444444444 -- mov esi, dword ptr [rbp-0x14] (path rank: 1.9961162667986563) //stbi__pic_load at stb_image.h:6100
+0x0000555555586cea -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x4], edi (path rank: 1.9961832939306445) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586c86 -- min_sign_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x4], eax (path rank: 1.9963145495096297) //stbi__mul2sizes_valid at stb_image.h:893
+0x0000555555586c8c -- rax min_reg_val_greater_or_equal 0x1 -- 0.9319444444444444 -- movzx eax, al (path rank: 1.9963294444278492) //stbi__mul2sizes_valid at stb_image.h:893
+0x0000555555586d2b -- rdx min_reg_val_less 0xff -- 0.9319444444444444 -- mov edx, dword ptr [rbp-0x10] (path rank: 1.996403919018947) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x0000555555586d2e -- rsi min_reg_val_less 0xff -- 0.9319444444444444 -- mov esi, edx (path rank: 1.9964113664780572) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x0000555555586d32 -- is_visited -- 0.9319444444444444 -- call 0x555555586c21 (path rank: 1.9964262613962767) //stbi__mad3sizes_valid at stb_image.h:906 (discriminator 3)
+0x0000555555586c21 -- is_visited -- 0.9319444444444444 -- nop edx, edi (path rank: 1.9964337088553865) //stbi__addsizes_valid at stb_image.h:877
+0x0000555555586c25 -- is_visited -- 0.9319444444444444 -- push rbp (path rank: 1.9964411563144961) //stbi__addsizes_valid at stb_image.h:877
+0x0000555555586c26 -- is_visited -- 0.9319444444444444 -- mov rbp, rsp (path rank: 1.996448603773606) //stbi__addsizes_valid at stb_image.h:877
+0x0000555555586c2c -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x8], esi (path rank: 1.9964560512327159) //stbi__addsizes_valid at stb_image.h:877
+0x0000555555586c2f -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x8], 0x0 (path rank: 1.9964634986918255) //stbi__addsizes_valid at stb_image.h:878
+0x0000555555586c33 -- is_visited -- 0.9319444444444444 -- jns 0x555555586c3c (path rank: 1.9964709461509353) //stbi__addsizes_valid at stb_image.h:878
+0x0000555555586c3c -- is_visited -- 0.9319444444444444 -- mov eax, 0x7fffffff (path rank: 1.9964783936100454) //stbi__addsizes_valid at stb_image.h:883
+0x0000555555586c41 -- max_interrupt_flag_set -- 0.9319444444444444 -- sub eax, dword ptr [rbp-0x8] (path rank: 1.9964858410691548) //stbi__addsizes_valid at stb_image.h:883
+0x0000555555586c44 -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x4], eax (path rank: 1.996493288528265) //stbi__addsizes_valid at stb_image.h:883
+0x0000555555586c47 -- rax min_reg_val_less 0xffffffff -- 0.9319444444444444 -- setle al (path rank: 1.9965007359873745) //stbi__addsizes_valid at stb_image.h:883
+0x0000555555586c4a -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- movzx eax, al (path rank: 1.9965081834464844) //stbi__addsizes_valid at stb_image.h:883
+0x0000555555586c4d -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- pop rbp (path rank: 1.9965156309055943) //stbi__addsizes_valid at stb_image.h:884
+0x0000555555586c4e -- is_visited -- 0.9319444444444444 -- ret  (path rank: 1.996523078364704) //stbi__addsizes_valid at stb_image.h:884
+0x0000555555586d37 -- max_interrupt_flag_set -- 0.9319444444444444 -- test eax, eax (path rank: 1.9965305258238137) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 3)
+0x0000555555586d39 -- is_visited -- 0.9319444444444444 -- jz 0x555555586d42 (path rank: 1.9965379732829236) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 3)
+0x0000555555586d3b -- is_visited -- 0.9319444444444444 -- mov eax, 0x1 (path rank: 1.9965454207420334) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 5)
+0x000055555559d3c1 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9965677631193626) //stbi__pic_load at stb_image.h:6102
+0x000055555559d3c5 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.9965752105784726) //stbi__pic_load at stb_image.h:6102
+0x00005555555881c2 -- 0x5555555881c2 has_edge_to 0x55555559d3cd -- 0.9319444444444444 -- ret  (path rank: 1.9965826580375823) //stbi__get32be at stb_image.h:1484
+0x000055555559d3cd -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9965901054966924) //stbi__pic_load at stb_image.h:6103
+0x000055555559d3d1 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.996597552955802) //stbi__pic_load at stb_image.h:6103
+0x0000555555588186 -- 0x555555588186 has_edge_to 0x55555559d3d9 -- 0.9319444444444444 -- ret  (path rank: 1.9966050004149118) //stbi__get16be at stb_image.h:1478
+0x000055555559d3d9 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9966124478740217) //stbi__pic_load at stb_image.h:6104
+0x000055555559d3dd -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.9966198953331313) //stbi__pic_load at stb_image.h:6104
+0x000055555559d3eb -- is_visited -- 0.9319444444444444 -- mov ecx, 0x0 (path rank: 1.9966422377104607) //stbi__pic_load at stb_image.h:6107
+0x000055555559d3f0 -- is_visited -- 0.9319444444444444 -- mov edx, 0x4 (path rank: 1.9966496851695705) //stbi__pic_load at stb_image.h:6107
+0x0000555555586e23 -- is_visited -- 0.9319444444444444 -- nop edx, edi (path rank: 1.99666458008779) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586e27 -- is_visited -- 0.9319444444444444 -- push rbp (path rank: 1.9966720275469) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586e28 -- is_visited -- 0.9319444444444444 -- mov rbp, rsp (path rank: 1.9966794750060095) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586e2b -- is_visited -- 0.9319444444444444 -- sub rsp, 0x10 (path rank: 1.9966869224651196) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586e38 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x10], ecx (path rank: 1.996699018698348) //stbi__malloc_mad3 at stb_image.h:926
+0x0000555555586e3b -- rcx min_reg_val_less 0xff -- 0.9319444444444444 -- mov ecx, dword ptr [rbp-0x10] (path rank: 1.9967064661574578) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586d48 -- 0x555555586d48 has_edge_to 0x555555586e4e -- 0.9319444444444444 -- ret  (path rank: 1.9967362559938968) //stbi__mad3sizes_valid at stb_image.h:907 (discriminator 9)
+0x0000555555586e4e -- max_interrupt_flag_set -- 0.9319444444444444 -- test eax, eax (path rank: 1.9967437034530067) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586e50 -- is_visited -- 0.9319444444444444 -- jnz 0x555555586e59 (path rank: 1.9967511509121165) //stbi__malloc_mad3 at stb_image.h:927
+0x0000555555586e66 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov eax, dword ptr [rbp-0x10] (path rank: 1.9967883882076656) //stbi__malloc_mad3 at stb_image.h:928
+0x0000555555586c20 -- 0x555555586c20 has_edge_to 0x555555586e75 -- 0.9319444444444444 -- ret  (path rank: 1.996885205176093) //stbi__malloc at stb_image.h:862
+0x0000555555586e75 -- is_visited -- 0.9319444444444444 -- leave  (path rank: 1.9968926526352027) //stbi__malloc_mad3 at stb_image.h:929
+0x0000555555586e76 -- 0x555555586e76 has_edge_to 0x55555559d3fc -- 0.9319444444444444 -- ret  (path rank: 1.9969001000943125) //stbi__malloc_mad3 at stb_image.h:929
+0x000055555559d411 -- is_visited -- 0.9319444444444444 -- mov esi, 0xff (path rank: 1.9969522323080808) //stbi__pic_load at stb_image.h:6108
+0x000055555559d422 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rcx, qword ptr [rbp-0x40] (path rank: 1.9969745746854104) //stbi__pic_load at stb_image.h:6110
+0x000055555559d42c -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9969969170627397) //stbi__pic_load at stb_image.h:6110
+0x000055555559d433 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.9970118119809595) //stbi__pic_load at stb_image.h:6110
+0x000055555559d436 -- is_visited -- 0.9319444444444444 -- call 0x55555559ce09 (path rank: 1.997019259440069) //stbi__pic_load at stb_image.h:6110
+0x000055555559ce09 -- is_visited -- 0.9319444444444444 -- nop edx, edi (path rank: 1.9970267068991792) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce0d -- is_visited -- 0.9319444444444444 -- push rbp (path rank: 1.9970341543582888) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce0e -- is_visited -- 0.9319444444444444 -- mov rbp, rsp (path rank: 1.9970416018173986) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce11 -- is_visited -- 0.9319444444444444 -- sub rsp, 0xa0 (path rank: 1.9970490492765083) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce18 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov qword ptr [rbp-0x88], rdi (path rank: 1.9970564967356184) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce2b -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov qword ptr [rbp-0x98], rcx (path rank: 1.9970713916538378) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce46 -- max_interrupt_flag_set -- 0.9319444444444444 -- xor eax, eax (path rank: 1.9970992963322207) //stbi__pic_load_core at stb_image.h:5977
+0x000055555559ce48 -- is_visited -- 0.9319444444444444 -- mov dword ptr [rbp-0x74], 0x0 (path rank: 1.9971067437913304) //stbi__pic_load_core at stb_image.h:5978
+0x000055555559ce4f -- is_visited -- 0.9319444444444444 -- mov dword ptr [rbp-0x70], 0x0 (path rank: 1.9971141912504404) //stbi__pic_load_core at stb_image.h:5978
+0x000055555559ce56 -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x70], 0xa (path rank: 1.9971216387095498) //stbi__pic_load_core at stb_image.h:5986
+0x000055555559ce5a -- is_visited -- 0.9319444444444444 -- jnz 0x55555559ce75 (path rank: 1.99712908616866) //stbi__pic_load_core at stb_image.h:5986
+0x000055555559ce75 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov eax, dword ptr [rbp-0x70] (path rank: 1.9971365336277698) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce78 -- rdx min_reg_val_less 0xff -- 0.9319444444444444 -- lea edx, ptr [rax+0x1] (path rank: 1.9971439810868794) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce7b -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x70], edx (path rank: 1.9971514285459893) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce7e -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- lea rcx, ptr [rbp-0x30] (path rank: 1.9971588760050991) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce82 -- rdx min_reg_val_less 0xff -- 0.9319444444444444 -- movsxd rdx, eax (path rank: 1.9971663234642087) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce85 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov rax, rdx (path rank: 1.9971737709233186) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce88 -- max_interrupt_flag_set -- 0.9319444444444444 -- add rax, rax (path rank: 1.9971812183824282) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce8b -- max_interrupt_flag_set -- 0.9319444444444444 -- add rax, rdx (path rank: 1.997188665841538) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce91 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov qword ptr [rbp-0x40], rax (path rank: 1.9971961133006482) //stbi__pic_load_core at stb_image.h:5989
+0x000055555559ce95 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x88] (path rank: 1.9972035607597576) //stbi__pic_load_core at stb_image.h:5991
+0x000055555559ce9c -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.9972110082188677) //stbi__pic_load_core at stb_image.h:5991
+0x000055555559cea4 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- movzx eax, al (path rank: 1.9972184556779775) //stbi__pic_load_core at stb_image.h:5991
+0x000055555559cea7 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x4c], eax (path rank: 1.9972259031370871) //stbi__pic_load_core at stb_image.h:5991
+0x000055555559ceaa -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x88] (path rank: 1.997233350596197) //stbi__pic_load_core at stb_image.h:5992
+0x000055555559ceb1 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.9972407980553069) //stbi__pic_load_core at stb_image.h:5992
+0x0000555555587edd -- 0x555555587edd has_edge_to 0x55555559ceb9 -- 0.9319444444444444 -- ret  (path rank: 1.9972482455144165) //stbi__get8 at stb_image.h:1419
+0x000055555559ceb9 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdx, qword ptr [rbp-0x40] (path rank: 1.9972556929735263) //stbi__pic_load_core at stb_image.h:5992
+0x000055555559cebd -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov byte ptr [rdx], al (path rank: 1.9972631404326362) //stbi__pic_load_core at stb_image.h:5992
+0x000055555559cebf -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x88] (path rank: 1.9972705878917458) //stbi__pic_load_core at stb_image.h:5993
+0x000055555559cec6 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.997278035350856) //stbi__pic_load_core at stb_image.h:5993
+0x000055555559cece -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdx, qword ptr [rbp-0x40] (path rank: 1.9972854828099655) //stbi__pic_load_core at stb_image.h:5993
+0x000055555559ced2 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov byte ptr [rdx+0x1], al (path rank: 1.9972929302690754) //stbi__pic_load_core at stb_image.h:5993
+0x000055555559ced5 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x88] (path rank: 1.997300377728185) //stbi__pic_load_core at stb_image.h:5994
+0x000055555559cedc -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.997307825187295) //stbi__pic_load_core at stb_image.h:5994
+0x000055555559cee4 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdx, qword ptr [rbp-0x40] (path rank: 1.9973152726464047) //stbi__pic_load_core at stb_image.h:5994
+0x000055555559cee8 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov byte ptr [rdx+0x2], al (path rank: 1.9973227201055146) //stbi__pic_load_core at stb_image.h:5994
+0x000055555559ceeb -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x40] (path rank: 1.9973301675646244) //stbi__pic_load_core at stb_image.h:5996
+0x000055555559ceef -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- movzx eax, byte ptr [rax+0x2] (path rank: 1.997337615023734) //stbi__pic_load_core at stb_image.h:5996
+0x000055555559cef3 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- movzx eax, al (path rank: 1.997345062482844) //stbi__pic_load_core at stb_image.h:5996
+0x000055555559cef6 -- max_interrupt_flag_set -- 0.9319444444444444 -- or dword ptr [rbp-0x74], eax (path rank: 1.9973525099419538) //stbi__pic_load_core at stb_image.h:5996
+0x000055555559cef9 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x88] (path rank: 1.9973599574010634) //stbi__pic_load_core at stb_image.h:5998
+0x000055555559cf00 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.9973674048601733) //stbi__pic_load_core at stb_image.h:5998
+0x0000555555587f4d -- 0x555555587f4d has_edge_to 0x55555559cf08 -- 0.9319444444444444 -- ret  (path rank: 1.9973748523192834) //stbi__at_eof at stb_image.h:1431
+0x000055555559cf08 -- max_interrupt_flag_set -- 0.9319444444444444 -- test eax, eax (path rank: 1.9973822997783928) //stbi__pic_load_core at stb_image.h:5998
+0x000055555559d2d3 -- max_interrupt_flag_set -- 0.9319444444444444 -- sub rdx, qword ptr fs:[0x28] (path rank: 1.9973962521175843) //stbi__pic_load_core at stb_image.h:6084 (discriminator 2)
+0x000055555559d2dc -- is_visited -- 0.9319444444444444 -- jz 0x55555559d2e3 (path rank: 1.9974036995766944) //stbi__pic_load_core at stb_image.h:6084 (discriminator 2)
+0x000055555559d2e3 -- is_visited -- 0.9319444444444444 -- leave  (path rank: 1.9974111470358038) //stbi__pic_load_core at stb_image.h:6084
+0x000055555559d2e4 -- is_visited -- 0.9319444444444444 -- ret  (path rank: 1.9974185944949139) //stbi__pic_load_core at stb_image.h:6084
+0x000055555559d43b -- max_interrupt_flag_set -- 0.9319444444444444 -- test rax, rax (path rank: 1.9974260419540233) //stbi__pic_load at stb_image.h:6110
+0x000055555559d43e -- is_visited -- 0.9319444444444444 -- jnz 0x55555559d454 (path rank: 1.9974334894131334) //stbi__pic_load at stb_image.h:6110
+0x0000555555586a5e -- 0x555555586a5e has_edge_to 0x55555559d44c -- 0.9319444444444444 -- ret  (path rank: 1.997478174167792) //stbi_free at loader.c:89
+0x000055555559d44c -- is_visited -- 0.9319444444444444 -- mov qword ptr [rbp-0x10], 0x0 (path rank: 1.997485621626902) //stbi__pic_load at stb_image.h:6112
+0x000055555559d454 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x30] (path rank: 1.9974930690860115) //stbi__pic_load at stb_image.h:6114
+0x000055555559d45d -- rax min_reg_val_less 0xffffffffffffffff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x38] (path rank: 1.9975154114633413) //stbi__pic_load at stb_image.h:6115
+0x000055555559d466 -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x44], 0x0 (path rank: 1.9975377538406704) //stbi__pic_load at stb_image.h:6116
+0x000055555559d46a -- is_visited -- 0.9319444444444444 -- jnz 0x55555559d475 (path rank: 1.9975452012997803) //stbi__pic_load at stb_image.h:6116
+0x000055555559d47b -- rdx min_reg_val_less 0xff -- 0.9319444444444444 -- mov edx, dword ptr [rbp-0x44] (path rank: 1.9975675436771096) //stbi__pic_load at stb_image.h:6117
+0x000055555559d47e -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.9975749911362195) //stbi__pic_load at stb_image.h:6117
+0x000055555559d485 -- is_visited -- 0.9319444444444444 -- mov esi, 0x4 (path rank: 1.997589886054439) //stbi__pic_load at stb_image.h:6117
+0x000055555559d48a -- rdi min_reg_val_less 0xff -- 0.9319444444444444 -- mov rdi, rax (path rank: 1.997597333513549) //stbi__pic_load at stb_image.h:6117
+0x000055555559d48d -- is_visited -- 0.9319444444444444 -- call 0x555555588266 (path rank: 1.9976047809726585) //stbi__pic_load at stb_image.h:6117
+0x0000555555588266 -- is_visited -- 0.9319444444444444 -- nop edx, edi (path rank: 1.9976122284317686) //stbi__convert_format at stb_image.h:1524
+0x000055555558826a -- is_visited -- 0.9319444444444444 -- push rbp (path rank: 1.9976196758908784) //stbi__convert_format at stb_image.h:1524
+0x000055555558826b -- is_visited -- 0.9319444444444444 -- mov rbp, rsp (path rank: 1.997627123349988) //stbi__convert_format at stb_image.h:1524
+0x000055555558826e -- is_visited -- 0.9319444444444444 -- sub rsp, 0x40 (path rank: 1.997634570809098) //stbi__convert_format at stb_image.h:1524
+0x0000555555588272 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov qword ptr [rbp-0x28], rdi (path rank: 1.9976420182682078) //stbi__convert_format at stb_image.h:1524
+0x0000555555588276 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x2c], esi (path rank: 1.9976494657273174) //stbi__convert_format at stb_image.h:1524
+0x0000555555588279 -- memory_value min_reg_val_less 0xff -- 0.9319444444444444 -- mov dword ptr [rbp-0x30], edx (path rank: 1.9976569131864272) //stbi__convert_format at stb_image.h:1524
+0x0000555555588283 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov eax, dword ptr [rbp-0x30] (path rank: 1.997664360645537) //stbi__convert_format at stb_image.h:1528
+0x0000555555588286 -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp eax, dword ptr [rbp-0x2c] (path rank: 1.9976718081046467) //stbi__convert_format at stb_image.h:1528
+0x0000555555588289 -- is_visited -- 0.9319444444444444 -- jnz 0x555555588294 (path rank: 1.9976792555637568) //stbi__convert_format at stb_image.h:1528
+0x0000555555588294 -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x30], 0x0 (path rank: 1.9976867030228664) //stbi__convert_format at stb_image.h:1529
+0x0000555555588298 -- is_visited -- 0.9319444444444444 -- jle 0x5555555882a0 (path rank: 1.9976941504819763) //stbi__convert_format at stb_image.h:1529
+0x000055555558829a -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp dword ptr [rbp-0x30], 0x4 (path rank: 1.9977015979410861) //stbi__convert_format at stb_image.h:1529 (discriminator 1)
+0x000055555558829e -- is_visited -- 0.9319444444444444 -- jle 0x5555555882c8 (path rank: 1.997709045400196) //stbi__convert_format at stb_image.h:1529 (discriminator 1)
+0x00005555555882ce -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov eax, dword ptr [rbp-0x30] (path rank: 1.9977313877775253) //stbi__convert_format at stb_image.h:1531
+0x00005555555882d1 -- is_visited -- 0.9319444444444444 -- mov ecx, 0x0 (path rank: 1.997738835236635) //stbi__convert_format at stb_image.h:1531
+0x00005555555882d6 -- rdi min_reg_val_less 0xff -- 0.9319444444444444 -- mov edi, eax (path rank: 1.9977462826957448) //stbi__convert_format at stb_image.h:1531
+0x0000555555586cf9 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov eax, dword ptr [rbp-0x4] (path rank: 1.9977686250730742) //stbi__mad3sizes_valid at stb_image.h:905
+0x0000555555586cfe -- rdi min_reg_val_less 0xff -- 0.9319444444444444 -- mov edi, eax (path rank: 1.9977760725321843) //stbi__mad3sizes_valid at stb_image.h:905
+0x0000555555586d09 -- rax min_reg_val_less 0xff -- 0.9319444444444444 -- mov eax, dword ptr [rbp-0x4] (path rank: 1.9977835199912937) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x00005555555882e1 -- max_interrupt_flag_set -- 0.9319444444444444 -- cmp qword ptr [rbp-0x8], 0x0 (path rank: 1.997813309827733) //stbi__convert_format at stb_image.h:1532
+0x000055555559ce9f -- 0x55555559ce9f edge_only_taken_to 0x555555587e57 -- 0.9319444444444444 -- call 0x555555587e57 (path rank: 2) //stbi__pic_load_core at stb_image.h:5991
+0x00005555555882d8 -- 0x5555555882d8 edge_only_taken_to 0x555555586e23 -- 0.9319444444444444 -- call 0x555555586e23 (path rank: 2) //stbi__convert_format at stb_image.h:1531
+0x000055555559ceb4 -- 0x55555559ceb4 edge_only_taken_to 0x555555587e57 -- 0.9319444444444444 -- call 0x555555587e57 (path rank: 2) //stbi__pic_load_core at stb_image.h:5992
+0x000055555559d3a6 -- 0x55555559d3a6 edge_only_taken_to 0x55555559d3c1 -- 0.9319444444444444 -- jnz 0x55555559d3c1 (path rank: 2) //stbi__pic_load at stb_image.h:6100
+0x0000555555586d1e -- 0x555555586d1e edge_only_taken_to 0x555555586d20 -- 0.9319444444444444 -- jz 0x555555586d42 (path rank: 2) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x000055555559d447 -- 0x55555559d447 edge_only_taken_to 0x555555586a36 -- 0.9319444444444444 -- call 0x555555586a36 (path rank: 2) //stbi__pic_load at stb_image.h:6111
+0x000055555559d3c8 -- 0x55555559d3c8 edge_only_taken_to 0x555555588187 -- 0.9319444444444444 -- call 0x555555588187 (path rank: 2) //stbi__pic_load at stb_image.h:6102
+0x000055555559d3f7 -- 0x55555559d3f7 edge_only_taken_to 0x555555586e23 -- 0.9319444444444444 -- call 0x555555586e23 (path rank: 2) //stbi__pic_load at stb_image.h:6107
+0x0000555555577664 -- 0x555555577664 has_edge_to 0x55555559d41e -- 0.9319444444444444 -- bnd jmp qword ptr [rip+0x557d5] (path rank: 2) //?? ??:0
+0x0000555555586d40 -- 0x555555586d40 edge_only_taken_to 0x555555586d47 -- 0.9319444444444444 -- jmp 0x555555586d47 (path rank: 2) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 5)
+0x000055555559cec9 -- 0x55555559cec9 edge_only_taken_to 0x555555587e57 -- 0.9319444444444444 -- call 0x555555587e57 (path rank: 2) //stbi__pic_load_core at stb_image.h:5993
+0x000055555559d3d4 -- 0x55555559d3d4 edge_only_taken_to 0x555555588145 -- 0.9319444444444444 -- call 0x555555588145 (path rank: 2) //stbi__pic_load at stb_image.h:6103
+0x0000555555586e49 -- 0x555555586e49 edge_only_taken_to 0x555555586cde -- 0.9319444444444444 -- call 0x555555586cde (path rank: 2) //stbi__malloc_mad3 at stb_image.h:927
+0x000055555559cf0a -- num_successors_equal 1 -- 0.9319444444444444 -- jz 0x55555559cf25 (path rank: 2) //stbi__pic_load_core at stb_image.h:5998
+0x0000555555586c74 -- 0x555555586c74 edge_only_taken_to 0x555555586c7d -- 0.9319444444444444 -- jnz 0x555555586c7d (path rank: 2) //stbi__mul2sizes_valid at stb_image.h:891
+0x000055555559cf03 -- 0x55555559cf03 edge_only_taken_to 0x555555587ede -- 0.9319444444444444 -- call 0x555555587ede (path rank: 2) //stbi__pic_load_core at stb_image.h:5998
+0x000055555559cedf -- 0x55555559cedf edge_only_taken_to 0x555555587e57 -- 0.9319444444444444 -- call 0x555555587e57 (path rank: 2) //stbi__pic_load_core at stb_image.h:5994
+0x0000555555586e70 -- 0x555555586e70 edge_only_taken_to 0x555555586c03 -- 0.9319444444444444 -- call 0x555555586c03 (path rank: 2) //stbi__malloc_mad3 at stb_image.h:928
+0x000055555559d419 -- 0x55555559d419 edge_only_taken_to 0x555555577660 -- 0.9319444444444444 -- call 0x555555577660 (path rank: 2) //stbi__pic_load at stb_image.h:6108
+0x000055555559d3e0 -- 0x55555559d3e0 edge_only_taken_to 0x555555588145 -- 0.9319444444444444 -- call 0x555555588145 (path rank: 2) //stbi__pic_load at stb_image.h:6104
+0x0000555555587f43 -- max_adjust_flag_set -- 0.9256944444444444 -- cmp rdx, rax (path rank: 1.9960790295031072) //stbi__at_eof at stb_image.h:1430
+0x000055555559d390 -- rax min_reg_val_less 0xc082 -- 0.9256944444444444 -- mov eax, dword ptr [rbp-0x18] (path rank: 1.9961237142577661) //stbi__pic_load at stb_image.h:6100
+0x000055555559d39d -- rdi min_reg_val_less 0xc082 -- 0.9256944444444444 -- mov edi, eax (path rank: 1.9961460566350955) //stbi__pic_load at stb_image.h:6100
+0x0000555555586c90 -- 0x555555586c90 has_edge_to 0x555555586d1c -- 0.9256944444444444 -- ret  (path rank: 1.9963666817233983) //stbi__mul2sizes_valid at stb_image.h:894
+0x0000555555586d1c -- max_interrupt_flag_set -- 0.9256944444444444 -- test eax, eax (path rank: 1.996374129182508) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x0000555555586d07 -- 0x555555586d07 edge_only_taken_to 0x555555586d09 -- 0.9256944444444444 -- jz 0x555555586d42 (path rank: 2) //stbi__mad3sizes_valid at stb_image.h:905
+0x000055555559d361 -- memory_value min_reg_val_greater_or_equal 0x1708 -- 0.9256944444444444 -- mov dword ptr [rbp-0x14], eax (path rank: 2) //stbi__pic_load at stb_image.h:6098
+0x0000555555586d17 -- 0x555555586d17 edge_only_taken_to 0x555555586c4f -- 0.9256944444444444 -- call 0x555555586c4f (path rank: 2) //stbi__mad3sizes_valid at stb_image.h:905 (discriminator 1)
+0x0000555555587f49 -- rax min_reg_val_less 0x1 -- 0.9194444444444444 -- movzx eax, al (path rank: 1.996093924421327) //stbi__at_eof at stb_image.h:1430
+0x000055555559d370 -- max_zero_flag_set -- 0.9194444444444444 -- test eax, eax (path rank: 1.9961088193395466) //stbi__pic_load at stb_image.h:6099
+0x000055555559d393 -- is_visited -- 0.9194444444444444 -- mov ecx, 0x0 (path rank: 1.9961311617168758) //stbi__pic_load at stb_image.h:6100
+0x000055555559d398 -- is_visited -- 0.9194444444444444 -- mov edx, 0x4 (path rank: 1.9961386091759858) //stbi__pic_load at stb_image.h:6100
+0x0000555555586cde -- is_visited -- 0.9194444444444444 -- nop edx, edi (path rank: 1.9961535040942053) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586ce2 -- is_visited -- 0.9194444444444444 -- push rbp (path rank: 1.9961609515533152) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586ce3 -- is_visited -- 0.9194444444444444 -- mov rbp, rsp (path rank: 1.9961683990124248) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586ce6 -- is_visited -- 0.9194444444444444 -- sub rsp, 0x10 (path rank: 1.9961758464715347) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586cf3 -- memory_value min_reg_val_less 0xff -- 0.9194444444444444 -- mov dword ptr [rbp-0x10], ecx (path rank: 1.9962028376229826) //stbi__mad3sizes_valid at stb_image.h:904
+0x0000555555586c4f -- is_visited -- 0.9194444444444444 -- nop edx, edi (path rank: 1.996225180000312) //stbi__mul2sizes_valid at stb_image.h:889
+0x0000555555586c53 -- is_visited -- 0.9194444444444444 -- push rbp (path rank: 1.996232627459422) //stbi__mul2sizes_valid at stb_image.h:889
+0x0000555555586c54 -- is_visited -- 0.9194444444444444 -- mov rbp, rsp (path rank: 1.9962400749185318) //stbi__mul2sizes_valid at stb_image.h:889
+0x0000555555586c5d -- max_interrupt_flag_set -- 0.9194444444444444 -- cmp dword ptr [rbp-0x4], 0x0 (path rank: 1.9962549698367513) //stbi__mul2sizes_valid at stb_image.h:890
+0x0000555555586c61 -- is_visited -- 0.9194444444444444 -- js 0x555555586c69 (path rank: 1.9962624172958612) //stbi__mul2sizes_valid at stb_image.h:890
+0x0000555555586c63 -- max_interrupt_flag_set -- 0.9194444444444444 -- cmp dword ptr [rbp-0x8], 0x0 (path rank: 1.9962698647549708) //stbi__mul2sizes_valid at stb_image.h:890 (discriminator 2)
+0x0000555555586c67 -- is_visited -- 0.9194444444444444 -- jns 0x555555586c70 (path rank: 1.9962773122140807) //stbi__mul2sizes_valid at stb_image.h:890 (discriminator 2)
+0x0000555555586c70 -- max_interrupt_flag_set -- 0.9194444444444444 -- cmp dword ptr [rbp-0x8], 0x0 (path rank: 1.9962847596731903) //stbi__mul2sizes_valid at stb_image.h:891
+0x0000555555586c7d -- is_visited -- 0.9194444444444444 -- mov eax, 0x7fffffff (path rank: 1.9962922071323002) //stbi__mul2sizes_valid at stb_image.h:893
+0x0000555555586c82 -- rdx min_reg_val_less 0xff -- 0.9194444444444444 -- cdq  (path rank: 1.9962996545914102) //stbi__mul2sizes_valid at stb_image.h:893
+0x0000555555586c8f -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9194444444444444 -- pop rbp (path rank: 1.996336891886959) //stbi__mul2sizes_valid at stb_image.h:894
+0x0000555555586d05 -- max_interrupt_flag_set -- 0.9194444444444444 -- test eax, eax (path rank: 1.996344339346069) //stbi__mad3sizes_valid at stb_image.h:905
+0x0000555555586d47 -- is_visited -- 0.9194444444444444 -- leave  (path rank: 1.996552868201143) //stbi__mad3sizes_valid at stb_image.h:907 (discriminator 9)
+0x000055555559d3a4 -- max_interrupt_flag_set -- 0.9194444444444444 -- test eax, eax (path rank: 1.996560315660253) //stbi__pic_load at stb_image.h:6100
+0x000055555559d39f -- 0x55555559d39f edge_only_taken_to 0x555555586cde -- 0.9194444444444444 -- call 0x555555586cde (path rank: 2) //stbi__pic_load at stb_image.h:6100
+0x0000555555586d00 -- 0x555555586d00 edge_only_taken_to 0x555555586c4f -- 0.9194444444444444 -- call 0x555555586c4f (path rank: 2) //stbi__mad3sizes_valid at stb_image.h:905
+0x000055555559d372 -- 0x55555559d372 edge_only_taken_to 0x55555559d38d -- 0.9194444444444444 -- jz 0x55555559d38d (path rank: 2) //stbi__pic_load at stb_image.h:6099
+0x000055555559d352 -- memory_value min_reg_val_less 0x9940 -- 0.9194444444444444 -- mov dword ptr [rbp-0x18], eax (path rank: 2) //stbi__pic_load at stb_image.h:6097
+0x000055555559d309 -- rax min_reg_val_greater_or_equal 0x1fc45d902080ed00 -- 0.9131944444444444 -- mov rax, qword ptr fs:[0x28] (path rank: 1.996374966774342) //stbi__pic_load at stb_image.h:6087
+0x000055555559d312 -- memory_value min_reg_val_greater_or_equal 0x1fc45d902080ed00 -- 0.9131944444444444 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9963814716544235) //stbi__pic_load at stb_image.h:6087
+0x000055555559cc8f -- 0x55555559cc8f edge_only_taken_to 0x55555559cc98 -- 0.9069444444444444 -- jz 0x55555559cc98 (path rank: 0.6938436393353308) //stbi__pic_is4 at stb_image.h:5926
+0x0000555555587066 -- 0x555555587066 edge_only_taken_to 0x555555587068 -- 0.9069444444444444 -- jz 0x555555587092 (path rank: 0.7936257150640154) //stbi__load_main at stb_image.h:997
+0x000055555559d4db -- rax min_reg_val_greater_or_equal 0x1 -- 0.9069444444444444 -- mov eax, dword ptr [rbp-0x4] (path rank: 1.9957010942465638) //stbi__pic_test at stb_image.h:6126
+0x0000555555587068 -- r8 min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov r8, qword ptr [rbp-0x40] (path rank: 1.995708541705674) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x000055555558706c -- rdi min_reg_val_less 0xff -- 0.9069444444444444 -- mov edi, dword ptr [rbp-0x34] (path rank: 1.9957159891647838) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x000055555558706f -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rcx, qword ptr [rbp-0x30] (path rank: 1.9957234366238934) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x0000555555587073 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdx, qword ptr [rbp-0x28] (path rank: 1.9957308840830033) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x0000555555587077 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rsi, qword ptr [rbp-0x20] (path rank: 1.9957383315421129) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x000055555558707b -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x18] (path rank: 1.9957457790012227) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x000055555558707f -- r9 min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov r9, r8 (path rank: 1.9957532264603326) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x0000555555587082 -- r8 min_reg_val_less 0xff -- 0.9069444444444444 -- mov r8d, edi (path rank: 1.9957606739194422) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x0000555555587085 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdi, rax (path rank: 1.995768121378552) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x0000555555587088 -- is_visited -- 0.9069444444444444 -- call 0x55555559d2e5 (path rank: 1.9957755688376622) //stbi__load_main at stb_image.h:997 (discriminator 1)
+0x000055555559d2e5 -- is_visited -- 0.9069444444444444 -- nop edx, edi (path rank: 1.9957830162967716) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2e9 -- is_visited -- 0.9069444444444444 -- push rbp (path rank: 1.9957904637558816) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2ea -- is_visited -- 0.9069444444444444 -- mov rbp, rsp (path rank: 1.9957979112149915) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2ed -- is_visited -- 0.9069444444444444 -- sub rsp, 0x50 (path rank: 1.9958053586741011) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2f1 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov qword ptr [rbp-0x28], rdi (path rank: 1.995812806133211) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2f5 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov qword ptr [rbp-0x30], rsi (path rank: 1.9958202535923208) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2f9 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov qword ptr [rbp-0x38], rdx (path rank: 1.9958277010514305) //stbi__pic_load at stb_image.h:6087
+0x000055555559d2fd -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov qword ptr [rbp-0x40], rcx (path rank: 1.9958351485105403) //stbi__pic_load at stb_image.h:6087
+0x000055555559d301 -- memory_value min_reg_val_less 0xff -- 0.9069444444444444 -- mov dword ptr [rbp-0x44], r8d (path rank: 1.9958425959696502) //stbi__pic_load at stb_image.h:6087
+0x000055555559d305 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov qword ptr [rbp-0x50], r9 (path rank: 1.9958500434287598) //stbi__pic_load at stb_image.h:6087
+0x000055555559d316 -- max_interrupt_flag_set -- 0.9069444444444444 -- xor eax, eax (path rank: 1.995870500648033) //stbi__pic_load at stb_image.h:6087
+0x000055555559d318 -- max_interrupt_flag_set -- 0.9069444444444444 -- cmp qword ptr [rbp-0x40], 0x0 (path rank: 1.995877948107143) //stbi__pic_load at stb_image.h:6092
+0x000055555559d31d -- is_visited -- 0.9069444444444444 -- jnz 0x55555559d327 (path rank: 1.9958853955662526) //stbi__pic_load at stb_image.h:6092
+0x000055555559d327 -- is_visited -- 0.9069444444444444 -- mov dword ptr [rbp-0x1c], 0x0 (path rank: 1.9958928430253624) //stbi__pic_load at stb_image.h:6094
+0x000055555559d340 -- max_interrupt_flag_set -- 0.9069444444444444 -- cmp dword ptr [rbp-0x1c], 0x5b (path rank: 1.9959002904844723) //stbi__pic_load at stb_image.h:6094 (discriminator 1)
+0x000055555559d344 -- 0x55555559d344 has_edge_to 0x55555559d330 -- 0.9069444444444444 -- jle 0x55555559d330 (path rank: 1.995907737943582) //stbi__pic_load at stb_image.h:6094 (discriminator 1)
+0x000055555559d330 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9959151854026917) //stbi__pic_load at stb_image.h:6095 (discriminator 3)
+0x000055555559d334 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdi, rax (path rank: 1.9959226328618016) //stbi__pic_load at stb_image.h:6095 (discriminator 3)
+0x000055555559d33c -- max_interrupt_flag_set -- 0.9069444444444444 -- add dword ptr [rbp-0x1c], 0x1 (path rank: 1.9959300803209115) //stbi__pic_load at stb_image.h:6094 (discriminator 3)
+0x000055555559d346 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.995937527780021) //stbi__pic_load at stb_image.h:6097
+0x000055555559d34a -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdi, rax (path rank: 1.9959449752391312) //stbi__pic_load at stb_image.h:6097
+0x000055555559d355 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9959524226982406) //stbi__pic_load at stb_image.h:6098
+0x000055555559d359 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdi, rax (path rank: 1.9959598701573507) //stbi__pic_load at stb_image.h:6098
+0x000055555559d364 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9959673176164605) //stbi__pic_load at stb_image.h:6099
+0x000055555559d368 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdi, rax (path rank: 1.9959747650755701) //stbi__pic_load at stb_image.h:6099
+0x0000555555587ede -- is_visited -- 0.9069444444444444 -- nop edx, edi (path rank: 1.99598221253468) //stbi__at_eof at stb_image.h:1422
+0x0000555555587ee2 -- is_visited -- 0.9069444444444444 -- push rbp (path rank: 1.9959896599937899) //stbi__at_eof at stb_image.h:1422
+0x0000555555587ee3 -- is_visited -- 0.9069444444444444 -- mov rbp, rsp (path rank: 1.9959971074528995) //stbi__at_eof at stb_image.h:1422
+0x0000555555587ee6 -- is_visited -- 0.9069444444444444 -- sub rsp, 0x10 (path rank: 1.9960045549120093) //stbi__at_eof at stb_image.h:1422
+0x0000555555587eea -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov qword ptr [rbp-0x8], rdi (path rank: 1.9960120023711194) //stbi__at_eof at stb_image.h:1422
+0x0000555555587eee -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9960194498302288) //stbi__at_eof at stb_image.h:1423
+0x0000555555587ef2 -- rax min_reg_val_less 0xff -- 0.9069444444444444 -- mov rax, qword ptr [rax+0x10] (path rank: 1.996026897289339) //stbi__at_eof at stb_image.h:1423
+0x0000555555587ef6 -- max_interrupt_flag_set -- 0.9069444444444444 -- test rax, rax (path rank: 1.9960343447484483) //stbi__at_eof at stb_image.h:1423
+0x0000555555587ef9 -- is_visited -- 0.9069444444444444 -- jz 0x555555587f2d (path rank: 1.9960417922075584) //stbi__at_eof at stb_image.h:1423
+0x0000555555587f2d -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9960492396666683) //stbi__at_eof at stb_image.h:1430
+0x0000555555587f31 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rdx, qword ptr [rax+0xb8] (path rank: 1.9960566871257779) //stbi__at_eof at stb_image.h:1430
+0x0000555555587f38 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9960641345848877) //stbi__at_eof at stb_image.h:1430
+0x0000555555587f3c -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- mov rax, qword ptr [rax+0xc0] (path rank: 1.9960715820439976) //stbi__at_eof at stb_image.h:1430
+0x0000555555587f46 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9069444444444444 -- setnb al (path rank: 1.996086476962217) //stbi__at_eof at stb_image.h:1430
+0x0000555555587f4c -- is_visited -- 0.9069444444444444 -- leave  (path rank: 1.9961013718804366) //stbi__at_eof at stb_image.h:1431
+0x000055555559d35c -- 0x55555559d35c edge_only_taken_to 0x555555588145 -- 0.9069444444444444 -- call 0x555555588145 (path rank: 2) //stbi__pic_load at stb_image.h:6098
+0x000055555559cd11 -- 0x55555559cd11 edge_only_taken_to 0x55555559cd1a -- 0.9069444444444444 -- jnz 0x55555559cd1a (path rank: 2) //stbi__pic_test_core at stb_image.h:5942
+0x000055555559d34d -- 0x55555559d34d edge_only_taken_to 0x555555588145 -- 0.9069444444444444 -- call 0x555555588145 (path rank: 2) //stbi__pic_load at stb_image.h:6097
+0x000055555559d32e -- 0x55555559d32e edge_only_taken_to 0x55555559d340 -- 0.9069444444444444 -- jmp 0x55555559d340 (path rank: 2) //stbi__pic_load at stb_image.h:6094
+0x000055555559d36b -- 0x55555559d36b edge_only_taken_to 0x555555587ede -- 0.9069444444444444 -- call 0x555555587ede (path rank: 2) //stbi__pic_load at stb_image.h:6099
+0x000055555559d4cc -- memory_value min_reg_val_greater_or_equal 0x1 -- 0.9069444444444444 -- mov dword ptr [rbp-0x4], eax (path rank: 2) //stbi__pic_test at stb_image.h:6124
+0x000055555559d337 -- 0x55555559d337 edge_only_taken_to 0x555555587e57 -- 0.9069444444444444 -- call 0x555555587e57 (path rank: 2) //stbi__pic_load at stb_image.h:6095 (discriminator 3)
+0x000055555559cd1a -- 0x55555559cd1a edge_only_taken_to 0x55555559cd1f -- 0.9069444444444444 -- mov eax, 0x1 (path rank: 2) //stbi__pic_test_core at stb_image.h:5945
+0x000055555559cc87 -- rdx max_reg_val_greater_or_equal 0x5555555b0b9c -- 0.9006944444444445 -- add rdx, rcx (path rank: 1.9956936467874544) //stbi__pic_is4 at stb_image.h:5926

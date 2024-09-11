@@ -1,0 +1,202 @@
+0x000055555559ad59 -- max_sign_flag_set -- 0.973731884057971 -- cmp al, byte ptr [rbp-0x19] (path rank: 0.559066605123872) //aoev1_reserve_print at print-aoe.c:327 (discriminator 1)
+0x000055555559ad5c -- 0x55555559ad5c has_edge_to 0x55555559ad0c -- 0.973731884057971 -- jb 0x55555559ad0c (path rank: 0.5644420501006715) //aoev1_reserve_print at print-aoe.c:327 (discriminator 1)
+0x000055555559ad0c -- rax min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.5698174950774709) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad10 -- rbx min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rbx, qword ptr [rax+0x98] (path rank: 0.5751929400542706) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad17 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rdx, qword ptr [rbp-0x30] (path rank: 0.5805683850310699) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad1b -- rax min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.5859438300078694) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad1f -- rsi min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rsi, rdx (path rank: 0.591319274984669) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad22 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rdi, rax (path rank: 0.5966947199614683) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555558d01e -- 0x55555558d01e has_edge_to 0x55555559ad2a -- 0.973731884057971 -- ret  (path rank: 0.7097182608381494) //etheraddr_string at addrtoname.c:535
+0x000055555559ad2a -- rcx min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rcx, rax (path rank: 0.715093705814949) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad2d -- rdx min_reg_val_less 0xff -- 0.973731884057971 -- movzx edx, byte ptr [rbp-0x1a] (path rank: 0.7204691507917483) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad31 -- rax min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.7258445957685479) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad35 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- lea rsi, ptr [rip+0xf3a27] (path rank: 0.7312200407453474) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad3c -- rdi min_reg_val_less 0xffffffffffffffff -- 0.973731884057971 -- mov rdi, rax (path rank: 0.7365954857221468) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad3f -- is_visited -- 0.973731884057971 -- mov eax, 0x0 (path rank: 0.7419709306989464) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x0000555555590970 -- 0x555555590970 has_edge_to 0x55555559ad46 -- 0.973731884057971 -- ret  (path rank: 0.7482206370915359) //ndo_printf at print.c:462
+0x000055555559ad46 -- max_interrupt_flag_set -- 0.973731884057971 -- add qword ptr [rbp-0x30], 0x6 (path rank: 0.7535960820683354) //aoev1_reserve_print at print-aoe.c:329 (discriminator 3)
+0x000055555559ad4b -- rax min_reg_val_less 0xff -- 0.973731884057971 -- movzx eax, byte ptr [rbp-0x1a] (path rank: 0.758971527045135) //aoev1_reserve_print at print-aoe.c:327 (discriminator 3)
+0x000055555559ad4f -- max_interrupt_flag_set -- 0.973731884057971 -- add eax, 0x1 (path rank: 0.7643469720219345) //aoev1_reserve_print at print-aoe.c:327 (discriminator 3)
+0x000055555559ad55 -- rax max_reg_val_greater_or_equal 0x2 -- 0.973731884057971 -- movzx eax, byte ptr [rbp-0x1a] (path rank: 0.8042193674760546) //aoev1_reserve_print at print-aoe.c:327 (discriminator 1)
+0x000055555559ad25 -- 0x55555559ad25 edge_only_taken_to 0x55555558cdaf -- 0.973731884057971 -- call 0x55555558cdaf (path rank: 2) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad44 -- 0x55555559ad44 edge_only_taken_to 0x555555590855 -- 0.973731884057971 -- call rbx (path rank: 2) //aoev1_reserve_print at print-aoe.c:328 (discriminator 3)
+0x000055555559ad52 -- 0x55555559ad52 edge_only_taken_to 0x55555559ad55 -- 0.973731884057971 -- mov byte ptr [rbp-0x1a], al (path rank: 2) //aoev1_reserve_print at print-aoe.c:327 (discriminator 3)
+0x000055555559ad01 -- min_zero_flag_set -- 0.9719202898550724 -- cmp dword ptr [rbp-0x34], eax (path rank: 0.542651211080885) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559ad04 -- 0x55555559ad04 has_edge_to 0x55555559ad06 -- 0.9719202898550724 -- jnz 0x55555559ad66 (path rank: 0.5480266560576845) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559ad06 -- is_visited -- 0.9719202898550724 -- mov byte ptr [rbp-0x1a], 0x0 (path rank: 0.553402101034484) //aoev1_reserve_print at print-aoe.c:327
+0x000055555559ad5e -- 0x55555559ad5e edge_only_taken_to 0x55555559ae0c -- 0.9719202898550724 -- jmp 0x55555559ae0c (path rank: 2) //aoev1_reserve_print at print-aoe.c:331
+0x000055555559ad0a -- 0x55555559ad0a edge_only_taken_to 0x55555559ad55 -- 0.9719202898550724 -- jmp 0x55555559ad55 (path rank: 2) //aoev1_reserve_print at print-aoe.c:327
+0x000055555558c77e -- memory_value min_reg_val_less 0x1 -- 0.970108695652174 -- mov word ptr [rax], dx (path rank: 0) //lookup_emem at addrtoname.c:357
+0x000055555558c6ff -- max_zero_flag_set -- 0.970108695652174 -- or eax, edx (path rank: 0.8029494507090403) //lookup_emem at addrtoname.c:347
+0x000055555558c701 -- r12 min_reg_val_less 0x1 -- 0.970108695652174 -- mov r12d, eax (path rank: 0.8083248956858399) //lookup_emem at addrtoname.c:347
+0x000055555558c704 -- rax min_reg_val_less 0x1 -- 0.970108695652174 -- mov eax, r12d (path rank: 0.8137003406626393) //lookup_emem at addrtoname.c:349
+0x000055555558c777 -- rdx min_reg_val_less 0x1 -- 0.970108695652174 -- mov edx, r12d (path rank: 0.822167545628324) //lookup_emem at addrtoname.c:357
+0x000055555559acfe -- max_parity_flag_set -- 0.9692028985507246 -- add eax, 0x2 (path rank: 0.5360148433805237) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559acc3 -- rax min_reg_val_less 0x5 -- 0.9664855072463768 -- movzx eax, byte ptr [rax] (path rank: 0.4553831687285315) //aoev1_reserve_print at print-aoe.c:321
+0x000055555559acc6 -- memory_value min_reg_val_less 0x5 -- 0.9664855072463768 -- mov byte ptr [rbp-0x19], al (path rank: 0.46008414244262447) //aoev1_reserve_print at print-aoe.c:321
+0x000055555559acd9 -- rdx min_reg_val_less 0x5 -- 0.9664855072463768 -- movzx edx, byte ptr [rbp-0x19] (path rank: 0.48206768753747) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559acf2 -- rdx min_reg_val_less 0x5 -- 0.9664855072463768 -- movzx edx, byte ptr [rbp-0x19] (path rank: 0.5087522063464083) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559acf6 -- rax min_reg_val_less 0x5 -- 0.9664855072463768 -- mov eax, edx (path rank: 0.5141276513232078) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559acf8 -- rax min_reg_val_less 0x9 -- 0.9664855072463768 -- add eax, eax (path rank: 0.5195030963000071) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559acfa -- rax min_reg_val_less 0xe -- 0.9664855072463768 -- add eax, edx (path rank: 0.5248785412768068) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559acfc -- rax min_reg_val_less 0x1b -- 0.9664855072463768 -- add eax, eax (path rank: 0.5302539862536062) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559abd0 -- rax min_reg_val_less 0x555555868805 -- 0.9619565217391304 -- add rax, rdx (path rank: 0.1598862935778526) //aoev1_reserve_print at print-aoe.c:310
+0x000055555559abd3 -- memory_value min_reg_val_less 0x555555868805 -- 0.9619565217391304 -- mov qword ptr [rbp-0x18], rax (path rank: 0.16526173855465212) //aoev1_reserve_print at print-aoe.c:310
+0x000055555559acbf -- rax min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- mov rax, qword ptr [rbp-0x30] (path rank: 0.44938142900779016) //aoev1_reserve_print at print-aoe.c:321
+0x000055555559acc9 -- max_interrupt_flag_set -- 0.9610507246376812 -- add qword ptr [rbp-0x30], 0x1 (path rank: 0.4654595874194239) //aoev1_reserve_print at print-aoe.c:322
+0x000055555559acce -- rax min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.4708350323962233) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559acd2 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- mov rcx, qword ptr [rax+0x98] (path rank: 0.47621047737302286) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559acdd -- rax min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.4869131908078571) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559ace1 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- lea rsi, ptr [rip+0xf3a6f] (path rank: 0.49228863578465654) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559ace8 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- mov rdi, rax (path rank: 0.497664080761456) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559aceb -- is_visited -- 0.9610507246376812 -- mov eax, 0x0 (path rank: 0.5030395257382555) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559acb9 -- 0x55555559acb9 edge_only_taken_to 0x55555559acbf -- 0.9610507246376812 -- jb 0x55555559ade2 (path rank: 2) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x000055555559acf0 -- 0x55555559acf0 edge_only_taken_to 0x555555590855 -- 0.9610507246376812 -- call rcx (path rank: 2) //aoev1_reserve_print at print-aoe.c:323
+0x000055555559ac4e -- rax min_reg_val_greater_or_equal 0x2 -- 0.9583333333333331 -- movzx eax, byte ptr [rax] (path rank: 0.36398160478033414) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac51 -- rax min_reg_val_greater_or_equal 0x2 -- 0.9583333333333331 -- movzx eax, al (path rank: 0.36920936108485475) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac54 -- rdx min_reg_val_greater_or_equal 0x2 -- 0.9583333333333331 -- mov edx, eax (path rank: 0.3744371173893754) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac6f -- rdx min_reg_val_greater_or_equal 0x55555577a935 -- 0.9583333333333331 -- mov rdx, rax (path rank: 0.40886242044088006) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac3f -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.3017764040989388) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac43 -- rbx min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rbx, qword ptr [rax+0x98] (path rank: 0.3071518490757383) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac4a -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rbp-0x30] (path rank: 0.3125272940525378) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac56 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- lea rax, ptr [rip+0xf3a93] (path rank: 0.33358600794289917) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac5d -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rsi, rax (path rank: 0.3389614529196987) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac60 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- lea rax, ptr [rip+0x14c2b9] (path rank: 0.34433689789649813) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac67 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rdi, rax (path rank: 0.34971234287329755) //aoev1_reserve_print at print-aoe.c:317
+0x0000555555651a0a -- 0x555555651a0a has_edge_to 0x55555559ac6f -- 0.9565217391304348 -- ret  (path rank: 0.35814655307447785) //tok2str at util-print.c:513
+0x000055555559ac72 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.36874975435579793) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac76 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- lea rcx, ptr [rip+0xf3acf] (path rank: 0.3741251993325974) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac7d -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rsi, rcx (path rank: 0.37950064430939695) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac80 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rdi, rax (path rank: 0.38487608928619643) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac83 -- is_visited -- 0.9565217391304348 -- mov eax, 0x0 (path rank: 0.3902515342629959) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac8a -- max_interrupt_flag_set -- 0.9565217391304348 -- add qword ptr [rbp-0x30], 0x1 (path rank: 0.39562697923979545) //aoev1_reserve_print at print-aoe.c:318
+0x000055555559ac8f -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.40100242421659493) //aoev1_reserve_print at print-aoe.c:320
+0x000055555559ac93 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rax+0x80] (path rank: 0.40637786919339436) //aoev1_reserve_print at print-aoe.c:320
+0x000055555559ac9a -- max_interrupt_flag_set -- 0.9565217391304348 -- test rax, rax (path rank: 0.41175331417019384) //aoev1_reserve_print at print-aoe.c:320
+0x000055555559ac9d -- is_visited -- 0.9565217391304348 -- jz 0x55555559ade2 (path rank: 0.4171287591469934) //aoev1_reserve_print at print-aoe.c:320
+0x000055555559aca3 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.4225042041237928) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x000055555559aca7 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rax+0x80] (path rank: 0.42787964910059223) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x000055555559acae -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- lea rdx, ptr [rax-0x1] (path rank: 0.43325509407739177) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x000055555559acb2 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9565217391304348 -- mov rax, qword ptr [rbp-0x30] (path rank: 0.43863053905419125) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x000055555559acb6 -- max_interrupt_flag_set -- 0.9565217391304348 -- cmp rdx, rax (path rank: 0.4440059840309908) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x000055555558c6f9 -- rax min_reg_val_less 0x1 -- 0.9565217391304348 -- movzx eax, byte ptr [rax] (path rank: 0.760030753209073) //lookup_emem at addrtoname.c:347
+0x000055555558c6fc -- rax min_reg_val_less 0x1 -- 0.9565217391304348 -- movzx eax, al (path rank: 0.7654061981858724) //lookup_emem at addrtoname.c:347
+0x000055555559ac6a -- 0x55555559ac6a edge_only_taken_to 0x5555556519b8 -- 0.9565217391304348 -- call 0x5555556519b8 (path rank: 2) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac88 -- 0x55555559ac88 edge_only_taken_to 0x555555590855 -- 0.9565217391304348 -- call rbx (path rank: 2) //aoev1_reserve_print at print-aoe.c:317
+0x000055555559ac39 -- 0x55555559ac39 edge_only_taken_to 0x55555559ac3f -- 0.9565217391304348 -- jb 0x55555559ade2 (path rank: 2) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555559abe1 -- rax min_reg_val_less 0x1d -- 0.9556159420289856 -- mov eax, dword ptr [rbp-0x34] (path rank: 0.1752373501573194) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abe4 -- rcx min_reg_val_less 0x1b -- 0.9556159420289856 -- lea ecx, ptr [rax-0x2] (path rank: 0.18061279513411888) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abe7 -- rdx min_reg_val_less 0x1b -- 0.9556159420289856 -- mov edx, ecx (path rank: 0.18598824011091838) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abee -- rax min_reg_val_less 0x11aaaaaab4 -- 0.9556159420289856 -- imul rax, rdx (path rank: 0.19596385171358568) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abf2 -- rax min_reg_val_less 0x12 -- 0.9556159420289856 -- shr rax, 0x20 (path rank: 0.20133929669038514) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abf6 -- rdx min_reg_val_less 0x12 -- 0.9556159420289856 -- mov edx, eax (path rank: 0.20671474166718462) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abf8 -- rdx min_reg_val_less 0x4 -- 0.9556159420289856 -- shr edx, 0x2 (path rank: 0.2120901866439841) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abfb -- rax min_reg_val_less 0x4 -- 0.9556159420289856 -- mov eax, edx (path rank: 0.2174656316207836) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abfd -- rax min_reg_val_less 0x8 -- 0.9556159420289856 -- add eax, eax (path rank: 0.2228410765975831) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abff -- rax min_reg_val_less 0xc -- 0.9556159420289856 -- add eax, edx (path rank: 0.22821652157438255) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559ac01 -- rax min_reg_val_less 0x18 -- 0.9556159420289856 -- add eax, eax (path rank: 0.23359196655118206) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555558c7a5 -- r10 min_reg_val_less 0x55555586d1b0 -- 0.9556159420289856 -- mov rdx, rax (path rank: 0.5055866730822145) //lookup_emem at addrtoname.c:360
+0x0000555555590879 -- memory_value max_reg_val_greater_or_equal 0x55555586cd18 -- 0.9556159420289856 -- mov qword ptr [rbp-0x98], rcx (path rank: 0.9593742694896341) //ndo_printf at print.c:451
+0x000055555559abc6 -- memory_value min_reg_val_less 0x1d -- 0.9547101449275364 -- mov dword ptr [rbp-0x34], edx (path rank: 0.13387771111247285) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abc9 -- rdx min_reg_val_less 0x1d -- 0.9547101449275364 -- mov edx, dword ptr [rbp-0x34] (path rank: 0.14991068197518537) //aoev1_reserve_print at print-aoe.c:310
+0x000055555559ac03 -- max_zero_flag_set -- 0.9538043478260868 -- sub ecx, eax (path rank: 0.23189561940054554) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559ac05 -- rdx min_reg_val_less 0x1 -- 0.9538043478260868 -- mov edx, ecx (path rank: 0.23727106437734502) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559ac07 -- max_zero_flag_set -- 0.9538043478260868 -- test edx, edx (path rank: 0.24264650935414445) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559ac09 -- 0x55555559ac09 has_edge_to 0x55555559ac0f -- 0.9538043478260868 -- jnz 0x55555559ad63 (path rank: 0.24802195433094396) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559ac0f -- rax min_reg_val_less 0xffffffffffffffff -- 0.9538043478260868 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.25339739930774346) //aoev1_reserve_print at print-aoe.c:316
+0x000055555559ac13 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9538043478260868 -- mov rax, qword ptr [rax+0x80] (path rank: 0.2587728442845429) //aoev1_reserve_print at print-aoe.c:316
+0x000055555559ac1a -- max_interrupt_flag_set -- 0.9538043478260868 -- test rax, rax (path rank: 0.26414828926134243) //aoev1_reserve_print at print-aoe.c:316
+0x000055555559ac1d -- is_visited -- 0.9538043478260868 -- jz 0x55555559ade2 (path rank: 0.26952373423814185) //aoev1_reserve_print at print-aoe.c:316
+0x000055555559ac23 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9538043478260868 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.2748991792149414) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555559ac27 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9538043478260868 -- mov rax, qword ptr [rax+0x80] (path rank: 0.2802746241917408) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555559ac2e -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9538043478260868 -- lea rdx, ptr [rax-0x1] (path rank: 0.2856500691685403) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555559ac32 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9538043478260868 -- mov rax, qword ptr [rbp-0x30] (path rank: 0.29102551414533984) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555559ac36 -- max_interrupt_flag_set -- 0.9538043478260868 -- cmp rdx, rax (path rank: 0.29640095912213926) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555558ce1a -- rsi max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9510869565217392 -- mov rsi, r12 (path rank: 0.9290620144908565) //etheraddr_string at addrtoname.c:507
+0x000055555558ce8b -- rax max_reg_val_greater_or_equal 0x5555558687f3 -- 0.9510869565217392 -- lea rax, ptr [r12+0x1] (path rank: 0.9344374594676559) //etheraddr_string at addrtoname.c:517
+0x000055555558ce9b -- rax max_reg_val_greater_or_equal 0x5555558687f4 -- 0.9510869565217392 -- lea rax, ptr [r12+0x2] (path rank: 0.940108281789013) //etheraddr_string at addrtoname.c:517
+0x000055555558ced0 -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9510869565217392 -- mov rax, r12 (path rank: 0.9454837267658125) //etheraddr_string at addrtoname.c:519
+0x000055555558ced3 -- r12 max_reg_val_greater_or_equal 0x5555558687f3 -- 0.9510869565217392 -- lea r12, ptr [rax+0x1] (path rank: 0.950859171742612) //etheraddr_string at addrtoname.c:519
+0x000055555558cf2d -- rax max_reg_val_greater_or_equal 0x5555558687f7 -- 0.9510869565217392 -- mov rax, r12 (path rank: 0.958026010744287) //etheraddr_string at addrtoname.c:523
+0x000055555558cf30 -- r12 max_reg_val_greater_or_equal 0x5555558687f8 -- 0.9510869565217392 -- lea r12, ptr [rax+0x1] (path rank: 0.9634014557210865) //etheraddr_string at addrtoname.c:523
+0x000055555558cdcc -- r12 max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov r12, rsi (path rank: 0.8095948124528541) //etheraddr_string at addrtoname.c:493
+0x000055555558cde5 -- rsi max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rsi, r12 (path rank: 0.8149702574296537) //etheraddr_string at addrtoname.c:500
+0x000055555558c693 -- memory_value max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov qword ptr [rbp-0x40], rsi (path rank: 0.8203457024064531) //lookup_emem at addrtoname.c:341
+0x000055555558c697 -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rax, qword ptr [rbp-0x40] (path rank: 0.8257211473832526) //lookup_emem at addrtoname.c:345
+0x000055555558c6a6 -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rax, qword ptr [rbp-0x40] (path rank: 0.8310965923600522) //lookup_emem at addrtoname.c:345
+0x000055555558c6aa -- rax max_reg_val_greater_or_equal 0x5555558687f3 -- 0.9492753623188406 -- add rax, 0x1 (path rank: 0.8364720373368517) //lookup_emem at addrtoname.c:345
+0x000055555558c6b9 -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rax, qword ptr [rbp-0x40] (path rank: 0.8420444005433562) //lookup_emem at addrtoname.c:346
+0x000055555558c6bd -- rax max_reg_val_greater_or_equal 0x5555558687f4 -- 0.9492753623188406 -- add rax, 0x2 (path rank: 0.8474198455201558) //lookup_emem at addrtoname.c:346
+0x000055555558c6cc -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rax, qword ptr [rbp-0x40] (path rank: 0.8527952904969552) //lookup_emem at addrtoname.c:346
+0x000055555558c6d0 -- rax max_reg_val_greater_or_equal 0x5555558687f5 -- 0.9492753623188406 -- add rax, 0x3 (path rank: 0.8581707354737547) //lookup_emem at addrtoname.c:346
+0x000055555558c6de -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rax, qword ptr [rbp-0x40] (path rank: 0.8681067479476586) //lookup_emem at addrtoname.c:347
+0x000055555558c6e2 -- rax max_reg_val_greater_or_equal 0x5555558687f6 -- 0.9492753623188406 -- add rax, 0x4 (path rank: 0.8734821929244581) //lookup_emem at addrtoname.c:347
+0x000055555558c6f1 -- rax max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- mov rax, qword ptr [rbp-0x40] (path rank: 0.8881735622794454) //lookup_emem at addrtoname.c:347
+0x000055555558c6f5 -- rax max_reg_val_greater_or_equal 0x5555558687f7 -- 0.9492753623188406 -- add rax, 0x5 (path rank: 0.8935490072562449) //lookup_emem at addrtoname.c:347
+0x000055555558c7e9 -- r12 max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- pop r12 (path rank: 0.9208848877074327) //lookup_emem at addrtoname.c:365
+0x000055555558cfc1 -- rcx min_reg_val_less 0x351 -- 0.947463768115942 -- mov qword ptr [r13+0x8], rax (path rank: 0.9273433311676805) //etheraddr_string at addrtoname.c:531
+0x000055555558cfc9 -- max_parity_flag_set -- 0.9456521739130436 -- test rax, rax (path rank: 0.9446633293933813) //etheraddr_string at addrtoname.c:532
+0x000055555559abe9 -- is_visited -- 0.9447463768115942 -- mov eax, 0xaaaaaaab (path rank: 0.1776050457980781) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x000055555559abdb -- 0x55555559abdb edge_only_taken_to 0x55555559abe1 -- 0.9447463768115942 -- jbe 0x55555559ad63 (path rank: 2) //aoev1_reserve_print at print-aoe.c:313
+0x000055555559b0f7 -- max_zero_flag_set -- 0.943840579710145 -- cmp byte ptr [rbp-0x21], 0x3 (path rank: 0.06937237139087905) //aoev1_print at print-aoe.c:385
+0x000055555559b0fd -- rax min_reg_val_less 0xffffffffffffffff -- 0.943840579710145 -- lea rax, ptr [rip-0x553] (path rank: 0.07474781636767855) //aoev1_print at print-aoe.c:385 (discriminator 1)
+0x000055555559b126 -- memory_value max_reg_val_greater_or_equal 0x55555559a9c8 -- 0.943840579710145 -- mov qword ptr [rbp-0x18], rax (path rank: 0.08012326134447803) //aoev1_print at print-aoe.c:381
+0x000055555559b143 -- r8 max_reg_val_greater_or_equal 0x55555559a9c8 -- 0.943840579710145 -- mov r8, qword ptr [rbp-0x18] (path rank: 0.0854987063212775) //aoev1_print at print-aoe.c:388
+0x000055555559b14d -- 0x55555559b14d has_edge_to 0x55555559abb1 -- 0.943840579710145 -- call r8 (path rank: 0.090874151298077) //aoev1_print at print-aoe.c:388
+0x000055555559abb1 -- is_visited -- 0.943840579710145 -- nop edx, edi (path rank: 0.09624959627487645) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abb5 -- is_visited -- 0.943840579710145 -- push rbp (path rank: 0.10162504125167596) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abb6 -- is_visited -- 0.943840579710145 -- mov rbp, rsp (path rank: 0.10700048622847544) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abb9 -- is_visited -- 0.943840579710145 -- push rbx (path rank: 0.1123759312052749) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abba -- is_visited -- 0.943840579710145 -- sub rsp, 0x38 (path rank: 0.11775137618207439) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abbe -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.943840579710145 -- mov qword ptr [rbp-0x28], rdi (path rank: 0.12312682115887386) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abc2 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.943840579710145 -- mov qword ptr [rbp-0x30], rsi (path rank: 0.12850226613567337) //aoev1_reserve_print at print-aoe.c:309
+0x000055555559abcc -- rax min_reg_val_less 0xffffffffffffffff -- 0.943840579710145 -- mov rax, qword ptr [rbp-0x30] (path rank: 0.14385332271514012) //aoev1_reserve_print at print-aoe.c:310
+0x000055555559abd7 -- max_interrupt_flag_set -- 0.943840579710145 -- cmp dword ptr [rbp-0x34], 0x1 (path rank: 0.15842910094367524) //aoev1_reserve_print at print-aoe.c:313
+0x000055555559ae0c -- rbx min_reg_val_less 0xffffffffffffffff -- 0.943840579710145 -- mov rbx, qword ptr [rbp-0x8] (path rank: 0.8647704320377938) //aoev1_reserve_print at print-aoe.c:339
+0x000055555559ae10 -- is_visited -- 0.943840579710145 -- leave  (path rank: 0.8701458770145934) //aoev1_reserve_print at print-aoe.c:339
+0x000055555559b0fb -- 0x55555559b0fb edge_only_taken_to 0x55555559b0fd -- 0.943840579710145 -- jnz 0x55555559b106 (path rank: 1.9823673941321003) //aoev1_print at print-aoe.c:385
+0x000055555559ae11 -- 0x55555559ae11 edge_only_taken_to 0x55555559b150 -- 0.943840579710145 -- ret  (path rank: 2) //aoev1_reserve_print at print-aoe.c:339
+0x000055555559b104 -- 0x55555559b104 edge_only_taken_to 0x55555559b126 -- 0.943840579710145 -- jmp 0x55555559b126 (path rank: 2) //aoev1_print at print-aoe.c:385 (discriminator 1)
+0x000055555558d019 -- r13 max_reg_val_less 0xff -- 0.9411231884057972 -- pop r13 (path rank: 0.5764144017243713) //etheraddr_string at addrtoname.c:535
+0x000055555558d017 -- r12 max_reg_val_less 0x16 -- 0.9411231884057972 -- pop r12 (path rank: 0.6430813388673939) //etheraddr_string at addrtoname.c:535
+0x000055555559b0f5 -- 0x55555559b0f5 has_edge_to 0x55555559b0f7 -- 0.9356884057971014 -- jz 0x55555559b10d (path rank: 0.06394874989531482) //aoev1_print at print-aoe.c:384
+0x000055555559b02e -- rax max_reg_val_greater_or_equal 0x3 -- 0.9320652173913044 -- movzx eax, byte ptr [rax] (path rank: 0.03295075834224751) //aoev1_print at print-aoe.c:373
+0x000055555559b044 -- rax max_reg_val_greater_or_equal 0x3 -- 0.9320652173913044 -- movzx eax, byte ptr [rbp-0x21] (path rank: 0.03832620331904699) //aoev1_print at print-aoe.c:375
+0x000055555559b048 -- rdx max_reg_val_greater_or_equal 0x3 -- 0.9320652173913044 -- mov edx, eax (path rank: 0.043701648295846475) //aoev1_print at print-aoe.c:375
+0x000055555559b063 -- rdx max_reg_val_greater_or_equal 0x55555568e3a2 -- 0.9320652173913044 -- mov rdx, rax (path rank: 0.049077093272645964) //aoev1_print at print-aoe.c:375
+0x000055555559b031 -- memory_value max_reg_val_greater_or_equal 0x3 -- 0.9320652173913044 -- mov byte ptr [rbp-0x21], al (path rank: 1.8305581311176145) //aoev1_print at print-aoe.c:373
+0x000055555558c6e6 -- rax min_reg_val_less 0x1 -- 0.927536231884058 -- movzx eax, byte ptr [rax] (path rank: 0.6360323796433935) //lookup_emem at addrtoname.c:347
+0x000055555558c6e9 -- rax min_reg_val_less 0x1 -- 0.927536231884058 -- movzx eax, al (path rank: 0.6414078246201931) //lookup_emem at addrtoname.c:347
+0x000055555558c6ec -- max_zero_flag_set -- 0.927536231884058 -- shl eax, 0x8 (path rank: 0.6467832695969926) //lookup_emem at addrtoname.c:347
+0x000055555558c6ef -- rdx min_reg_val_less 0xff -- 0.927536231884058 -- mov edx, eax (path rank: 0.652158714573792) //lookup_emem at addrtoname.c:347
+0x000055555558cf3a -- rax max_reg_val_less 0xa -- 0.9239130434782608 -- and eax, 0xf (path rank: 0.5276107349453973) //etheraddr_string at addrtoname.c:523
+0x000055555558cf3d -- rdx max_reg_val_less 0xa -- 0.9239130434782608 -- mov edx, eax (path rank: 0.5329861799221969) //etheraddr_string at addrtoname.c:523
+0x000055555558cf46 -- rdx max_reg_val_less 0xa -- 0.9239130434782608 -- movsxd rdx, edx (path rank: 0.5383616248989964) //etheraddr_string at addrtoname.c:523
+0x000055555558cf50 -- rdx max_reg_val_less 0x4d -- 0.9239130434782608 -- movzx edx, byte ptr [rdx+rcx*1] (path rank: 0.5437370698757958) //etheraddr_string at addrtoname.c:523
+0x000055555558cf54 -- memory_value max_reg_val_less 0x4d -- 0.9239130434782608 -- mov byte ptr [rax], dl (path rank: 0.5460644157152804) //etheraddr_string at addrtoname.c:523
+0x000055555558c6d4 -- rax min_reg_val_less 0x1 -- 0.9239130434782608 -- movzx eax, byte ptr [rax] (path rank: 0.6192425541006495) //lookup_emem at addrtoname.c:346
+0x000055555558c6d7 -- rax min_reg_val_less 0x1 -- 0.9239130434782608 -- movzx eax, al (path rank: 0.6246179990774489) //lookup_emem at addrtoname.c:346
+0x000055555558c6ae -- rax min_reg_val_less 0x5 -- 0.9157608695652174 -- movzx eax, byte ptr [rax] (path rank: 0.601183238879475) //lookup_emem at addrtoname.c:345
+0x000055555558c6b1 -- rax min_reg_val_less 0x5 -- 0.9157608695652174 -- movzx eax, al (path rank: 0.6065586838562745) //lookup_emem at addrtoname.c:345
+0x000055555558ce90 -- rax min_reg_val_less 0x5 -- 0.9157608695652174 -- movzx eax, byte ptr [rax] (path rank: 0.6428418585999714) //etheraddr_string at addrtoname.c:517
+0x000055555558ce93 -- rax min_reg_val_less 0x5 -- 0.9157608695652174 -- movzx eax, al (path rank: 0.6482173035767708) //etheraddr_string at addrtoname.c:517
+0x000055555558ce96 -- rax min_reg_val_less 0x480 -- 0.9157608695652174 -- shl eax, 0x8 (path rank: 0.6535927485535703) //etheraddr_string at addrtoname.c:517
+0x000055555558cf8e -- rcx max_reg_val_greater_or_equal 0x555555866d80 -- 0.9121376811594204 -- mov rcx, rax (path rank: 0.7609722396281786) //etheraddr_string at addrtoname.c:527
+0x000055555558cdf0 -- r13 min_reg_val_less 0x5555557ba970 -- 0.911231884057971 -- mov r13, rax (path rank: 1.2449111559495507) //etheraddr_string at addrtoname.c:500
+0x000055555559b0ef -- 0x55555559b0ef has_edge_to 0x55555559b0f1 -- 0.9103260869565216 -- jz 0x55555559b116 (path rank: 0.04667165425139591) //aoev1_print at print-aoe.c:383
+0x000055555559b0f1 -- max_interrupt_flag_set -- 0.9103260869565216 -- cmp byte ptr [rbp-0x21], 0x2 (path rank: 0.05204709922819539) //aoev1_print at print-aoe.c:384
+0x000055555558c7e8 -- rbx min_reg_val_less 0x55555563a7bb -- 0.9094202898550724 -- pop rbx (path rank: 0.5740305070005245) //lookup_emem at addrtoname.c:365
+0x000055555558d016 -- rbx min_reg_val_less 0x5555556fc813 -- 0.9094202898550724 -- pop rbx (path rank: 0.6377058938905944) //etheraddr_string at addrtoname.c:535
+0x0000555555651999 -- rax max_reg_val_greater_or_equal 0x555555866e00 -- 0.9057971014492754 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.5946381834726304) //tok2strbuf at util-print.c:495
+0x00005555556519a5 -- rdi max_reg_val_greater_or_equal 0x555555866e00 -- 0.9057971014492754 -- mov rdi, rax (path rank: 0.5998648310033353) //tok2strbuf at util-print.c:495
+0x00005555556519b2 -- rax max_reg_val_greater_or_equal 0x555555866e00 -- 0.9057971014492754 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.60509147853404) //tok2strbuf at util-print.c:496
+0x000055555558c707 -- rax max_reg_val_greater_or_equal 0x9fb1 -- 0.9039855072463768 -- xor eax, ebx (path rank: 0.8575524021677436) //lookup_emem at addrtoname.c:349
+0x000055555558c75e -- rax max_reg_val_less 0x55555586cd30 -- 0.9030797101449276 -- mov rax, qword ptr [rbp-0x28] (path rank: 0.8544046674860284) //lookup_emem at addrtoname.c:356
+0x000055555558cef7 -- memory_value min_reg_val_less 0x31 -- 0.9021739130434784 -- mov byte ptr [rax], dl (path rank: 0.5231344749682079) //etheraddr_string at addrtoname.c:519
+0x000055555558cedd -- max_zero_flag_set -- 0.9021739130434784 -- and eax, 0xf (path rank: 0.7357769010901075) //etheraddr_string at addrtoname.c:519
+0x000055555558cee0 -- rdx min_reg_val_less 0x1 -- 0.9021739130434784 -- mov edx, eax (path rank: 0.7409045693496077) //etheraddr_string at addrtoname.c:519
+0x000055555558cee9 -- rdx min_reg_val_less 0x1 -- 0.9021739130434784 -- movsxd rdx, edx (path rank: 0.7460322376091078) //etheraddr_string at addrtoname.c:519
+0x000055555558cef3 -- rdx min_reg_val_less 0x31 -- 0.9021739130434784 -- movzx edx, byte ptr [rdx+rcx*1] (path rank: 0.7511599058686078) //etheraddr_string at addrtoname.c:519
+0x000055555558cf0b -- rax min_reg_val_less 0x1 -- 0.901268115942029 -- movzx eax, byte ptr [r12] (path rank: 0.7127306754669102) //etheraddr_string at addrtoname.c:522
+0x000055555558cf34 -- rax min_reg_val_less 0x1 -- 0.901268115942029 -- movzx eax, byte ptr [rax] (path rank: 0.7201347824406426) //etheraddr_string at addrtoname.c:523
+0x000055555558cf37 -- rax min_reg_val_less 0x1 -- 0.901268115942029 -- movzx eax, al (path rank: 0.725510227417442) //etheraddr_string at addrtoname.c:523
