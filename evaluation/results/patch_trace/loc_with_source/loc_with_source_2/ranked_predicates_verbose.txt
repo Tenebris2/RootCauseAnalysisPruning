@@ -1,0 +1,13 @@
+0x0000555555564af8 -- max_sign_flag_set -- 0.988950276243094 -- jnz 0x555555564b5c (path rank: 0) //another_hunk at pch.c:1334
+0x0000555555564bd3 -- rsi min_reg_val_less 0x555555587361 -- 0.988950276243094 -- call 0x55555556c5b0 (path rank: 0.5808126185484676) //another_hunk at pch.c:1346 (discriminator 4)
+0x0000555555564bac -- 0x555555564bac edge_only_taken_to 0x555555564bae -- 0.988950276243094 -- jnle 0x555555564bb7 (path rank: 2) //another_hunk at pch.c:1346
+0x00005555555752ff -- rbx min_reg_val_greater_or_equal 0x7fffffffcccb -- 0.984963943669062 -- ret  (path rank: 2) //gl_linked_iterator at gl_anylinked_list2.h:933
+0x0000555555564b77 -- rsi min_reg_val_greater_or_equal 0x8 -- 0.978699706767012 -- call 0x55555556c472 (path rank: 0.3407207746830388) //another_hunk at pch.c:1346
+0x0000555555564b93 -- rsi min_reg_val_greater_or_equal 0x7 -- 0.9769912785209982 -- call 0x55555556c472 (path rank: 0.44818808026355195) //another_hunk at pch.c:1346
+0x0000555555564b64 -- max_interrupt_flag_set -- 0.9764218024389936 -- jnz 0x555555564bd8 (path rank: 0.1472995906958171) //another_hunk at pch.c:1345
+0x000055555556c5af -- 0x55555556c5af has_edge_to 0x555555564bac -- 0.9764218024389936 -- ret  (path rank: 2) //format_linenum at util.c:918
+0x0000555555564ae7 -- num_successors_equal 2 -- 0.9764218024389936 -- jz 0x555555564c48 (path rank: 2) //another_hunk at pch.c:1331
+0x000055555556c695 -- rsi min_reg_val_greater_or_equal 0x555555587354 -- 0.959337519978857 -- call 0x555555559f90 (path rank: 0.7281122092442848) //fatal at util.c:928
+0x0000555555569aad -- rbx max_reg_val_greater_or_equal 0x7fffffffcccb -- 0.9579091103588012 -- ret  (path rank: 2) //traverse_another_path at safe.c:549
+0x000055555556c6be -- rdx min_reg_val_greater_or_equal 0x5555555924a7 -- 0.9564901395688342 -- call 0x555555559e00 (path rank: 1.0032943995208146) //fatal at util.c:931
+0x000055555555d236 -- 0x55555555d236 edge_only_taken_to 0x55555555b79e -- 0.900426635119999 -- jnz 0x55555555b79e (path rank: 2) //main at patch.c:202 (discriminator 6)

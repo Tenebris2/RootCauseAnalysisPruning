@@ -59,9 +59,9 @@ def run(method: Method, with_source: bool, id: int):
             res_path = LOC_PATH + f"loc_{id}"
     elif method == Method.BASIC_BLOCK:
         res_path = BASIC_BLOCK_PATH + f"basic_block_{id}"
-    os.makedirs(res_path, exist_ok=True)
+    os.makedirs(res_path, exist_ok=True) 
     trace(res_path, method=method, with_source=with_source, id=id)
-    root_cause_analysis(res_path)
+    root_cause_analysis(res_path) 
     
 def print_res(cmd):
     print(cmd.stdout, cmd.stderr)
@@ -82,13 +82,14 @@ def trace(res_path, method: Method, with_source: bool, id: int):
     print_res(get_addr_cmd_res)
 
     try:
-        shutil.copy(f"{TRACES_PATH}/stats.txt", res_path)
-        if method == Method.LOC and with_source == False:
+        shutil.copy(f"{TRACES_PATH}/stats.txt", res_path) 
+        if method == Method.LOC and with_source == False: 
             move_decompiling_results(id)
         elif method == Method.LOC and with_source == True:
             move_source_code_extraction_results(id)
-        shutil.copy(HIT_COUNT, res_path)
+        shutil.copy(f"{os.getcwd()}/{HIT_COUNT}", res_path)
         print(f"File moved from {TRACES_PATH} to {res_path}")
+        print(f"File {os.getcwd()}/{HIT_COUNT} move to {res_path}")
     except FileNotFoundError:
         print(f"Error: the file {TRACES_PATH} does not exist")
 
@@ -101,6 +102,10 @@ def clean_previous_run():
     print("Cleaned")
     rm_trace_ghidras = f"rm -rf {eval_dir}/*_trace_ghidra"
     subprocess.run(rm_trace_ghidras, shell=True)
+    try:
+        os.remove(f"{os.getcwd()}/{HIT_COUNT}")
+    except FileNotFoundError:
+        print("Hit count not found")
 def cleanup():
     rm_trace_binaries = f"rm {eval_dir}/*_trace"
     subprocess.run(rm_trace_binaries, shell=True)
@@ -115,7 +120,7 @@ def root_cause_analysis(res_path: str):
     print_res(result)
     predicate_rank, line_rank = extract_ranking(f"{eval_dir}/ranked_predicates_verbose.txt", target)
 
-    with open(f"{res_path}/rca_results.txt", "a") as file:
+    with open(f"{res_path}/rca_results.txt", "w") as file:
         file.write(result.stdout)
         file.write(result.stderr)
         file.write(f"Predicate Ranking: {predicate_rank}\n LOC Ranking: {line_rank}")
@@ -125,6 +130,7 @@ def root_cause_analysis(res_path: str):
         print("File ranked_predicates_verbose.txt could not be found")
 def set_method(method: Method, with_source: bool):
     setup_method_cmd = f"{method_dir}/setup_method.sh " + method.value
+    print(setup_method_cmd)
     if method == Method.AURORA or method == Method.BASIC_BLOCK:
         print(setup_method_cmd)
     elif method == Method.LOC:
@@ -164,4 +170,4 @@ for i in range(0, 5):
     run(Method.AURORA, False, i)
     run(Method.LOC, False, i)
     run(Method.LOC, True, i)
-    run(Method.BASIC_BLOCK, False, i)
+    run(Method.BASIC_BLOCK, False, 1)

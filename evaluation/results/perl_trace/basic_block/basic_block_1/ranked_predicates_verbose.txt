@@ -1,0 +1,637 @@
+0x000055555560c33a -- rdx min_reg_val_less 0x4f7b4 -- 0.9901960784313726 -- jnbe 0x55555560c328 (path rank: 1.9452011453987699) //match_uniprop at uni_keywords.h:7221 (discriminator 1)
+0x000055555560ddc7 -- rbp min_reg_val_less 0x2 -- 0.9886480908152736 -- jmp 0x55555560d08d (path rank: 1.9514302801709904) //Perl_parse_uniprop_string at regcomp.c:23690
+0x000055555560d0a6 -- rbp min_reg_val_less 0x2 -- 0.9886480908152736 -- jnz 0x55555560cd1f (path rank: 1.9516815847642028) //Perl_parse_uniprop_string at regcomp.c:24012
+0x000055555560c3b4 -- r14 max_reg_val_greater_or_equal 0x55555571cefb -- 0.9867905056759544 -- jz 0x55555560c3d0 (path rank: 1.9655899188074906) //match_uniprop at uni_keywords.h:7227
+0x00005555556253cb -- 0x5555556253cb edge_only_taken_to 0x555555625263 -- 0.9855521155830752 -- jnbe 0x55555562525c (path rank: 1.9424943480729542) //Perl_handle_user_defined_property at regcomp.c:22774
+0x000055555562541f -- rcx min_reg_val_greater_or_equal 0x7 -- 0.9855521155830752 -- jb 0x555555625440 (path rank: 1.9467793199532368) //Perl_handle_user_defined_property at regcomp.c:22930
+0x00005555556bc034 -- 0x5555556bc034 edge_only_taken_to 0x5555556bc04e -- 0.9852425180598556 -- jz 0x5555556bb904 (path rank: 1.939104502804009) //S_regmatch at regexec.c:9347
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bd87b -- 0x5555556bd87b edge_only_taken_to 0x5555556c0615 -- 0.9852425180598556 -- jz 0x5555556c0610 (path rank: 1.9401109164674568) //S_regmatch at regexec.c:8354
+ (inlined by) S_regtry at regexec.c:4029
+0x000055555562591d -- 0x55555562591d edge_only_taken_to 0x555555625932 -- 0.9852425180598556 -- jle 0x555555625dd0 (path rank: 1.9414735654547046) //Perl__get_regclass_nonbitmap_data at regcomp.c:19731
+0x00005555556252ad -- rdx min_reg_val_greater_or_equal 0x5b -- 0.9852425180598556 -- jz 0x555555625400 (path rank: 1.9431123636803935) //Perl_handle_user_defined_property at regcomp.c:22812
+0x00005555556b7cc9 -- r13 min_reg_val_greater_or_equal 0x5555558c5f48 -- 0.984313725490196 -- jbe 0x5555556b7e50 (path rank: 1.941097389117311) //S_reginclass at regexec.c:10117
+0x00005555556251bd -- rcx min_reg_val_less 0x1 -- 0.9836945304437564 -- jnz 0x555555625560 (path rank: 1.9420406669092876) //Perl_handle_user_defined_property at regcomp.c:22759
+0x0000555555625263 -- max_zero_flag_set -- 0.9836945304437564 -- jz 0x5555556253b0 (path rank: 1.9422675074911206) //Perl_handle_user_defined_property at regcomp.c:22782
+0x000055555562527c -- rdx min_reg_val_greater_or_equal 0x26 -- 0.9836945304437564 -- jnbe 0x55555562529d (path rank: 1.9427211886547875) //Perl_handle_user_defined_property at regcomp.c:22799
+0x0000555555625452 -- max_interrupt_flag_set -- 0.9836945304437564 -- jz 0x555555625430 (path rank: 1.94327965878519) //Perl_handle_user_defined_property at regcomp.c:22930 (discriminator 1)
+0x000055555560c94c -- rbx min_reg_val_less 0xff -- 0.9833849329205366 -- jmp 0x55555560c9a4 (path rank: 1.9029482113909282) //Perl_parse_uniprop_string at regcomp.c:23232
+0x000055555560d3a5 -- r9 min_reg_val_less 0xff -- 0.9833849329205366 -- jnbe 0x55555560cc64 (path rank: 1.9056872003924312) //Perl_parse_uniprop_string at regcomp.c:23561
+0x00005555556bd810 -- max_zero_flag_set -- 0.9833849329205366 -- jl 0x5555556c1e08 (path rank: 1.9397753364209285) //S_regmatch at regexec.c:8350
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556b7cd5 -- max_interrupt_flag_set -- 0.9833849329205366 -- jnz 0x5555556b7d50 (path rank: 1.9403393625455383) //S_reginclass at regexec.c:10127 (discriminator 1)
+0x00005555556b7cec -- rax min_reg_val_less 0xff -- 0.9833849329205366 -- jb 0x5555556b7d40 (path rank: 1.9404527828364548) //S_reginclass at regexec.c:10147
+0x00005555556b7cf2 -- max_interrupt_flag_set -- 0.9833849329205366 -- jnz 0x5555556b7cfd (path rank: 1.9405662031273714) //S_reginclass at regexec.c:10151
+0x00005555556b7d07 -- max_interrupt_flag_set -- 0.9833849329205366 -- jz 0x5555556b7e66 (path rank: 1.9406796234182877) //S_reginclass at regexec.c:10157
+0x00005555556b7e6a -- max_interrupt_flag_set -- 0.9833849329205366 -- jz 0x5555556b7f38 (path rank: 1.9407930437092047) //S_reginclass at regexec.c:10234
+0x00005555556b7e74 -- max_interrupt_flag_set -- 0.9833849329205366 -- jz 0x5555556b7f18 (path rank: 1.9409064640001212) //S_reginclass at regexec.c:10236
+0x00005555556b7e7e -- max_interrupt_flag_set -- 0.9833849329205366 -- jnz 0x5555556b7e93 (path rank: 1.9410198842910378) //S_reginclass at regexec.c:10237
+0x00005555556258ab -- max_interrupt_flag_set -- 0.9833849329205366 -- jz 0x5555556258b3 (path rank: 1.9411333045819548) //Perl__get_regclass_nonbitmap_data at regcomp.c:19721
+0x00005555556258b1 -- rcx min_reg_val_less 0xff -- 0.9833849329205366 -- jnz 0x5555556258f0 (path rank: 1.9412467248728713) //Perl__get_regclass_nonbitmap_data at regcomp.c:19721 (discriminator 1)
+0x00005555556258fb -- max_interrupt_flag_set -- 0.9833849329205366 -- jnz 0x5555556258b3 (path rank: 1.9413601451637879) //Perl__get_regclass_nonbitmap_data at regcomp.c:19724
+0x0000555555625932 -- is_visited -- 0.9833849329205366 -- jle 0x555555625dd0 (path rank: 1.9415869857456212) //Perl__get_regclass_nonbitmap_data at regcomp.c:19735
+0x000055555562593e -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9833849329205366 -- jnz 0x555555625a8a (path rank: 1.9417004060365377) //Perl__get_regclass_nonbitmap_data at regcomp.c:19739
+0x0000555555625a90 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9833849329205366 -- jz 0x555555625de8 (path rank: 1.9418138263274543) //Perl__get_regclass_nonbitmap_data at regcomp.c:19740 (discriminator 1)
+0x0000555555625a99 -- 0x555555625a99 edge_only_taken_to 0x5555556687c3 -- 0.9833849329205366 -- jz 0x555555625de8 (path rank: 1.941927246618371) //Perl__get_regclass_nonbitmap_data at regcomp.c:19740 (discriminator 1)
+0x000055555562522f -- max_interrupt_flag_set -- 0.9833849329205366 -- jnb 0x5555556257ff (path rank: 1.942154087200204) //Perl_handle_user_defined_property at regcomp.c:22774 (discriminator 4)
+0x00005555556253c0 -- max_interrupt_flag_set -- 0.9833849329205366 -- jz 0x5555556253d8 (path rank: 1.9423809277820374) //Perl_handle_user_defined_property at regcomp.c:22784
+0x00005555556bce82 -- max_interrupt_flag_set -- 0.9833849329205366 -- jnz 0x5555556bf2e0 (path rank: 1.9425755295684057) //S_regmatch at regexec.c:6844
+ (inlined by) S_regtry at regexec.c:4029
+0x000055555562526b -- max_interrupt_flag_set -- 0.9833849329205366 -- jz 0x555555625638 (path rank: 1.9426077683638707) //Perl_handle_user_defined_property at regcomp.c:22792
+0x000055555559f214 -- 0x55555559f214 edge_only_taken_to 0x55555562541f -- 0.9833849329205366 -- bnd jmp qword ptr [rip+0x2ec71d] (path rank: 1.9427798116325674) //?? ??:0
+0x000055555562528c -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9833849329205366 -- jnb 0x55555562529d (path rank: 1.942834608945704) //Perl_handle_user_defined_property at regcomp.c:22801
+0x0000555555687337 -- rbx max_reg_val_greater_or_equal 0x4002aaaaac66600 -- 0.9833849329205366 -- jl 0x555555687340 (path rank: 1.9433930790761067) //Perl_save_pushptr at scope.c:598
+0x000055555560ddbb -- is_visited -- 0.9833849329205366 -- jnz 0x55555560dfd0 (path rank: 1.9435064993670232) //Perl_parse_uniprop_string at regcomp.c:23688
+0x000055555559f844 -- 0x55555559f844 has_edge_to 0x5555556253c0 -- 0.9833849329205366 -- bnd jmp qword ptr [rip+0x2ec405] (path rank: 2) //?? ??:0
+0x000055555560ddb0 -- 0x55555560ddb0 has_edge_to 0x55555560ddbb -- 0.9833849329205366 -- jnz 0x55555560d10b (path rank: 2) //Perl_parse_uniprop_string at regcomp.c:23681
+0x0000555555668822 -- 0x555555668822 has_edge_to 0x5555556251bd -- 0.9833849329205366 -- jnl 0x555555668840 (path rank: 2) //Perl_newSVpvn_flags at sv.c:9344
+0x000055555560c376 -- rbx max_reg_val_less 0x77c -- 0.9821465428276572 -- jz 0x55555560c3b6 (path rank: 1.9554450643965622) //match_uniprop at uni_keywords.h:7224
+0x00005555556bce65 -- max_interrupt_flag_set -- 0.9818369453044375 -- jnz 0x5555556bc023 (path rank: 1.942359234267906) //S_regmatch at regexec.c:6841
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bce70 -- is_visited -- 0.9818369453044375 -- jz 0x5555556bce7c (path rank: 1.9424673819181562) //S_regmatch at regexec.c:6843
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bfb28 -- max_interrupt_flag_set -- 0.9818369453044375 -- jmp 0x5555556bce63 (path rank: 1.942953482122616) //S_regmatch at regexec.c:6785
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bb76e -- 0x5555556bb76e has_edge_to 0x5555556bfb28 -- 0.9818369453044375 -- jmp rax (path rank: 2) //S_regmatch at regexec.c:5895
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bc0a0 -- rbx min_reg_val_greater_or_equal 0x77 -- 0.9815273477812178 -- jnz 0x5555556bcf20 (path rank: 1.9394400828505372) //S_regmatch at regexec.c:9365
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bd822 -- rdx min_reg_val_less 0xff -- 0.9815273477812178 -- jbe 0x5555556bd847 (path rank: 1.939887196436438) //S_regmatch at regexec.c:8351
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bd85d -- max_interrupt_flag_set -- 0.9815273477812178 -- jz 0x5555556c2520 (path rank: 1.9399990564519474) //S_regmatch at regexec.c:8354
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556c0615 -- 0x5555556c0615 edge_only_taken_to 0x5555556bb8d1 -- 0.9815273477812178 -- jmp 0x5555556bb8cb (path rank: 1.9402227764829663) //S_regmatch at regexec.c:5890
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bc028 -- is_visited -- 0.980908152734778 -- jnz 0x5555556bb8fb (path rank: 1.9389926427884996) //S_regmatch at regexec.c:9340
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bc04e -- r15 min_reg_val_less 0xffffffffffffffff -- 0.980908152734778 -- jnb 0x5555556bc061 (path rank: 1.9392163628195183) //S_regmatch at regexec.c:9350
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bc089 -- rax min_reg_val_less 0xff -- 0.980908152734778 -- jz 0x5555556bcef0 (path rank: 1.939328222835028) //S_regmatch at regexec.c:9361
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bc0ae -- 0x5555556bc0ae edge_only_taken_to 0x5555556bb746 -- 0.980908152734778 -- jmp 0x5555556bb743 (path rank: 1.9395519428660468) //S_regmatch at regexec.c:9365
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bbb37 -- rbp min_reg_val_greater_or_equal 0x5555558c5f48 -- 0.9805985552115584 -- jnz 0x5555556bbd5f (path rank: 1.9393360394021715) //S_regmatch at regexec.c:8316
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556dbb47 -- rdx max_reg_val_less 0x5555558affb0 -- 0.9803921568627452 -- jz 0x5555556dbb30 (path rank: 0.888404308385585) //Perl_PerlIO_close at perlio.c:1388
+0x00005555556bb746 -- min_sign_flag_set -- 0.9790505675954592 -- jnb 0x5555556bb850 (path rank: 1.9383228363903762) //S_regmatch at regexec.c:5892
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bb50b -- rax max_reg_val_less 0x1 -- 0.9781217750257998 -- jz 0x5555556bb53b (path rank: 1.9379872563438478) //S_regtry at regexec.c:4018
+0x000055555560d0b9 -- 0x55555560d0b9 edge_only_taken_to 0x55555560c33a -- 0.9762641898864808 -- jnz 0x55555560d0ec (path rank: 1.9511250080997615) //Perl_parse_uniprop_string at regcomp.c:24018
+0x00005555556bb758 -- max_adjust_flag_set -- 0.9759545923632612 -- jnbe 0x5555556c26f5 (path rank: 1.9396615175485952) //S_regmatch at regexec.c:5895
+ (inlined by) S_regtry at regexec.c:4029
+0x0000555555601773 -- r15 min_reg_val_less 0x60 -- 0.9750257997936016 -- jz 0x5555556019e0 (path rank: 1.923519820521921) //S_get_ANYOF_cp_list_for_ssc at regcomp.c:1606
+0x0000555555601794 -- 0x555555601794 edge_only_taken_to 0x5555556648aa -- 0.9750257997936016 -- jnle 0x555555601a18 (path rank: 1.9236316805374305) //S_get_ANYOF_cp_list_for_ssc at regcomp.c:1612
+0x0000555555601a43 -- max_interrupt_flag_set -- 0.9750257997936016 -- jmp 0x5555556018a4 (path rank: 1.9244329045159427) //S_get_ANYOF_cp_list_for_ssc at regcomp.c:1617
+0x00005555556018b2 -- max_interrupt_flag_set -- 0.9750257997936016 -- jnz 0x555555601b67 (path rank: 1.924517114835531) //S_get_ANYOF_cp_list_for_ssc at regcomp.c:1721
+0x00005555555fb530 -- 0x5555555fb530 has_edge_to 0x555555601a43 -- 0.9750257997936016 -- jz 0x5555555fb5a8 (path rank: 2) //S__append_range_to_invlist at regcomp.c:9347
+0x000055555565aa92 -- 0x55555565aa92 has_edge_to 0x555555600530 -- 0.9750257997936016 -- jnl 0x55555565aae8 (path rank: 2) //Perl_sv_2mortal at sv.c:9370
+ (inlined by) Perl_sv_2mortal at sv.c:9363
+0x0000555555601cfd -- r12 max_reg_val_greater_or_equal 0x21 -- 0.9747162022703818 -- jnz 0x555555601d0a (path rank: 1.9232095949485837) //S_ssc_and at regcomp.c:1752 (discriminator 4)
+0x0000555555601d3e -- rcx min_reg_val_greater_or_equal 0x20 -- 0.9747162022703818 -- jz 0x555555601da0 (path rank: 1.9247641820292198) //S_ssc_and at regcomp.c:1825
+0x0000555555601de4 -- r12 min_reg_val_less 0xff -- 0.9747162022703818 -- jz 0x555555601d7b (path rank: 1.9257873273615804) //S_ssc_and at regcomp.c:1897
+0x00005555556cd520 -- 0x5555556cd520 edge_only_taken_to 0x5555556cd76c -- 0.9747162022703818 -- jz 0x5555556cd76a (path rank: 1.9368956382143365) //Perl_regexec_flags at regexec.c:3755
+0x00005555556cd76c -- rax min_reg_val_less 0xff -- 0.9747162022703818 -- jmp 0x5555556cd601 (path rank: 1.9375473035103603) //Perl_regexec_flags at regexec.c:3779
+0x00005555556cd621 -- 0x5555556cd621 edge_only_taken_to 0x5555556bb4c2 -- 0.9747162022703818 -- jz 0x5555556cd677 (path rank: 1.937763536312829) //Perl_regexec_flags at regexec.c:3881
+0x00005555556bbb70 -- min_parity_flag_set -- 0.9747162022703818 -- jnbe 0x5555556bcf10 (path rank: 1.9385448762503246) //S_regmatch at regexec.c:9243
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556cd604 -- num_successors_equal 1 -- 0.9747162022703818 -- jz 0x5555556cd60f (path rank: 2) //Perl_regexec_flags at regexec.c:3877
+0x00005555556cc20c -- rdx max_reg_val_less 0x360080 -- 0.9740970072239422 -- jz 0x5555556cc21c (path rank: 1.9344114341082035) //Perl_regexec_flags at regexec.c:3387
+0x00005555556bbb80 -- 0x5555556bbb80 edge_only_taken_to 0x5555556bb8d1 -- 0.9740970072239422 -- jmp 0x5555556bb8cb (path rank: 1.938656736265834) //S_regmatch at regexec.c:9251
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555555f8d50 -- rbp min_reg_val_less 0x2 -- 0.9737874097007224 -- jnz 0x5555555f8d5b (path rank: 1.9237620708990235) //S_initialize_invlist_guts at regcomp.c:9184
+0x00005555555fb4b5 -- rax min_reg_val_less 0x16 -- 0.9737874097007224 -- jnz 0x5555555fb550 (path rank: 1.923873930914533) //S_invlist_max at regcomp.c:9174
+ (inlined by) S__append_range_to_invlist at regcomp.c:9280
+0x00005555555fb558 -- rdi min_reg_val_less 0x2 -- 0.9737874097007224 -- jmp 0x5555555fb4c6 (path rank: 1.9239857909300424) //S_invlist_max at regcomp.c:9174
+ (inlined by) S__append_range_to_invlist at regcomp.c:9280
+0x00005555555fb5e6 -- rsi min_reg_val_less 0x20 -- 0.9737874097007224 -- jnz 0x5555555fb5f2 (path rank: 1.9240976509455519) //S_invlist_extend at invlist_inline.h:109
+ (inlined by) S__append_range_to_invlist at regcomp.c:9333
+0x00005555555fb625 -- r8 min_reg_val_less 0x18 -- 0.9737874097007224 -- jmp 0x5555555fb528 (path rank: 1.9243210445004333) //S__append_range_to_invlist at invlist_inline.h:92
+0x00005555555c00e4 -- r13 min_reg_val_less 0x5555558af710 -- 0.973065015479876 -- jz 0x5555555c0120 (path rank: 1.9059071599539361) //Perl_get_cvn_flags at perl.c:2900
+0x000055555565d6fd -- rax max_reg_val_less 0x80 -- 0.9724458204334364 -- jnb 0x555555660f03 (path rank: 0.12308078760240448) //Perl_sv_vcatpvfn_flags at sv.c:13371
+0x0000555555601d04 -- max_parity_flag_set -- 0.9719298245614034 -- jz 0x555555601ef0 (path rank: 1.9228578844299489) //S_ssc_and at regcomp.c:1752 (discriminator 1)
+0x000055555560176a -- rax min_reg_val_greater_or_equal 0x7ffffffe -- 0.9719298245614034 -- jbe 0x555555601770 (path rank: 1.9234079605064116) //S_get_ANYOF_cp_list_for_ssc at regcomp.c:1599
+0x0000555555601e45 -- max_parity_flag_set -- 0.9719298245614034 -- jnz 0x555555601db1 (path rank: 1.925154470494096) //S_ssc_and at regcomp.c:1885
+0x0000555555601d1f -- max_sign_flag_set -- 0.9719298245614034 -- jz 0x555555601d34 (path rank: 1.925725243893076) //S_ssc_and at regcomp.c:1777
+0x0000555555601f85 -- max_parity_flag_set -- 0.9719298245614034 -- jnz 0x555555601dd5 (path rank: 1.9258699702581183) //S_ssc_and at regcomp.c:1891 (discriminator 1)
+0x0000555555601dcf -- rax min_reg_val_less 0x14 -- 0.9719298245614034 -- jz 0x555555601f80 (path rank: 1.9266301835111175) //S_ssc_and at regcomp.c:1891
+0x0000555555608515 -- max_interrupt_flag_set -- 0.9716202270381836 -- jz 0x55555560b73b (path rank: 1.9230243808348035) //S_study_chunk at regcomp.c:5877
+0x00005555556083d3 -- rax min_reg_val_less 0x4 -- 0.9716202270381836 -- jnbe 0x555555609629 (path rank: 1.9240212115253972) //S_study_chunk at regcomp.c:5834
+0x00005555555fb5f0 -- max_parity_flag_set -- 0.9716202270381836 -- jbe 0x5555555fb610 (path rank: 1.924198737248528) //S_invlist_extend at invlist_inline.h:109
+ (inlined by) S__append_range_to_invlist at regcomp.c:9333
+0x00005555555fee84 -- r10 min_reg_val_less 0xff -- 0.9716202270381836 -- jnbe 0x5555555feeb0 (path rank: 1.9247919306952173) //S_invlist_iternext at invlist_inline.h:229
+ (inlined by) S_ssc_is_cp_posixl_init at regcomp.c:1562
+0x0000555555601dab -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9716202270381836 -- jz 0x555555601e40 (path rank: 1.9248273366390167) //S_ssc_and at regcomp.c:1885
+0x0000555555608522 -- r14 min_reg_val_less 0xff -- 0.9716202270381836 -- jnz 0x555555609650 (path rank: 1.9248739045270367) //S_study_chunk at regcomp.c:5999
+0x0000555555601dbe -- max_interrupt_flag_set -- 0.9716202270381836 -- jz 0x555555601e00 (path rank: 1.925434601217685) //S_ssc_and at regcomp.c:1890
+0x00005555556074fc -- max_adjust_flag_set -- 0.9716202270381836 -- jz 0x55555560856a (path rank: 1.9333402909656523) //S_study_chunk at regcomp.c:4902
+0x00005555555feea2 -- 0x5555555feea2 has_edge_to 0x555555601dbe -- 0.9716202270381836 -- jnz 0x5555555feec8 (path rank: 2) //S_ssc_is_cp_posixl_init at regcomp.c:1572
+ (inlined by) S_ssc_is_cp_posixl_init at regcomp.c:1547
+0x00005555556083ea -- 0x5555556083ea has_edge_to 0x555555608515 -- 0.9716202270381836 -- jmp rax (path rank: 2) //S_study_chunk at regcomp.c:5834
+0x00005555556cd609 -- max_interrupt_flag_set -- 0.9714138286893704 -- jnl 0x5555556cd60f (path rank: 1.9418605118953078) //Perl_regexec_flags at regexec.c:3877
+0x0000555555622a9a -- 0x555555622a9a edge_only_taken_to 0x555555600530 -- 0.971001031991744 -- jz 0x555555622f20 (path rank: 1.9100523902640552) //Perl_re_op_compile at regcomp.c:7937
+0x0000555555605fba -- 0x555555605fba edge_only_taken_to 0x555555605fd8 -- 0.971001031991744 -- jz 0x555555605fcf (path rank: 1.912513728916804) //S_study_chunk at regcomp.c:6442
+0x0000555555605972 -- min_zero_flag_set -- 0.971001031991744 -- jz 0x555555605989 (path rank: 1.9156996813082952) //S_study_chunk at regcomp.c:4480
+0x0000555555600015 -- rax min_reg_val_less 0xc -- 0.971001031991744 -- jz 0x55555560002b (path rank: 1.9256327672566216) //S__invlist_len at invlist_inline.h:59
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9496
+0x0000555555600025 -- rbx min_reg_val_less 0x2 -- 0.971001031991744 -- jnz 0x5555556000c0 (path rank: 1.9257462458222494) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9497
+0x000055555560038a -- rbx min_reg_val_less 0x2 -- 0.971001031991744 -- jnz 0x555555600498 (path rank: 1.9258627194590112) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9605
+0x0000555555600295 -- rbx min_reg_val_less 0x2 -- 0.971001031991744 -- jz 0x555555600450 (path rank: 1.9263249723801033) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9712
+0x00005555556002ae -- rbx min_reg_val_less 0x2 -- 0.971001031991744 -- jbe 0x555555600504 (path rank: 1.9264424443739103) //Perl_SvREFCNT_dec_NN at inline.h:238
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9722
+0x00005555556075a5 -- max_adjust_flag_set -- 0.971001031991744 -- jnz 0x5555556074d6 (path rank: 1.9319333046296614) //S_study_chunk at regcomp.c:4902
+0x00005555556074f2 -- rax min_reg_val_less 0x12 -- 0.971001031991744 -- jz 0x55555560856a (path rank: 1.9334407806898772) //S_study_chunk at regcomp.c:4902
+0x0000555555622cf8 -- min_parity_flag_set -- 0.9706914344685242 -- jz 0x555555622dfd (path rank: 1.9309937324373694) //Perl_re_op_compile at regcomp.c:8329
+0x000055555560751a -- max_parity_flag_set -- 0.9706914344685242 -- jz 0x555555608570 (path rank: 1.931147587314597) //S_study_chunk at regcomp.c:4902
+0x0000555555622ce6 -- rax max_reg_val_less 0x28 -- 0.9706914344685242 -- jnz 0x555555622cf1 (path rank: 1.9312533818942577) //Perl_re_op_compile at regcomp.c:8327
+0x000055555562dfc7 -- rbp min_reg_val_greater_or_equal 0x2aaaaac4a420 -- 0.9705882352941176 -- jz 0x55555562dfd0 (path rank: 0.000013668808688816658) //Perl_safesysfree at util.c:348
+0x000055555565ba7f -- rax min_reg_val_greater_or_equal 0x887 -- 0.9705882352941176 -- jnz 0x55555565bb18 (path rank: 0.011202831317998315) //Perl_sv_free2 at sv.c:7094
+0x000055555565b188 -- rax min_reg_val_greater_or_equal 0x887 -- 0.9705882352941176 -- jmp 0x55555565b1d1 (path rank: 0.022391993827307815) //Perl_sv_clear at sv.c:6831
+0x000055555565b1d7 -- r14 max_reg_val_less 0xe -- 0.9705882352941176 -- jnz 0x55555565b338 (path rank: 0.03358115633661731) //Perl_sv_clear at sv.c:6590
+0x000055555565b343 -- 0x55555565b343 edge_only_taken_to 0x55555565b34d -- 0.9705882352941176 -- jnz 0x55555565b530 (path rank: 0.044770318845926804) //Perl_sv_clear at sv.c:6606
+0x000055555565b380 -- rax max_reg_val_less 0xb -- 0.9705882352941176 -- jnbe 0x55555565b886 (path rank: 0.0559594813552363) //Perl_sv_clear at sv.c:6624
+0x000055555565b38d -- rax max_reg_val_less 0x55555565b6f8 -- 0.9705882352941176 -- jmp rax (path rank: 0.0671486438645458) //Perl_sv_clear at sv.c:6624
+0x0000555555648b6c -- min_sign_flag_set -- 0.9705882352941176 -- jz 0x555555648ba0 (path rank: 0.0783378063738553) //Perl_hv_undef_flags at hv.c:2052
+0x000055555565b217 -- rax max_reg_val_less 0x55555583b5ac -- 0.9705882352941176 -- jz 0x55555565b468 (path rank: 0.0895269688831648) //Perl_sv_clear at sv.c:6832
+0x000055555565b23c -- r9 max_reg_val_less 0xe -- 0.9705882352941176 -- jz 0x55555565b249 (path rank: 0.10071613139247429) //Perl_sv_clear at sv.c:6842
+0x000055555565aa6c -- rbp min_reg_val_greater_or_equal 0x5555558496cd -- 0.9705882352941176 -- jz 0x55555565aaab (path rank: 0.1899128096214825) //Perl_sv_2mortal at sv.c:9366
+0x00005555556dc16d -- 0x5555556dc16d edge_only_taken_to 0x5555556dc991 -- 0.9705882352941176 -- jle 0x5555556dc1cc (path rank: 0.20110197213079198) //PerlIOUnix_refcnt_inc at perlio.c:2316
+0x00005555556d9113 -- 0x5555556d9113 edge_only_taken_to 0x5555556ddfe2 -- 0.9705882352941176 -- jnz 0x5555556d9170 (path rank: 0.21229113464010152) //PerlIO_list_free at perlio.c:536
+0x00005555556dc15b -- min_adjust_flag_set -- 0.9705882352941176 -- jle 0x5555556dc180 (path rank: 0.223480297149411) //PerlIOUnix_refcnt_inc at perlio.c:2312
+0x000055555559f6c4 -- rdi min_reg_val_greater_or_equal 0x9 -- 0.9705882352941176 -- bnd jmp qword ptr [rip+0x2ec4c5] (path rank: 0.23466945965872046) //?? ??:0
+0x0000555555630728 -- 0x555555630728 edge_only_taken_to 0x5555555c6f97 -- 0.9705882352941176 -- jnz 0x555555630732 (path rank: 0.24585862216802998) //Perl_rsignal_state at util.c:2743
+0x00005555555c8f1a -- rsi min_reg_val_greater_or_equal 0x2aaaaac4bcec -- 0.9705882352941176 -- jz 0x5555555c8f58 (path rank: 0.26793399414987) //Perl_cvgv_set at gv.c:219
+0x00005555555c8f5f -- 0x5555555c8f5f edge_only_taken_to 0x5555555c8f64 -- 0.9705882352941176 -- jz 0x5555555c8fc8 (path rank: 0.2791231566591795) //Perl_cvgv_set at gv.c:223 (discriminator 1)
+0x000055555564667f -- r14 min_reg_val_greater_or_equal 0x2aaaaac5a044 -- 0.9705882352941176 -- jz 0x555555646a80 (path rank: 0.29031231916848904) //Perl_hv_common at hv.c:357
+0x00005555555ccf0a -- r15 max_reg_val_less 0x5555558a1094 -- 0.9705882352941176 -- jmp 0x5555555cc790 (path rank: 0.3015014816777985) //Perl_gv_stashsv at gv.c:1606
+0x00005555555cc7f5 -- r14 min_reg_val_greater_or_equal 0x2aaaaac5a044 -- 0.9705882352941176 -- jz 0x5555555cc830 (path rank: 0.312690644187108) //Perl_gv_stashsvpvn_cached at gv.c:1552
+0x00005555555cc83b -- 0x5555555cc83b edge_only_taken_to 0x5555555cc849 -- 0.9705882352941176 -- jz 0x5555555cc87b (path rank: 0.3238798066964175) //Perl_gv_stashsvpvn_cached at gv.c:1562
+ (inlined by) Perl_gv_stashsvpvn_cached at gv.c:1540
+0x00005555555cc849 -- rax max_reg_val_less 0x8204405 -- 0.9705882352941176 -- jz 0x5555555cc998 (path rank: 0.335068969205727) //Perl_gv_stashsvpvn_cached at gv.c:1563
+ (inlined by) Perl_gv_stashsvpvn_cached at gv.c:1540
+0x00005555555cc9ee -- r13 min_reg_val_greater_or_equal 0x5555557da7a1 -- 0.9705882352941176 -- jmp 0x5555555cc8d7 (path rank: 0.35744729422434607) //S_gv_stashpvn_internal at gv.c:1503
+ (inlined by) Perl_gv_stashsvpvn_cached at gv.c:1572
+ (inlined by) Perl_gv_stashsvpvn_cached at gv.c:1540
+0x00005555555cc813 -- 0x5555555cc813 edge_only_taken_to 0x55555563d017 -- 0.9705882352941176 -- jnz 0x5555555cca8b (path rank: 0.3686364567336554) //Perl_gv_stashsvpvn_cached at gv.c:1581
+0x000055555563cf10 -- rbx min_reg_val_greater_or_equal 0x1 -- 0.9705882352941176 -- jnz 0x55555563d21e (path rank: 0.379825619242965) //S_mro_get_linear_isa_dfs at mro_core.c:382
+0x000055555563cf31 -- r14 min_reg_val_greater_or_equal 0x5555558a5dfc -- 0.9705882352941176 -- jmp 0x55555563cb00 (path rank: 0.39101478175227444) //S_mro_get_linear_isa_dfs at mro_core.c:382
+0x000055555563e4f7 -- 0x55555563e4f7 edge_only_taken_to 0x55555563e9eb -- 0.9705882352941176 -- jz 0x55555563e545 (path rank: 0.40220394426158396) //Perl_mro_get_linear_isa at mro_core.c:440
+0x00005555555cc957 -- min_parity_flag_set -- 0.9705882352941176 -- jz 0x5555555cc802 (path rank: 0.41339310677089347) //Perl_gv_stashsvpvn_cached at gv.c:1574
+ (inlined by) Perl_gv_stashsvpvn_cached at gv.c:1540
+0x0000555555667c29 -- rdi min_reg_val_greater_or_equal 0x5555558a5dd8 -- 0.9705882352941176 -- jz 0x555555667c70 (path rank: 0.42458226928020304) //Perl_newSViv at sv.c:9650
+0x00005555555cc98f -- min_parity_flag_set -- 0.9705882352941176 -- jmp 0x5555555cc802 (path rank: 0.4358582212947746) //Perl_gv_stashsvpvn_cached at gv.c:1576
+ (inlined by) Perl_gv_stashsvpvn_cached at gv.c:1540
+0x0000555555646ca1 -- rax max_reg_val_less 0x55555588ddec -- 0.9705882352941176 -- jnz 0x555555647530 (path rank: 0.45814787007975616) //Perl_hv_common at hv.c:749
+0x000055555563cda6 -- 0x55555563cda6 edge_only_taken_to 0x55555563d040 -- 0.9705882352941176 -- jnz 0x55555563d21e (path rank: 0.4693370325890658) //S_mro_get_linear_isa_dfs at mro_core.c:384
+0x00005555556450a9 -- min_sign_flag_set -- 0.9705882352941176 -- jz 0x5555556450b1 (path rank: 0.4805261950983752) //Perl_hfree_next_entry at hv.c:1997
+0x0000555555643c17 -- 0x555555643c17 edge_only_taken_to 0x555555643cae -- 0.9705882352941176 -- jnz 0x555555643c98 (path rank: 0.49171535760768476) //S_unshare_hek_or_pvn at hv.c:2977
+0x000055555565b4a0 -- 0x55555565b4a0 edge_only_taken_to 0x55555565b26a -- 0.9705882352941176 -- jz 0x55555565b267 (path rank: 0.5029045201169942) //Perl_sv_clear at sv.c:6842
+0x00005555556de4d2 -- 0x5555556de4d2 edge_only_taken_to 0x5555555ca9c4 -- 0.9705882352941176 -- jz 0x5555556de4e0 (path rank: 0.5140936826263036) //Perl_PerlIO_stdin at perlio.c:4861
+0x00005555556de502 -- 0x5555556de502 edge_only_taken_to 0x55555569cc08 -- 0.9705882352941176 -- jz 0x5555556de510 (path rank: 0.5252828451356132) //Perl_PerlIO_stdout at perlio.c:4870
+0x00005555556de602 -- 0x5555556de602 edge_only_taken_to 0x5555555ca9c4 -- 0.9705882352941176 -- jz 0x5555556de610 (path rank: 0.5364720076449228) //Perl_PerlIO_stderr at perlio.c:4879
+0x00005555556da32f -- 0x5555556da32f edge_only_taken_to 0x5555556da337 -- 0.9705882352941176 -- jz 0x5555556da366 (path rank: 0.5588503326635417) //Perl_PerlIO_flush at perlio.c:1617
+0x00005555556ddac4 -- rax min_reg_val_greater_or_equal 0x420b00 -- 0.9705882352941176 -- jz 0x5555556ddb40 (path rank: 0.5700394951728512) //PerlIOBuf_flush at perlio.c:3958
+0x00005555556ddb45 -- 0x5555556ddb45 edge_only_taken_to 0x5555556daa4b -- 0.9705882352941176 -- jnz 0x5555556ddbd0 (path rank: 0.5812286576821607) //PerlIOBuf_flush at perlio.c:3978
+0x000055555565b33c -- min_sign_flag_set -- 0.9705882352941176 -- jbe 0x55555565b379 (path rank: 0.65113467450668) //Perl_sv_clear at sv.c:6605
+0x000055555565b3bb -- r8 min_reg_val_greater_or_equal 0x2aaaaac57418 -- 0.9705882352941176 -- jz 0x55555565b4f8 (path rank: 0.6623238370159895) //Perl_sv_clear at sv.c:6768
+0x000055555565b50e -- min_sign_flag_set -- 0.9705882352941176 -- jnz 0x55555565b3e9 (path rank: 0.6735129995252989) //Perl_sv_clear at sv.c:6786
+0x00005555556dc404 -- rbx min_reg_val_greater_or_equal 0x2 -- 0.9705882352941176 -- jz 0x5555556dc47a (path rank: 0.8212693333297282) //PerlIOUnix_close at perlio.c:2820
+0x00005555556dc38a -- rdi min_reg_val_greater_or_equal 0x2 -- 0.9705882352941176 -- js 0x5555556dc3ba (path rank: 0.8324584958390375) //PerlIOUnix_refcnt_dec at perlio.c:2335
+0x00005555556dc397 -- min_adjust_flag_set -- 0.9705882352941176 -- jle 0x5555556dc3dc (path rank: 0.8436476583483471) //PerlIOUnix_refcnt_dec at perlio.c:2342
+0x00005555556dc3ae -- 0x5555556dc3ae edge_only_taken_to 0x5555556dc412 -- 0.9705882352941176 -- jle 0x5555556dc3ca (path rank: 0.8548368208576567) //PerlIOUnix_refcnt_dec at perlio.c:2347
+0x00005555556dc412 -- 0x5555556dc412 edge_only_taken_to 0x55555559f0b4 -- 0.9705882352941176 -- jle 0x5555556dc437 (path rank: 0.8660259833669661) //PerlIOUnix_close at perlio.c:2821
+0x00005555556dbebd -- 0x5555556dbebd edge_only_taken_to 0x5555556dbec6 -- 0.9705882352941176 -- jz 0x5555556dbecd (path rank: 0.8772151458762755) //PerlIOBuf_close at perlio.c:4266
+0x000055555565b34d -- min_sign_flag_set -- 0.9705882352941176 -- jz 0x55555565b554 (path rank: 0.883659962595967) //Perl_sv_clear at sv.c:6612
+0x000055555565b5d4 -- min_sign_flag_set -- 0.9705882352941176 -- jz 0x55555565b64c (path rank: 0.9126594242800345) //Perl_sv_clear at sv.c:6665
+0x000055555565b199 -- rax min_reg_val_greater_or_equal 0x2a82 -- 0.9705882352941176 -- jz 0x55555565b1ce (path rank: 0.919432759987693) //Perl_sv_clear at sv.c:6910
+0x000055555565b677 -- r8 max_reg_val_less 0x5555558a0e24 -- 0.9705882352941176 -- jmp 0x55555565b249 (path rank: 0.923848586789344) //Perl_sv_clear at sv.c:6691
+0x000055555565b279 -- r14 max_reg_val_less 0xc -- 0.9705882352941176 -- jz 0x55555565b440 (path rank: 0.9305958119112117) //Perl_sv_clear at sv.c:6855
+0x000055555565b2e4 -- rax min_reg_val_greater_or_equal 0x2400800c -- 0.9705882352941176 -- jmp 0x55555565b205 (path rank: 0.9350377492986534) //Perl_sv_clear at sv.c:6888
+0x0000555555688b4a -- 0x555555688b4a edge_only_taken_to 0x555555688b50 -- 0.9705882352941176 -- jnle 0x555555688b50 (path rank: 0.9869755915082139) //Perl_pop_scope at scope.c:130
+0x00005555556dba47 -- r14 max_reg_val_less 0xff -- 0.9705882352941176 -- jz 0x5555556dba6e (path rank: 1.8389927617726156) //PerlIOBase_close at perlio.c:2143 (discriminator 1)
+0x00005555555c7f20 -- min_sign_flag_set -- 0.9705882352941176 -- jz 0x5555555c7ff0 (path rank: 1.9155905227189582) //perl_run at perl.c:2703
+0x000055555566e079 -- num_successors_equal 2 -- 0.9705882352941176 -- jnz 0x55555566e17d (path rank: 2) //Perl_newSVhek at sv.c:9491
+0x00005555555c9b97 -- num_successors_equal 2 -- 0.9705882352941176 -- jnz 0x5555555c9bd2 (path rank: 2) //Perl_gv_init_pvn at gv.c:445
+0x00005555556dbb34 -- num_successors_equal 2 -- 0.9705882352941176 -- jz 0x5555556dbb51 (path rank: 2) //Perl_PerlIO_close at perlio.c:1386 (discriminator 1)
+0x0000555555602b57 -- rbp max_reg_val_less 0x28 -- 0.9703818369453044 -- jz 0x555555602b88 (path rank: 1.9157366798866142) //Perl_regnext at regcomp.c:21722
+0x0000555555622d0c -- min_parity_flag_set -- 0.9703818369453044 -- jnz 0x555555622e06 (path rank: 1.9322163776323324) //Perl_re_op_compile at regcomp.c:8336
+0x00005555556059d5 -- min_parity_flag_set -- 0.9700722394220846 -- jnz 0x5555556076c9 (path rank: 1.9159266384395504) //S_study_chunk at regcomp.c:4496
+0x00005555555fb51a -- max_parity_flag_set -- 0.9697626418988649 -- jb 0x5555555fb5d8 (path rank: 1.910995360010454) //S__append_range_to_invlist at regcomp.c:9332
+0x00005555556074e4 -- max_interrupt_flag_set -- 0.9694530443756452 -- jz 0x555555608597 (path rank: 1.9301550674999748) //S_study_chunk at regcomp.c:4902
+0x0000555555601ce1 -- rbx min_reg_val_less 0x5555558cb826 -- 0.9694530443756452 -- jbe 0x555555601d90 (path rank: 1.9631424682954748) //S_ssc_and at regcomp.c:1741
+0x000055555560853b -- max_interrupt_flag_set -- 0.9691434468524251 -- jmp 0x555555605c8b (path rank: 1.9249857645425463) //S_study_chunk at regcomp.c:6001
+0x0000555555607523 -- num_successors_equal 1 -- 0.9691434468524251 -- jz 0x55555560756f (path rank: 2) //S_study_chunk at regcomp.c:4981
+0x0000555555608392 -- 0x555555608392 has_edge_to 0x5555556083d3 -- 0.9691434468524251 -- jz 0x555555606c0c (path rank: 2) //S_study_chunk at regcomp.c:5824
+0x000055555560043b -- max_parity_flag_set -- 0.9688338493292054 -- jz 0x5555556001e3 (path rank: 1.9251443342604728) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9662
+0x0000555555607506 -- is_visited -- 0.9688338493292054 -- jz 0x555555608570 (path rank: 1.9304225371759531) //S_study_chunk at regcomp.c:4902
+0x0000555555607510 -- is_visited -- 0.9688338493292054 -- jz 0x555555608570 (path rank: 1.9305343971914626) //S_study_chunk at regcomp.c:4902
+0x0000555555608b61 -- 0x555555608b61 edge_only_taken_to 0x555555605a4b -- 0.9688338493292054 -- jz 0x555555605a48 (path rank: 1.930616226445261) //S_study_chunk at regcomp.c:5028
+0x0000555555607574 -- 0x555555607574 edge_only_taken_to 0x555555602b57 -- 0.9688338493292054 -- jz 0x555555607580 (path rank: 1.9307819095860248) //S_study_chunk at regcomp.c:5008
+0x00005555556074da -- 0x5555556074da has_edge_to 0x5555556074e4 -- 0.9688338493292054 -- jz 0x555555608597 (path rank: 2) //S_study_chunk at regcomp.c:4902
+0x0000555555600530 -- r12 max_reg_val_greater_or_equal 0x3f -- 0.9685242518059856 -- jz 0x555555600740 (path rank: 1.9108516415423755) //Perl__add_range_to_invlist at regcomp.c:9991
+0x0000555555622f04 -- 0x555555622f04 edge_only_taken_to 0x55555562413a -- 0.9685242518059856 -- jz 0x555555624135 (path rank: 1.9308376901339181) //Perl_re_op_compile at regcomp.c:8234
+0x000055555562413a -- is_visited -- 0.9685242518059856 -- jmp 0x555555622b37 (path rank: 1.9313274755475869) //Perl_SvREFCNT_dec at inline.h:227
+ (inlined by) Perl_re_op_compile at regcomp.c:7756
+0x0000555555622ba2 -- max_interrupt_flag_set -- 0.9685242518059856 -- jz 0x555555623c47 (path rank: 1.9314393355630963) //Perl_re_op_compile at regcomp.c:8243
+0x000055555561da38 -- max_adjust_flag_set -- 0.9682146542827657 -- jz 0x55555561f4ab (path rank: 1.9170756868374657) //S_reg at regcomp.c:12190
+0x00005555556cc2ce -- rax min_reg_val_greater_or_equal 0x5555558bdf88 -- 0.967905056759546 -- jnz 0x5555556cc3f8 (path rank: 1.9358789650801058) //Perl_regexec_flags at regexec.c:3455
+0x000055555566c92f -- r12 min_reg_val_less 0x5555558c97e2 -- 0.9663570691434468 -- jz 0x55555566c9bc (path rank: 1.3941373094410803) //Perl_sv_catsv_flags at sv.c:5569
+0x0000555555601427 -- min_zero_flag_set -- 0.9663570691434468 -- jz 0x55555560164e (path rank: 1.910643323039382) //S_populate_ANYOF_from_invlist at regcomp.c:15138
+0x00005555556cc0e6 -- r9 min_reg_val_greater_or_equal 0x5555558bdf94 -- 0.9663570691434468 -- jnz 0x5555556cc0ec (path rank: 1.9341053181036616) //Perl_ReANY at inline.h:193
+ (inlined by) Perl_regexec_flags at regexec.c:3287
+0x00005555556cc0f5 -- rax min_reg_val_greater_or_equal 0x5555558bdf94 -- 0.9663570691434468 -- jz 0x5555556cc360 (path rank: 1.9342177090846486) //Perl_regexec_flags at regexec.c:3293
+0x000055555560d17c -- max_parity_flag_set -- 0.9663570691434468 -- jmp 0x55555560cdb5 (path rank: 1.9571803885616468) //Perl_parse_uniprop_string at regcomp.c:24357
+0x0000555555610e97 -- rbp min_reg_val_less 0xff -- 0.966047471620227 -- jnz 0x55555560fe6a (path rank: 1.9079638901809488) //S_regclass at regcomp.c:18689 (discriminator 1)
+0x0000555555610313 -- max_zero_flag_set -- 0.966047471620227 -- jz 0x55555560f926 (path rank: 1.9093473307222069) //S_regclass at regcomp.c:18632
+0x00005555556106e1 -- r14 max_reg_val_less 0x8 -- 0.966047471620227 -- jz 0x5555556106f5 (path rank: 1.9099333005993986) //Perl_SvREFCNT_dec at inline.h:222
+ (inlined by) S_regclass at regcomp.c:19602
+0x0000555555622a44 -- rdx min_reg_val_greater_or_equal 0xa3 -- 0.9657378740970072 -- jz 0x555555622a52 (path rank: 1.9162462418316726) //Perl_re_op_compile at regcomp.c:7928
+0x00005555556687c3 -- r14 max_reg_val_less 0x6 -- 0.9654282765737874 -- jz 0x555555668850 (path rank: 1.814651421744821) //Perl_newSVpvn_flags at sv.c:9330
+0x000055555560fe15 -- max_zero_flag_set -- 0.9654282765737874 -- jz 0x555555610e84 (path rank: 1.909711142124739) //S_regclass at regcomp.c:18669
+0x00005555555f9640 -- r8 min_reg_val_less 0xff -- 0.9654282765737874 -- jnz 0x5555555f96f0 (path rank: 1.911013365358625) //S_set_ANYOF_arg at regcomp.c:19645
+0x000055555560837b -- max_zero_flag_set -- 0.9654282765737874 -- jnz 0x5555556093e5 (path rank: 1.922440252673143) //S_study_chunk at regcomp.c:5819
+0x000055555560db48 -- r10 min_reg_val_greater_or_equal 0x4 -- 0.9651186790505676 -- jz 0x55555560ddab (path rank: 1.9061294788081558) //Perl_parse_uniprop_string at regcomp.c:23673
+0x00005555555f9470 -- r13 min_reg_val_greater_or_equal 0x7 -- 0.9651186790505676 -- jnz 0x5555555f9500 (path rank: 1.9062428990990725) //S_get_fq_name at regcomp.c:23081
+0x000055555560d137 -- r10 min_reg_val_greater_or_equal 0x4 -- 0.9651186790505676 -- jz 0x55555560dcf0 (path rank: 1.9065831599718226) //Perl_parse_uniprop_string at regcomp.c:24349
+0x0000555555617c6e -- r15 min_reg_val_greater_or_equal 0x5 -- 0.9651186790505676 -- jnz 0x555555616ef2 (path rank: 1.9480950130820178) //S_regatom at regcomp.c:13564
+0x000055555560d141 -- 0x55555560d141 edge_only_taken_to 0x55555566c6ec -- 0.9648090815273478 -- jle 0x55555560d151 (path rank: 1.9066965802627394) //Perl_parse_uniprop_string at regcomp.c:24349 (discriminator 1)
+0x000055555562ee57 -- 0x55555562ee57 has_edge_to 0x5555555fb625 -- 0.9638802889576884 -- jz 0x55555562ee9a (path rank: 2) //Perl_safesysrealloc at util.c:286
+0x000055555565f2a8 -- min_sign_flag_set -- 0.9635706914344684 -- jb 0x55555565d8d4 (path rank: 1.1781619185813579) //Perl_sv_vcatpvfn_flags at sv.c:12536
+0x000055555560d087 -- 0x55555560d087 edge_only_taken_to 0x5555555ca9c4 -- 0.9635706914344684 -- jnz 0x55555560db20 (path rank: 1.9057937396630196) //Perl_parse_uniprop_string at regcomp.c:23659
+0x0000555555613e30 -- min_sign_flag_set -- 0.9635706914344684 -- jz 0x555555613e86 (path rank: 1.9071979105815793) //S_is_invlist at invlist_inline.h:32
+ (inlined by) S_regclass at regcomp.c:17510
+0x00005555555f9703 -- 0x5555555f9703 edge_only_taken_to 0x5555555f971a -- 0.9635706914344684 -- jz 0x5555555f9717 (path rank: 1.9111267856495417) //S_set_ANYOF_arg at regcomp.c:19654
+0x00005555555f9674 -- 0x5555555f9674 edge_only_taken_to 0x55555564a4d3 -- 0.9635706914344684 -- jz 0x5555555f968c (path rank: 1.9113539462681406) //S_set_ANYOF_arg at regcomp.c:19663
+0x000055555564a681 -- rbx max_reg_val_greater_or_equal 0x7fffffffc848 -- 0.9635706914344684 -- jmp 0x55555564a531 (path rank: 1.9594076942294534) //Perl_av_store at av.c:347
+0x000055555566c7bb -- 0x55555566c7bb has_edge_to 0x55555566c92f -- 0.9635706914344684 -- jnz 0x55555566c8fd (path rank: 2) //Perl_sv_catpvn_flags at sv.c:5543
+0x00005555556648aa -- r13 min_reg_val_less 0xff -- 0.9632610939112488 -- jz 0x5555556648f8 (path rank: 0.11175493700620681) //Perl_newSV_type at sv.c:9724
+0x000055555564a4d3 -- rsi max_reg_val_greater_or_equal 0x1 -- 0.9632610939112488 -- jnz 0x55555564a6c0 (path rank: 0.16783743763964248) //Perl_av_store at av.c:320
+0x000055555560cdc6 -- max_interrupt_flag_set -- 0.9632610939112488 -- jnz 0x55555560e548 (path rank: 1.9067649603170391) //Perl_parse_uniprop_string at regcomp.c:24359
+0x0000555555613e3b -- max_interrupt_flag_set -- 0.9632610939112488 -- jz 0x555555613ecb (path rank: 1.907311330872496) //S_regclass at regcomp.c:17517
+0x0000555555613e81 -- max_interrupt_flag_set -- 0.9632610939112488 -- jmp 0x5555556103dc (path rank: 1.907510083721958) //S_regclass at regcomp.c:17575
+0x000055555560ff96 -- max_interrupt_flag_set -- 0.9632610939112488 -- jnz 0x5555556101e8 (path rank: 1.9077752101401273) //S_regclass at regcomp.c:18790
+0x00005555555f9bb3 -- rbx max_reg_val_less 0x1 -- 0.9632610939112488 -- jmp 0x55555559f050 (path rank: 1.9104164824575487) //memset at string_fortified.h:71 (discriminator 2)
+ (inlined by) S_change_engine_size at regcomp.c:20062 (discriminator 2)
+0x000055555565ab15 -- r14 min_reg_val_less 0xff -- 0.9632610939112488 -- jz 0x55555565ab58 (path rank: 1.911518603970253) //Perl_newRV_noinc at sv.c:9747
+0x00005555556bb4c2 -- max_interrupt_flag_set -- 0.9632610939112488 -- jnz 0x5555556bb4d0 (path rank: 1.9378753963283384) //Perl_ReANY at inline.h:193
+ (inlined by) S_regtry at regexec.c:3980
+0x00005555556bb583 -- max_interrupt_flag_set -- 0.9632610939112488 -- jnz 0x5555556bb593 (path rank: 1.9380991163593573) //Perl_ReANY at inline.h:193
+ (inlined by) S_regmatch at regexec.c:5767
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bb60b -- max_interrupt_flag_set -- 0.9632610939112488 -- jz 0x5555556c14c0 (path rank: 1.9382109763748667) //S_regmatch at regexec.c:5807
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bb8d1 -- max_interrupt_flag_set -- 0.9632610939112488 -- jz 0x5555556bd0fe (path rank: 1.9387685962813435) //S_regmatch at regexec.c:5866
+ (inlined by) S_regtry at regexec.c:4029
+0x00005555556bb8dc -- 0x5555556bb8dc edge_only_taken_to 0x5555556bb746 -- 0.9632610939112488 -- jmp 0x5555556bb718 (path rank: 1.938880456296853) //S_regmatch at regexec.c:5866
+ (inlined by) S_regtry at regexec.c:4029
+0x000055555564a591 -- 0x55555564a591 has_edge_to 0x55555565ab15 -- 0.9632610939112488 -- jz 0x55555564a611 (path rank: 2) //Perl_av_store at av.c:362
+0x00005555556614bf -- 0x5555556614bf has_edge_to 0x55555560d137 -- 0.9632610939112488 -- jnz 0x5555556614cc (path rank: 2) //Perl_sv_catpvf at sv.c:10939
+0x000055555566c9ca -- 0x55555566c9ca has_edge_to 0x555555613e81 -- 0.9632610939112488 -- jnz 0x55555566ca17 (path rank: 2) //Perl_sv_catsv_flags at sv.c:5579
+0x0000555555622c73 -- rdi min_reg_val_less 0x1 -- 0.9629514963880288 -- jns 0x555555622c81 (path rank: 1.9281718495128157) //Perl_re_op_compile at regcomp.c:8301
+0x000055555562ee7d -- r12 min_reg_val_less 0x5555558be240 -- 0.9626418988648092 -- jmp 0x55555562e880 (path rank: 1.9534091841041772) //Perl_safesysrealloc at util.c:230
+0x0000555555610610 -- rcx min_reg_val_greater_or_equal 0x20 -- 0.9623323013415892 -- jbe 0x55555561061f (path rank: 1.9105299027484657) //S_populate_ANYOF_from_invlist at regcomp.c:15133
+ (inlined by) S_regclass at regcomp.c:19570
+0x0000555555605afd -- rdx max_reg_val_greater_or_equal 0xffffffe9 -- 0.9623323013415892 -- jnbe 0x555555606c19 (path rank: 1.921557665547364) //S_study_chunk at regcomp.c:5213
+0x00005555555f8e25 -- r12 min_reg_val_less 0x5555558be240 -- 0.9623323013415892 -- jz 0x5555555f8eb0 (path rank: 1.9456312393370085) //S_add_data at regcomp.c:6478
+0x0000555555617c9a -- 0x555555617c9a has_edge_to 0x5555555f8c3b -- 0.9620227038183694 -- jnz 0x555555617570 (path rank: 2) //S_regatom at regcomp.c:13577
+0x00005555555fee2d -- rsi max_reg_val_greater_or_equal 0x7fffffffc5c8 -- 0.96109391124871 -- jnz 0x5555555fee50 (path rank: 1.9655122457297585) //S__invlist_len at invlist_inline.h:59
+ (inlined by) S_invlist_iternext at invlist_inline.h:215
+ (inlined by) S_ssc_is_cp_posixl_init at regcomp.c:1562
+0x00005555556ddb67 -- min_parity_flag_set -- 0.96078431372549 -- jz 0x5555556ddba0 (path rank: 0.6525177386883535) //PerlIOBuf_flush at perlio.c:4005
+0x00005555555a2ca6 -- rdx max_reg_val_less 0x194 -- 0.96078431372549 -- jz 0x5555555a2cc8 (path rank: 1.0093270511036614) //Perl_Slab_Free at op.c:472
+ (inlined by) Perl_Slab_Free at op.c:445
+0x000055555560cb7f -- min_parity_flag_set -- 0.9604747162022704 -- jmp 0x55555560c99f (path rank: 1.9055267069278465) //Perl_parse_uniprop_string at regcomp.c:23190 (discriminator 1)
+0x00005555556ccedc -- rbp min_reg_val_greater_or_equal 0x5555558c5f4a -- 0.9604747162022704 -- jmp 0x5555556cc2f6 (path rank: 1.9359128552667715) //Perl_regexec_flags at regexec.c:3484
+0x00005555556875bc -- rbp max_reg_val_greater_or_equal 0x5555558c5f4a -- 0.9604747162022704 -- jl 0x5555556875c0 (path rank: 1.9366495367756382) //Perl_save_destructor_x at scope.c:680
+0x0000555555613d5a -- 0x555555613d5a edge_only_taken_to 0x555555613e2a -- 0.9601651186790504 -- jz 0x555555613e27 (path rank: 1.9068783806079554) //S_regclass at regcomp.c:17497
+0x000055555560cb68 -- rbp min_reg_val_less 0x3 -- 0.9601651186790504 -- jmp 0x55555560c99f (path rank: 1.9133316979565897) //Perl_parse_uniprop_string at regcomp.c:23255
+0x000055555561021e -- rax min_reg_val_greater_or_equal 0x1 -- 0.9598555211558308 -- jmp 0x5555556105bd (path rank: 1.9102246343792586) //S_regclass at regcomp.c:19549 (discriminator 3)
+0x0000555555605af5 -- max_adjust_flag_set -- 0.9598555211558308 -- jbe 0x555555605b03 (path rank: 1.9226820431159568) //S_study_chunk at regcomp.c:5213
+0x00005555556cc315 -- r13 min_reg_val_less 0x2 -- 0.9598555211558308 -- jz 0x5555556cc34f (path rank: 1.9350829282846382) //Perl_regexec_flags at regexec.c:3491
+0x0000555555610d82 -- max_parity_flag_set -- 0.9595459236326108 -- jnle 0x555555610efc (path rank: 1.907062856690483) //S_regclass at regcomp.c:17773
+0x0000555555610f49 -- r13 min_reg_val_greater_or_equal 0x60 -- 0.9595459236326108 -- jmp 0x555555610967 (path rank: 1.908000783281614) //S_regclass at regcomp.c:17788
+0x0000555555613e2a -- max_interrupt_flag_set -- 0.959236326109391 -- jz 0x555555613e32 (path rank: 1.9069918008988722) //S_is_invlist at invlist_inline.h:32
+ (inlined by) S_regclass at regcomp.c:17510
+0x000055555560fdce -- rax min_reg_val_less 0xff -- 0.959236326109391 -- jz 0x55555560fddb (path rank: 1.9072438816964368) //S_regclass at regcomp.c:18653
+0x0000555555610d79 -- rdi max_reg_val_greater_or_equal 0x11 -- 0.959236326109391 -- jz 0x555555611154 (path rank: 1.9077076162122981) //S_regclass at regcomp.c:17707
+0x000055555560f8fc -- rdx max_reg_val_greater_or_equal 0x1 -- 0.959236326109391 -- jz 0x555555610290 (path rank: 1.9077374113529064) //S_regclass at regcomp.c:18592
+0x0000555555610eff -- min_zero_flag_set -- 0.959236326109391 -- jz 0x555555610f38 (path rank: 1.9079086267237975) //S_regclass at regcomp.c:17774
+0x00005555555f971a -- is_visited -- 0.959236326109391 -- jz 0x5555555f9671 (path rank: 1.9112405259772243) //S_set_ANYOF_arg at regcomp.c:19658
+0x00005555555f8e95 -- 0x5555555f8e95 has_edge_to 0x5555556106e1 -- 0.959236326109391 -- jb 0x5555555f8e84 (path rank: 2) //memcpy at string_fortified.h:34
+ (inlined by) S_add_data at regcomp.c:6490
+0x00005555556638ca -- 0x5555556638ca has_edge_to 0x5555555f9703 -- 0.959236326109391 -- jz 0x5555556638e6 (path rank: 2) //Perl_sv_upgrade at sv.c:1474
+0x000055555560f904 -- 0x55555560f904 has_edge_to 0x555555610313 -- 0.959236326109391 -- jnz 0x555555610308 (path rank: 2) //S_regclass at regcomp.c:18622
+0x000055555566c9b4 -- r13 max_reg_val_greater_or_equal 0x5555558b1cd0 -- 0.9589267285861712 -- jz 0x55555566c9bc (path rank: 1.566808750094238) //Perl_sv_catsv_flags at sv.c:5576 (discriminator 6)
+0x0000555555651b56 -- r12 min_reg_val_greater_or_equal 0x5555558c5f48 -- 0.9589267285861712 -- jnz 0x555555651b5c (path rank: 1.9338012612661475) //Perl_ReANY at inline.h:193
+ (inlined by) Perl_pp_match at pp_hot.c:3014
+0x00005555556cc143 -- rax min_reg_val_greater_or_equal 0x5555558c5f48 -- 0.9589267285861712 -- jz 0x5555556cc1d8 (path rank: 1.9342515171245966) //Perl_regexec_flags at regexec.c:3322 (discriminator 6)
+0x00005555556cc1e8 -- r14 min_reg_val_greater_or_equal 0x5555558c5f48 -- 0.9589267285861712 -- jb 0x5555556cc1a8 (path rank: 1.9345553586935988) //Perl_regexec_flags at regexec.c:3372
+0x00005555556cc23b -- rcx min_reg_val_less 0x3 -- 0.9589267285861712 -- jnle 0x5555556cc1a8 (path rank: 1.9375699805897428) //Perl_regexec_flags at regexec.c:3432
+0x0000555555610eea -- rax max_reg_val_greater_or_equal 0x6a -- 0.9586171310629514 -- jmp 0x55555560edb9 (path rank: 1.9084770960301602) //S_regclass at regcomp.c:17907
+0x00005555556cc2e6 -- rcx min_reg_val_less 0xff -- 0.9586171310629514 -- jz 0x5555556cce90 (path rank: 1.9348577678738759) //Perl_regexec_flags at regexec.c:3480 (discriminator 4)
+0x00005555556cc5f3 -- 0x5555556cc5f3 edge_only_taken_to 0x5555556cc612 -- 0.9586171310629514 -- jz 0x5555556cc608 (path rank: 1.9359882758870035) //Perl_regexec_flags at regexec.c:3519
+0x0000555555663ecd -- 0x555555663ecd has_edge_to 0x55555565aa6c -- 0.9586171310629514 -- jz 0x555555663e6f (path rank: 2) //Perl_sv_grow at sv.c:1600
+0x00005555556077b0 -- 0x5555556077b0 has_edge_to 0x55555560837b -- 0.9586171310629514 -- jnz 0x555555608370 (path rank: 2) //S_study_chunk at regcomp.c:5817
+0x000055555560f6f5 -- r8 max_reg_val_less 0xff -- 0.9583075335397316 -- jz 0x55555560fbe6 (path rank: 1.9067831268055788) //S_regclass at regcomp.c:18418
+0x00005555556cc253 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9583075335397316 -- jnz 0x5555556cd72a (path rank: 1.934632953430363) //Perl_regexec_flags at regexec.c:3439
+0x00005555556cc31a -- max_interrupt_flag_set -- 0.9583075335397316 -- jz 0x5555556cc528 (path rank: 1.9351963485755552) //Perl_regexec_flags at regexec.c:3493
+0x00005555556cc336 -- max_interrupt_flag_set -- 0.9583075335397316 -- jnbe 0x5555556cc690 (path rank: 1.9353097688664718) //Perl_regexec_flags at regexec.c:3498
+0x00005555556cc341 -- max_interrupt_flag_set -- 0.9583075335397316 -- jl 0x5555556cc55e (path rank: 1.935423189157388) //Perl_regexec_flags at regexec.c:3490 (discriminator 2)
+0x00005555556cc34d -- is_visited -- 0.9583075335397316 -- jnz 0x5555556cc317 (path rank: 1.9355366094483046) //Perl_regexec_flags at regexec.c:3491
+0x00005555556cc35b -- 0x5555556cc35b edge_only_taken_to 0x5555556cc336 -- 0.9583075335397316 -- jmp 0x5555556cc320 (path rank: 1.9356500297392216) //Perl_regexec_flags at regexec.c:3492
+0x00005555556cc5bb -- max_interrupt_flag_set -- 0.9583075335397316 -- jnz 0x5555556cc9c0 (path rank: 1.9358748555960867) //Perl_regexec_flags at regexec.c:3511
+0x00005555556cc612 -- rdi min_reg_val_less 0xff -- 0.9583075335397316 -- jz 0x5555556cc630 (path rank: 1.93610169617792) //Perl_regexec_flags at regexec.c:3540
+0x00005555556cc637 -- is_visited -- 0.9583075335397316 -- jnz 0x5555556cc8e8 (path rank: 1.9362151164688368) //Perl_regexec_flags at regexec.c:3552
+0x00005555556cc640 -- is_visited -- 0.9583075335397316 -- jz 0x5555556cc6b0 (path rank: 1.9363285367597534) //Perl_regexec_flags at regexec.c:3588
+0x00005555556cc6c3 -- rbx min_reg_val_less 0xff -- 0.9583075335397316 -- jz 0x5555556cd000 (path rank: 1.93644195705067) //Perl_regexec_flags at regexec.c:3602
+0x00005555556cd00c -- is_visited -- 0.9583075335397316 -- jz 0x5555556cd385 (path rank: 1.936555377341587) //Perl_regexec_flags at regexec.c:3602 (discriminator 2)
+0x00005555556cd391 -- is_visited -- 0.9583075335397316 -- jz 0x5555556cd509 (path rank: 1.9366687976325034) //Perl_regexec_flags at regexec.c:3649
+0x00005555556cd50e -- is_visited -- 0.9583075335397316 -- jnz 0x5555556cd397 (path rank: 1.93678221792342) //Perl_regexec_flags at regexec.c:3649 (discriminator 1)
+0x000055555562e8aa -- 0x55555562e8aa has_edge_to 0x5555556ccedc -- 0.9583075335397316 -- jz 0x55555562e8b5 (path rank: 2) //Perl_safesysmalloc at util.c:158
+0x0000555555610e1f -- max_adjust_flag_set -- 0.9579979360165118 -- jnz 0x555555610ed9 (path rank: 1.90607384574998) //S_regclass at regcomp.c:17907
+0x000055555559f834 -- rbp min_reg_val_less 0x5555556f8be6 -- 0.957688338493292 -- bnd jmp qword ptr [rip+0x2ec40d] (path rank: 0.5476611701542322) //?? ??:0
+0x0000555555610e01 -- 0x555555610e01 edge_only_taken_to 0x555555610ef7 -- 0.957688338493292 -- jnz 0x555555610eef (path rank: 1.905789132822802) //S_regclass at regcomp.c:17869
+0x000055555562ee34 -- rax min_reg_val_less 0x1 -- 0.957688338493292 -- jz 0x55555562ee88 (path rank: 1.911691860381577) //Perl_safesysrealloc at util.c:225
+0x0000555555651af9 -- 0x555555651af9 edge_only_taken_to 0x555555651b05 -- 0.9573787409700724 -- jb 0x555555651d10 (path rank: 1.9331938592337412) //Perl_pp_match at pp_hot.c:2968 (discriminator 1)
+0x0000555555610ef7 -- 0x555555610ef7 edge_only_taken_to 0x555555610e1f -- 0.9570691434468525 -- jmp 0x555555610e1c (path rank: 1.9059025531137186) //S_regclass at regcomp.c:17907
+0x000055555560ef7d -- max_interrupt_flag_set -- 0.9570691434468525 -- jnz 0x55555560f520 (path rank: 1.9062131819193797) //S_regclass at regcomp.c:18165
+0x000055555560ef8b -- 0x55555560ef8b edge_only_taken_to 0x55555560f6ab -- 0.9570691434468525 -- jz 0x55555560f6a0 (path rank: 1.9063266022102965) //S_regclass at regcomp.c:18263
+0x000055555561757c -- max_interrupt_flag_set -- 0.9570691434468525 -- jmp 0x555555616d18 (path rank: 1.9094943706257315) //S_regatom at regcomp.c:13318
+0x000055555560fa98 -- 0x55555560fa98 edge_only_taken_to 0x555555617c6e -- 0.9570691434468525 -- jnz 0x555555613b1a (path rank: 1.9095167749215896) //S_regclass at regcomp.c:19616
+0x0000555555617c77 -- max_interrupt_flag_set -- 0.9570691434468525 -- jz 0x55555561bbad (path rank: 1.9099928752816695) //S_regatom at regcomp.c:13567
+0x00005555555f8a43 -- 0x5555555f8a43 has_edge_to 0x55555561757c -- 0.9570691434468525 -- jz 0x5555555f8c10 (path rank: 2) //S_skip_to_be_ignored_text at regcomp.c:19986
+0x000055555565d72f -- rax max_reg_val_less 0xa2 -- 0.9568627450980391 -- jbe 0x555555660f03 (path rank: 0.13426995011171397) //Perl_sv_vcatpvfn_flags at sv.c:13378
+0x0000555555610653 -- r9 max_reg_val_less 0xff -- 0.9567595459236328 -- jz 0x55555561069c (path rank: 1.910980978383607) //S_regclass at regcomp.c:19584
+0x0000555555651b05 -- rbx min_reg_val_less 0xff -- 0.9564499484004128 -- jnz 0x555555652240 (path rank: 1.9333072795246578) //Perl_pp_match at pp_hot.c:2976
+0x00005555556cc1ee -- is_visited -- 0.9564499484004128 -- jb 0x5555556cc1a8 (path rank: 1.9342878897387097) //Perl_regexec_flags at regexec.c:3372
+0x000055555566141a -- rbp min_reg_val_greater_or_equal 0x5555558399e1 -- 0.9563467492260064 -- jz 0x555555661453 (path rank: 1.9063563193899895) //Perl_sv_catpvf at sv.c:10931
+0x000055555559f904 -- rdi min_reg_val_less 0x2 -- 0.956140350877193 -- bnd jmp qword ptr [rip+0x2ec3a5] (path rank: 1.9119268295477305) //?? ??:0
+0x00005555556cc36a -- rdx min_reg_val_less 0xff -- 0.956140350877193 -- jmp 0x5555556cc11b (path rank: 1.933758218725786) //Perl_regexec_flags at regexec.c:3293
+0x00005555556103e2 -- max_interrupt_flag_set -- 0.9552115583075336 -- jz 0x555555610d67 (path rank: 1.9050903071282421) //S_regclass at regcomp.c:17683
+0x0000555555606c52 -- rdi min_reg_val_less 0x3 -- 0.9552115583075336 -- jz 0x555555607798 (path rank: 1.9217509678928628) //S_study_chunk at regcomp.c:5318
+0x0000555555605d2f -- rdx min_reg_val_less 0x14 -- 0.9552115583075336 -- jz 0x555555605f50 (path rank: 1.922195807788219) //S_study_chunk at regcomp.c:4573
+0x0000555555605d47 -- rax min_reg_val_less 0x14 -- 0.9552115583075336 -- jnz 0x555555605e30 (path rank: 1.9223089928639614) //S_study_chunk at regcomp.c:4581
+0x000055555560cbec -- max_parity_flag_set -- 0.9549019607843136 -- jnz 0x55555560d398 (path rank: 1.912828654158742) //Perl_parse_uniprop_string at regcomp.c:23546 (discriminator 1)
+0x0000555555606c2a -- rdx min_reg_val_less 0x17 -- 0.9549019607843136 -- jz 0x555555607d6f (path rank: 1.9216360858123944) //S_study_chunk at regcomp.c:5266
+0x000055555568879e -- rax min_reg_val_greater_or_equal 0x5d -- 0.9547987616099072 -- jmp 0x555555687ab0 (path rank: 1.5678242050592275) //Perl_SvREFCNT_dec at inline.h:227
+ (inlined by) Perl_leave_scope at scope.c:1112
+0x0000555555651af2 -- rdx max_reg_val_less 0x2 -- 0.954592363261094 -- js 0x555555651aff (path rank: 1.9331878787578953) //Perl_pp_match at pp_hot.c:2968
+0x000055555560d07e -- max_zero_flag_set -- 0.954282765737874 -- jnz 0x55555560ccff (path rank: 1.905959956603211) //Perl_parse_uniprop_string at regcomp.c:23647
+0x00005555556101f9 -- rcx min_reg_val_less 0xff -- 0.9539731682146544 -- jnz 0x555555610a8d (path rank: 1.9101112140883423) //S_regclass at regcomp.c:19549 (discriminator 1)
+0x00005555555c0126 -- 0x5555555c0126 edge_only_taken_to 0x55555560db48 -- 0.9534571723426212 -- jz 0x5555555c010b (path rank: 1.909787080134516) //Perl_get_cvn_flags at perl.c:2906
+0x00005555556101ed -- max_interrupt_flag_set -- 0.9533539731682146 -- jnz 0x5555556105ad (path rank: 1.909997793797426) //S_regclass at regcomp.c:19549
+0x000055555565dfb5 -- rdx max_reg_val_less 0x99 -- 0.9531475748194014 -- jnz 0x55555565dfd0 (path rank: 0.6551122939195292) //Perl_sv_vcatpvfn_flags at sv.c:12048
+0x000055555560d079 -- rcx min_reg_val_greater_or_equal 0x72 -- 0.9530443756449948 -- jz 0x55555560d084 (path rank: 1.9058468815434437) //Perl_parse_uniprop_string at regcomp.c:23647
+0x0000555555605e3d -- max_sign_flag_set -- 0.9530443756449948 -- jnz 0x555555605e9b (path rank: 1.9210345081263698) //S_study_chunk at regcomp.c:4610
+0x000055555560c9f8 -- num_successors_equal 2 -- 0.9530443756449948 -- jnbe 0x55555560c9a4 (path rank: 2) //Perl_parse_uniprop_string at regcomp.c:23179
+0x000055555560cb3f -- rdx min_reg_val_less 0x2 -- 0.952734778121775 -- jbe 0x55555560d453 (path rank: 1.9131283534513521) //Perl_parse_uniprop_string at regcomp.c:23221 (discriminator 1)
+0x0000555555610625 -- rdi min_reg_val_less 0xff -- 0.9524251805985552 -- jz 0x55555561062f (path rank: 1.9106744072501376) //S_regclass at regcomp.c:19572
+0x0000555555610634 -- is_visited -- 0.9524251805985552 -- jz 0x555555610640 (path rank: 1.9107878275410544) //S_regclass at regcomp.c:19576
+0x000055555559f054 -- 0x55555559f054 has_edge_to 0x555555610610 -- 0.9524251805985552 -- bnd jmp qword ptr [rip+0x2ec7fd] (path rank: 2) //?? ??:0
+0x00005555555f8c3b -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9521155830753354 -- jnb 0x5555555f8c98 (path rank: 1.8957512104554897) //S_nextchar at regcomp.c:20026
+0x000055555560c9ea -- rsi min_reg_val_greater_or_equal 0x4 -- 0.9521155830753354 -- jz 0x55555560cb90 (path rank: 1.9042349665244784) //Perl_parse_uniprop_string at regcomp.c:23201
+0x000055555560ccf2 -- rax min_reg_val_less 0x4 -- 0.9521155830753354 -- jbe 0x55555560ccff (path rank: 1.9199149114138134) //Perl_parse_uniprop_string at regcomp.c:23645
+0x00005555555c882e -- rax min_reg_val_greater_or_equal 0x62744de3 -- 0.9518059855521156 -- jmp 0x5555555c8747 (path rank: 0.30035847907216146) //stadtx_hash_with_state at stadtx_hash.h:226
+0x000055555560c97a -- 0x55555560c97a edge_only_taken_to 0x55555560cb3f -- 0.9518059855521156 -- jz 0x55555560cb30 (path rank: 1.9037030567583786) //Perl_parse_uniprop_string at regcomp.c:23221
+0x000055555560f87e -- rdi max_reg_val_less 0xff -- 0.9518059855521156 -- jz 0x55555560f8ee (path rank: 1.9068820163192006) //S_regclass at regcomp.c:18547
+0x0000555555600412 -- is_visited -- 0.9518059855521156 -- jnz 0x5555556003b2 (path rank: 1.9249334617782927) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9627
+0x0000555555600414 -- 0x555555600414 edge_only_taken_to 0x5555556003fd -- 0.9518059855521156 -- jmp 0x5555556003ee (path rank: 1.9250469403439205) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9627
+0x00005555556003b0 -- 0x5555556003b0 has_edge_to 0x555555600412 -- 0.9518059855521156 -- jz 0x555555600410 (path rank: 2) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9626
+0x0000555555602bf6 -- rax min_reg_val_less 0x14 -- 0.9514963880288958 -- jz 0x555555602c10 (path rank: 1.9159128769277873) //S_regtail at regcomp.c:20320
+0x000055555560ca1c -- rdx min_reg_val_greater_or_equal 0x12881 -- 0.9514963880288958 -- jz 0x55555560ca37 (path rank: 1.9227164682800508) //Perl_parse_uniprop_string at regcomp.c:23269
+0x000055555560ccf9 -- min_zero_flag_set -- 0.951186790505676 -- jz 0x55555560d070 (path rank: 1.9054541692525686) //Perl_parse_uniprop_string at regcomp.c:23646
+0x000055555565d2cd -- min_adjust_flag_set -- 0.9504643962848296 -- jb 0x55555565df96 (path rank: 0.6665489259961851) //Perl_sv_vcatpvfn_flags at sv.c:12047
+0x000055555565dfc4 -- rbx max_reg_val_less 0x28 -- 0.9504643962848296 -- jnz 0x55555565dcbd (path rank: 0.6770827151542884) //Perl_sv_vcatpvfn_flags at sv.c:12048
+0x000055555565d8ce -- 0x55555565d8ce edge_only_taken_to 0x55555565f2a8 -- 0.9504643962848296 -- jz 0x55555565f2a1 (path rank: 0.7467900368812467) //Perl_sv_vcatpvfn_flags at sv.c:12535
+0x000055555565e5ab -- rax max_reg_val_less 0xc -- 0.9504643962848296 -- jnbe 0x55555565f3c2 (path rank: 1.898278597617055) //Perl_sv_vcatpvfn_flags at sv.c:12659
+0x000055555565f1d7 -- min_zero_flag_set -- 0.9504643962848296 -- js 0x55555565f840 (path rank: 1.898392017907972) //Perl_sv_vcatpvfn_flags at sv.c:12698
+0x000055555565ec2b -- rdx max_reg_val_less 0x1 -- 0.9504643962848296 -- jnb 0x55555565ec10 (path rank: 1.8985054381988884) //Perl_sv_vcatpvfn_flags at sv.c:12822 (discriminator 1)
+0x000055555560cb4d -- 0x55555560cb4d edge_only_taken_to 0x55555560cb68 -- 0.9502579979360164 -- jnz 0x55555560d453 (path rank: 1.9039181493019137) //Perl_parse_uniprop_string at regcomp.c:23221 (discriminator 2)
+0x000055555565e014 -- rcx min_reg_val_greater_or_equal 0x2aaabaf84b3a -- 0.95015479876161 -- jmp 0x55555565d2d3 (path rank: 0.6952992960326798) //S_sv_catpvn_simple at sv.c:11042
+ (inlined by) Perl_sv_vcatpvfn_flags at sv.c:12067
+0x000055555565de00 -- min_adjust_flag_set -- 0.95015479876161 -- jnz 0x55555565ee04 (path rank: 0.7007010696715227) //Perl_sv_vcatpvfn_flags at sv.c:12210
+0x000055555565dda9 -- rax max_reg_val_less 0x4c -- 0.95015479876161 -- jnbe 0x55555565ddc0 (path rank: 0.7221523603235755) //Perl_sv_vcatpvfn_flags at sv.c:12104
+0x000055555565ddfb -- min_parity_flag_set -- 0.95015479876161 -- jz 0x55555565de3b (path rank: 0.7352204831810643) //Perl_sv_vcatpvfn_flags at sv.c:12151
+0x000055555565dfda -- r8 max_reg_val_less 0x10 -- 0.95015479876161 -- jnz 0x55555565dfe2 (path rank: 0.8012999784172594) //S_sv_catpvn_simple at sv.c:11037
+ (inlined by) Perl_sv_vcatpvfn_flags at sv.c:12067
+0x000055555565ee40 -- rax max_reg_val_less 0x3b -- 0.95015479876161 -- jbe 0x55555565fc64 (path rank: 1.0046904625380275) //Perl_sv_vcatpvfn_flags at sv.c:12226
+0x000055555565d2bf -- max_zero_flag_set -- 0.95015479876161 -- jz 0x55555565dc80 (path rank: 1.3469023134010663) //Perl_sv_vcatpvfn_flags at sv.c:12044 (discriminator 4)
+0x000055555565dfe0 -- min_sign_flag_set -- 0.94984520123839 -- jbe 0x55555565dff4 (path rank: 0.7061192511112993) //S_sv_catpvn_simple at sv.c:11037
+ (inlined by) Perl_sv_vcatpvfn_flags at sv.c:12067
+0x0000555555622bd8 -- rax max_reg_val_less 0x2 -- 0.9496388028895768 -- jle 0x555555622bde (path rank: 1.9273313352233903) //Perl_re_op_compile at regcomp.c:8280
+0x0000555555646c85 -- rsi min_reg_val_greater_or_equal 0x7ffffffc -- 0.9495356037151704 -- jbe 0x555555647d88 (path rank: 0.44695870757044676) //Perl_SvREFCNT_dec at inline.h:224
+ (inlined by) Perl_hv_common at hv.c:741
+0x000055555560cbe3 -- 0x55555560cbe3 edge_only_taken_to 0x55555560cbec -- 0.9493292053663572 -- jbe 0x55555560cc51 (path rank: 1.904838123253901) //Perl_parse_uniprop_string at regcomp.c:23546
+0x000055555560c9c3 -- rdx min_reg_val_less 0x2c992 -- 0.9493292053663572 -- jnz 0x55555560c950 (path rank: 1.9285963333501162) //Perl_parse_uniprop_string at regcomp.c:23184
+0x000055555560c9d2 -- rsi max_reg_val_greater_or_equal 0x80000014 -- 0.9493292053663572 -- jbe 0x55555560cb70 (path rank: 1.9286810514742563) //Perl_parse_uniprop_string at regcomp.c:23188
+0x000055555560c9da -- max_sign_flag_set -- 0.9493292053663572 -- jz 0x55555560cb88 (path rank: 1.9287657695983964) //Perl_parse_uniprop_string at regcomp.c:23193
+0x000055555560fbf1 -- 0x55555560fbf1 edge_only_taken_to 0x55555560f87e -- 0.9490196078431372 -- jz 0x55555560f873 (path rank: 1.906681543003241) //S_regclass at regcomp.c:18418 (discriminator 1)
+0x000055555560d3b3 -- 0x55555560d3b3 edge_only_taken_to 0x55555560ccf2 -- 0.9480908152734776 -- jmp 0x55555560cce8 (path rank: 1.9057999624332858) //Perl_parse_uniprop_string at regcomp.c:23561
+0x0000555555622d34 -- rsi min_reg_val_less 0xff -- 0.9480908152734776 -- jz 0x555555622d3d (path rank: 1.9269329819449528) //Perl_re_op_compile at regcomp.c:8351
+0x000055555560ef74 -- num_successors_equal 2 -- 0.9480908152734776 -- jb 0x55555560edf0 (path rank: 2) //S_regclass at regcomp.c:17235
+0x000055555560f6ab -- 0x55555560f6ab edge_only_taken_to 0x55555560f6f5 -- 0.947781217750258 -- jz 0x55555560f6ea (path rank: 1.9064400225012128) //S_regclass at regcomp.c:18408
+0x000055555560fde0 -- max_interrupt_flag_set -- 0.947471620227038 -- jz 0x5555556101e8 (path rank: 1.9073573019873535) //S_regclass at regcomp.c:18662
+0x000055555560fe70 -- max_interrupt_flag_set -- 0.947471620227038 -- jz 0x55555560ff90 (path rank: 1.907661789849211) //S_regclass at regcomp.c:18702
+0x0000555555622be7 -- rax min_reg_val_greater_or_equal 0x20 -- 0.947471620227038 -- jnz 0x555555623876 (path rank: 1.9316620681139587) //Perl_re_op_compile at regcomp.c:8283
+0x000055555560f92e -- is_visited -- 0.9471620227038184 -- jz 0x55555560fdbb (path rank: 1.90713046140552) //S_regclass at regcomp.c:18642
+0x0000555555610700 -- 0x555555610700 edge_only_taken_to 0x55555560fa98 -- 0.9471620227038184 -- jz 0x55555560fa87 (path rank: 1.9097399271506954) //Perl_SvREFCNT_dec at inline.h:222
+ (inlined by) S_regclass at regcomp.c:19603
+0x00005555556003ec -- r10 min_reg_val_less 0x1 -- 0.9471620227038184 -- jnb 0x5555556003b0 (path rank: 1.9247496026811683) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9625
+0x0000555555607596 -- max_parity_flag_set -- 0.9465428276573788 -- jz 0x555555608b40 (path rank: 1.9298612810429385) //S_study_chunk at regcomp.c:4899
+0x0000555555610969 -- is_visited -- 0.945923632610939 -- jz 0x5555556109af (path rank: 1.9055622922409687) //S_regclass at regcomp.c:17832
+0x00005555556109b5 -- is_visited -- 0.945923632610939 -- jz 0x555555610dfc (path rank: 1.9056757125318853) //S_regclass at regcomp.c:17843
+0x000055555560724e -- rbp min_reg_val_less 0x2 -- 0.945923632610939 -- jz 0x555555607612 (path rank: 1.9190592212058502) //S_study_chunk at regcomp.c:4676
+0x0000555555601c14 -- rbp min_reg_val_less 0x2 -- 0.945923632610939 -- jmp 0x5555555ffff0 (path rank: 1.9200188714805957) //S_ssc_union at regcomp.c:2009
+ (inlined by) S_ssc_or at regcomp.c:1996
+0x0000555555600307 -- rbp min_reg_val_less 0x2 -- 0.9453044375644994 -- jmp 0x55555565ba70 (path rank: 1.9175970046396005) //Perl_SvREFCNT_dec_NN at inline.h:241
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9722
+0x0000555555614a35 -- rbp max_reg_val_less 0xa -- 0.9453044375644994 -- jz 0x555555614a1a (path rank: 1.9180104795922424) //S_regclass at regcomp.c:17458
+0x000055555565dc9f -- rdx max_reg_val_less 0x3 -- 0.9449948400412796 -- jnz 0x55555565dfd0 (path rank: 1.8684051002624222) //Perl_sv_vcatpvfn_flags at sv.c:12048
+0x000055555560c970 -- min_carry_flag_set -- 0.94437564499484 -- jz 0x55555560cc20 (path rank: 1.9035896364674618) //Perl_parse_uniprop_string at regcomp.c:23220
+0x000055555560c966 -- rdx min_reg_val_greater_or_equal 0x2000 -- 0.942827657378741 -- jz 0x55555560cb20 (path rank: 1.903476216176545) //Perl_parse_uniprop_string at regcomp.c:23213 (discriminator 1)
+0x000055555560cb8b -- rcx max_reg_val_less 0x3 -- 0.9425180598555212 -- jmp 0x55555560c99f (path rank: 1.9034172555824567) //Perl_parse_uniprop_string at regcomp.c:23190 (discriminator 1)
+0x000055555560ca3d -- min_sign_flag_set -- 0.9403508771929824 -- jns 0x55555560ca5b (path rank: 1.9046112826720676) //Perl_parse_uniprop_string at regcomp.c:23279
+0x000055555560ca3f -- is_visited -- 0.9400412796697626 -- jmp 0x55555560cbe0 (path rank: 1.9047247029629844) //Perl_parse_uniprop_string at regcomp.c:23279
+0x0000555555622d02 -- max_interrupt_flag_set -- 0.937564499484004 -- jz 0x555555623e8d (path rank: 1.9296565240357324) //Perl_re_op_compile at regcomp.c:8329 (discriminator 2)
+0x000055555561e983 -- r8 min_reg_val_greater_or_equal 0x5 -- 0.9369453044375644 -- jz 0x55555561d951 (path rank: 1.950033093416713) //S_reg at regcomp.c:12149
+0x0000555555614a03 -- rcx min_reg_val_greater_or_equal 0x5f -- 0.9366357069143448 -- jz 0x5555556149e0 (path rank: 1.9025741596951986) //S_regclass at regcomp.c:17437
+0x000055555560c923 -- max_interrupt_flag_set -- 0.9366357069143448 -- jz 0x55555560cc37 (path rank: 1.9028347911000116) //Perl_parse_uniprop_string at regcomp.c:23179
+0x000055555561d9af -- rsi min_reg_val_greater_or_equal 0x3e -- 0.9366357069143448 -- jz 0x55555561f834 (path rank: 1.918917369280617) //S_reg at regcomp.c:12181
+0x000055555561d9cf -- r13 min_reg_val_greater_or_equal 0x10 -- 0.9366357069143448 -- jmp 0x55555561d9f4 (path rank: 1.9190230579842744) //S_reg at regcomp.c:12176
+0x000055555561da2c -- r13 min_reg_val_greater_or_equal 0x10 -- 0.9366357069143448 -- jz 0x55555561e6da (path rank: 1.9191457407272408) //S_reg at regcomp.c:12184
+0x000055555560c9a2 -- 0x55555560c9a2 edge_only_taken_to 0x55555560c9c3 -- 0.936016511867905 -- jbe 0x55555560ca00 (path rank: 1.90317273167771) //Perl_parse_uniprop_string at regcomp.c:23179 (discriminator 2)
+0x00005555555ca9c4 -- rdi max_reg_val_greater_or_equal 0x5555558c5fe2 -- 0.935500515995872 -- jnz 0x5555555cab00 (path rank: 0.3462581317150365) //Perl_gv_fetchpvn_flags at gv.c:2396
+0x000055555560c954 -- min_adjust_flag_set -- 0.9350877192982456 -- jz 0x55555560cb20 (path rank: 1.9033627958856287) //Perl_parse_uniprop_string at regcomp.c:23213
+0x000055555564bc39 -- rdx max_reg_val_less 0x5555558be394 -- 0.934468524251806 -- jnz 0x55555564bc30 (path rank: 1.6185609715632814) //Perl_runops_standard at run.c:41 (discriminator 1)
+0x00005555556071e0 -- max_interrupt_flag_set -- 0.9338493292053665 -- jnz 0x555555607636 (path rank: 1.9167254375546425) //S_study_chunk at regcomp.c:4660
+0x000055555566c965 -- rax min_reg_val_less 0xb -- 0.9319917440660476 -- jz 0x55555566c971 (path rank: 1.9174099169909093) //Perl_sv_catsv_flags at sv.c:5572 (discriminator 4)
+0x000055555561e7ab -- r8 min_reg_val_greater_or_equal 0x5 -- 0.9319917440660476 -- jnz 0x55555561e890 (path rank: 1.9499368976873745) //S_reg at regcomp.c:12105
+0x0000555555614a11 -- max_sign_flag_set -- 0.931062951496388 -- jz 0x555555614c7a (path rank: 1.9025124635904915) //S_regclass at regcomp.c:17454
+0x00005555556073f3 -- max_interrupt_flag_set -- 0.9307533539731684 -- jz 0x555555608215 (path rank: 1.9272603909142956) //S_study_chunk at regcomp.c:4724
+0x00005555556149d1 -- r11 min_reg_val_greater_or_equal 0x5555558aef8e -- 0.9298245614035088 -- jz 0x555555614b15 (path rank: 1.9020591283940753) //S_regclass at regcomp.c:17428
+0x0000555555614a08 -- 0x555555614a08 edge_only_taken_to 0x555555614a11 -- 0.9285861713106296 -- jz 0x555555614d4e (path rank: 1.902399043299575) //S_regclass at regcomp.c:17441
+0x0000555555614a37 -- 0x555555614a37 edge_only_taken_to 0x5555556687c3 -- 0.9285861713106296 -- jmp 0x555555613cd9 (path rank: 1.9027206293354375) //S_regclass at regcomp.c:17458
+0x0000555555651a2c -- r13 min_reg_val_greater_or_equal 0x5555558bdf94 -- 0.9285861713106296 -- jz 0x555555651d90 (path rank: 1.933327840378181) //Perl_pp_match at pp_hot.c:2928 (discriminator 3)
+0x00005555556149de -- 0x5555556149de edge_only_taken_to 0x555555614a03 -- 0.9282765737874096 -- jmp 0x5555556149e8 (path rank: 1.9021725486849919) //S_regclass at regcomp.c:17437
+0x0000555555606056 -- rax min_reg_val_less 0x2 -- 0.9282765737874096 -- jnz 0x555555606080 (path rank: 1.9150537987787846) //S_study_chunk at regcomp.c:6464
+0x0000555555605f6d -- rbx max_reg_val_greater_or_equal 0xd -- 0.9282765737874096 -- jmp 0x555555605ce5 (path rank: 1.9175613675404142) //S_study_chunk at regcomp.c:4562
+0x0000555555602b79 -- rax max_reg_val_greater_or_equal 0xd -- 0.9270381836945304 -- jz 0x555555602b88 (path rank: 1.9154062045158349) //Perl_regnext at regcomp.c:21731 (discriminator 2)
+0x0000555555602c1c -- rax max_reg_val_greater_or_equal 0xd -- 0.9267285861713106 -- jnle 0x555555602c40 (path rank: 1.9134551996791054) //S_regtail at regcomp.c:20325
+0x00005555556073dd -- rax min_reg_val_greater_or_equal 0x11 -- 0.9247678018575852 -- jnz 0x555555608090 (path rank: 1.9466504555128894) //S_study_chunk at regcomp.c:4716
+0x000055555561d966 -- rbx max_reg_val_greater_or_equal 0x10 -- 0.924251805985552 -- jz 0x55555561e6e0 (path rank: 1.918473567334534) //S_reg at regcomp.c:12171
+0x000055555561d7c1 -- rbx max_reg_val_greater_or_equal 0x5 -- 0.9239422084623324 -- jz 0x55555561e778 (path rank: 1.9482494623938027) //S_reg at regcomp.c:12094
+0x000055555561d7da -- rbx max_reg_val_greater_or_equal 0x5 -- 0.9239422084623324 -- jz 0x55555561e798 (path rank: 1.948335112444831) //S_reg at regcomp.c:12098
+0x000055555566af68 -- r15 max_reg_val_greater_or_equal 0x7fffffffc848 -- 0.9223942208462332 -- jnz 0x55555566b028 (path rank: 1.967435995028849) //Perl_sv_setiv at sv.c:1657
+0x0000555555613be6 -- 0x555555613be6 edge_only_taken_to 0x55555559f124 -- 0.9220846233230132 -- jz 0x5555556149ad (path rank: 1.901881025256434) //S_regclass at regcomp.c:17425
+0x0000555555600762 -- r14 max_reg_val_greater_or_equal 0x7fffffffc568 -- 0.9217750257997936 -- jmp 0x5555556005e0 (path rank: 1.9618627208092998) //Perl__add_range_to_invlist at regcomp.c:9994
+0x000055555559f124 -- 0x55555559f124 has_edge_to 0x5555556149d1 -- 0.9214654282765736 -- bnd jmp qword ptr [rip+0x2ec795] (path rank: 2) //?? ??:0
+0x000055555564442f -- rax min_reg_val_greater_or_equal 0x32 -- 0.9213622291021673 -- jmp 0x555555644317 (path rank: 0.22393799183308313) //stadtx_hash_with_state at stadtx_hash.h:238
+0x000055555560eed3 -- max_parity_flag_set -- 0.9205366357069142 -- jnbe 0x55555561191b (path rank: 1.92895288702477) //S_regclass at regcomp.c:17314
+0x00005555555bfa45 -- r12 min_reg_val_less 0x5555558cafdc -- 0.9196078431372549 -- jz 0x5555555bfa4e (path rank: 0.15664827513033297) //Perl_get_sv at perl.c:2813
+0x00005555556073be -- rsi min_reg_val_greater_or_equal 0x6 -- 0.9192982456140352 -- js 0x555555608123 (path rank: 1.9369471655150754) //S_study_chunk at regcomp.c:4712
+0x0000555555605e39 -- max_parity_flag_set -- 0.9189886480908152 -- jz 0x555555605e3f (path rank: 1.9174346174201642) //S_study_chunk at regcomp.c:4610
+0x0000555555651ac4 -- rdx min_reg_val_greater_or_equal 0x17 -- 0.9186790505675956 -- jnz 0x555555651aca (path rank: 1.9350126068106237) //Perl_ReANY at inline.h:193
+ (inlined by) Perl_pp_match at pp_hot.c:2952
+0x0000555555651ae5 -- rdx min_reg_val_greater_or_equal 0x13 -- 0.9186790505675956 -- jz 0x555555651ff0 (path rank: 1.9351227214829392) //Perl_pp_match at pp_hot.c:2952
+0x000055555560766a -- max_parity_flag_set -- 0.918059855521156 -- jmp 0x5555556071e6 (path rank: 1.961914278257261) //S_study_chunk at regcomp.c:4663
+0x0000555555605bc0 -- 0x555555605bc0 edge_only_taken_to 0x555555605c61 -- 0.9174406604747162 -- jz 0x555555605c56 (path rank: 1.915898388982315) //S_study_chunk at regcomp.c:5226
+0x0000555555600f48 -- rbx max_reg_val_less 0x7fffffffca00 -- 0.9171310629514964 -- jz 0x555555600f56 (path rank: 1.9127955916433954) //Perl__invlist_intersection_maybe_complement_2nd at regcomp.c:9775
+0x000055555561c196 -- max_parity_flag_set -- 0.9165118679050568 -- jmp 0x55555561c07d (path rank: 1.8990021923634608) //S_regbranch at regcomp.c:12373
+0x000055555565f2d9 -- rsi min_reg_val_greater_or_equal 0x5555557a2dea -- 0.9165118679050568 -- jnz 0x55555565d8d4 (path rank: 1.9064697396809058) //Perl_sv_vcatpvfn_flags at sv.c:12538
+0x000055555560728a -- max_interrupt_flag_set -- 0.9140350877192982 -- jz 0x5555556075d8 (path rank: 1.9179233675498668) //S_study_chunk at regcomp.c:4684
+0x00005555556003ab -- r9 min_reg_val_less 0xffffffffffffffff -- 0.9134158926728586 -- jmp 0x5555556003e1 (path rank: 1.9192245065600386) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9453
+0x00005555556003fd -- rdx min_reg_val_greater_or_equal 0x1 -- 0.9134158926728586 -- jnz 0x5555556003c6 (path rank: 1.9193966386828365) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9640
+0x0000555555601f35 -- rcx min_reg_val_less 0xff -- 0.9131062951496388 -- jbe 0x555555601fb8 (path rank: 1.9276407936019178) //S_invlist_iternext at invlist_inline.h:220
+ (inlined by) S_ssc_is_anything at regcomp.c:1495
+ (inlined by) S_ssc_and at regcomp.c:1771
+0x0000555555608fc1 -- min_zero_flag_set -- 0.9131062951496388 -- jnz 0x555555607448 (path rank: 1.928498375637978) //S_study_chunk at regcomp.c:4788
+0x0000555555622ae0 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x555555622eb0 (path rank: 1.9155862027426676) //Perl_re_op_compile at regcomp.c:8227
+0x0000555555605e6f -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x5555556070c0 (path rank: 1.9161580447265043) //S_study_chunk at regcomp.c:4621
+0x00005555556070d9 -- rax min_reg_val_less 0xff -- 0.912796697626419 -- jnz 0x5555556079f5 (path rank: 1.9162715232921317) //S_study_chunk at regcomp.c:4629
+0x00005555556070e4 -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x555555607a26 (path rank: 1.9163850018577595) //S_study_chunk at regcomp.c:4634
+0x0000555555607a59 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x5555556070ea (path rank: 1.9164984804233873) //S_study_chunk at regcomp.c:4637
+0x0000555555607176 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x55555560766f (path rank: 1.9166119589890147) //S_study_chunk at regcomp.c:4646
+0x00005555556075db -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x5555556072c1 (path rank: 1.9180368461154942) //S_study_chunk at regcomp.c:4691
+0x00005555556072c4 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x5555556072d0 (path rank: 1.918150324681122) //S_study_chunk at regcomp.c:4692
+0x00005555556072e3 -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x5555556075ed (path rank: 1.9182638032467496) //S_study_chunk at regcomp.c:4696
+0x0000555555601b8e -- max_interrupt_flag_set -- 0.912796697626419 -- jbe 0x555555601ca0 (path rank: 1.918377281812377) //S_ssc_or at regcomp.c:1927
+0x0000555555601bac -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x555555601bb9 (path rank: 1.9184907603780046) //S_ssc_or at regcomp.c:1937 (discriminator 4)
+0x0000555555601bb3 -- is_visited -- 0.912796697626419 -- jz 0x555555601cb0 (path rank: 1.9186042389436324) //S_ssc_or at regcomp.c:1937 (discriminator 1)
+0x0000555555601cb7 -- rax min_reg_val_less 0xff -- 0.912796697626419 -- jmp 0x555555601be7 (path rank: 1.91871771750926) //S_ssc_or at regcomp.c:1939
+0x0000555555601c34 -- is_visited -- 0.912796697626419 -- jz 0x555555601bf9 (path rank: 1.9188311960748874) //S_ssc_or at regcomp.c:1981
+0x00005555556000d2 -- r12 min_reg_val_less 0x10 -- 0.912796697626419 -- jnz 0x555555600160 (path rank: 1.9190406904333959) //S__invlist_len at invlist_inline.h:59
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9556
+0x000055555560016b -- r12 min_reg_val_less 0x2 -- 0.912796697626419 -- jz 0x5555556000d8 (path rank: 1.9191541689990232) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9556
+0x00005555556001e9 -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x555555600222 (path rank: 1.9196873204489413) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9688
+0x0000555555600444 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x5555556001e6 (path rank: 1.919726570983172) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9662 (discriminator 1)
+0x00005555555fa0a6 -- rbp min_reg_val_less 0xc -- 0.912796697626419 -- jz 0x5555555fa0b3 (path rank: 1.9202884608492412) //S__invlist_len at invlist_inline.h:59
+ (inlined by) S_invlist_replace_list_destroys_src at regcomp.c:9049
+0x0000555555667a70 -- rdx min_reg_val_less 0xc -- 0.912796697626419 -- jnz 0x555555667b88 (path rank: 1.9204019394148688) //Perl_sv_usepvn_flags at sv.c:5128
+0x0000555555667ab9 -- rax min_reg_val_less 0xd -- 0.912796697626419 -- jnz 0x555555667b30 (path rank: 1.9205154179804966) //Perl_sv_usepvn_flags at sv.c:5145
+0x00005555555fa116 -- rbp min_reg_val_less 0x2 -- 0.912796697626419 -- jz 0x5555555fa11f (path rank: 1.9206288965461242) //S_invlist_set_len at invlist_inline.h:122
+ (inlined by) S_invlist_replace_list_destroys_src at regcomp.c:9082
+0x000055555560760d -- max_interrupt_flag_set -- 0.912796697626419 -- jmp 0x5555556072e9 (path rank: 1.9209776502524207) //S_study_chunk at regcomp.c:4697
+0x00005555556072f5 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x55555560715e (path rank: 1.9210911288180479) //S_study_chunk at regcomp.c:4637
+0x00005555555fee63 -- rcx min_reg_val_less 0xff -- 0.912796697626419 -- jbe 0x5555555fee2f (path rank: 1.9246784521295897) //S_invlist_iternext at invlist_inline.h:220
+ (inlined by) S_ssc_is_cp_posixl_init at regcomp.c:1562
+0x00005555555fee89 -- is_visited -- 0.912796697626419 -- jnz 0x5555555fee37 (path rank: 1.9249060480743891) //S_ssc_is_cp_posixl_init at regcomp.c:1563
+0x000055555560733c -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x55555560776d (path rank: 1.9266276298832123) //S_study_chunk at regcomp.c:4699
+0x0000555555607349 -- is_visited -- 0.912796697626419 -- jz 0x55555560739c (path rank: 1.9267411084488402) //S_study_chunk at regcomp.c:4701
+0x00005555556073ae -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x5555556073d2 (path rank: 1.9268545870144678) //S_study_chunk at regcomp.c:4711
+0x00005555556073ee -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x555555607420 (path rank: 1.927146912348668) //S_study_chunk at regcomp.c:4723
+0x0000555555601efa -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x555555601d34 (path rank: 1.927375600845086) //S_ssc_is_anything at regcomp.c:1489
+ (inlined by) S_ssc_and at regcomp.c:1771
+0x0000555555601f19 -- rax min_reg_val_less 0xff -- 0.912796697626419 -- jz 0x555555601fb8 (path rank: 1.9275273150362902) //S__invlist_len at invlist_inline.h:59
+ (inlined by) S_invlist_iternext at invlist_inline.h:215
+ (inlined by) S_ssc_is_anything at regcomp.c:1495
+ (inlined by) S_ssc_and at regcomp.c:1771
+0x0000555555601f5a -- max_interrupt_flag_set -- 0.912796697626419 -- jnbe 0x555555602028 (path rank: 1.9277542721675451) //S_invlist_iternext at invlist_inline.h:229
+ (inlined by) S_ssc_is_anything at regcomp.c:1495
+ (inlined by) S_ssc_and at regcomp.c:1771
+0x0000555555601f63 -- is_visited -- 0.912796697626419 -- jnz 0x555555601fc0 (path rank: 1.9278677507331727) //S_ssc_is_anything at regcomp.c:1496
+ (inlined by) S_ssc_and at regcomp.c:1771
+0x0000555555601f7a -- max_interrupt_flag_set -- 0.912796697626419 -- jmp 0x555555601d34 (path rank: 1.9279812292988003) //S_ssc_and at regcomp.c:1772
+0x0000555555601d4b -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x555555601d58 (path rank: 1.928094707864428) //S_ssc_and at regcomp.c:1826
+0x0000555555601d52 -- 0x555555601d52 edge_only_taken_to 0x5555555fee2d -- 0.912796697626419 -- jz 0x555555601e50 (path rank: 1.9282081864300555) //S_ssc_and at regcomp.c:1826 (discriminator 1)
+0x000055555560742e -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x555555605a48 (path rank: 1.928271418506723) //S_study_chunk at regcomp.c:4739
+0x0000555555601e5d -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x555555601db1 (path rank: 1.928287958544324) //S_ssc_and at regcomp.c:1886
+0x000055555560743f -- 0x55555560743f edge_only_taken_to 0x55555559f4b4 -- 0.912796697626419 -- jz 0x555555608fa2 (path rank: 1.9283848970723505) //S_study_chunk at regcomp.c:4786
+0x0000555555608fdf -- 0x555555608fdf edge_only_taken_to 0x555555607452 -- 0.912796697626419 -- jmp 0x555555607445 (path rank: 1.9287746391472687) //S_study_chunk at regcomp.c:4789
+0x0000555555607452 -- rax min_reg_val_less 0xffff -- 0.912796697626419 -- jnz 0x5555556082ac (path rank: 1.9288881177128965) //S_study_chunk at regcomp.c:4791
+0x0000555555607478 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x555555605a48 (path rank: 1.9290015962785239) //S_study_chunk at regcomp.c:4791
+0x0000555555607482 -- max_interrupt_flag_set -- 0.912796697626419 -- jnz 0x55555560a449 (path rank: 1.9291150748441515) //S_study_chunk at regcomp.c:4807
+0x000055555560a451 -- rax min_reg_val_less 0xffffffffffffffff -- 0.912796697626419 -- jmp 0x5555556074a6 (path rank: 1.929228553409779) //S_study_chunk at regcomp.c:4807
+0x00005555556074a9 -- max_interrupt_flag_set -- 0.912796697626419 -- jz 0x55555560a456 (path rank: 1.9293420319754067) //S_study_chunk at regcomp.c:4899
+0x00005555556074d1 -- max_interrupt_flag_set -- 0.912796697626419 -- jmp 0x55555560759c (path rank: 1.9294555105410345) //S_study_chunk at regcomp.c:4796
+0x0000555555601bec -- 0x555555601bec has_edge_to 0x555555601c34 -- 0.912796697626419 -- jz 0x555555601c30 (path rank: 2) //S_ssc_or at regcomp.c:1976
+0x0000555555601e63 -- num_successors_greater 0 -- 0.912796697626419 -- jmp 0x555555601d7b (path rank: 2) //S_ssc_and at regcomp.c:1886
+0x0000555555600423 -- 0x555555600423 has_edge_to 0x55555560043b -- 0.912796697626419 -- jz 0x555555600438 (path rank: 2) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9661
+0x000055555565bae2 -- 0x55555565bae2 has_edge_to 0x55555560760d -- 0.912796697626419 -- jnz 0x55555565baf5 (path rank: 2) //Perl_sv_free2 at sv.c:7113
+0x00005555556003da -- 0x5555556003da has_edge_to 0x555555600423 -- 0.912796697626419 -- jnb 0x555555600420 (path rank: 2) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9610
+0x000055555566af86 -- 0x55555566af86 has_edge_to 0x555555608fdf -- 0.912796697626419 -- jnz 0x55555566b040 (path rank: 2) //Perl_sv_setiv at sv.c:1659 (discriminator 4)
+0x0000555555606091 -- 0x555555606091 has_edge_to 0x55555560724e -- 0.912796697626419 -- jnz 0x55555560b87b (path rank: 2) //S_study_chunk at regcomp.c:6473
+0x0000555555600183 -- r15 min_reg_val_less 0xffffffffffffffff -- 0.9121775025799792 -- jz 0x555555600370 (path rank: 1.9191100296373662) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9583
+0x000055555566af26 -- rsi max_reg_val_greater_or_equal 0x81f4 -- 0.9121775025799792 -- jnz 0x55555566b010 (path rank: 1.927961644861917) //Perl_sv_setiv at sv.c:1631
+0x0000555555602bb7 -- r12 max_reg_val_greater_or_equal 0x13 -- 0.9119711042311662 -- jmp 0x555555602bce (path rank: 1.9241950852888812) //S_regtail at regcomp.c:20292
+0x000055555561f0b6 -- r13 min_reg_val_less 0x6 -- 0.9118679050567596 -- jnl 0x55555561d6df (path rank: 1.9096514254298362) //S_reg at regcomp.c:12294
+0x000055555561d97c -- max_interrupt_flag_set -- 0.9118679050567596 -- jnz 0x55555561d985 (path rank: 1.9136654648596623) //S_reg at regcomp.c:12177
+0x000055555561da00 -- max_sign_flag_set -- 0.9118679050567596 -- jnz 0x55555561d9d8 (path rank: 1.91446494184739) //S_reg at regcomp.c:12183
+0x000055555561d9da -- max_parity_flag_set -- 0.9118679050567596 -- jz 0x55555561ee58 (path rank: 1.9145784204130176) //S_reg at regcomp.c:12194
+0x0000555555602b61 -- rsi min_reg_val_less 0x1 -- 0.9118679050567596 -- jnbe 0x555555602b8b (path rank: 1.9146918989786454) //Perl_regnext at regcomp.c:21725
+0x0000555555605996 -- max_parity_flag_set -- 0.9118679050567596 -- jnz 0x5555556059a0 (path rank: 1.915813159873923) //S_study_chunk at regcomp.c:4482
+0x0000555555616e68 -- 0x555555616e68 edge_only_taken_to 0x55555560ebf2 -- 0.9115583075335396 -- jmp rdx (path rank: 1.8964791637719924) //S_regatom at regcomp.c:13367
+0x000055555560022c -- rax min_reg_val_less 0xff -- 0.9115583075335396 -- jz 0x555555600239 (path rank: 1.9198007990145691) //S__invlist_len at invlist_inline.h:59
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9706
+0x00005555555e305e -- r12 max_reg_val_greater_or_equal 0x5555558c5c58 -- 0.9109391124871 -- jnz 0x5555555e4be5 (path rank: 1.9219346260808055) //S_scan_const at toke.c:4172
+0x000055555565bacd -- rbx max_reg_val_greater_or_equal 0x7fffffffcb78 -- 0.9106295149638804 -- jnz 0x55555565bb00 (path rank: 1.9637921110588956) //Perl_sv_free2 at sv.c:7112
+0x000055555561d7f2 -- max_sign_flag_set -- 0.9103199174406604 -- jnz 0x55555561e7a0 (path rank: 1.9132311476716028) //S_reg at regcomp.c:12074
+0x000055555561da41 -- max_interrupt_flag_set -- 0.9103199174406604 -- jmp 0x55555561d9e0 (path rank: 1.9141204997206054) //S_reg at regcomp.c:12203
+0x000055555561ec38 -- 0x55555561ec38 edge_only_taken_to 0x55555561ecb0 -- 0.9103199174406604 -- jz 0x55555561eca8 (path rank: 1.914805377544273) //S_reg at regcomp.c:12206
+0x000055555561d9ee -- 0x55555561d9ee has_edge_to 0x55555561ec38 -- 0.9103199174406604 -- jz 0x55555561ec30 (path rank: 2) //S_reg at regcomp.c:12181 (discriminator 2)
+0x000055555561d971 -- 0x55555561d971 has_edge_to 0x55555561d97c -- 0.9103199174406604 -- jz 0x55555561eca8 (path rank: 2) //S_reg at regcomp.c:12175
+0x0000555555612ce1 -- 0x555555612ce1 edge_only_taken_to 0x555555612cfc -- 0.9100103199174406 -- jz 0x555555612cf1 (path rank: 1.903007915407429) //S_regclass at regcomp.c:17421 (discriminator 1)
+0x0000555555612cc1 -- rax min_reg_val_less 0x1 -- 0.9093911248710008 -- jnz 0x555555612cf1 (path rank: 1.9031885204407581) //S_regclass at regcomp.c:17421
+0x00005555555f8e80 -- rsi min_reg_val_less 0x2 -- 0.9093911248710008 -- jz 0x5555555f8e97 (path rank: 1.9122040749013882) //memcpy at string_fortified.h:34
+ (inlined by) S_add_data at regcomp.c:6490
+0x000055555560ebf2 -- rcx min_reg_val_greater_or_equal 0x1 -- 0.9090815273477812 -- jz 0x55555560fab3 (path rank: 1.8966056050554962) //S_regclass at regcomp.c:17089
+0x000055555560ed51 -- 0x55555560ed51 edge_only_taken_to 0x55555560f47c -- 0.9090815273477812 -- jnz 0x55555560f478 (path rank: 1.8992351873282791) //S_regclass at regcomp.c:17213
+0x000055555560ee95 -- r13 min_reg_val_greater_or_equal 0x4e -- 0.9087719298245612 -- jz 0x555555610369 (path rank: 1.899802288782862) //S_regclass at regcomp.c:17265
+0x00005555556104bb -- 0x5555556104bb edge_only_taken_to 0x555555610925 -- 0.9087719298245612 -- jbe 0x555555610917 (path rank: 1.8999157090737786) //S_regclass at regcomp.c:17295
+0x0000555555612cfc -- max_interrupt_flag_set -- 0.9087719298245612 -- jb 0x555555613bde (path rank: 1.9017676049655172) //S_regclass at regcomp.c:17423
+0x000055555560f47c -- is_visited -- 0.9084623323013415 -- jbe 0x55555560ed57 (path rank: 1.8993486076191957) //S_regclass at regcomp.c:17213 (discriminator 1)
+0x000055555560f48e -- max_interrupt_flag_set -- 0.9084623323013415 -- jnz 0x55555560ed60 (path rank: 1.899462027910112) //S_regclass at regcomp.c:17218
+0x000055555560f954 -- min_carry_flag_set -- 0.9084623323013415 -- jnz 0x55555560ee4b (path rank: 1.8996888684919455) //S_regclass at regcomp.c:17241
+0x0000555555611972 -- 0x555555611972 has_edge_to 0x555555612cc1 -- 0.9084623323013415 -- jmp rax (path rank: 2) //S_regclass at regcomp.c:17337
+0x00005555556519c3 -- rax min_reg_val_greater_or_equal 0x34 -- 0.9081527347781218 -- jnz 0x5555556519f7 (path rank: 1.9325229340051004) //Perl_gimme_V at inline.h:2050
+ (inlined by) Perl_pp_match at pp_hot.c:2906
+0x0000555555651a06 -- 0x555555651a06 edge_only_taken_to 0x555555651a2c -- 0.9081527347781218 -- jz 0x555555651cb8 (path rank: 1.9326363542960172) //Perl_pp_match at pp_hot.c:2912
+0x000055555561194c -- r13 max_reg_val_greater_or_equal 0x6a -- 0.9075335397316822 -- jnz 0x5555556127a0 (path rank: 1.9012194120989274) //S_regclass at regcomp.c:17337
+0x000055555561195b -- rdx max_reg_val_greater_or_equal 0x6a -- 0.9075335397316822 -- jnbe 0x5555556136b6 (path rank: 1.9013328323898442) //S_regclass at regcomp.c:17337
+0x000055555560eec6 -- 0x55555560eec6 edge_only_taken_to 0x55555560eed3 -- 0.9072239422084624 -- jnz 0x555555610bbe (path rank: 1.900142549655612) //S_regclass at regcomp.c:17311
+0x0000555555668590 -- r14 min_reg_val_greater_or_equal 0x7fffffffc118 -- 0.9072239422084624 -- jmp 0x555555668507 (path rank: 1.9527178592138217) //Perl_sv_setpv_bufsize at sv.c:4927 (discriminator 2)
+0x000055555565e524 -- rsi min_reg_val_greater_or_equal 0x3a3a5f5b -- 0.9071207430340558 -- jmp 0x55555565d7f5 (path rank: 0.14545911262102346) //Perl_sv_vcatpvfn_flags at sv.c:13413
+0x00005555556617bb -- r15 min_reg_val_greater_or_equal 0x7fffffffc848 -- 0.9069143446852426 -- jnz 0x5555556617c5 (path rank: 1.953678176919393) //Perl_newSVpvf at sv.c:9601
+0x0000555555605a62 -- rax max_reg_val_less 0x49 -- 0.9062951496388028 -- jnz 0x555555605ab0 (path rank: 1.9109639107868264) //S_study_chunk at regcomp.c:4539
+0x000055555560707f -- 0x55555560707f edge_only_taken_to 0x555555605a4b -- 0.9062951496388028 -- jmp 0x5555556059f9 (path rank: 1.9169420310161926) //S_study_chunk at regcomp.c:4501
+0x00005555556003c9 -- max_interrupt_flag_set -- 0.9062951496388028 -- jnz 0x5555556003d3 (path rank: 1.9194593649606415) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9641
+0x000055555560023c -- max_interrupt_flag_set -- 0.9062951496388028 -- jz 0x55555560028e (path rank: 1.9199142775801967) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9706
+0x0000555555600245 -- 0x555555600245 edge_only_taken_to 0x55555562ee34 -- 0.9062951496388028 -- jz 0x55555560024e (path rank: 1.920027756145824) //S_invlist_set_len at invlist_inline.h:122
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9707
+0x0000555555600507 -- 0x555555600507 edge_only_taken_to 0x555555600307 -- 0.9062951496388028 -- jmp 0x5555556002f9 (path rank: 1.9205906443689382) //Perl_SvREFCNT_dec_NN at inline.h:241
+ (inlined by) Perl__invlist_union_maybe_complement_2nd at regcomp.c:9722
+0x00005555556000c6 -- 0x5555556000c6 has_edge_to 0x5555556000d2 -- 0.9062951496388028 -- jz 0x5555556000d8 (path rank: 2) //Perl__invlist_union_maybe_complement_2nd at regcomp.c:9556
+0x00005555556059cb -- 0x5555556059cb has_edge_to 0x55555560707f -- 0.9062951496388028 -- jnz 0x555555607077 (path rank: 2) //S_study_chunk at regcomp.c:4495
+0x0000555555622a02 -- 0x555555622a02 edge_only_taken_to 0x555555622a44 -- 0.9059855521155832 -- jnz 0x555555622e68 (path rank: 1.9097967041733221) //Perl_re_op_compile at regcomp.c:7906
+0x00005555556012a1 -- rbx max_reg_val_less 0x7fffffffca20 -- 0.9059855521155832 -- jmp 0x55555565ba70 (path rank: 1.9129161781875597) //Perl_SvREFCNT_dec_NN at inline.h:241
+ (inlined by) Perl__invlist_intersection_maybe_complement_2nd at regcomp.c:9960
+0x000055555560f2b2 -- max_interrupt_flag_set -- 0.9050567595459236 -- jnb 0x55555560ed4c (path rank: 1.8991217670373624) //S_regclass at regcomp.c:17192 (discriminator 2)
+0x000055555560f29e -- rax min_reg_val_less 0x30 -- 0.904437564499484 -- jnbe 0x55555560fae7 (path rank: 1.8990083467464456) //S_regclass at regcomp.c:17192 (discriminator 1)
+0x0000555555606776 -- rdx min_reg_val_less 0x1 -- 0.904437564499484 -- jz 0x555555606010 (path rank: 1.9126590076602892) //S_study_chunk at regcomp.c:6450
+0x000055555560edc4 -- r14 min_reg_val_less 0xff -- 0.9041279669762642 -- jz 0x55555560ef70 (path rank: 1.8995754482010287) //S_regclass at regcomp.c:17223
+0x0000555555611924 -- max_interrupt_flag_set -- 0.9041279669762642 -- jz 0x555555611933 (path rank: 1.9003182344866727) //S_regclass at regcomp.c:17318
+0x00005555555f8ee1 -- max_interrupt_flag_set -- 0.9038183694530444 -- jmp 0x5555555f8e64 (path rank: 1.9116835953101858) //S_add_data at regcomp.c:6488
+0x000055555560ec2e -- rax min_reg_val_less 0x5555558c9bd0 -- 0.9038183694530444 -- jz 0x55555560ec5c (path rank: 1.9425147291816909) //S_regclass at regcomp.c:17122 (discriminator 6)
+0x000055555560f20d -- rcx min_reg_val_greater_or_equal 0x4e -- 0.9035087719298244 -- jnz 0x55555560ed40 (path rank: 1.898894926455529) //S_regclass at regcomp.c:17183
+0x000055555562ee3c -- max_zero_flag_set -- 0.9031991744066048 -- jz 0x55555562ee70 (path rank: 1.9113966028220897) //Perl_safesysrealloc at util.c:229
+0x0000555555610925 -- 0x555555610925 edge_only_taken_to 0x5555556112cf -- 0.9025799793601652 -- jnb 0x5555556112c7 (path rank: 1.9000291293646951) //S_regclass at regcomp.c:17295 (discriminator 1)
+0x000055555565d3b6 -- 0x55555565d3b6 edge_only_taken_to 0x55555565d242 -- 0.9022703818369452 -- jnz 0x55555565d23b (path rank: 1.4248894899709768) //Perl_sv_vcatpvfn_flags at sv.c:11962 (discriminator 1)
+0x0000555555616e51 -- max_parity_flag_set -- 0.901031991744066 -- jnbe 0x555555616b08 (path rank: 1.8966550835604932) //S_regatom at regcomp.c:13367

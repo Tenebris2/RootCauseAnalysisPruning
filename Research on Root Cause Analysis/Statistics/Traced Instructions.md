@@ -160,3 +160,6 @@ CVE-2016-5636 - Python
 ![[Pasted image 20240910110924.png]]
 
 
+mruby type confusion -> 10 minutes -> < 2000
+rerun mruby aurora 2 
+rerun perl aurora 4

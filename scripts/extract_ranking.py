@@ -20,7 +20,7 @@ def extract_ranking(path, target):
         count = 0
         for line in data:
             count += 1
-            if line == target:
+            if line == target or line == "pch.c:1331":
                 break
             if '.c' in line or '.h' in line:
                 temporary_data.add(line)

@@ -1,0 +1,288 @@
+0x0000555555566eb6 -- rax min_reg_val_greater_or_equal 0xb -- 0.9921875 -- movzx eax, byte ptr [rax] (path rank: 0.13502576022806648) //obj_free at gc.c:684
+0x0000555555566eb9 -- rax min_reg_val_greater_or_equal 0xb -- 0.9921875 -- movzx eax, al (path rank: 0.15431515454636172) //obj_free at gc.c:684
+0x0000555555566ec5 -- rax min_reg_val_greater_or_equal 0xb -- 0.9921875 -- mov eax, eax (path rank: 0.17360454886465693) //obj_free at gc.c:684
+0x0000555555566ec7 -- rdx min_reg_val_greater_or_equal 0x2a -- 0.9921875 -- lea rdx, ptr [rax*4] (path rank: 0.19289394318295217) //obj_free at gc.c:684
+0x0000555555566ed6 -- rax min_reg_val_greater_or_equal 0xfffa00e4 -- 0.9921875 -- mov eax, dword ptr [rdx+rax*1] (path rank: 0.2121833375012474) //obj_free at gc.c:684
+0x0000555555566ee2 -- rax min_reg_val_greater_or_equal 0x555555566f3c -- 0.9921875 -- add rax, rdx (path rank: 0.23147273181954253) //obj_free at gc.c:684
+0x0000555555567140 -- rax min_reg_val_greater_or_equal 0x18d -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 0.2507621261378378) //obj_free at gc.c:770
+0x0000555555566f9b -- rax min_reg_val_greater_or_equal 0x8000000000000000 -- 0.9921875 -- mov rax, qword ptr [rax+0x28] (path rank: 0.270051520456133) //obj_free at gc.c:723
+0x0000555555566f9f -- min_sign_flag_set -- 0.9921875 -- test rax, rax (path rank: 0.2893409147744282) //obj_free at gc.c:723
+0x00005555555670ab -- rax min_reg_val_greater_or_equal 0x18e -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 0.30863030909272343) //obj_free at gc.c:751
+0x00005555555670d9 -- rdx min_reg_val_greater_or_equal 0x2aaaaab0f4f8 -- 0.9921875 -- mov rdx, qword ptr [rax+0x28] (path rank: 0.32791970341101856) //obj_free at gc.c:754
+0x00005555555670e1 -- rsi min_reg_val_greater_or_equal 0x2aaaaab0f4f8 -- 0.9921875 -- mov rsi, rdx (path rank: 0.34720909772931385) //obj_free at gc.c:754
+0x000055555555a86a -- rdx min_reg_val_greater_or_equal 0x2aaaaab0f778 -- 0.9921875 -- mov rdx, qword ptr [rax+0x40] (path rank: 0.36649849204760904) //mrb_irep_free at state.c:164
+0x000055555555a872 -- rsi min_reg_val_greater_or_equal 0x2aaaaab0f778 -- 0.9921875 -- mov rsi, rdx (path rank: 0.38578788636590433) //mrb_irep_free at state.c:164
+0x000055555556a3a1 -- memory_value min_reg_val_greater_or_equal 0x2aaaaab0f778 -- 0.9921875 -- mov qword ptr [rbp-0x20], rsi (path rank: 0.40507728068419957) //mrb_debug_info_free at debug.c:203
+0x000055555555ef17 -- rax min_reg_val_greater_or_equal 0x190 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 0.4243666750024948) //mrb_gc_free_str at string.c:235
+0x000055555555ef27 -- rax min_reg_val_greater_or_equal 0x190 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 0.44365606932078994) //mrb_gc_free_str at string.c:237
+0x000055555555ef50 -- rax min_reg_val_greater_or_equal 0x190 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 0.46294546363908506) //mrb_gc_free_str at string.c:239
+0x000055555555a790 -- rax max_reg_val_less 0x5 -- 0.9921875 -- mov rax, qword ptr [rax+0x50] (path rank: 0.4822348579573803) //mrb_irep_free at state.c:144 (discriminator 2)
+0x000055555555a72a -- rdx max_reg_val_less 0x4 -- 0.9921875 -- mov rdx, qword ptr [rbp-0x8] (path rank: 0.5015242522756757) //mrb_irep_free at state.c:145
+0x000055555555a72e -- min_zero_flag_set -- 0.9921875 -- shl rdx, 0x4 (path rank: 0.5208136465939708) //mrb_irep_free at state.c:145
+0x000055555555a735 -- rax min_reg_val_greater_or_equal 0xa -- 0.9921875 -- mov eax, dword ptr [rax+0x8] (path rank: 0.540103040912266) //mrb_irep_free at state.c:145
+0x000055555555a738 -- max_zero_flag_set -- 0.9921875 -- cmp eax, 0x10 (path rank: 0.5593924352305611) //mrb_irep_free at state.c:145
+0x000055555555a745 -- rdx max_reg_val_less 0x4 -- 0.9921875 -- mov rdx, qword ptr [rbp-0x8] (path rank: 0.5786818295488564) //mrb_irep_free at state.c:146
+0x000055555555a749 -- min_zero_flag_set -- 0.9921875 -- shl rdx, 0x4 (path rank: 0.5979712238671516) //mrb_irep_free at state.c:146
+0x000055555555a76a -- rdx max_reg_val_less 0x4 -- 0.9921875 -- mov rdx, qword ptr [rbp-0x8] (path rank: 0.6172606181854469) //mrb_irep_free at state.c:147
+0x000055555555a76e -- min_zero_flag_set -- 0.9921875 -- shl rdx, 0x4 (path rank: 0.636550012503742) //mrb_irep_free at state.c:147
+0x000055555555a787 -- memory_value max_reg_val_less 0x5 -- 0.9921875 -- add qword ptr [rbp-0x8], 0x1 (path rank: 0.6558394068220372) //mrb_irep_free at state.c:144 (discriminator 3)
+0x000055555556720e -- 0x55555556720e edge_only_taken_to 0x55555556788f -- 0.9921875 -- ret  (path rank: 1.1345810515827075) //obj_free at gc.c:794
+0x000055555555a73b -- 0x55555555a73b edge_only_taken_to 0x55555555a73d -- 0.9921875 -- jnz 0x55555555a787 (path rank: 1.1530084162992265) //mrb_irep_free at state.c:145
+0x0000555555566fa2 -- 0x555555566fa2 edge_only_taken_to 0x555555566fa8 -- 0.9921875 -- jns 0x5555555671fc (path rank: 1.1714357810157459) //obj_free at gc.c:723
+0x000055555556a3aa -- 0x55555556a3aa edge_only_taken_to 0x55555556a3b0 -- 0.9921875 -- jz 0x55555556a485 (path rank: 1.1898631457322648) //mrb_debug_info_free at debug.c:206
+0x000055555557b2ad -- memory_value min_reg_val_less 0x555500000011 -- 0.9921875 -- mov qword ptr [rbp-0x18], rdx (path rank: 1.715003942403389) //mrb_obj_new at class.c:1343
+0x000055555557b2d6 -- rdx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rdx, qword ptr [rbp-0x18] (path rank: 1.7158637474397342) //mrb_obj_new at class.c:1344
+0x00005555555989bd -- 0x5555555989bd has_edge_to 0x555555562c52 -- 0.9921875 -- call r8 (path rank: 1.717583357512424) //mrb_funcall_with_block at vm.c:407
+0x0000555555578163 -- 0x555555578163 has_edge_to 0x55555557837c -- 0.9921875 -- jmp rax (path rank: 1.718443162548769) //mrb_get_args at class.c:517
+0x000055555556b205 -- 0x55555556b205 has_edge_to 0x555555577d3e -- 0.9921875 -- ret  (path rank: 1.7313348002673343) //mrb_check_convert_type at object.c:355 (discriminator 1)
+0x0000555555579bc0 -- 0x555555579bc0 has_edge_to 0x555555562ca1 -- 0.9921875 -- ret  (path rank: 1.7321946053036792) //mrb_get_args at class.c:833
+0x000055555555f876 -- rax min_reg_val_less 0x4110 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 1.7356307210624717) //str_replace at string.c:516 (discriminator 4)
+0x000055555555f878 -- max_zero_flag_set -- 0.9921875 -- shr eax, 0xb (path rank: 1.7364905260988166) //str_replace at string.c:516 (discriminator 4)
+0x000055555555f89f -- rax min_reg_val_less 0x4110 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 1.737350331135162) //str_replace at string.c:519
+0x000055555555f8a1 -- max_zero_flag_set -- 0.9921875 -- shr eax, 0xb (path rank: 1.7382101361715068) //str_replace at string.c:519
+0x000055555555f8a4 -- max_zero_flag_set -- 0.9921875 -- and eax, 0x10 (path rank: 1.7390699412078519) //str_replace at string.c:519
+0x000055555555f8a7 -- max_zero_flag_set -- 0.9921875 -- test eax, eax (path rank: 1.7399297462441963) //str_replace at string.c:519
+0x000055555555f8a9 -- 0x55555555f8a9 has_edge_to 0x55555555f8ab -- 0.9921875 -- jnz 0x55555555f8d2 (path rank: 1.7407895512805418) //str_replace at string.c:519
+0x0000555555565fdf -- 0x555555565fdf has_edge_to 0x55555555f8d2 -- 0.9921875 -- ret  (path rank: 1.7416493563168867) //mrb_free at gc.c:269
+0x000055555555f8d6 -- rax min_reg_val_less 0x4110 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 1.7425091613532315) //str_replace at string.c:523
+0x000055555555f8d8 -- max_zero_flag_set -- 0.9921875 -- shr eax, 0xb (path rank: 1.7433689663895768) //str_replace at string.c:523
+0x000055555555f8db -- max_zero_flag_set -- 0.9921875 -- and eax, 0x1ffffd (path rank: 1.744228771425922) //str_replace at string.c:523
+0x000055555555f8e0 -- rdx min_reg_val_less 0x8 -- 0.9921875 -- mov edx, eax (path rank: 1.7450885764622663) //str_replace at string.c:523
+0x000055555555f8f5 -- memory_value min_reg_val_less 0x4110 -- 0.9921875 -- mov dword ptr [rax], edx (path rank: 1.745259514635839) //str_replace at string.c:523
+0x000055555555f8e6 -- rcx min_reg_val_less 0x8 -- 0.9921875 -- mov ecx, edx (path rank: 1.7459483814986116) //str_replace at string.c:523
+0x000055555555f8e8 -- max_zero_flag_set -- 0.9921875 -- shl ecx, 0xb (path rank: 1.7468081865349565) //str_replace at string.c:523
+0x000055555555f8eb -- rdx min_reg_val_less 0x4110 -- 0.9921875 -- mov edx, dword ptr [rax] (path rank: 1.7476679915713014) //str_replace at string.c:523
+0x000055555555f8f3 -- rdx min_reg_val_less 0x4110 -- 0.9921875 -- or edx, ecx (path rank: 1.7485277966076465) //str_replace at string.c:523
+0x000055555555f910 -- rax min_reg_val_less 0x4110 -- 0.9921875 -- mov eax, dword ptr [rax] (path rank: 1.753680585634742) //str_replace at string.c:527
+0x000055555555f912 -- max_zero_flag_set -- 0.9921875 -- shr eax, 0xb (path rank: 1.7545403906710866) //str_replace at string.c:527
+0x000055555555f925 -- rdx min_reg_val_less 0x4110 -- 0.9921875 -- mov edx, dword ptr [rax] (path rank: 1.7554001957074317) //str_replace at string.c:527
+0x000055555555faa7 -- 0x55555555faa7 has_edge_to 0x555555562cbd -- 0.9921875 -- ret  (path rank: 1.7588371652974757) //str_replace at string.c:548
+0x000055555557b2f0 -- rdx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rdx, qword ptr [rbp-0x18] (path rank: 1.7596969703338206) //mrb_obj_new at class.c:1346
+0x000055555559646f -- rbx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rbx, rdx (path rank: 1.7622763854428556) //mrb_raise at error.c:305
+0x0000555555596381 -- rcx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rcx, rdx (path rank: 1.7657156055882355) //mrb_exc_raise at error.c:287
+0x000055555559638a -- rdx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rdx, rcx (path rank: 1.7665754106245803) //mrb_exc_raise at error.c:287
+0x0000555555596391 -- memory_value min_reg_val_less 0x555500000011 -- 0.9921875 -- mov qword ptr [rbp-0x18], rdx (path rank: 1.7674352156609257) //mrb_exc_raise at error.c:287
+0x0000555555596399 -- rdx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rdx, qword ptr [rbp-0x18] (path rank: 1.7682950206972707) //mrb_exc_raise at error.c:288
+0x0000555555596207 -- rcx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rcx, rdx (path rank: 1.7691548257336152) //mrb_exc_set at error.c:255
+0x0000555555596210 -- rdx min_reg_val_less 0x555500000011 -- 0.9921875 -- mov rdx, rcx (path rank: 1.7700146307699605) //mrb_exc_set at error.c:255
+0x0000555555596217 -- memory_value min_reg_val_less 0x555500000011 -- 0.9921875 -- mov qword ptr [rbp-0x48], rdx (path rank: 1.7708744358063055) //mrb_exc_set at error.c:255
+0x0000555555596345 -- rax min_reg_val_less 0x11 -- 0.9921875 -- mov eax, dword ptr [rbp-0x48] (path rank: 1.7717342408426502) //mrb_exc_set at error.c:277
+0x00005555555955db -- rax min_reg_val_greater_or_equal 0x7fff00000001 -- 0.9921875 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.7738248753261694) //mrb_fixnum_value at value.h:197
+0x0000555555572849 -- rsi min_reg_val_less 0xff -- 0.9921875 -- mov rsi, qword ptr [rbp-0x8] (path rank: 1.7850023407986542) //mrb_obj_iv_set at variable.c:496
+0x00005555555721f2 -- memory_value min_reg_val_less 0xff -- 0.9921875 -- mov qword ptr [rbp-0x20], rsi (path rank: 1.7867219508713443) //iv_put at variable.c:306
+0x000055555557220a -- rax min_reg_val_less 0xff -- 0.9921875 -- mov rax, qword ptr [rbp-0x20] (path rank: 1.7875817559076892) //iv_put at variable.c:307
+0x000055555557220e -- memory_value min_reg_val_less 0xff -- 0.9921875 -- mov qword ptr [rbp-0x8], rax (path rank: 1.788441560944034) //iv_put at variable.c:307
+0x0000555555572215 -- rsi min_reg_val_less 0xff -- 0.9921875 -- mov rsi, qword ptr [rbp-0x8] (path rank: 1.7893013659803794) //iv_put at variable.c:310
+0x0000555555571dcc -- memory_value min_reg_val_less 0xff -- 0.9921875 -- mov qword ptr [rbp-0x20], rsi (path rank: 1.7901611710167242) //kh_put_iv at variable.c:292
+0x0000555555571dde -- rax min_reg_val_less 0xff -- 0.9921875 -- mov rax, qword ptr [rbp-0x20] (path rank: 1.791020976053069) //kh_put_iv at variable.c:292
+0x000055555556b19d -- max_zero_flag_set -- 0.9918994815668204 -- cmp dword ptr [rbp-0x1c], eax (path rank: 1.7261759700492647) //mrb_check_convert_type at object.c:351
+0x000055555556b1a0 -- 0x55555556b1a0 has_edge_to 0x55555556b1a2 -- 0.9918994815668204 -- jnz 0x55555556b1b2 (path rank: 1.7270357750856096) //mrb_check_convert_type at object.c:351
+0x000055555556b1a2 -- max_interrupt_flag_set -- 0.9918994815668204 -- cmp dword ptr [rbp-0x1c], 0x15 (path rank: 1.7278955801219547) //mrb_check_convert_type at object.c:351 (discriminator 1)
+0x000055555556b1a6 -- is_visited -- 0.9918994815668204 -- jz 0x55555556b1b2 (path rank: 1.7287553851582993) //mrb_check_convert_type at object.c:351 (discriminator 1)
+0x000055555556b1a8 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9918994815668204 -- mov rax, qword ptr [rbp-0x30] (path rank: 1.7296151901946444) //mrb_check_convert_type at object.c:351 (discriminator 2)
+0x000055555556b1ac -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9918994815668204 -- mov rdx, qword ptr [rbp-0x28] (path rank: 1.7304749952309895) //mrb_check_convert_type at object.c:351 (discriminator 2)
+0x000055555555f376 -- rdx min_reg_val_less 0x2a -- 0.9918994815668204 -- mov edx, dword ptr [rax+0x20] (path rank: 1.750243616044698) //str_make_shared at string.c:399
+0x000055555555f37d -- rax min_reg_val_less 0x2a -- 0.9918994815668204 -- mov eax, dword ptr [rax+0x18] (path rank: 1.7511034210810428) //str_make_shared at string.c:399
+0x00005555555955df -- rdx min_reg_val_greater_or_equal 0x6aaa00000003 -- 0.9918994815668204 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.774491143170005) //mrb_fixnum_value at value.h:197
+0x00005555555955e4 -- 0x5555555955e4 edge_only_taken_to 0x555555595f1f -- 0.9918994815668204 -- ret  (path rank: 1.9961661839359681) //mrb_fixnum_value at value.h:198
+0x000055555556b1b0 -- 0x55555556b1b0 edge_only_taken_to 0x55555556b204 -- 0.9918994815668204 -- jmp 0x55555556b204 (path rank: 2) //mrb_check_convert_type at object.c:351 (discriminator 2)
+0x00005555555975c7 -- max_parity_flag_set -- 0.9916114631336406 -- cmp eax, 0x14 (path rank: 0.05786818295488563) //mrb_class at class.h:32
+0x000055555556b17e -- rax min_reg_val_greater_or_equal 0x55552ab04d0e -- 0.9916114631336406 -- mov rax, rsi (path rank: 1.7192601447005644) //mrb_check_convert_type at object.c:348
+0x000055555556b181 -- rsi min_reg_val_greater_or_equal 0x555500000006 -- 0.9916114631336406 -- mov rsi, rdx (path rank: 1.7201199497369093) //mrb_check_convert_type at object.c:348
+0x000055555556b184 -- rdx min_reg_val_greater_or_equal 0x555500000006 -- 0.9916114631336406 -- mov rdx, rsi (path rank: 1.7209797547732544) //mrb_check_convert_type at object.c:348
+0x000055555556b187 -- memory_value min_reg_val_greater_or_equal 0x55552ab04d0e -- 0.9916114631336406 -- mov qword ptr [rbp-0x30], rax (path rank: 1.7218395598095997) //mrb_check_convert_type at object.c:348
+0x000055555556b18b -- memory_value min_reg_val_greater_or_equal 0x555500000006 -- 0.9916114631336406 -- mov qword ptr [rbp-0x28], rdx (path rank: 1.7226993648459445) //mrb_check_convert_type at object.c:348
+0x000055555556b192 -- memory_value min_reg_val_greater_or_equal 0x5555555c7a90 -- 0.9916114631336406 -- mov qword ptr [rbp-0x38], r8 (path rank: 1.7235591698822894) //mrb_check_convert_type at object.c:348
+0x000055555556b196 -- memory_value min_reg_val_greater_or_equal 0x5555555c7a89 -- 0.9916114631336406 -- mov qword ptr [rbp-0x40], r9 (path rank: 1.7244189749186345) //mrb_check_convert_type at object.c:348
+0x000055555556b19a -- rax min_reg_val_greater_or_equal 0x6 -- 0.9916114631336406 -- mov eax, dword ptr [rbp-0x28] (path rank: 1.7252787799549794) //mrb_check_convert_type at object.c:351
+0x000055555555f3dd -- memory_value min_reg_val_less 0x2a -- 0.9910354262672812 -- mov dword ptr [rax+0x10], edx (path rank: 1.748920231542347) //str_make_shared at string.c:406
+0x000055555555f3d6 -- rdx min_reg_val_less 0x2a -- 0.9910354262672812 -- mov edx, dword ptr [rax+0x18] (path rank: 1.7519632261173876) //str_make_shared at string.c:406
+0x000055555555f94b -- memory_value min_reg_val_less 0x2a -- 0.9910354262672812 -- mov dword ptr [rax+0x18], edx (path rank: 1.7541402185885206) //str_replace at string.c:529
+0x000055555555f941 -- rax min_reg_val_less 0x2a -- 0.9910354262672812 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.7562600007437765) //str_replace at string.c:529
+0x000055555555f945 -- rdx min_reg_val_less 0x2a -- 0.9910354262672812 -- mov edx, eax (path rank: 1.7571198057801214) //str_replace at string.c:529
+0x000055555555f869 -- rax min_reg_val_less 0x2a -- 0.9904593894009216 -- mov eax, dword ptr [rax+0x18] (path rank: 1.7329754128726365) //str_replace at string.c:515 (discriminator 2)
+0x000055555555f86c -- rax min_reg_val_less 0x2a -- 0.9904593894009216 -- cdqe  (path rank: 1.7338352179089813) //str_replace at string.c:515 (discriminator 2)
+0x000055555555f86e -- memory_value min_reg_val_less 0x2a -- 0.988155241935484 -- mov qword ptr [rbp-0x10], rax (path rank: 1.7346381784083131) //str_replace at string.c:515 (discriminator 4)
+0x000055555555ee1c -- rdi min_reg_val_less 0x52 -- 0.9870391705069124 -- mov qword ptr [rbp-0x10], rax (path rank: 1.7037275324818784) //mrb_str_new_cstr at string.c:202
+0x000055555555e77d -- min_sign_flag_set -- 0.9846990207373272 -- mov rax, qword ptr [rbp-0x10] (path rank: 0.689755030375936) //str_new at string.c:77
+0x000055555555ee2a -- rdx min_reg_val_less 0x6f -- 0.9824308755760368 -- mov rdx, qword ptr [rbp-0x10] (path rank: 1.7001545247340804) //mrb_str_new_cstr at string.c:208
+0x0000555555577949 -- 0x555555577949 has_edge_to 0x55555557d1e0 -- 0.9803787442396312 -- ret  (path rank: 1.685829331320141) //mrb_class_get at class.c:294
+0x000055555557d1e0 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9803787442396312 -- mov rcx, rax (path rank: 1.6866891363564858) //mrb_mod_s_constants at class.c:2130
+0x000055555557d1e3 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9803787442396312 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.6875489413928308) //mrb_mod_s_constants at class.c:2130
+0x000055555557d1e7 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9803787442396312 -- lea rdx, ptr [rip+0x4c002] (path rank: 1.6884087464291757) //mrb_mod_s_constants at class.c:2130
+0x000055555557d1ee -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9803787442396312 -- mov rsi, rcx (path rank: 1.6892685514655208) //mrb_mod_s_constants at class.c:2130
+0x000055555557d1f1 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9803787442396312 -- mov rdi, rax (path rank: 1.6901283565018657) //mrb_mod_s_constants at class.c:2130
+0x0000555555596432 -- memory_value min_reg_val_greater_or_equal 0x5555555c8f76 -- 0.9803787442396312 -- mov qword ptr [rbp-0x38], rdx (path rank: 1.6970067967926254) //mrb_raise at error.c:302
+0x0000555555596436 -- rdx min_reg_val_greater_or_equal 0x5555555c8f76 -- 0.9803787442396312 -- mov rdx, qword ptr [rbp-0x38] (path rank: 1.6978666018289708) //mrb_raise at error.c:304
+0x000055555559643e -- rsi min_reg_val_greater_or_equal 0x5555555c8f76 -- 0.9803787442396312 -- mov rsi, rdx (path rank: 1.6995862119016605) //mrb_raise at error.c:304
+0x000055555557d1f4 -- 0x55555557d1f4 edge_only_taken_to 0x55555559641d -- 0.9803787442396312 -- call 0x55555559641d (path rank: 2) //mrb_mod_s_constants at class.c:2130
+0x000055555559641d -- is_visited -- 0.9800907258064516 -- nop edx, edi (path rank: 1.690730111948198) //mrb_raise at error.c:302
+0x0000555555596421 -- is_visited -- 0.9800907258064516 -- push rbp (path rank: 1.6915921415499742) //mrb_raise at error.c:302
+0x0000555555596422 -- is_visited -- 0.9800907258064516 -- mov rbp, rsp (path rank: 1.6924541711517502) //mrb_raise at error.c:302
+0x0000555555596425 -- is_visited -- 0.9800907258064516 -- push rbx (path rank: 1.693316200753526) //mrb_raise at error.c:302
+0x0000555555596426 -- is_visited -- 0.9800907258064516 -- sub rsp, 0x38 (path rank: 1.6941782303553028) //mrb_raise at error.c:302
+0x000055555559642a -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov qword ptr [rbp-0x28], rdi (path rank: 1.6950402599570786) //mrb_raise at error.c:302
+0x000055555559642e -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov qword ptr [rbp-0x30], rsi (path rank: 1.6959022895588551) //mrb_raise at error.c:302
+0x000055555559643a -- rax min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.698483929233321) //mrb_raise at error.c:304
+0x0000555555596441 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rdi, rax (path rank: 1.700205763871442) //mrb_raise at error.c:304
+0x000055555555ee52 -- 0x55555555ee52 has_edge_to 0x555555596449 -- 0.9800907258064516 -- ret  (path rank: 1.7070410159677387) //mrb_str_new_cstr at string.c:211
+0x0000555555596449 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov qword ptr [rbp-0x20], rax (path rank: 1.707903045569515) //mrb_raise at error.c:304
+0x000055555559644d -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov qword ptr [rbp-0x18], rdx (path rank: 1.708765075171291) //mrb_raise at error.c:304
+0x0000555555596451 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rax, qword ptr [rbp-0x20] (path rank: 1.7096271047730671) //mrb_raise at error.c:305
+0x0000555555596455 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rdx, qword ptr [rbp-0x18] (path rank: 1.7104891343748432) //mrb_raise at error.c:305
+0x0000555555596459 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rsi, qword ptr [rbp-0x30] (path rank: 1.7113511639766197) //mrb_raise at error.c:305
+0x000055555559645d -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rdi, qword ptr [rbp-0x28] (path rank: 1.7122131935783955) //mrb_raise at error.c:305
+0x0000555555596461 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rcx, rdx (path rank: 1.7130752231801716) //mrb_raise at error.c:305
+0x0000555555596464 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rdx, rax (path rank: 1.7139372527819476) //mrb_raise at error.c:305
+0x000055555559571a -- 0x55555559571a has_edge_to 0x55555559646c -- 0.9800907258064516 -- ret  (path rank: 1.7603521153505002) //mrb_exc_new_str at error.c:33
+0x000055555559646c -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rcx, rax (path rank: 1.7612141449522767) //mrb_raise at error.c:305
+0x0000555555596472 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.7629359795903976) //mrb_raise at error.c:305
+0x0000555555596476 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rsi, rcx (path rank: 1.763798009192174) //mrb_raise at error.c:305
+0x0000555555596479 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9800907258064516 -- mov rdi, rax (path rank: 1.7646600387939502) //mrb_raise at error.c:305
+0x000055555559647c -- 0x55555559647c edge_only_taken_to 0x555555596371 -- 0.9800907258064516 -- call 0x555555596371 (path rank: 2) //mrb_raise at error.c:305
+0x0000555555596467 -- 0x555555596467 edge_only_taken_to 0x5555555956c2 -- 0.9800907258064516 -- call 0x5555555956c2 (path rank: 2) //mrb_raise at error.c:305
+0x0000555555596444 -- 0x555555596444 edge_only_taken_to 0x55555555edf5 -- 0.9800907258064516 -- call 0x55555555edf5 (path rank: 2) //mrb_raise at error.c:304
+0x000055555559b5bf -- 0x55555559b5bf has_edge_to 0x55555557d1a9 -- 0.9789386520737328 -- call r8 (path rank: 1.6720724507386209) //mrb_vm_exec at vm.c:1165
+0x000055555557d1a9 -- is_visited -- 0.9789386520737328 -- nop edx, edi (path rank: 1.6729322557749662) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1ad -- is_visited -- 0.9789386520737328 -- push rbp (path rank: 1.673792060811311) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1ae -- is_visited -- 0.9789386520737328 -- mov rbp, rsp (path rank: 1.6746518658476561) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1b1 -- is_visited -- 0.9789386520737328 -- sub rsp, 0x20 (path rank: 1.675511670884001) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1b5 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov qword ptr [rbp-0x8], rdi (path rank: 1.6763714759203459) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1b9 -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov rcx, rdx (path rank: 1.6772312809566907) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1bc -- rax min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov rax, rsi (path rank: 1.6780910859930358) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1bf -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov rdx, rdi (path rank: 1.6789508910293807) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1c2 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov rdx, rcx (path rank: 1.679810696065726) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1c5 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov qword ptr [rbp-0x20], rax (path rank: 1.6806705011020708) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1c9 -- memory_value min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov qword ptr [rbp-0x18], rdx (path rank: 1.6815303061384157) //mrb_mod_s_constants at class.c:2129
+0x000055555557d1cd -- rax min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.6823901111747608) //mrb_mod_s_constants at class.c:2130
+0x000055555557d1d1 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- lea rsi, ptr [rip+0x4ba7e] (path rank: 1.6832499162111059) //mrb_mod_s_constants at class.c:2130
+0x000055555557d1d8 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9789386520737328 -- mov rdi, rax (path rank: 1.6841097212474507) //mrb_mod_s_constants at class.c:2130
+0x0000555555577902 -- rdx max_reg_val_greater_or_equal 0xe9 -- 0.9789386520737328 -- mov edx, eax (path rank: 1.6849695262837956) //mrb_class_get_under at class.c:287
+0x000055555557d1db -- 0x55555557d1db edge_only_taken_to 0x555555577919 -- 0.9789386520737328 -- call 0x555555577919 (path rank: 2) //mrb_mod_s_constants at class.c:2130
+0x000055555555ee05 -- memory_value min_reg_val_less 0x5555555cc351 -- 0.9783626152073732 -- mov qword ptr [rbp-0x20], rsi (path rank: 1.7010677934732183) //mrb_str_new_cstr at string.c:197
+0x000055555555ee10 -- rax min_reg_val_less 0x5555555cc351 -- 0.9783626152073732 -- mov rax, qword ptr [rbp-0x20] (path rank: 1.7019298230749944) //mrb_str_new_cstr at string.c:202
+0x000055555555ee14 -- rdi min_reg_val_less 0x5555555cc351 -- 0.9783626152073732 -- mov rdi, rax (path rank: 1.7027918526767705) //mrb_str_new_cstr at string.c:202
+0x000055555555ee2e -- rcx min_reg_val_less 0x5555555cc351 -- 0.9783626152073732 -- mov rcx, qword ptr [rbp-0x20] (path rank: 1.7053169567641866) //mrb_str_new_cstr at string.c:208
+0x000055555555ee36 -- rsi min_reg_val_less 0x5555555cc351 -- 0.9783626152073732 -- mov rsi, rcx (path rank: 1.7061789863659627) //mrb_str_new_cstr at string.c:208
+0x0000555555595f1f -- r12 min_reg_val_greater_or_equal 0x7fff00000001 -- 0.9783626152073732 -- mov r12, rax (path rank: 1.7755444853988593) //exc_debug_info at error.c:220
+0x0000555555595f3f -- rcx min_reg_val_greater_or_equal 0x7fff00000001 -- 0.9783626152073732 -- mov rcx, r12 (path rank: 1.7772640954715495) //exc_debug_info at error.c:220
+0x0000555555595f45 -- rax min_reg_val_greater_or_equal 0x7fff00000001 -- 0.9783626152073732 -- mov rax, r12 (path rank: 1.7789837055442395) //exc_debug_info at error.c:220
+0x0000555555595f22 -- r13 min_reg_val_greater_or_equal 0x6aaa00000003 -- 0.9780745967741936 -- mov r13, rdx (path rank: 1.7762129778081261) //exc_debug_info at error.c:220
+0x0000555555595f42 -- rbx min_reg_val_greater_or_equal 0x6aaa00000003 -- 0.9780745967741936 -- mov rbx, r13 (path rank: 1.7779348124462473) //exc_debug_info at error.c:220
+0x0000555555595f48 -- rdx min_reg_val_greater_or_equal 0x6aaa00000003 -- 0.9780745967741936 -- mov rdx, r13 (path rank: 1.7796566470843684) //exc_debug_info at error.c:220
+0x0000555555595f53 -- r8 min_reg_val_greater_or_equal 0x6aaa00000003 -- 0.9780745967741936 -- mov r8, rdx (path rank: 1.7805186766861445) //exc_debug_info at error.c:220
+0x00005555555727ea -- rcx max_reg_val_greater_or_equal 0x6aaa0000000c -- 0.9780745967741936 -- mov rcx, r8 (path rank: 1.7813807062879208) //mrb_obj_iv_set at variable.c:489
+0x00005555555727ed -- rdx max_reg_val_greater_or_equal 0x6aaa0000000c -- 0.9780745967741936 -- mov rdx, rcx (path rank: 1.7822427358896968) //mrb_obj_iv_set at variable.c:489
+0x00005555555727f4 -- memory_value max_reg_val_greater_or_equal 0x6aaa0000000c -- 0.9780745967741936 -- mov qword ptr [rbp-0x38], rdx (path rank: 1.783104765491473) //mrb_obj_iv_set at variable.c:489
+0x0000555555572842 -- rdi max_reg_val_greater_or_equal 0x6aaa0000000c -- 0.9780745967741936 -- mov rdi, qword ptr [rbp-0x38] (path rank: 1.783966795093249) //mrb_obj_iv_set at variable.c:496
+0x0000555555572851 -- r8 max_reg_val_greater_or_equal 0x6aaa0000000c -- 0.9780745967741936 -- mov r8, rdi (path rank: 1.7856886297313703) //mrb_obj_iv_set at variable.c:496
+0x0000555555579bbb -- r12 min_reg_val_greater_or_equal 0x6aaaaab0b424 -- 0.9645377304147466 -- pop r12 (path rank: 0) //mrb_get_args at class.c:833
+0x0000555555573a24 -- r12 min_reg_val_greater_or_equal 0x6aaaaab07cd4 -- 0.9633856566820276 -- pop r12 (path rank: 0.019289394318295214) //const_get at variable.c:911
+0x000055555556b436 -- r12 min_reg_val_greater_or_equal 0x6aaaaab07cd4 -- 0.9633856566820276 -- pop r12 (path rank: 0.03857878863659043) //mrb_check_type at object.c:421
+0x0000555555571ea0 -- rax max_reg_val_greater_or_equal 0x67 -- 0.9576252880184332 -- mov eax, dword ptr [rbp-0xc] (path rank: 1.6605784087156408) //kh_put_iv at variable.c:292 (discriminator 10)
+0x0000555555572235 -- rdx max_reg_val_greater_or_equal 0x74 -- 0.9576252880184332 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.6614382137519859) //iv_put at variable.c:311
+0x0000555555572238 -- rdx max_reg_val_greater_or_equal 0x740 -- 0.9576252880184332 -- shl rdx, 0x4 (path rank: 1.6622980187883305) //iv_put at variable.c:311
+0x000055555557222a -- memory_value max_reg_val_greater_or_equal 0x74 -- 0.9576252880184332 -- mov dword ptr [rbp-0xc], eax (path rank: 2) //iv_put at variable.c:310
+0x0000555555573c73 -- memory_value min_reg_val_less 0xff -- 0.9573372695852534 -- mov dword ptr [rbp-0x1c], esi (path rank: 0.09644697159147608) //mrb_vm_const_set at variable.c:962
+0x000055555559a44a -- rsi min_reg_val_less 0xff -- 0.9573372695852534 -- mov esi, dword ptr [rdx] (path rank: 1.6502754199988687) //mrb_vm_exec at vm.c:931
+0x0000555555573cb9 -- rdx min_reg_val_less 0xff -- 0.9573372695852534 -- mov edx, dword ptr [rbp-0x1c] (path rank: 1.6580019279504794) //mrb_vm_const_set at variable.c:966
+0x00005555555aafc6 -- memory_value min_reg_val_less 0x29a -- 0.9436563940092166 -- mov dword ptr [rbp-0x1c], esi (path rank: 1.8483339423758844) //lv_idx at codegen.c:560
+0x0000555555591786 -- memory_value min_reg_val_less 0x29a -- 0.9436563940092166 -- mov dword ptr [rax], edx (path rank: 1.848879883670993) //parser_update_cxt at parse.y:5461 (discriminator 3)
+0x00005555555b3da1 -- memory_value min_reg_val_less 0x29a -- 0.9436563940092166 -- mov dword ptr [rax], edx (path rank: 1.8546536035554484) //scope_new at codegen.c:2735
+0x000055555559176a -- rax min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rax, qword ptr [rax] (path rank: 1.9259150347649305) //parser_update_cxt at parse.y:5461 (discriminator 3)
+0x000055555559176d -- rcx min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rcx, rax (path rank: 1.9260639576057117) //parser_update_cxt at parse.y:5461 (discriminator 3)
+0x0000555555591784 -- rdx min_reg_val_less 0x29a -- 0.9436563940092166 -- mov edx, ecx (path rank: 1.9262128804464924) //parser_update_cxt at parse.y:5461 (discriminator 3)
+0x00005555555b3d7f -- rax min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rax, qword ptr [rax] (path rank: 1.9265150840024747) //scope_new at codegen.c:2735
+0x00005555555b3d82 -- rcx min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rcx, rax (path rank: 1.926664006843256) //scope_new at codegen.c:2735
+0x00005555555b3d9f -- rdx min_reg_val_less 0x29a -- 0.9436563940092166 -- mov edx, ecx (path rank: 1.9268129296840366) //scope_new at codegen.c:2735
+0x00005555555b3da7 -- rax min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rax, qword ptr [rax] (path rank: 1.9270982436282065) //scope_new at codegen.c:2736
+0x00005555555b3db2 -- rax min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rax, qword ptr [rax] (path rank: 1.9272471664689874) //scope_new at codegen.c:2737
+0x00005555555b3db5 -- rdx min_reg_val_less 0x29a -- 0.9436563940092166 -- mov edx, eax (path rank: 1.9273960893097684) //scope_new at codegen.c:2737
+0x00005555555b3dbb -- rsi min_reg_val_less 0x29a -- 0.9436563940092166 -- mov esi, edx (path rank: 1.9275450121505489) //scope_new at codegen.c:2737
+0x00005555555aafe5 -- rax min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rax, qword ptr [rax] (path rank: 1.927837870209388) //lv_idx at codegen.c:565
+0x00005555555ac5ad -- rax min_reg_val_less 0x29a -- 0.9436563940092166 -- mov rax, qword ptr [rbp-0x30] (path rank: 1.931621074162408) //gen_assignment at codegen.c:945
+0x00005555555ac5b1 -- rdx min_reg_val_less 0x29a -- 0.9436563940092166 -- mov edx, eax (path rank: 1.931769997003189) //gen_assignment at codegen.c:945
+0x00005555555ac5b7 -- rsi min_reg_val_less 0x29a -- 0.9436563940092166 -- mov esi, edx (path rank: 1.9319189198439697) //gen_assignment at codegen.c:945
+0x00005555555ac52a -- rax min_reg_val_less 0xff -- 0.9383280529953916 -- mov rax, qword ptr [rax+0x8] (path rank: 1.6211714914735633) //gen_assignment at codegen.c:938
+0x00005555555ac52e -- memory_value min_reg_val_less 0xff -- 0.9383280529953916 -- mov qword ptr [rbp-0x30], rax (path rank: 1.6220312965099084) //gen_assignment at codegen.c:938
+0x00005555555ac726 -- rax min_reg_val_less 0xff -- 0.9383280529953916 -- mov rax, qword ptr [rbp-0x30] (path rank: 1.6228911015462535) //gen_assignment at codegen.c:976
+0x00005555555ac72a -- rdx min_reg_val_less 0xff -- 0.9383280529953916 -- mov edx, eax (path rank: 1.6237509065825981) //gen_assignment at codegen.c:976
+0x00005555555ac730 -- rsi min_reg_val_less 0xff -- 0.9383280529953916 -- mov esi, edx (path rank: 1.6246107116189432) //gen_assignment at codegen.c:976
+0x000055555559899e -- r8 min_reg_val_less 0x555555563f99 -- 0.9383280529953916 -- mov r8, qword ptr [rax+0x18] (path rank: 1.7130236552510019) //mrb_funcall_with_block at vm.c:407
+0x000055555559a476 -- memory_value max_reg_val_greater_or_equal 0x80010d -- 0.932855702764977 -- mov dword ptr [rbp-0x5b4], eax (path rank: 0.11573636590977127) //mrb_vm_exec at vm.c:932
+0x000055555559a474 -- rax max_reg_val_greater_or_equal 0x80010d -- 0.932855702764977 -- mov eax, dword ptr [rax] (path rank: 1.6648583606621874) //mrb_vm_exec at vm.c:932
+0x000055555559a47c -- rax max_reg_val_greater_or_equal 0x80010d -- 0.932855702764977 -- mov eax, dword ptr [rbp-0x5b4] (path rank: 1.6657181656985323) //mrb_vm_exec at vm.c:932
+0x000055555559a44c -- rdx max_reg_val_greater_or_equal 0x555500000009 -- 0.9314156105990784 -- mov rdx, qword ptr [rax+0x8] (path rank: 1.6511073487684145) //mrb_vm_exec at vm.c:931
+0x000055555559a45a -- rcx max_reg_val_greater_or_equal 0x555500000009 -- 0.9314156105990784 -- mov rcx, rdx (path rank: 1.6528269588411044) //mrb_vm_exec at vm.c:931
+0x0000555555573c7a -- memory_value max_reg_val_greater_or_equal 0x555500000009 -- 0.9314156105990784 -- mov qword ptr [rbp-0x28], rcx (path rank: 1.6554063739501392) //mrb_vm_const_set at variable.c:962
+0x0000555555573cb5 -- rdi max_reg_val_greater_or_equal 0x555500000009 -- 0.9314156105990784 -- mov rdi, qword ptr [rbp-0x28] (path rank: 1.6571259840228294) //mrb_vm_const_set at variable.c:966
+0x0000555555573cc4 -- r8 max_reg_val_greater_or_equal 0x555500000009 -- 0.9314156105990784 -- mov r8, rdi (path rank: 1.6588441269235823) //mrb_vm_const_set at variable.c:966
+0x000055555559a450 -- rax max_reg_val_greater_or_equal 0x55555560dce8 -- 0.9311275921658986 -- mov rax, qword ptr [rax] (path rank: 1.6519671538047596) //mrb_vm_exec at vm.c:931
+0x000055555559a45d -- rdx max_reg_val_greater_or_equal 0x55555560dce8 -- 0.9311275921658986 -- mov rdx, rax (path rank: 1.6536867638774493) //mrb_vm_exec at vm.c:931
+0x0000555555573c76 -- memory_value max_reg_val_greater_or_equal 0x55555560dce8 -- 0.9311275921658986 -- mov qword ptr [rbp-0x30], rdx (path rank: 1.6545465689137944) //mrb_vm_const_set at variable.c:962
+0x0000555555573cb1 -- rcx max_reg_val_greater_or_equal 0x55555560dce8 -- 0.9311275921658986 -- mov rcx, qword ptr [rbp-0x30] (path rank: 1.6562661789864845) //mrb_vm_const_set at variable.c:966
+0x000055555559a435 -- rdx min_reg_val_less 0x2 -- 0.9293994815668204 -- movzx edx, dx (path rank: 1.6488289654848771) //mrb_vm_exec at vm.c:931
+0x000055555559a438 -- rcx min_reg_val_less 0x6 -- 0.9293994815668204 -- lea rcx, ptr [rdx*4] (path rank: 1.64968798836808) //mrb_vm_exec at vm.c:931
+0x000055555559a482 -- rax min_reg_val_less 0x19 -- 0.9293994815668204 -- and eax, 0x7f (path rank: 1.666577970734877) //mrb_vm_exec at vm.c:932
+0x000055555559a485 -- rax min_reg_val_less 0x19 -- 0.9293994815668204 -- cdqe  (path rank: 1.6674377757712222) //mrb_vm_exec at vm.c:932
+0x000055555559a487 -- rdx min_reg_val_less 0xff -- 0.9293994815668204 -- lea rdx, ptr [rax*8] (path rank: 1.6682975808075666) //mrb_vm_exec at vm.c:932
+0x000055555559a496 -- rax min_reg_val_less 0x55555559a9a7 -- 0.9293994815668204 -- mov rax, qword ptr [rdx+rax*1] (path rank: 1.669157385843912) //mrb_vm_exec at vm.c:932
+0x00005555555aad17 -- rax min_reg_val_greater_or_equal 0x3 -- 0.9279593894009216 -- mov rax, qword ptr [rax+0x58] (path rank: 1.6340292265252752) //new_msym at codegen.c:510
+0x00005555555aad1b -- memory_value min_reg_val_greater_or_equal 0x3 -- 0.9279593894009216 -- mov qword ptr [rbp-0x8], rax (path rank: 1.63488903156162) //new_msym at codegen.c:510
+0x00005555555aadc3 -- rdx min_reg_val_greater_or_equal 0x3 -- 0.927671370967742 -- mov rdx, qword ptr [rbp-0x10] (path rank: 1.635748836597965) //new_msym at codegen.c:519
+0x00005555555aadc7 -- rdx min_reg_val_greater_or_equal 0xa -- 0.927671370967742 -- shl rdx, 0x2 (path rank: 1.63660864163431) //new_msym at codegen.c:519
+0x00005555555aadde -- rax min_reg_val_greater_or_equal 0x3 -- 0.927671370967742 -- mov rax, qword ptr [rax+0x58] (path rank: 1.637468446670655) //new_msym at codegen.c:520
+0x00005555555aadf3 -- rdx min_reg_val_greater_or_equal 0x3 -- 0.927671370967742 -- mov rdx, qword ptr [rax+0x58] (path rank: 1.638328251707) //new_msym at codegen.c:520 (discriminator 1)
+0x00005555555aadf7 -- rdx min_reg_val_greater_or_equal 0x4 -- 0.927671370967742 -- add rdx, 0x1 (path rank: 1.6391880567433452) //new_msym at codegen.c:520 (discriminator 1)
+0x00005555555aadfb -- memory_value min_reg_val_greater_or_equal 0x4 -- 0.927671370967742 -- mov qword ptr [rax+0x58], rdx (path rank: 1.6400478617796896) //new_msym at codegen.c:520 (discriminator 1)
+0x00005555555aadff -- rax min_reg_val_greater_or_equal 0x3 -- 0.927671370967742 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.640907666816035) //new_msym at codegen.c:521
+0x000055555559a465 -- memory_value max_reg_val_greater_or_equal 0x55555562ce3a -- 0.9259432603686636 -- add qword ptr [rbp-0x5e8], 0x4 (path rank: 1.663138750589497) //mrb_vm_exec at vm.c:932
+0x000055555559a46d -- rax max_reg_val_greater_or_equal 0x55555562ce3a -- 0.9259432603686636 -- mov rax, qword ptr [rbp-0x5e8] (path rank: 1.663998555625842) //mrb_vm_exec at vm.c:932
+0x0000555555571de2 -- rdx max_reg_val_greater_or_equal 0x3a -- 0.9250792050691244 -- mov edx, dword ptr [rax+0x8] (path rank: 1.6597039319599276) //kh_put_iv at variable.c:292
+0x0000555555581f26 -- memory_value min_reg_val_less 0x29a -- 0.9240711405529952 -- mov dword ptr [rbp-0xc], esi (path rank: 1.5238025101302939) //local_add at parse.y:275
+0x0000555555583476 -- rax min_reg_val_less 0x29a -- 0.9240711405529952 -- mov rax, qword ptr [rax+0x8] (path rank: 1.6264942468952992) //assignable at parse.y:911
+0x000055555558347a -- rdx min_reg_val_less 0x29a -- 0.9240711405529952 -- mov edx, eax (path rank: 1.6311232314527053) //assignable at parse.y:911
+0x0000555555583480 -- rsi min_reg_val_less 0x29a -- 0.9240711405529952 -- mov esi, edx (path rank: 1.635752216010112) //assignable at parse.y:911
+0x0000555555581f29 -- rdx min_reg_val_less 0x29a -- 0.9240711405529952 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.6415167148558685) //local_add at parse.y:276
+0x0000555555581f30 -- rsi min_reg_val_less 0x29a -- 0.9240711405529952 -- mov esi, edx (path rank: 1.6461456994132748) //local_add at parse.y:276
+0x0000555555581f3e -- rdx min_reg_val_less 0x29a -- 0.9240711405529952 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.650774683970681) //local_add at parse.y:277
+0x0000555555581f45 -- rsi min_reg_val_less 0x29a -- 0.9240711405529952 -- mov esi, edx (path rank: 1.6554036685280875) //local_add at parse.y:277
+0x000055555559a3a6 -- max_parity_flag_set -- 0.922343029953917 -- shr edx, 0x17 (path rank: 1.9290191548783349) //mrb_vm_exec at vm.c:925
+0x000055555559a3ac -- max_parity_flag_set -- 0.922343029953917 -- shl rdx, 0x4 (path rank: 1.9293292280888243) //mrb_vm_exec at vm.c:925
+0x000055555559a3e6 -- max_parity_flag_set -- 0.9221990207373272 -- and eax, 0x7f (path rank: 1.6459547170061781) //mrb_vm_exec at vm.c:926
+0x0000555555581ec1 -- memory_value min_reg_val_less 0x29a -- 0.9220550115207372 -- mov dword ptr [rbp-0x1c], esi (path rank: 1.5335022775578642) //local_add_f at parse.y:267
+0x0000555555581ed1 -- rax min_reg_val_less 0x29a -- 0.9220550115207372 -- mov eax, dword ptr [rbp-0x1c] (path rank: 1.6610956978769138) //local_add_f at parse.y:269
+0x0000555555581ed4 -- rdx min_reg_val_less 0x29a -- 0.9220550115207372 -- mov rdx, rax (path rank: 1.6657246824343206) //local_add_f at parse.y:269
+0x0000555555581edb -- rsi min_reg_val_less 0x29a -- 0.9220550115207372 -- mov rsi, rdx (path rank: 1.6703536669917265) //local_add_f at parse.y:269
+0x000055555559a416 -- rdx max_reg_val_greater_or_equal 0xc00392 -- 0.9218029953917052 -- mov edx, dword ptr [rbp-0x5b4] (path rank: 1.857448167032795) //mrb_vm_exec at vm.c:931
+0x000055555559a41c -- rdx max_reg_val_greater_or_equal 0x2 -- 0.9218029953917052 -- shr edx, 0x17 (path rank: 1.8577770913407947) //mrb_vm_exec at vm.c:931
+0x000055555559a41f -- rdx max_reg_val_greater_or_equal 0x2 -- 0.9218029953917052 -- movsxd rdx, edx (path rank: 1.858106015648795) //mrb_vm_exec at vm.c:931
+0x000055555559a422 -- rdx max_reg_val_greater_or_equal 0x18 -- 0.9218029953917052 -- shl rdx, 0x4 (path rank: 1.8584349399567954) //mrb_vm_exec at vm.c:931
+0x000055555559a429 -- rdx max_reg_val_greater_or_equal 0xc00392 -- 0.9218029953917052 -- mov edx, dword ptr [rbp-0x5b4] (path rank: 1.8587638642647952) //mrb_vm_exec at vm.c:931
+0x000055555559a42f -- rdx max_reg_val_greater_or_equal 0x18007 -- 0.9218029953917052 -- shr edx, 0x7 (path rank: 1.8590927885727955) //mrb_vm_exec at vm.c:931
+0x000055555559a432 -- rdx max_reg_val_greater_or_equal 0x18007 -- 0.9218029953917052 -- movsxd rdx, edx (path rank: 1.8594217128807955) //mrb_vm_exec at vm.c:931
+0x00005555555aae40 -- rax min_reg_val_less 0x1 -- 0.9206509216589862 -- mov rax, qword ptr [rbp-0x18] (path rank: 1.785905199119848) //new_sym at codegen.c:530 (discriminator 1)
+0x000055555559a3da -- memory_value max_reg_val_greater_or_equal 0x180000c -- 0.918634792626728 -- mov dword ptr [rbp-0x5b4], eax (path rank: 0.07715757727318086) //mrb_vm_exec at vm.c:926
+0x000055555559a3d8 -- rax max_reg_val_greater_or_equal 0x180000c -- 0.918634792626728 -- mov eax, dword ptr [rax] (path rank: 1.9166206964609136) //mrb_vm_exec at vm.c:926
+0x000055555559a3e0 -- rax max_reg_val_greater_or_equal 0x180000c -- 0.918634792626728 -- mov eax, dword ptr [rbp-0x5b4] (path rank: 1.9168095387270832) //mrb_vm_exec at vm.c:926
+0x000055555559a3a0 -- rdx max_reg_val_greater_or_equal 0x1400311 -- 0.9174827188940092 -- mov edx, dword ptr [rbp-0x5b4] (path rank: 1.9085786629304435) //mrb_vm_exec at vm.c:925
+0x000055555559a3a9 -- rdx max_reg_val_greater_or_equal 0x3 -- 0.9174827188940092 -- movsxd rdx, edx (path rank: 1.9089330014473191) //mrb_vm_exec at vm.c:925
+0x00005555555a9d2b -- rax min_reg_val_less 0x2 -- 0.9135584677419356 -- mov eax, dword ptr [rax+0xec] (path rank: 1.631879881752914) //genop_peep at codegen.c:177 (discriminator 2)
+0x00005555555a9d48 -- rax min_reg_val_less 0x2 -- 0.9135584677419356 -- mov eax, dword ptr [rax+0xec] (path rank: 1.6327344868854452) //genop_peep at codegen.c:178
+0x00005555555a9d4e -- rax min_reg_val_less 0x2 -- 0.9135584677419356 -- cdqe  (path rank: 1.6335890920179756) //genop_peep at codegen.c:178
+0x00005555555a9d50 -- rax min_reg_val_less 0x6 -- 0.9135584677419356 -- shl rax, 0x2 (path rank: 1.6344436971505063) //genop_peep at codegen.c:178
+0x00005555555a9d54 -- max_zero_flag_set -- 0.9135584677419356 -- sub rax, 0x4 (path rank: 1.6352983022830372) //genop_peep at codegen.c:178
+0x00005555555a9d19 -- rax min_reg_val_less 0x2 -- 0.9132704493087558 -- mov eax, dword ptr [rax+0xec] (path rank: 1.6310252766203839) //genop_peep at codegen.c:177 (discriminator 1)
+0x0000555555595ee5 -- rax min_reg_val_greater_or_equal 0x55555566fdd6 -- 0.9128384216589862 -- mov rax, qword ptr [rax+0x30] (path rank: 1.834423741590454) //exc_debug_info at error.c:218
+0x0000555555595ee9 -- memory_value min_reg_val_greater_or_equal 0x55555566fdd6 -- 0.9128384216589862 -- mov qword ptr [rbp-0x40], rax (path rank: 1.8350391563140411) //exc_debug_info at error.c:218
+0x000055555559b4e0 -- rax max_reg_val_greater_or_equal 0x55555566fdd2 -- 0.9122623847926268 -- mov rax, qword ptr [rbp-0x5e8] (path rank: 1.760624611469978) //mrb_vm_exec at vm.c:1150
+0x000055555559b4e7 -- rdx max_reg_val_greater_or_equal 0x55555566fdd6 -- 0.9122623847926268 -- lea rdx, ptr [rax+0x4] (path rank: 1.761240026193565) //mrb_vm_exec at vm.c:1150
+0x000055555559b4f2 -- memory_value max_reg_val_greater_or_equal 0x55555566fdd6 -- 0.9122623847926268 -- mov qword ptr [rax+0x30], rdx (path rank: 1.7618554409171525) //mrb_vm_exec at vm.c:1150
+0x00005555555ac73a -- memory_value min_reg_val_less 0x2 -- 0.9103902649769584 -- mov dword ptr [rbp-0xc], eax (path rank: 1.6254485090762363) //gen_assignment at codegen.c:976
+0x00005555555ac745 -- rax min_reg_val_less 0x2 -- 0.9103902649769584 -- mov eax, dword ptr [rbp-0xc] (path rank: 1.6266180467569944) //gen_assignment at codegen.c:977
+0x00005555555ac748 -- rax min_reg_val_less 0xff -- 0.9103902649769584 -- shl eax, 0x7 (path rank: 1.6274770696401966) //gen_assignment at codegen.c:977
+0x00005555555ac74b -- rax min_reg_val_less 0xff -- 0.9103902649769584 -- and eax, 0x7fff80 (path rank: 1.6283360925233992) //gen_assignment at codegen.c:977
+0x000055555559a3c9 -- memory_value max_reg_val_greater_or_equal 0x55555566fcca -- 0.9075100806451613 -- add qword ptr [rbp-0x5e8], 0x4 (path rank: 1.6530579699414556) //mrb_vm_exec at vm.c:926
+0x000055555559a3d1 -- rax max_reg_val_greater_or_equal 0x55555566fcca -- 0.9075100806451613 -- mov rax, qword ptr [rbp-0x5e8] (path rank: 1.6538942666350152) //mrb_vm_exec at vm.c:926
+0x00005555555860d4 -- rcx min_reg_val_less 0x5555556632a0 -- 0.9019657258064516 -- mov rcx, qword ptr [rax] (path rank: 1.616082316727569) //yyparse at parse.y:1739
+0x00005555555860de -- rsi min_reg_val_less 0x5555556632a0 -- 0.9019657258064516 -- mov rsi, rcx (path rank: 1.6169595777826262) //yyparse at parse.y:1739

@@ -456,7 +456,7 @@ VOID Fini(INT32 code, VOID *v) {
     std::string data = jsonify();
     fprintf(g_trace_file, "%s", data.c_str());
     fclose(g_trace_file);
-    outFile << hitCount << " / " << baseCount << std::endl;
+    outFile << baseCount << " / " << baseCount << std::endl;
     parse_maps();
     LOG("[=] Completed trace.\n");
 }
@@ -491,7 +491,7 @@ INT32 Aslr() {
 int main(int argc, char * argv[]) {
     // Check if ASLR is disabled
     std::ifstream infile("/proc/sys/kernel/randomize_va_space");
-    outFile << hitCount << " / " << baseCount << std::endl;
+    outFile.open("hitcount.out", std::ios_base::app);
     int aslr;
     if (!infile) {
         PIN_ERROR("Unable to check whether ASLR is enabled or not. Failed to open /proc/sys/kernel/randomize_va_space");
