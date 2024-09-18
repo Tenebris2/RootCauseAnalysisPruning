@@ -64,7 +64,7 @@
 |     |                   |                              | 0:03              | LOC       |                                    | 31                                                         | 26    |                |
 |     |                   |                              | 0:03              | LOC-DEBUG |                                    | 31                                                         | 27    |                |
 |     |                   |                              | 0:02.8            | BB        |                                    | 28                                                         | 26    |                |
-| 2   | CVE-2016-5636     | python                       | 1:02              | aurora    | 0:23/919                           | 290                                                        | 188   | 0:04           |
+| v2  | CVE-2016-5636     | python                       | 1:02              | aurora    | 0:23/919                           | 290                                                        | 188   | 0:04           |
 |     |                   |                              | 0:27              | LOC       |                                    | 184                                                        | 149   | 0:02           |
 |     |                   |                              | 0:20              | LOC-DEBUG |                                    | 157                                                        | 136   | 0:01.20        |
 |     |                   |                              | 0:12              | BB        |                                    | 194                                                        | 104   | 0:0.3          |
@@ -163,3 +163,8 @@ CVE-2016-5636 - Python
 mruby type confusion -> 10 minutes -> < 2000
 rerun mruby aurora 2 
 rerun perl aurora 4
+
+
+<del>Lưu ý basic block 1, 2 của matdump không tìm ra root cause?</del>
+Lưu ý basic block của sleuthkit và cjpeg không tìm ra hẳn root cause
+Lưu ý kết quả rca của mruby integer overflow là vm.c:1236 (lệch root cause 36 lines, tạm chấp nhận do khả năng chạy nhiều files là không thể)

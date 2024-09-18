@@ -18,8 +18,8 @@ method_dir = os.getenv("METHOD_DIR")
 args = sys.argv[1]
 target = sys.argv[2]
 fpath = args.split("/")
-fpath = f"{eval_dir}/results/{fpath[len(fpath) - 1].split(' ')[0]}"
-
+temp = args.split(' ')[0].split("/")[-1];
+fpath = f"{eval_dir}/results/{temp}"
 AURORA_PATH = f"{fpath}/aurora/"
 LOC_PATH = f"{fpath}/loc/"
 LOC_WITH_SOURCE_PATH = f"{fpath}/loc_with_source/"
@@ -62,12 +62,12 @@ def run(method: Method, with_source: bool, id: int):
     os.makedirs(res_path, exist_ok=True) 
     trace(res_path, method=method, with_source=with_source, id=id)
     root_cause_analysis(res_path) 
-    
+
 def print_res(cmd):
     print(cmd.stdout, cmd.stderr)
 def trace(res_path, method: Method, with_source: bool, id: int):
     clean_previous_run()
-    
+
     # move input-{id} into input directory for rca monitoring
     move_input_cmd = f"cp {eval_dir}/inputs/input-{id}/* -r {eval_dir}/inputs/" 
     subprocess.run(move_input_cmd, shell=True, text=True, capture_output=True)
@@ -170,4 +170,4 @@ for i in range(0, 5):
     run(Method.AURORA, False, i)
     run(Method.LOC, False, i)
     run(Method.LOC, True, i)
-    run(Method.BASIC_BLOCK, False, 1)
+    run(Method.BASIC_BLOCK, False, i)

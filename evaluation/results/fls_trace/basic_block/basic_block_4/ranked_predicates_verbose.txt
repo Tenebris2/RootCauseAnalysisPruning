@@ -1,0 +1,16 @@
+0x0000555555558af4 -- rdi max_reg_val_less 0x6aaaa4e304d8 -- 0.9944444444444444 -- bnd jmp qword ptr [rip+0xc43b5] (path rank: 0.24021929649635276) //?? ??:0
+0x0000555555558d14 -- 0x555555558d14 edge_only_taken_to 0x55555555bd0a -- 0.9944444444444444 -- bnd jmp qword ptr [rip+0xc42a5] (path rank: 0.4804385929927055) //?? ??:0
+0x000055555555e10d -- min_sign_flag_set -- 0.9666666666666668 -- jb 0x55555555da03 (path rank: 1.9058419854956652) //tsk_fs_dir_walk_lcl at fs_dir.c:568 (discriminator 1)
+0x00005555555b76e9 -- rdx max_reg_val_greater_or_equal 0xbf4 -- 0.9666666666666668 -- jnle 0x5555555b7702 (path rank: 1.9178165589421001) //ext2fs_dinode_copy at ext2fs.c:782 (discriminator 1)
+0x000055555555c7b6 -- rax max_reg_val_less 0x9 -- 0.9666666666666668 -- jz 0x55555555c818 (path rank: 1.921571502090983) //print_dent_act at fls_lib.c:121
+0x000055555555c7c6 -- min_sign_flag_set -- 0.9666666666666668 -- jz 0x55555555c818 (path rank: 1.9252333044540835) //print_dent_act at fls_lib.c:122
+0x000055555555a730 -- rdx max_reg_val_less 0x55555561d321 -- 0.9666666666666668 -- jz 0x55555555a752 (path rank: 1.9314968340942367) //tsk_fprintf at tsk_printf.c:87
+0x0000555555558ac4 -- num_successors_equal 2 -- 0.964506172839506 -- bnd jmp qword ptr [rip+0xc43cd] (path rank: 2) //?? ??:0
+0x000055555555cac3 -- rax min_reg_val_greater_or_equal 0x29 -- 0.9611111111111112 -- jnz 0x55555555cb18 (path rank: 1.928879489918451) //print_dent_act at fls_lib.c:197
+0x00005555555b75f6 -- rcx max_reg_val_greater_or_equal 0xa00 -- 0.95 -- jnl 0x5555555b7608 (path rank: 1.9316213047814779) //ext2fs_dinode_copy at ext2fs.c:789
+0x000055555556238d -- rdx min_reg_val_greater_or_equal 0xafa0 -- 0.9459876543209876 -- jz 0x5555555623b1 (path rank: 0.7232815284763336) //tsk_fs_free at fs_open.c:224
+0x00005555555b7606 -- rax min_reg_val_less 0xff -- 0.934567901234568 -- jmp 0x5555555b760f (path rank: 1.9328977259713191) //ext2fs_dinode_copy at ext2fs.c:788 (discriminator 1)
+0x000055555555da76 -- 0x55555555da76 edge_only_taken_to 0x55555555da80 -- 0.9277777777777778 -- jz 0x55555555da9b (path rank: 1.9178922088012995) //tsk_fs_dir_walk_lcl at fs_dir.c:582
+0x00005555555eb026 -- rsi min_reg_val_less 0x1 -- 0.9234567901234568 -- jz 0x5555555eb06a (path rank: 1.9231283387127542) //tsk_fs_read_block at fs_io.c:138
+0x0000555555558814 -- rdx max_reg_val_less 0x8a -- 0.9228395061728396 -- bnd jmp qword ptr [rip+0xc4525] (path rank: 0) //?? ??:0
+0x0000555555558944 -- rdi max_reg_val_greater_or_equal 0x5555556393f0 -- 0.9157407407407409 -- bnd jmp qword ptr [rip+0xc448d] (path rank: 1.9292838474656657) //?? ??:0

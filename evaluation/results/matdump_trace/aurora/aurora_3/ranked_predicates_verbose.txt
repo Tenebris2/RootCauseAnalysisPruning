@@ -1,0 +1,181 @@
+0x00005555555af2e7 -- rax min_reg_val_greater_or_equal 0xfdffffff -- 1 -- mov eax, dword ptr [rbp-0xa4] (path rank: 1.9994823692910892) //Mat_VarReadNextInfo5 at mat5.c:4975
+0x00005555555af302 -- rax min_reg_val_greater_or_equal 0xfdffffff -- 1 -- mov eax, dword ptr [rbp-0xa4] (path rank: 1.9994924010485686) //Mat_VarReadNextInfo5 at mat5.c:4978
+0x00005555555af308 -- rax min_reg_val_greater_or_equal 0xfdfffff8 -- 1 -- and eax, 0xfffffff8 (path rank: 1.9994957449677286) //Mat_VarReadNextInfo5 at mat5.c:4978
+0x00005555555af30b -- max_zero_flag_set -- 1 -- add eax, 0x8 (path rank: 1.9994990888868882) //Mat_VarReadNextInfo5 at mat5.c:4978
+0x00005555555af145 -- rax min_reg_val_less 0xdff8008 -- 1 -- mov eax, dword ptr [rbp-0x58] (path rank: 1.9995439159309232) //Mat_VarReadNextInfo5 at mat5.c:4941
+0x00005555555af14e -- rax min_reg_val_less 0xdff8008 -- 1 -- mov eax, dword ptr [rbp-0x94] (path rank: 1.9995460427098273) //Mat_VarReadNextInfo5 at mat5.c:4942
+0x00005555555af154 -- rax min_reg_val_less 0x8 -- 1 -- movzx eax, al (path rank: 1.9995481694887312) //Mat_VarReadNextInfo5 at mat5.c:4942
+0x00005555555af15c -- rax min_reg_val_less 0xdff8008 -- 1 -- mov eax, dword ptr [rbp-0x94] (path rank: 1.9995534742131238) //Mat_VarReadNextInfo5 at mat5.c:4942 (discriminator 1)
+0x00005555555af162 -- rax min_reg_val_less 0x8 -- 1 -- movzx eax, al (path rank: 1.9995556009920274) //Mat_VarReadNextInfo5 at mat5.c:4942 (discriminator 1)
+0x00005555555af170 -- memory_value min_reg_val_less 0x8 -- 1 -- mov dword ptr [rdx+0x14], eax (path rank: 1.999561981328739) //Mat_VarReadNextInfo5 at mat5.c:4942 (discriminator 4)
+0x00005555555af173 -- rax min_reg_val_less 0xdff8008 -- 1 -- mov eax, dword ptr [rbp-0x94] (path rank: 1.999564108107643) //Mat_VarReadNextInfo5 at mat5.c:4943 (discriminator 4)
+0x00005555555af187 -- rax min_reg_val_less 0xdff8008 -- 1 -- mov eax, dword ptr [rbp-0x94] (path rank: 1.9995747420021623) //Mat_VarReadNextInfo5 at mat5.c:4944 (discriminator 4)
+0x00005555555af380 -- rax min_reg_val_greater_or_equal 0x80000000 -- 1 -- mov eax, dword ptr [rbp-0xa4] (path rank: 1.9995770501941488) //Mat_VarReadNextInfo5 at mat5.c:4983
+0x00005555555af386 -- rax min_reg_val_greater_or_equal 0x5555d56056c0 -- 1 -- add rax, rdx (path rank: 1.9995803941133086) //Mat_VarReadNextInfo5 at mat5.c:4983
+0x00005555555af19b -- rax min_reg_val_less 0xdff8008 -- 1 -- mov eax, dword ptr [rbp-0x94] (path rank: 1.9995853758966817) //Mat_VarReadNextInfo5 at mat5.c:4945 (discriminator 4)
+0x00005555555af1b3 -- rax min_reg_val_less 0x8 -- 1 -- mov eax, dword ptr [rax+0x14] (path rank: 1.999598136570105) //Mat_VarReadNextInfo5 at mat5.c:4946 (discriminator 4)
+0x00005555555af327 -- max_parity_flag_set -- 1 -- mov rdx, rax (path rank: 1.9996760747182485) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af157 -- max_adjust_flag_set -- 1 -- cmp eax, 0x11 (path rank: 1.99977294801771) //Mat_VarReadNextInfo5 at mat5.c:4942
+0x00005555555af1b6 -- max_sign_flag_set -- 1 -- cmp eax, 0x5 (path rank: 1.9997981760157422) //Mat_VarReadNextInfo5 at mat5.c:4946 (discriminator 4)
+0x00005555555af148 -- memory_value min_reg_val_less 0xdff8008 -- 1 -- mov dword ptr [rbp-0x94], eax (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4941
+0x00005555555af30e -- memory_value min_reg_val_less 0xff -- 1 -- mov dword ptr [rbp-0xa0], eax (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4978
+0x00005555555af2d6 -- memory_value min_reg_val_greater_or_equal 0xfdffffff -- 1 -- mov dword ptr [rbp-0xa4], eax (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4972
+0x000055555556201b -- rax min_reg_val_greater_or_equal 0x7c0 -- 0.992063492063492 -- mov eax, dword ptr [rax] (path rank: 1.9992898308260991) //Mat_uint32Swap at endian.c:132
+0x0000555555562075 -- memory_value max_reg_val_greater_or_equal 0xffffc53f -- 0.992063492063492 -- mov dword ptr [rax], edx (path rank: 1.9993177993196336) //Mat_uint32Swap at endian.c:137
+0x000055555556206e -- rdx max_reg_val_greater_or_equal 0xffffc53f -- 0.992063492063492 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.9994689936144499) //Mat_uint32Swap at endian.c:137
+0x000055555556207b -- rax max_reg_val_greater_or_equal 0xffffc53f -- 0.992063492063492 -- mov eax, dword ptr [rax] (path rank: 1.9994723375336099) //Mat_uint32Swap at endian.c:139
+0x00005555555af2ed -- rax min_reg_val_greater_or_equal 0x4 -- 0.992063492063492 -- and eax, 0x7 (path rank: 1.999485713210249) //Mat_VarReadNextInfo5 at mat5.c:4975
+0x00005555555af314 -- rax min_reg_val_less 0xff -- 0.992063492063492 -- mov eax, dword ptr [rbp-0xa0] (path rank: 1.999502432806048) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af31a -- rax min_reg_val_less 0xff -- 0.992063492063492 -- add eax, 0x1 (path rank: 1.9995057767252078) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af31d -- rax min_reg_val_less 0xff -- 0.992063492063492 -- mov eax, eax (path rank: 1.9995091206443678) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af31f -- rdi min_reg_val_less 0xff -- 0.992063492063492 -- mov rdi, rax (path rank: 1.9995124645635276) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af32e -- memory_value min_reg_val_less 0x6aaa1e202b68 -- 0.992063492063492 -- mov qword ptr [rax+0x30], rdx (path rank: 1.999521420708688) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af336 -- rax min_reg_val_less 0x6aaa1e202b68 -- 0.992063492063492 -- mov rax, qword ptr [rax+0x30] (path rank: 1.9995281085470074) //Mat_VarReadNextInfo5 at mat5.c:4980
+0x00005555555af139 -- rax min_reg_val_less 0xff -- 0.992063492063492 -- mov eax, dword ptr [rbp-0x60] (path rank: 1.9995396623731156) //Mat_VarReadNextInfo5 at mat5.c:4940
+0x00005555555af13c -- max_zero_flag_set -- 0.992063492063492 -- cmp eax, 0x6 (path rank: 1.9995417891520195) //Mat_VarReadNextInfo5 at mat5.c:4940
+0x00005555555af34d -- rdx min_reg_val_less 0xff -- 0.992063492063492 -- mov edx, dword ptr [rbp-0xa0] (path rank: 1.9995436110025506) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af357 -- rax min_reg_val_less 0x6aaa1e202b68 -- 0.992063492063492 -- mov rax, qword ptr [rax+0x30] (path rank: 1.9995502988408702) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af15a -- is_visited -- 0.992063492063492 -- jnbe 0x5555555af167 (path rank: 1.9995513474342197) //Mat_VarReadNextInfo5 at mat5.c:4942
+0x00005555555af360 -- rdi min_reg_val_less 0x6aaa1e202b68 -- 0.992063492063492 -- mov rdi, rax (path rank: 1.99955698667919) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af165 -- is_visited -- 0.992063492063492 -- jmp 0x5555555af16c (path rank: 1.9995577277709313) //Mat_VarReadNextInfo5 at mat5.c:4942 (discriminator 1)
+0x00005555555af16c -- rdx min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rdx, qword ptr [rbp-0x80] (path rank: 1.9995598545498352) //Mat_VarReadNextInfo5 at mat5.c:4942 (discriminator 4)
+0x00005555555af36c -- rax min_reg_val_less 0xff -- 0.992063492063492 -- mov eax, dword ptr [rbp-0xa0] (path rank: 1.9995636745175096) //Mat_VarReadNextInfo5 at mat5.c:4982
+0x00005555555af179 -- max_interrupt_flag_set -- 0.992063492063492 -- and eax, 0x800 (path rank: 1.9995662348865468) //Mat_VarReadNextInfo5 at mat5.c:4943 (discriminator 4)
+0x00005555555af372 -- max_zero_flag_set -- 0.992063492063492 -- cmp qword ptr [rbp-0x68], rax (path rank: 1.9995670184366694) //Mat_VarReadNextInfo5 at mat5.c:4982
+0x00005555555af17e -- rdx min_reg_val_less 0xff -- 0.992063492063492 -- mov edx, eax (path rank: 1.9995683616654507) //Mat_VarReadNextInfo5 at mat5.c:4943 (discriminator 4)
+0x00005555555af378 -- rax min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995703623558292) //Mat_VarReadNextInfo5 at mat5.c:4983
+0x00005555555af180 -- rax min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995704884443548) //Mat_VarReadNextInfo5 at mat5.c:4943 (discriminator 4)
+0x00005555555af184 -- memory_value min_reg_val_less 0xff -- 0.992063492063492 -- mov dword ptr [rax+0x18], edx (path rank: 1.9995726152232585) //Mat_VarReadNextInfo5 at mat5.c:4943 (discriminator 4)
+0x00005555555af37c -- rdx min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rdx, qword ptr [rax+0x30] (path rank: 1.9995737062749888) //Mat_VarReadNextInfo5 at mat5.c:4983
+0x00005555555af18d -- max_interrupt_flag_set -- 0.992063492063492 -- and eax, 0x400 (path rank: 1.9995768687810662) //Mat_VarReadNextInfo5 at mat5.c:4944 (discriminator 4)
+0x00005555555af192 -- rdx min_reg_val_less 0xff -- 0.992063492063492 -- mov edx, eax (path rank: 1.99957899555997) //Mat_VarReadNextInfo5 at mat5.c:4944 (discriminator 4)
+0x00005555555af194 -- rax min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.999581122338874) //Mat_VarReadNextInfo5 at mat5.c:4944 (discriminator 4)
+0x00005555555af198 -- memory_value min_reg_val_less 0xff -- 0.992063492063492 -- mov dword ptr [rax+0x1c], edx (path rank: 1.9995832491177779) //Mat_VarReadNextInfo5 at mat5.c:4944 (discriminator 4)
+0x00005555555af1a1 -- max_interrupt_flag_set -- 0.992063492063492 -- and eax, 0x200 (path rank: 1.9995875026755858) //Mat_VarReadNextInfo5 at mat5.c:4945 (discriminator 4)
+0x00005555555af1a6 -- rdx min_reg_val_less 0xff -- 0.992063492063492 -- mov edx, eax (path rank: 1.9995896294544895) //Mat_VarReadNextInfo5 at mat5.c:4945 (discriminator 4)
+0x00005555555af1a8 -- rax min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995917562333934) //Mat_VarReadNextInfo5 at mat5.c:4945 (discriminator 4)
+0x00005555555af1ac -- memory_value min_reg_val_less 0xff -- 0.992063492063492 -- mov dword ptr [rax+0x20], edx (path rank: 1.9995938830122972) //Mat_VarReadNextInfo5 at mat5.c:4945 (discriminator 4)
+0x00005555555af1af -- rax min_reg_val_less 0xffffffffffffffff -- 0.992063492063492 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995960097912011) //Mat_VarReadNextInfo5 at mat5.c:4946 (discriminator 4)
+0x00005555555af33a -- max_parity_flag_set -- 0.992063492063492 -- test rax, rax (path rank: 1.9996884635591836) //Mat_VarReadNextInfo5 at mat5.c:4980
+0x00005555555af13f -- 0x5555555af13f edge_only_taken_to 0x5555555af145 -- 0.992063492063492 -- jnz 0x5555555af1c7 (path rank: 1.99979308615649) //Mat_VarReadNextInfo5 at mat5.c:4940
+0x00005555555af1b9 -- 0x5555555af1b9 edge_only_taken_to 0x5555555af1c7 -- 0.992063492063492 -- jnz 0x5555555af1c7 (path rank: 1.9998020873332667) //Mat_VarReadNextInfo5 at mat5.c:4946 (discriminator 4)
+0x00005555555af2f2 -- 0x5555555af2f2 edge_only_taken_to 0x5555555af302 -- 0.992063492063492 -- jnz 0x5555555af302 (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4975
+0x00005555555af376 -- 0x5555555af376 edge_only_taken_to 0x5555555af378 -- 0.992063492063492 -- jnz 0x5555555af391 (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4982
+0x000055555556201d -- memory_value min_reg_val_greater_or_equal 0x7c0 -- 0.992063492063492 -- mov dword ptr [rbp-0xc], eax (path rank: 2) //Mat_uint32Swap at endian.c:132
+0x000055555555aa04 -- rsi min_reg_val_less 0x2aeaeff522d0 -- 0.9841269841269842 -- add qword ptr [rbp-0x18], rax (path rank: 1.928204106211191) //Mat_Open at mat.c:391
+0x00005555555af2ac -- rax min_reg_val_less 0xff -- 0.9841269841269842 -- mov eax, dword ptr [rbp-0x60] (path rank: 1.9994193327480663) //Mat_VarReadNextInfo5 at mat5.c:4969
+0x00005555555af2af -- max_zero_flag_set -- 0.9841269841269842 -- cmp eax, 0x1 (path rank: 1.9994226766672263) //Mat_VarReadNextInfo5 at mat5.c:4969
+0x00005555555af2b8 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rax, qword ptr [rbp-0xc8] (path rank: 1.999426020586386) //Mat_VarReadNextInfo5 at mat5.c:4971
+0x00005555555af2bf -- rax min_reg_val_less 0xff -- 0.9841269841269842 -- mov eax, dword ptr [rax+0x24] (path rank: 1.9994293645055459) //Mat_VarReadNextInfo5 at mat5.c:4971
+0x00005555555af2c2 -- max_interrupt_flag_set -- 0.9841269841269842 -- test eax, eax (path rank: 1.9994327084247057) //Mat_VarReadNextInfo5 at mat5.c:4971
+0x00005555555af2c4 -- is_visited -- 0.9841269841269842 -- jz 0x5555555af2de (path rank: 1.9994360523438655) //Mat_VarReadNextInfo5 at mat5.c:4971
+0x00005555555af2c6 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- lea rax, ptr [rbp-0x60] (path rank: 1.9994393962630252) //Mat_VarReadNextInfo5 at mat5.c:4972
+0x00005555555af2ca -- max_interrupt_flag_set -- 0.9841269841269842 -- add rax, 0x4 (path rank: 1.999442740182185) //Mat_VarReadNextInfo5 at mat5.c:4972
+0x00005555555af2ce -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rdi, rax (path rank: 1.999446084101345) //Mat_VarReadNextInfo5 at mat5.c:4972
+0x00005555555ae903 -- rsi min_reg_val_greater_or_equal 0x7e8043ff -- 0.9841269841269842 -- mov dword ptr [rbp-0x9c], eax (path rank: 1.99946625183233) //Mat_VarReadNextInfo5 at mat5.c:4771
+0x0000555555562092 -- 0x555555562092 has_edge_to 0x5555555af2d6 -- 0.9841269841269842 -- ret  (path rank: 1.9994756814527697) //Mat_uint32Swap at endian.c:140
+0x00005555555af2dc -- is_visited -- 0.9841269841269842 -- jmp 0x5555555af2e7 (path rank: 1.9994790253719295) //Mat_VarReadNextInfo5 at mat5.c:4972
+0x00005555555af2f0 -- max_interrupt_flag_set -- 0.9841269841269842 -- test eax, eax (path rank: 1.9994890571294088) //Mat_VarReadNextInfo5 at mat5.c:4975
+0x00005555555af32a -- rax min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995180767895282) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x00005555555af332 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995247646278476) //Mat_VarReadNextInfo5 at mat5.c:4980
+0x00005555555af078 -- max_parity_flag_set -- 0.9841269841269842 -- mov qword ptr [rbp-0x68], rax (path rank: 1.9995271410105673) //Mat_VarReadNextInfo5 at mat5.c:4919
+0x00005555555af33d -- is_visited -- 0.9841269841269842 -- jz 0x5555555af451 (path rank: 1.999533579245071) //Mat_VarReadNextInfo5 at mat5.c:4980
+0x00005555555af343 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rax, qword ptr [rbp-0xc8] (path rank: 1.9995369231642308) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af34a -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rcx, qword ptr [rax] (path rank: 1.9995402670833906) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af353 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9841269841269842 -- mov rax, qword ptr [rbp-0x80] (path rank: 1.9995469549217104) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af35b -- is_visited -- 0.9841269841269842 -- mov esi, 0x1 (path rank: 1.9995536427600302) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af368 -- memory_value min_reg_val_less 0xff -- 0.9841269841269842 -- mov qword ptr [rbp-0x68], rax (path rank: 1.9995603305983496) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555af250 -- max_parity_flag_set -- 0.9841269841269842 -- mov qword ptr [rbp-0x68], rax (path rank: 1.999606089153532) //Mat_VarReadNextInfo5 at mat5.c:4959
+0x00005555555af0f4 -- max_parity_flag_set -- 0.9841269841269842 -- add rax, 0x10 (path rank: 1.9997708945760098) //Mat_VarReadNextInfo5 at mat5.c:4929
+0x00005555555af2b2 -- 0x5555555af2b2 edge_only_taken_to 0x5555555af2b8 -- 0.9841269841269842 -- jnz 0x5555555af3c8 (path rank: 1.9998028232785374) //Mat_VarReadNextInfo5 at mat5.c:4969
+0x00005555555af363 -- 0x5555555af363 edge_only_taken_to 0x5555555563b0 -- 0.9841269841269842 -- call 0x5555555563b0 (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4981
+0x00005555555563b4 -- 0x5555555563b4 has_edge_to 0x5555555af368 -- 0.9841269841269842 -- bnd jmp qword ptr [rip+0xacae5] (path rank: 2) //?? ??:0
+0x00005555555af322 -- 0x5555555af322 edge_only_taken_to 0x555555556530 -- 0.9841269841269842 -- call 0x555555556530 (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4979
+0x0000555555556534 -- 0x555555556534 has_edge_to 0x5555555af327 -- 0.9841269841269842 -- bnd jmp qword ptr [rip+0xaca25] (path rank: 2) //?? ??:0
+0x00005555555af2d1 -- 0x5555555af2d1 edge_only_taken_to 0x555555561ff8 -- 0.9841269841269842 -- call 0x555555561ff8 (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4972
+0x00005555555ae8c4 -- max_parity_flag_set -- 0.9761904761904762 -- mov dword ptr [rbp-0x9c], eax (path rank: 1.9994848730489516) //Mat_VarReadNextInfo5 at mat5.c:4768
+0x000055555555aaeb -- max_parity_flag_set -- 0.9761904761904762 -- mov rdx, qword ptr [rbp-0x20] (path rank: 1.9997235676339649) //Mat_Open at mat.c:408
+0x0000555555561fda -- memory_value max_reg_val_greater_or_equal 0xffc37ffe -- 0.9682539682539684 -- mov dword ptr [rax], edx (path rank: 0.6509942184125975) //Mat_int32Swap at endian.c:113
+0x0000555555561f8d -- rax max_reg_val_less 0xf -- 0.9682539682539684 -- xor eax, edx (path rank: 1.3357702166697492) //Mat_int32Swap at endian.c:110
+0x0000555555561f96 -- rax max_reg_val_less 0xf -- 0.9682539682539684 -- movzx eax, byte ptr [rbp-0xc] (path rank: 1.3794828036183069) //Mat_int32Swap at endian.c:110
+0x0000555555561f9f -- rdx max_reg_val_less 0xf -- 0.9682539682539684 -- movzx edx, byte ptr [rbp-0xc] (path rank: 1.4156212316160062) //Mat_int32Swap at endian.c:110
+0x0000555555561f8f -- memory_value max_reg_val_less 0xf -- 0.9682539682539684 -- mov byte ptr [rbp-0xc], al (path rank: 1.6526706386122154) //Mat_int32Swap at endian.c:110
+0x000055555556206b -- memory_value max_reg_val_greater_or_equal 0xfe -- 0.9682539682539684 -- mov byte ptr [rbp-0xb], al (path rank: 1.9993229753822652) //Mat_uint32Swap at endian.c:135
+0x000055555556204b -- rax max_reg_val_greater_or_equal 0xfe -- 0.9682539682539684 -- movzx eax, byte ptr [rbp-0xa] (path rank: 1.9994589618569703) //Mat_uint32Swap at endian.c:135
+0x0000555555562054 -- rdx max_reg_val_greater_or_equal 0xfe -- 0.9682539682539684 -- movzx edx, byte ptr [rbp-0xa] (path rank: 1.9994623057761303) //Mat_uint32Swap at endian.c:135
+0x0000555555562069 -- rax max_reg_val_greater_or_equal 0xfe -- 0.9682539682539684 -- xor eax, edx (path rank: 1.99946564969529) //Mat_uint32Swap at endian.c:135
+0x0000555555561fd3 -- rdx max_reg_val_greater_or_equal 0xffc37ffe -- 0.9682539682539684 -- mov edx, dword ptr [rbp-0xc] (path rank: 1.9995109141893115) //Mat_int32Swap at endian.c:113
+0x0000555555561fe0 -- rax max_reg_val_greater_or_equal 0xffc37ffe -- 0.9682539682539684 -- mov eax, dword ptr [rax] (path rank: 1.9995130409682154) //Mat_int32Swap at endian.c:115
+0x00005555555675ca -- rax min_reg_val_less 0x45a3fecef1cbf800 -- 0.9682539682539684 -- mov rax, qword ptr fs:[0x28] (path rank: 1.9997967375772578) //ReadRankDims at mat5.c:1633
+0x00005555555675d3 -- memory_value min_reg_val_less 0x45a3fecef1cbf800 -- 0.9682539682539684 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9997979547175138) //ReadRankDims at mat5.c:1633
+0x000055555556778f -- rdx min_reg_val_less 0x45a3fecef1cbf800 -- 0.9682539682539684 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.9998003889980256) //ReadRankDims at mat5.c:1677
+0x0000555555562020 -- rdx max_reg_val_greater_or_equal 0xfe -- 0.9603174603174602 -- movzx edx, byte ptr [rbp-0xc] (path rank: 1.9993696628753597) //Mat_uint32Swap at endian.c:134
+0x0000555555562035 -- rax max_reg_val_greater_or_equal 0xfe -- 0.9603174603174602 -- xor eax, edx (path rank: 1.999375109127689) //Mat_uint32Swap at endian.c:134
+0x000055555556203e -- rax max_reg_val_greater_or_equal 0xfe -- 0.9603174603174602 -- movzx eax, byte ptr [rbp-0x9] (path rank: 1.9993784530468486) //Mat_uint32Swap at endian.c:134
+0x00005555555675c4 -- memory_value max_reg_val_less 0x1000ac80 -- 0.9603174603174602 -- mov dword ptr [rbp-0x44], edx (path rank: 1.9994009469824667) //ReadRankDims at mat5.c:1633
+0x00005555555af1ca -- rdx max_reg_val_less 0x1000ac80 -- 0.9603174603174602 -- mov edx, dword ptr [rbp-0x50] (path rank: 1.9996045169068168) //Mat_VarReadNextInfo5 at mat5.c:4951
+0x00005555555620a3 -- rax min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov rax, qword ptr fs:[0x28] (path rank: 1.9997273605826693) //Mat_int16Swap at endian.c:149
+0x00005555555620ac -- memory_value min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9997285777229252) //Mat_int16Swap at endian.c:149
+0x00005555555620f6 -- rdx min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.9997297948631811) //Mat_int16Swap at endian.c:162
+0x00005555555ae838 -- rax min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov rax, qword ptr fs:[0x28] (path rank: 1.9997492691072765) //Mat_VarReadNextInfo5 at mat5.c:4753
+0x00005555555ae841 -- memory_value min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov qword ptr [rbp-0x18], rax (path rank: 1.9997504862475324) //Mat_VarReadNextInfo5 at mat5.c:4753
+0x0000555555562008 -- rax min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov rax, qword ptr fs:[0x28] (path rank: 1.9997711776318834) //Mat_uint32Swap at endian.c:125
+0x0000555555562011 -- memory_value min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9997723947721393) //Mat_uint32Swap at endian.c:125
+0x000055555556207d -- rdx min_reg_val_less 0x45a3fecef1cbf800 -- 0.9603174603174602 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.9997857833149546) //Mat_uint32Swap at endian.c:140
+0x0000555555562037 -- memory_value max_reg_val_greater_or_equal 0xfe -- 0.9603174603174602 -- mov byte ptr [rbp-0x9], al (path rank: 2) //Mat_uint32Swap at endian.c:134
+0x0000555555561fc3 -- memory_value max_reg_val_greater_or_equal 0xfb -- 0.9523809523809524 -- mov byte ptr [rbp-0xa], al (path rank: 1.4438442998267895) //Mat_int32Swap at endian.c:111
+0x0000555555561f6d -- rax min_reg_val_less 0x405533b79cc82000 -- 0.9523809523809524 -- mov rax, qword ptr fs:[0x28] (path rank: 1.561586478292333) //Mat_int32Swap at endian.c:101
+0x0000555555561f76 -- memory_value min_reg_val_less 0x405533b79cc82000 -- 0.9523809523809524 -- mov qword ptr [rbp-0x8], rax (path rank: 1.5758961431400742) //Mat_int32Swap at endian.c:101
+0x0000555555561fe2 -- rdx min_reg_val_less 0x405533b79cc82000 -- 0.9523809523809524 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.6659634613065661) //Mat_int32Swap at endian.c:116
+0x000055555556205c -- min_parity_flag_set -- 0.9523809523809524 -- xor eax, edx (path rank: 1.9993102018426658) //Mat_uint32Swap at endian.c:135
+0x0000555555561fac -- rdx max_reg_val_greater_or_equal 0xfb -- 0.9523809523809524 -- movzx edx, byte ptr [rbp-0xb] (path rank: 1.9994960267369843) //Mat_int32Swap at endian.c:111
+0x0000555555561fc1 -- rax max_reg_val_greater_or_equal 0xfb -- 0.9523809523809524 -- xor eax, edx (path rank: 1.9995024070736962) //Mat_int32Swap at endian.c:111
+0x0000555555561fca -- rax max_reg_val_greater_or_equal 0xfb -- 0.9523809523809524 -- movzx eax, byte ptr [rbp-0xa] (path rank: 1.9995066606315037) //Mat_int32Swap at endian.c:111
+0x0000555555561fa9 -- memory_value max_reg_val_greater_or_equal 0xf8 -- 0.9444444444444444 -- mov byte ptr [rbp-0xc], al (path rank: 0.5325695145249288) //Mat_int32Swap at endian.c:110
+0x0000555555561fd0 -- memory_value max_reg_val_greater_or_equal 0xf7 -- 0.9444444444444444 -- mov byte ptr [rbp-0xb], al (path rank: 0.7882269940083529) //Mat_int32Swap at endian.c:111
+0x0000555555561f80 -- rax max_reg_val_greater_or_equal 0xf8807f00 -- 0.9444444444444444 -- mov eax, dword ptr [rax] (path rank: 1.9872501055873286) //Mat_int32Swap at endian.c:108
+0x0000555555561f89 -- rax max_reg_val_greater_or_equal 0xf8 -- 0.9444444444444444 -- movzx eax, byte ptr [rbp-0x9] (path rank: 1.9878381271002175) //Mat_int32Swap at endian.c:110
+0x0000555555561f92 -- rdx max_reg_val_greater_or_equal 0xf8 -- 0.9444444444444444 -- movzx edx, byte ptr [rbp-0x9] (path rank: 1.9889900189043648) //Mat_int32Swap at endian.c:110
+0x0000555555561fa7 -- rax max_reg_val_greater_or_equal 0xf8 -- 0.9444444444444444 -- xor eax, edx (path rank: 1.9895780404172534) //Mat_int32Swap at endian.c:110
+0x0000555555561fb0 -- rax max_reg_val_greater_or_equal 0xf7 -- 0.9444444444444444 -- movzx eax, byte ptr [rbp-0xa] (path rank: 1.9977983070262542) //Mat_int32Swap at endian.c:111
+0x0000555555561fb9 -- rdx max_reg_val_greater_or_equal 0xf7 -- 0.9444444444444444 -- movzx edx, byte ptr [rbp-0xa] (path rank: 1.998003719411524) //Mat_int32Swap at endian.c:111
+0x0000555555561fce -- rax max_reg_val_greater_or_equal 0xf7 -- 0.9444444444444444 -- xor eax, edx (path rank: 1.9981208070297811) //Mat_int32Swap at endian.c:111
+0x00005555555ae875 -- memory_value max_reg_val_less 0x94 -- 0.9444444444444444 -- mov qword ptr [rbp-0x78], rax (path rank: 1.9992147772746298) //Mat_VarReadNextInfo5 at mat5.c:4763
+0x0000555555562044 -- memory_value max_reg_val_greater_or_equal 0xfe -- 0.9444444444444444 -- mov byte ptr [rbp-0xc], al (path rank: 1.9993196314631054) //Mat_uint32Swap at endian.c:134
+0x0000555555562024 -- rax max_reg_val_greater_or_equal 0xfe -- 0.9444444444444444 -- movzx eax, byte ptr [rbp-0x9] (path rank: 1.9994090964183875) //Mat_uint32Swap at endian.c:134
+0x000055555556202d -- rdx max_reg_val_greater_or_equal 0xfe -- 0.9444444444444444 -- movzx edx, byte ptr [rbp-0x9] (path rank: 1.9994148746180591) //Mat_uint32Swap at endian.c:134
+0x0000555555562042 -- rax max_reg_val_greater_or_equal 0xfe -- 0.9444444444444444 -- xor eax, edx (path rank: 1.9994227551509003) //Mat_uint32Swap at endian.c:134
+0x00005555555564d4 -- num_successors_equal 2 -- 0.9444444444444444 -- bnd jmp qword ptr [rip+0xaca55] (path rank: 2) //?? ??:0
+0x0000555555561f82 -- memory_value max_reg_val_greater_or_equal 0xf8807f00 -- 0.9444444444444444 -- mov dword ptr [rbp-0xc], eax (path rank: 2) //Mat_int32Swap at endian.c:108
+0x0000555555562028 -- rax max_reg_val_less 0xc4 -- 0.9365079365079364 -- xor eax, edx (path rank: 1.9992943918855146) //Mat_uint32Swap at endian.c:134
+0x000055555556202a -- memory_value max_reg_val_less 0xc4 -- 0.9365079365079364 -- mov byte ptr [rbp-0xc], al (path rank: 1.9992977358046744) //Mat_uint32Swap at endian.c:134
+0x0000555555562031 -- rax max_reg_val_less 0xc4 -- 0.9365079365079364 -- movzx eax, byte ptr [rbp-0xc] (path rank: 1.9993022968640903) //Mat_uint32Swap at endian.c:134
+0x000055555556203a -- rdx max_reg_val_less 0xc4 -- 0.9365079365079364 -- movzx edx, byte ptr [rbp-0xc] (path rank: 1.9993056407832501) //Mat_uint32Swap at endian.c:134
+0x00005555555675c7 -- memory_value max_reg_val_less 0x1402680 -- 0.9365079365079364 -- mov dword ptr [rbp-0x48], ecx (path rank: 1.9994042909016263) //ReadRankDims at mat5.c:1633
+0x00005555555af1c7 -- rcx max_reg_val_less 0x1402680 -- 0.9365079365079364 -- mov ecx, dword ptr [rbp-0x4c] (path rank: 1.9994064305467063) //Mat_VarReadNextInfo5 at mat5.c:4951
+0x0000555555559726 -- rax min_reg_val_less 0x405533b79cc82000 -- 0.9285714285714286 -- mov rax, qword ptr fs:[0x28] (path rank: 1.999731012003437) //strdup_printf at io.c:79
+0x000055555555972f -- memory_value min_reg_val_less 0x405533b79cc82000 -- 0.9285714285714286 -- mov qword ptr [rbp-0xb8], rax (path rank: 1.999732229143693) //strdup_printf at io.c:79
+0x000055555555978c -- rdx min_reg_val_less 0x405533b79cc82000 -- 0.9285714285714286 -- mov rdx, qword ptr [rbp-0xb8] (path rank: 1.9997468348267646) //strdup_printf at io.c:86
+0x00005555555596af -- rdi min_reg_val_greater_or_equal 0x7fffffffcdf8 -- 0.9285714285714286 -- mov rax, qword ptr [rbp-0x28] (path rank: 2) //strdup_vprintf at io.c:68
+0x0000555555559153 -- rax min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov rax, qword ptr fs:[0x28] (path rank: 1.5038157347023726) //main at matdump.c:833
+0x000055555555915c -- memory_value min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov qword ptr [rbp-0x8], rax (path rank: 1.518125399550114) //main at matdump.c:833
+0x000055555555a796 -- rax min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov rax, qword ptr fs:[0x28] (path rank: 1.5324350643978553) //Mat_Open at mat.c:336
+0x000055555555a79f -- memory_value min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov qword ptr [rbp-0x8], rax (path rank: 1.5467447292455967) //Mat_Open at mat.c:336
+0x0000555555559623 -- rax min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov rax, qword ptr fs:[0x28] (path rank: 1.6802378290868853) //strdup_vprintf at io.c:54
+0x000055555555962c -- memory_value min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov qword ptr [rbp-0x8], rax (path rank: 1.6945474939346268) //strdup_vprintf at io.c:54
+0x00005555555596b3 -- rdx min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.723175343611901) //strdup_vprintf at io.c:69 (discriminator 1)
+0x000055555555ad05 -- rdx min_reg_val_less 0x405533b79cc82000 -- 0.9206349206349208 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.7374862255998982) //Mat_Open at mat.c:496 (discriminator 1)
+0x0000555555561fb6 -- memory_value max_reg_val_less 0x2 -- 0.9126984126984128 -- mov byte ptr [rbp-0xb], al (path rank: 0.4997166375007451) //Mat_int32Swap at endian.c:111
+0x0000555555561fb4 -- rax max_reg_val_less 0x2 -- 0.9126984126984128 -- xor eax, edx (path rank: 1.8441414134815366) //Mat_int32Swap at endian.c:111
+0x0000555555561fbd -- rax max_reg_val_less 0x2 -- 0.9126984126984128 -- movzx eax, byte ptr [rbp-0xb] (path rank: 1.8619803742766123) //Mat_int32Swap at endian.c:111
+0x0000555555561fc6 -- rdx max_reg_val_less 0x2 -- 0.9126984126984128 -- movzx edx, byte ptr [rbp-0xb] (path rank: 1.8732164069339627) //Mat_int32Swap at endian.c:111
+0x0000555555559670 -- memory_value max_reg_val_less 0x82 -- 0.9047619047619048 -- mov dword ptr [rbp-0x2c], eax (path rank: 0.8329418037107834) //strdup_vprintf at io.c:60
+0x000055555555966d -- rax max_reg_val_less 0x82 -- 0.9047619047619048 -- add eax, 0x1 (path rank: 1.9989528103503467) //strdup_vprintf at io.c:60
+0x0000555555559673 -- rax max_reg_val_less 0x82 -- 0.9047619047619048 -- mov eax, dword ptr [rbp-0x2c] (path rank: 1.9989804970746252) //strdup_vprintf at io.c:63
+0x0000555555559676 -- rax max_reg_val_less 0x83 -- 0.9047619047619048 -- add eax, 0x1 (path rank: 1.9989954038262165) //strdup_vprintf at io.c:63
+0x0000555555559679 -- rax max_reg_val_less 0x83 -- 0.9047619047619048 -- cdqe  (path rank: 1.9990103105778076) //strdup_vprintf at io.c:63
+0x000055555555967b -- rdi max_reg_val_less 0x83 -- 0.9047619047619048 -- mov rdi, rax (path rank: 1.999025217329399) //strdup_vprintf at io.c:63
+0x0000555555559695 -- rax max_reg_val_less 0x82 -- 0.9047619047619048 -- mov eax, dword ptr [rbp-0x2c] (path rank: 1.9990401240809903) //strdup_vprintf at io.c:67
+0x0000555555559698 -- rsi max_reg_val_less 0x82 -- 0.9047619047619048 -- movsxd rsi, eax (path rank: 1.9990550308325816) //strdup_vprintf at io.c:67
+0x00005555555675e1 -- max_adjust_flag_set -- 0.9047619047619048 -- cmp dword ptr [rbp-0x44], 0x5 (path rank: 1.9994100691012981) //ReadRankDims at mat5.c:1636
+0x00005555555ae93e -- 0x5555555ae93e edge_only_taken_to 0x5555555af055 -- 0.9047619047619048 -- jz 0x5555555af055 (path rank: 2) //Mat_VarReadNextInfo5 at mat5.c:4776

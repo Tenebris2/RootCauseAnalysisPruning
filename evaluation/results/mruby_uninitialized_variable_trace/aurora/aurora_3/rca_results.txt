@@ -1,0 +1,53 @@
+analyzing traces
+reading crashes
+reading non-crashes
+43 crashes and 889 non-crashes
+filling cfg
+calculating scores
+dumping linear scores
+found 1764 predicates with score better than 0.9
+trace analysis time: 98.774005914 seconds
+monitoring predicates
+monitoring time: 963.744159162 seconds
+ranking predicates
+ranking time: 2.628650645 seconds
+total time: 1065.146844684 seconds
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/predicate_monitoring/Cargo.toml
+workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/trace_analysis/Cargo.toml
+workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/root_cause_analysis/Cargo.toml
+workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
+warning: use of deprecated method `zip::read::ZipFile::<'a>::sanitized_name`: by stripping `..`s from the path, the meaning of paths can change.
+                         `mangled_name` can be used if this behaviour is desirable
+   --> trace_analysis/src/trace.rs:282:42
+    |
+282 |         let trace_file_path = trace_file.sanitized_name().to_str().unwrap().to_string();
+    |                                          ^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: for loop over an `Option`. This is more readably written as an `if let` statement
+   --> trace_analysis/src/control_flow_graph.rs:178:31
+    |
+178 |             for successors in self.successors.get(&node) {
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(for_loops_over_fallibles)]` on by default
+help: to check pattern in a loop use `while let`
+    |
+178 |             while let Some(successors) = self.successors.get(&node) {
+    |             ~~~~~~~~~~~~~~~          ~~~
+help: consider using `if let` to clear intent
+    |
+178 |             if let Some(successors) = self.successors.get(&node) {
+    |             ~~~~~~~~~~~~          ~~~
+
+warning: `trace_analysis` (lib) generated 2 warnings
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `target/release/rca --eval-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --trace-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --monitor --rank-predicates`
+Predicate Ranking: 1
+ LOC Ranking: 1

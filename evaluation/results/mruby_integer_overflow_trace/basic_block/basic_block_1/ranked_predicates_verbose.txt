@@ -1,0 +1,147 @@
+0x00005555555a2f7a -- max_parity_flag_set -- 0.9939759036144578 -- jle 0x5555555a2fc2 (path rank: 0.22163779393541183) //mrb_vm_exec at vm.c:1867
+0x000055555559c035 -- rsi min_reg_val_less 0x1b -- 0.9939759036144578 -- jmp 0x55555559c054 (path rank: 1.987892467028212) //uvenv at vm.c:234
+0x000055555555f4cf -- rdx min_reg_val_less 0xff -- 0.9939759036144578 -- jz 0x55555555f4e4 (path rank: 1.9886242316038893) //mrb_ary_size at array.c:1048
+0x00005555555a60fa -- rcx max_reg_val_greater_or_equal 0x58 -- 0.9939759036144578 -- jmp 0x5555555a621c (path rank: 1.988820060919684) //mrb_vm_exec at vm.c:2631 (discriminator 2)
+0x00005555555a6272 -- rdx max_reg_val_greater_or_equal 0x48 -- 0.9939759036144578 -- jmp 0x5555555a62c0 (path rank: 1.9889179755775812) //mrb_vm_exec at vm.c:2631 (discriminator 10)
+0x000055555559fa4e -- rdx max_reg_val_greater_or_equal 0x48 -- 0.9939759036144578 -- jz 0x55555559fa95 (path rank: 1.9890158902354786) //mrb_vm_exec at vm.c:1243
+0x000055555555e75e -- rdx min_reg_val_less 0xff -- 0.9939759036144578 -- jz 0x55555555e773 (path rank: 1.9891138048933759) //mrb_ary_aget at array.c:815
+0x000055555555db0f -- rsi min_reg_val_less 0xff -- 0.9939759036144578 -- jz 0x55555555db24 (path rank: 1.9892117195512733) //mrb_ary_ref at array.c:608
+0x000055555559c091 -- 0x55555559c091 has_edge_to 0x55555559f7ef -- 0.9939759036144578 -- jmp 0x55555559c0e1 (path rank: 2) //uvenv at vm.c:239 (discriminator 1)
+0x000055555559bf97 -- 0x55555559bf97 has_edge_to 0x55555559c17b -- 0.993530270815884 -- jbe 0x55555559bfc1 (path rank: 2) //stack_extend_alloc at vm.c:215
+0x000055555559c05f -- max_interrupt_flag_set -- 0.9930846380173098 -- jnz 0x55555559c037 (path rank: 1.9879469614983751) //uvenv at vm.c:234
+0x000055555559c071 -- max_interrupt_flag_set -- 0.9930846380173098 -- jz 0x55555559c07d (path rank: 1.9880380972305967) //uvenv at vm.c:238
+0x000055555559eaf5 -- rdx min_reg_val_less 0x1c -- 0.9930846380173098 -- jmp 0x55555559e8ee (path rank: 1.9881058677167167) //mrb_vm_exec at vm.c:1050
+0x000055555559c07b -- rax min_reg_val_less 0xffffffffffffffff -- 0.9930846380173098 -- jmp 0x55555559c082 (path rank: 1.9881292329628182) //uvenv at vm.c:238 (discriminator 1)
+0x000055555559c08b -- is_visited -- 0.9930846380173098 -- jz 0x55555559c093 (path rank: 1.9882203686950395) //uvenv at vm.c:239 (discriminator 4)
+0x00005555555a6069 -- rdx max_reg_val_greater_or_equal 0x58 -- 0.9930846380173098 -- jz 0x5555555a61c2 (path rank: 1.9887221462617868) //mrb_vm_exec at vm.c:2631
+0x000055555559e8ee -- 0x55555559e8ee has_edge_to 0x55555559c035 -- 0.9930846380173098 -- jmp rax (path rank: 2) //mrb_vm_exec at vm.c:1016
+0x0000555555569263 -- rax max_reg_val_greater_or_equal 0x7ee -- 0.991747739621588 -- jnb 0x555555569271 (path rank: 1.9874190523847999) //mrb_obj_alloc at gc.c:515
+0x000055555559be7a -- rdx max_reg_val_greater_or_equal 0x1798 -- 0.991302106823014 -- jbe 0x55555559be84 (path rank: 1.9876001840298814) //stack_extend_alloc at vm.c:187
+0x000055555559bc1b -- rcx max_reg_val_greater_or_equal 0x1c2 -- 0.99085647402444 -- jz 0x55555559bdf7 (path rank: 1.9877824554943244) //envadjust at vm.c:148
+0x000055555559be8b -- num_successors_equal 2 -- 0.99085647402444 -- jnle 0x55555559be94 (path rank: 2) //stack_extend_alloc at vm.c:197
+0x000055555559be92 -- max_interrupt_flag_set -- 0.9868457788372742 -- jmp 0x55555559be9d (path rank: 1.987691319762103) //stack_extend_alloc at vm.c:198
+0x00005555555a102a -- rdx max_reg_val_greater_or_equal 0x8 -- 0.9823894508515344 -- jns 0x5555555a103b (path rank: 1.9879476245117418) //mrb_vm_exec at vm.c:1515
+0x00005555555a1045 -- rax max_reg_val_greater_or_equal 0x8 -- 0.9823894508515344 -- jmp 0x5555555a104c (path rank: 1.988045539169639) //mrb_vm_exec at vm.c:1515 (discriminator 3)
+0x000055555559d795 -- r9 min_reg_val_less 0x5555556a3668 -- 0.9801451796490775 -- jnz 0x55555559d7cc (path rank: 1.9877229050907927) //eval_under at vm.c:621
+0x000055555559dbb5 -- rax min_reg_val_less 0x5555556a36f8 -- 0.9801451796490775 -- jz 0x55555559dbbc (path rank: 1.9878284363002399) //mrb_obj_instance_eval at vm.c:722
+0x000055555557de16 -- rax max_reg_val_greater_or_equal 0xaab18e80 -- 0.9748136932757768 -- jmp 0x55555557de46 (path rank: 1.9871671069278087) //mrb_method_search_vm at class.c:1428
+0x00005555555a08b0 -- rcx max_reg_val_greater_or_equal 0xaab62b80 -- 0.9748136932757768 -- jnz 0x5555555a0ba1 (path rank: 1.987265021585706) //mrb_vm_exec at vm.c:1432
+0x000055555556874b -- 0x55555556874b has_edge_to 0x55555559dbb5 -- 0.9507495221527822 -- jnz 0x5555555687c3 (path rank: 2) //mrb_realloc at gc.c:222
+0x000055555559c17b -- min_zero_flag_set -- 0.9494126237570604 -- jnz 0x55555559c22c (path rank: 1.9871522679286686) //cipush at vm.c:278
+0x0000555555578e3c -- rbx max_reg_val_greater_or_equal 0x5555559e1cc0 -- 0.9427281317784506 -- jz 0x555555578e5d (path rank: 1.0434392741561256) //mrb_obj_value at value.h:220
+0x000055555556af65 -- rbx max_reg_val_greater_or_equal 0x5555559e1cc0 -- 0.9427281317784506 -- jz 0x55555556b0c0 (path rank: 1.9865539601652746) //mrb_field_write_barrier at gc.c:1274
+0x0000555555562a37 -- rcx max_reg_val_greater_or_equal 0x5555559ebbb5 -- 0.9340302386014648 -- jmp 0x555555562a5b (path rank: 1.9841459282414484) //mrb_str_times at string.c:845 (discriminator 4)
+0x00005555555629cd -- rax max_reg_val_greater_or_equal 0x5555559ebc48 -- 0.9335846058028908 -- jle 0x555555562a9b (path rank: 1.984040338592987) //mrb_str_times at string.c:842 (discriminator 4)
+0x0000555555587998 -- rdx max_reg_val_less 0x5555556c0088 -- 0.9306960462169532 -- jnz 0x5555555879a5 (path rank: 1.9779415254517725) //yydestruct at y.tab.c:5023
+0x000055555559d7e6 -- rax min_reg_val_less 0x17 -- 0.9306960462169532 -- jnz 0x55555559d828 (path rank: 1.9870589115138981) //eval_under at vm.c:625
+0x00005555555a0e26 -- max_interrupt_flag_set -- 0.9302504134183792 -- jnz 0x5555555a0e51 (path rank: 1.986603232852791) //mrb_vm_exec at vm.c:1483 (discriminator 6)
+0x000055555556fbce -- 0x55555556fbce edge_only_taken_to 0x55555556fbe5 -- 0.9298047806198054 -- jmp 0x55555556fbdc (path rank: 1.9869677757816766) //mrb_proc_new at proc.c:27 (discriminator 1)
+0x000055555559c000 -- 0x55555559c000 has_edge_to 0x55555559c17b -- 0.9298047806198054 -- jb 0x55555559c013 (path rank: 2) //stack_extend at vm.c:223
+0x000055555556fbbc -- 0x55555556fbbc has_edge_to 0x55555556fbce -- 0.9298047806198054 -- jz 0x55555556fbd0 (path rank: 2) //mrb_proc_new at proc.c:27
+0x000055555557cc7c -- rax min_reg_val_less 0xffffffffffffffff -- 0.9293591478212314 -- jmp 0x55555557cfac (path rank: 0.44327558787082366) //mrb_get_args at class.c:948
+0x000055555556fcbc -- rdx max_reg_val_greater_or_equal 0x6c214 -- 0.9293591478212314 -- jns 0x55555556fcc7 (path rank: 1.984420504392287) //env_new at proc.c:51
+0x000055555559db0e -- rbx min_reg_val_less 0xffffffffffffffff -- 0.9293591478212314 -- jnz 0x55555559db3c (path rank: 1.985422997446723) //mrb_obj_instance_eval at vm.c:705
+0x000055555559d873 -- max_interrupt_flag_set -- 0.9293591478212314 -- jz 0x55555559d902 (path rank: 1.9860564184594622) //eval_under at vm.c:634
+0x00005555555a0dba -- rax min_reg_val_less 0xff -- 0.9293591478212314 -- jnz 0x5555555a0e51 (path rank: 1.9861475541916838) //mrb_vm_exec at vm.c:1481
+0x00005555555a0dd6 -- max_interrupt_flag_set -- 0.9293591478212314 -- jz 0x5555555a0e51 (path rank: 1.986238689923905) //mrb_vm_exec at vm.c:1483
+0x00005555555a0deb -- max_interrupt_flag_set -- 0.9293591478212314 -- jnz 0x5555555a0e51 (path rank: 1.9863298256561266) //mrb_vm_exec at vm.c:1483 (discriminator 1)
+0x00005555555a0e00 -- max_interrupt_flag_set -- 0.9293591478212314 -- jz 0x5555555a0e0f (path rank: 1.986420961388348) //mrb_vm_exec at vm.c:1483 (discriminator 2)
+0x00005555555a0e0d -- rax min_reg_val_less 0xffffffffffffffff -- 0.9293591478212314 -- jmp 0x5555555a0e14 (path rank: 1.9865120971205694) //mrb_vm_exec at vm.c:1483 (discriminator 3)
+0x00005555555a0e5f -- max_zero_flag_set -- 0.9293591478212314 -- jnz 0x5555555a0f20 (path rank: 1.9866943685850122) //mrb_vm_exec at vm.c:1488
+0x00005555555a0e72 -- max_interrupt_flag_set -- 0.9293591478212314 -- jnz 0x5555555a0e98 (path rank: 1.9867855043172338) //mrb_vm_exec at vm.c:1489
+0x00005555555a0eb3 -- max_interrupt_flag_set -- 0.9293591478212314 -- jz 0x5555555a0ed4 (path rank: 1.9868766400494553) //mrb_vm_exec at vm.c:1494
+0x00005555555a0dab -- 0x5555555a0dab has_edge_to 0x5555555a0dba -- 0.9293591478212314 -- jnz 0x5555555a0e51 (path rank: 2) //mrb_vm_exec at vm.c:1480
+0x00005555555a766b -- rdx max_reg_val_greater_or_equal 0x1f8 -- 0.9289135150226576 -- jmp 0x55555559e8ee (path rank: 1.9843293686600654) //mrb_vm_exec at vm.c:2760
+0x000055555556fde7 -- rcx min_reg_val_less 0x280c00 -- 0.9289135150226576 -- jz 0x55555556fe0c (path rank: 1.9845116401245084) //closure_setup at proc.c:76 (discriminator 4)
+0x000055555557b3e7 -- is_visited -- 0.9289135150226576 -- jnle 0x55555557b419 (path rank: 1.9846027758567297) //mrb_get_args at class.c:621
+0x000055555557b3ec -- max_interrupt_flag_set -- 0.9289135150226576 -- jz 0x55555557b41a (path rank: 1.9846939115889513) //mrb_get_args at class.c:621
+0x000055555557b3f1 -- max_interrupt_flag_set -- 0.9289135150226576 -- jz 0x55555557b407 (path rank: 1.9847850473211726) //mrb_get_args at class.c:621
+0x000055555557b40e -- max_interrupt_flag_set -- 0.9289135150226576 -- jz 0x55555557b41a (path rank: 1.984876183053394) //mrb_get_args at class.c:631
+0x000055555557b417 -- 0x55555557b417 edge_only_taken_to 0x55555557b43e -- 0.9289135150226576 -- jmp 0x55555557b41a (path rank: 1.9849673187856156) //mrb_get_args at class.c:632 (discriminator 1)
+0x000055555557b48e -- rax min_reg_val_less 0x1 -- 0.9289135150226576 -- jnle 0x55555557b4d7 (path rank: 1.9850584545178371) //mrb_get_args at class.c:646
+0x000055555557b872 -- min_zero_flag_set -- 0.9289135150226576 -- jnl 0x55555557cfac (path rank: 1.9851495902500584) //mrb_get_args at class.c:699
+0x000055555557cb53 -- rax min_reg_val_less 0x1c -- 0.9289135150226576 -- jnbe 0x55555557cb78 (path rank: 1.98524072598228) //mrb_get_args at class.c:933
+0x000055555557cb76 -- max_adjust_flag_set -- 0.9289135150226576 -- jmp 0x55555557cb8a (path rank: 1.9853318617145015) //mrb_get_args at class.c:933
+0x000055555559db42 -- max_interrupt_flag_set -- 0.9289135150226576 -- jnbe 0x55555559db4b (path rank: 1.9855141331789445) //mrb_obj_instance_eval at vm.c:708
+0x000055555559db4e -- 0x55555559db4e edge_only_taken_to 0x55555557db85 -- 0.9289135150226576 -- jnz 0x55555559db5a (path rank: 1.9856052689111658) //mrb_obj_instance_eval at vm.c:708
+0x000055555557db85 -- rdx max_reg_val_greater_or_equal 0x55550000000d -- 0.9289135150226576 -- jnbe 0x55555557dc3e (path rank: 1.9856964046433874) //mrb_singleton_class at class.c:1306
+0x0000555555579d0a -- rax max_reg_val_greater_or_equal 0xe -- 0.9289135150226576 -- jnz 0x555555579d4f (path rank: 1.985787540375609) //prepare_singleton_class at class.c:99
+0x0000555555579e56 -- rdx max_reg_val_greater_or_equal 0x55550000000e -- 0.9289135150226576 -- jmp 0x555555579e59 (path rank: 1.9859652827272407) //prepare_singleton_class at class.c:122
+0x0000555555578e6c -- 0x555555578e6c has_edge_to 0x55555559d795 -- 0.9289135150226576 -- jz 0x555555578e8d (path rank: 2) //mrb_obj_value at value.h:221
+0x000055555557b3e2 -- 0x55555557b3e2 has_edge_to 0x55555557b3e7 -- 0.9289135150226576 -- jz 0x55555557b3fe (path rank: 2) //mrb_get_args at class.c:621
+0x000055555557d03a -- 0x55555557d03a has_edge_to 0x55555559db0e -- 0.9289135150226576 -- jz 0x55555557d041 (path rank: 2) //mrb_get_args at class.c:1008 (discriminator 7)
+0x0000555555585ec9 -- rax max_reg_val_less 0x66 -- 0.9244249726177436 -- jz 0x555555585ed2 (path rank: 1.6366869521308105) //new_call at parse.y:428
+0x00005555555686b1 -- rcx max_reg_val_greater_or_equal 0x7fffe321ad78 -- 0.9119794686768464 -- jnz 0x5555555686fc (path rank: 0) //mrb_realloc_simple at gc.c:207
+0x00005555555b4eec -- rax max_reg_val_less 0x5 -- 0.9039580783025148 -- jnz 0x5555555b4f12 (path rank: 1.9825188774247973) //lambda_body at codegen.c:755
+0x00005555555694dc -- rax max_reg_val_greater_or_equal 0xfe -- 0.9039580783025148 -- jb 0x555555569492 (path rank: 1.9838935980493277) //mark_context_stack at gc.c:567 (discriminator 1)
+0x000055555556953b -- rax max_reg_val_greater_or_equal 0x17e -- 0.9039580783025148 -- jb 0x55555556950b (path rank: 1.983984733781549) //mark_context_stack at gc.c:576 (discriminator 1)
+0x00005555555b3050 -- 0x5555555b3050 edge_only_taken_to 0x5555555b4b4e -- 0.9035124455039408 -- jnz 0x5555555b3065 (path rank: 1.911467181398129) //codegen_palloc at codegen.c:120
+0x00005555555b4f3b -- rcx max_reg_val_less 0xe -- 0.9030668127053668 -- jz 0x5555555b4f4e (path rank: 1.9829745560859047) //lambda_body at codegen.c:764
+0x00005555555b4e7f -- rdx max_reg_val_less 0x2 -- 0.9021755471082188 -- jle 0x5555555b4f37 (path rank: 1.9823366059603544) //lambda_body at codegen.c:752
+0x00005555555b5d0c -- rcx max_reg_val_greater_or_equal 0x390 -- 0.901729914309645 -- jz 0x5555555b5d1f (path rank: 1.9710348810957719) //gen_call at codegen.c:989
+0x00005555555b36da -- rsi max_reg_val_greater_or_equal 0x7c807d7d -- 0.901729914309645 -- jmp 0x5555555b3e2c (path rank: 1.9798837625370551) //genop_peep at codegen.c:242
+0x00005555555bd841 -- rax max_reg_val_greater_or_equal 0x5555559e43b0 -- 0.901729914309645 -- jnz 0x5555555bd857 (path rank: 1.9811140215701015) //scope_add_irep at codegen.c:2837
+0x00005555555baba1 -- rcx max_reg_val_less 0x3b -- 0.901729914309645 -- jmp 0x5555555babcd (path rank: 1.9821610160232301) //codegen at codegen.c:2192
+0x00005555555b586a -- rdx max_reg_val_greater_or_equal 0xe4 -- 0.901729914309645 -- jmp 0x5555555b5879 (path rank: 1.9836691336164542) //gen_call at codegen.c:941
+0x00005555555960e5 -- rax min_reg_val_greater_or_equal 0x5555556c5e64 -- 0.901284281511071 -- jz 0x5555555960fe (path rank: 1.9791489810608285) //mrb_load_exec at parse.y:5790
+0x00005555555b6db5 -- rax max_reg_val_greater_or_equal 0x5555556c5e34 -- 0.901284281511071 -- jnz 0x5555555b6dbf (path rank: 1.9796276003640927) //codegen at codegen.c:1326
+0x00005555555b6b3c -- rax max_reg_val_greater_or_equal 0x206 -- 0.901284281511071 -- jnz 0x5555555b6b85 (path rank: 1.9800059496809013) //codegen at codegen.c:1296
+0x00005555555b6bb4 -- rdx max_reg_val_greater_or_equal 0x207 -- 0.901284281511071 -- jle 0x5555555b6bcc (path rank: 1.9801677128794226) //codegen at codegen.c:1305
+0x00005555555b582e -- rax max_reg_val_greater_or_equal 0x5555556c5e04 -- 0.901284281511071 -- jz 0x5555555b586c (path rank: 1.980401091077065) //gen_call at codegen.c:938 (discriminator 1)
+0x00005555555bdd6c -- rdx max_reg_val_greater_or_equal 0xfc -- 0.901284281511071 -- jz 0x5555555bddbe (path rank: 1.9804294371110225) //scope_new at codegen.c:2912
+0x00005555555b4ad3 -- rdx min_reg_val_less 0x7 -- 0.901284281511071 -- jnz 0x5555555b4ae8 (path rank: 1.9805483508547779) //lambda_body at codegen.c:683
+0x00005555555bd7fd -- rdx max_reg_val_greater_or_equal 0x206 -- 0.901284281511071 -- jmp 0x5555555bd800 (path rank: 1.9810372076063063) //codegen at codegen.c:2831
+0x00005555555b4798 -- max_zero_flag_set -- 0.901284281511071 -- jnz 0x5555555b4772 (path rank: 1.9813181652271021) //lv_idx at codegen.c:619
+0x00005555555b4770 -- rax min_reg_val_less 0xff -- 0.901284281511071 -- jmp 0x5555555b4793 (path rank: 1.9814152750463412) //lv_idx at codegen.c:619
+0x00005555555bab26 -- 0x5555555bab26 edge_only_taken_to 0x5555555babc7 -- 0.901284281511071 -- jmp 0x5555555babbf (path rank: 1.9816142016299014) //codegen at codegen.c:2188
+0x00005555555babc7 -- max_interrupt_flag_set -- 0.901284281511071 -- jnz 0x5555555bab2b (path rank: 1.981705337362123) //codegen at codegen.c:2188
+0x00005555555bab52 -- max_interrupt_flag_set -- 0.901284281511071 -- jle 0x5555555baba3 (path rank: 1.9817964730943443) //codegen at codegen.c:2190
+0x00005555555b3915 -- max_interrupt_flag_set -- 0.901284281511071 -- jnz 0x5555555b3e08 (path rank: 1.9819787445587873) //genop_peep at codegen.c:288
+0x00005555555b3e09 -- 0x5555555b3e09 edge_only_taken_to 0x5555555b3167 -- 0.901284281511071 -- jmp 0x5555555b3e1b (path rank: 1.9820698802910086) //genop_peep at codegen.c:299
+0x00005555555b4eb5 -- rax max_reg_val_less 0x3b -- 0.901284281511071 -- jnz 0x5555555b4ede (path rank: 1.9822444499714171) //lambda_body at codegen.c:754
+0x00005555555baac3 -- 0x5555555baac3 has_edge_to 0x5555555bab26 -- 0.901284281511071 -- jle 0x5555555bab07 (path rank: 2) //codegen at codegen.c:2181
+0x00005555555b33dc -- 0x5555555b33dc has_edge_to 0x5555555b3915 -- 0.901284281511071 -- jmp rax (path rank: 2) //genop_peep at codegen.c:191
+0x00005555555b4781 -- 0x5555555b4781 has_edge_to 0x5555555bab52 -- 0.901284281511071 -- jmp 0x5555555b479f (path rank: 2) //lv_idx at codegen.c:620 (discriminator 1)
+0x00005555555b3290 -- 0x5555555b3290 has_edge_to 0x5555555baba1 -- 0.901284281511071 -- jz 0x5555555b32bd (path rank: 2) //genop at codegen.c:167
+0x00005555555b6d2c -- rax min_reg_val_less 0x8 -- 0.9008386487124972 -- jnbe 0x5555555bd762 (path rank: 1.6400658577450087) //codegen at codegen.c:1318
+0x00005555555b5537 -- max_zero_flag_set -- 0.9008386487124972 -- jnz 0x5555555b5202 (path rank: 1.739310750346252) //gen_values at codegen.c:845
+0x00005555555b3360 -- rax min_reg_val_less 0x2 -- 0.9008386487124972 -- jz 0x5555555b3df3 (path rank: 1.7805778750689958) //genop_peep at codegen.c:188 (discriminator 1)
+0x00005555555b32e7 -- rsi min_reg_val_less 0x804015 -- 0.9008386487124972 -- jz 0x5555555b3319 (path rank: 1.8553368941152104) //no_optimize at codegen.c:179
+0x00005555555babdc -- rax min_reg_val_less 0xffffffffffffffff -- 0.9008386487124972 -- jmp 0x5555555bd7a4 (path rank: 1.956349989637329) //codegen at codegen.c:2200
+0x00005555555b51fd -- rsi min_reg_val_less 0xff -- 0.9008386487124972 -- jmp 0x5555555b5532 (path rank: 1.979756929736007) //gen_values at codegen.c:845
+0x00005555555b5758 -- rax min_reg_val_less 0x1 -- 0.9008386487124972 -- jns 0x5555555b5779 (path rank: 1.97985301929853) //gen_call at codegen.c:921
+0x00005555555b76e9 -- max_interrupt_flag_set -- 0.9008386487124972 -- jz 0x5555555bd76e (path rank: 1.980039104773913) //codegen at codegen.c:1453
+0x00005555555bd871 -- max_interrupt_flag_set -- 0.9008386487124972 -- jnz 0x5555555bd8cb (path rank: 1.980135194336436) //scope_add_irep at codegen.c:2841
+0x00005555555b4b0e -- max_interrupt_flag_set -- 0.9008386487124972 -- jz 0x5555555b4b38 (path rank: 1.9804413333749358) //lambda_body at codegen.c:689
+0x00005555555b4b4e -- max_interrupt_flag_set -- 0.9008386487124972 -- jz 0x5555555b4e3d (path rank: 1.9806285586696801) //lambda_body at codegen.c:694
+0x00005555555bddbc -- max_parity_flag_set -- 0.9008386487124972 -- jmp 0x5555555bddd1 (path rank: 1.9807740037259947) //scope_new at codegen.c:2915
+0x00005555555b3a44 -- max_interrupt_flag_set -- 0.9008386487124972 -- jnbe 0x5555555b3b48 (path rank: 1.9825228109983832) //genop_peep at codegen.c:309
+0x00005555555b3a6b -- max_interrupt_flag_set -- 0.9008386487124972 -- jmp rax (path rank: 1.9826189005609063) //genop_peep at codegen.c:309
+0x00005555555b3b49 -- 0x5555555b3b49 edge_only_taken_to 0x5555555b3167 -- 0.9008386487124972 -- jmp 0x5555555b3e1b (path rank: 1.982714990123429) //genop_peep at codegen.c:341
+0x00005555555be3b1 -- max_interrupt_flag_set -- 0.9008386487124972 -- jz 0x5555555be3d3 (path rank: 1.982902215418174) //loop_pop at codegen.c:3045
+0x00005555555b3f88 -- rdx min_reg_val_less 0xff -- 0.9008386487124972 -- jz 0x5555555b3fd7 (path rank: 1.9829983049806967) //dispatch_linked at codegen.c:440
+0x00005555555b3fd8 -- is_visited -- 0.9008386487124972 -- jmp 0x5555555b3fdb (path rank: 1.98309439454322) //dispatch_linked at codegen.c:440
+0x00005555555be40d -- 0x5555555be40d edge_only_taken_to 0x5555555bde5f -- 0.9008386487124972 -- jz 0x5555555be41b (path rank: 1.9831904841057428) //loop_pop at codegen.c:3050
+0x00005555555b775c -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9008386487124972 -- jmp 0x5555555bd76e (path rank: 1.9833209942477752) //codegen at codegen.c:1459
+0x00005555555bd76f -- 0x5555555bd76f edge_only_taken_to 0x5555555bd7fd -- 0.9008386487124972 -- jmp 0x5555555bd7ea (path rank: 1.9834170838102982) //codegen at codegen.c:1459
+0x00005555555b83a6 -- max_zero_flag_set -- 0.9008386487124972 -- jmp 0x5555555bd7ea (path rank: 1.9836265159305329) //codegen at codegen.c:1643
+0x0000555555559a64 -- rdi max_reg_val_greater_or_equal 0x5555559ebf80 -- 0.9008386487124972 -- bnd jmp qword ptr [rip+0xce415] (path rank: 1.9841148778189908) //?? ??:0
+0x00005555555b6d52 -- 0x5555555b6d52 has_edge_to 0x5555555b76e9 -- 0.9008386487124972 -- jmp rax (path rank: 2) //codegen at codegen.c:1318
+0x00005555555b59a4 -- 0x5555555b59a4 has_edge_to 0x5555555b5a06 -- 0.9008386487124972 -- jnz 0x5555555b5a02 (path rank: 2) //gen_call at codegen.c:958
+0x00005555555b5c0e -- 0x5555555b5c0e has_edge_to 0x5555555b5c7f -- 0.9008386487124972 -- jnz 0x5555555b5c7b (path rank: 2) //gen_call at codegen.c:976
+0x00005555555994c9 -- 0x5555555994c9 has_edge_to 0x5555555b3167 -- 0.9008386487124972 -- jmp 0x5555555994cc (path rank: 2) //mrb_pool_close at pool.c:90
+0x00005555555b58da -- 0x5555555b58da has_edge_to 0x5555555b593f -- 0.9008386487124972 -- jnz 0x5555555b593b (path rank: 2) //gen_call at codegen.c:952
+0x00005555555b30f4 -- 0x5555555b30f4 has_edge_to 0x5555555bdf99 -- 0.9008386487124972 -- jnz 0x5555555b3110 (path rank: 2) //codegen_realloc at codegen.c:138
+0x00005555555bdb90 -- num_successors_equal 2 -- 0.9008386487124972 -- jz 0x5555555bdcd4 (path rank: 2) //scope_new at codegen.c:2886
+0x00005555555b5b3b -- 0x5555555b5b3b has_edge_to 0x5555555b5b9d -- 0.9008386487124972 -- jnz 0x5555555b5b99 (path rank: 2) //gen_call at codegen.c:970
+0x00005555555b5b9d -- 0x5555555b5b9d has_edge_to 0x5555555b5c0e -- 0.9008386487124972 -- jnz 0x5555555b5c0a (path rank: 2) //gen_call at codegen.c:973
+0x00005555555b593f -- 0x5555555b593f has_edge_to 0x5555555b59a4 -- 0.9008386487124972 -- jnz 0x5555555b59a0 (path rank: 2) //gen_call at codegen.c:955
+0x00005555555b5a06 -- 0x5555555b5a06 has_edge_to 0x5555555b5a68 -- 0.9008386487124972 -- jnz 0x5555555b5a64 (path rank: 2) //gen_call at codegen.c:961
+0x00005555555b4042 -- 0x5555555b4042 has_edge_to 0x5555555b775c -- 0.9008386487124972 -- jle 0x5555555b405b (path rank: 2) //push_ at codegen.c:458
+0x00005555555b5a68 -- 0x5555555b5a68 has_edge_to 0x5555555b5aca -- 0.9008386487124972 -- jnz 0x5555555b5ac6 (path rank: 2) //gen_call at codegen.c:964
+0x00005555555bd80d -- 0x5555555bd80d has_edge_to 0x5555555b4e7f -- 0.9008386487124972 -- jz 0x5555555bd814 (path rank: 2) //codegen at codegen.c:2832
+0x00005555555b5aca -- 0x5555555b5aca has_edge_to 0x5555555b5b3b -- 0.9008386487124972 -- jnz 0x5555555b5b37 (path rank: 2) //gen_call at codegen.c:967
+0x000055555555b013 -- rcx max_reg_val_greater_or_equal 0x5555559e66fa -- 0.9003930159139231 -- jmp 0x55555555b080 (path rank: 1.9761105633197642) //mrb_str_pool at state.c:214
+0x00005555555b366b -- rdx min_reg_val_greater_or_equal 0xfa -- 0.9003930159139231 -- jnz 0x5555555b37f9 (path rank: 1.9797626181123356) //genop_peep at codegen.c:240
+0x000055555555b6dc -- rsi max_reg_val_greater_or_equal 0x5555556a8618 -- 0.9003930159139231 -- jmp 0x55555555b715 (path rank: 1.9874171845458823) //array_copy at array.c:75
+0x00005555555995d6 -- 0x5555555995d6 has_edge_to 0x5555555b3050 -- 0.9003930159139231 -- jmp 0x55555559964e (path rank: 2) //mrb_pool_alloc at pool.c:123

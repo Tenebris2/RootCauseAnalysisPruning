@@ -1,0 +1,48 @@
+0x0000555555558d14 -- 0x555555558d14 edge_only_taken_to 0x55555555bcf6 -- 0.9951923076923076 -- bnd jmp qword ptr [rip+0xc42a5] (path rank: 0) //?? ??:0
+0x000055555555e109 -- min_sign_flag_set -- 0.9807692307692308 -- cmp qword ptr [rbp-0x28], rax (path rank: 1.953909332871231) //tsk_fs_dir_walk_lcl at fs_dir.c:568 (discriminator 1)
+0x00005555555b76d0 -- memory_value max_reg_val_greater_or_equal 0xa00 -- 0.9807692307692308 -- add dword ptr [rbp-0x70], eax (path rank: 1.9631883666586059) //ext2fs_dinode_copy at ext2fs.c:807
+0x00005555555b76d3 -- rdx max_reg_val_greater_or_equal 0xa00 -- 0.9807692307692308 -- mov edx, dword ptr [rbp-0x70] (path rank: 1.9637833636173347) //ext2fs_dinode_copy at ext2fs.c:808
+0x00005555555b76e1 -- max_parity_flag_set -- 0.9807692307692308 -- add dword ptr [rbp-0x6c], 0x1 (path rank: 1.9643783605760634) //ext2fs_dinode_copy at ext2fs.c:783
+0x0000555555560da8 -- rax max_reg_val_less 0x9 -- 0.9807692307692308 -- mov eax, dword ptr [rax+0x44] (path rank: 1.964472093686311) //tsk_fs_name_print at fs_name.c:400
+0x00005555555b76eb -- rdx max_reg_val_greater_or_equal 0xa00 -- 0.9807692307692308 -- mov edx, dword ptr [rbp-0x70] (path rank: 1.9649733575347925) //ext2fs_dinode_copy at ext2fs.c:782 (discriminator 2)
+0x0000555555560dab -- min_sign_flag_set -- 0.9807692307692308 -- cmp eax, 0xb (path rank: 1.96506709064504) //tsk_fs_name_print at fs_name.c:400
+0x0000555555560db8 -- rax max_reg_val_less 0x9 -- 0.9807692307692308 -- mov eax, dword ptr [rax+0x44] (path rank: 1.9656620876037687) //tsk_fs_name_print at fs_name.c:402
+0x0000555555560dbb -- rax max_reg_val_less 0x9 -- 0.9807692307692308 -- mov eax, eax (path rank: 1.9662570845624976) //tsk_fs_name_print at fs_name.c:402
+0x0000555555560dbd -- rdx max_reg_val_less 0x11 -- 0.9807692307692308 -- lea rdx, ptr [rax+rax*1] (path rank: 1.9668520815212263) //tsk_fs_name_print at fs_name.c:402
+0x0000555555560dc8 -- rdx max_reg_val_less 0x55555561d321 -- 0.9807692307692308 -- add rdx, rax (path rank: 1.9674470784799554) //tsk_fs_name_print at fs_name.c:402
+0x000055555555e10d -- 0x55555555e10d edge_only_taken_to 0x55555555da03 -- 0.9807692307692308 -- jb 0x55555555da03 (path rank: 2) //tsk_fs_dir_walk_lcl at fs_dir.c:568 (discriminator 1)
+0x000055555555c7b0 -- rax max_reg_val_less 0x9 -- 0.9759615384615384 -- mov eax, dword ptr [rax+0x10] (path rank: 1.96250837504812) //print_dent_act at fls_lib.c:122
+0x000055555555c7c0 -- rax max_reg_val_less 0x9 -- 0.9759615384615384 -- mov eax, dword ptr [rax+0x10] (path rank: 1.963103372006849) //print_dent_act at fls_lib.c:122
+0x000055555555c7c3 -- min_sign_flag_set -- 0.9759615384615384 -- cmp eax, 0xb (path rank: 1.9636983689655776) //print_dent_act at fls_lib.c:122
+0x00005555555b75e1 -- rcx max_reg_val_greater_or_equal 0xa00 -- 0.9759615384615384 -- mov ecx, dword ptr [rbp-0x70] (path rank: 1.9657617182494187) //ext2fs_dinode_copy at ext2fs.c:787
+0x00005555555b75ff -- rax max_reg_val_greater_or_equal 0x9b0 -- 0.9759615384615384 -- mov rax, qword ptr [rax+0x20] (path rank: 1.967532206843913) //ext2fs_dinode_copy at ext2fs.c:788 (discriminator 1)
+0x00005555555b761b -- rax max_reg_val_greater_or_equal 0x3 -- 0.9759615384615384 -- mov eax, dword ptr [rbp-0x6c] (path rank: 1.9687125325735755) //ext2fs_dinode_copy at ext2fs.c:792
+0x00005555555b761e -- rax max_reg_val_greater_or_equal 0x3 -- 0.9759615384615384 -- cdqe  (path rank: 1.969302695438407) //ext2fs_dinode_copy at ext2fs.c:792
+0x00005555555b7620 -- rdx max_reg_val_greater_or_equal 0x14 -- 0.9759615384615384 -- lea rdx, ptr [rax*8] (path rank: 1.9698928583032385) //ext2fs_dinode_copy at ext2fs.c:792
+0x00005555555b7670 -- rax min_reg_val_greater_or_equal 0x3 -- 0.9759615384615384 -- mov eax, dword ptr [rbp-0x6c] (path rank: 1.9792362854362482) //ext2fs_dinode_copy at ext2fs.c:801
+0x00005555555b7673 -- rax min_reg_val_greater_or_equal 0x3 -- 0.9759615384615384 -- cdqe  (path rank: 1.9796197581241672) //ext2fs_dinode_copy at ext2fs.c:801
+0x00005555555b7675 -- rdx min_reg_val_greater_or_equal 0x14 -- 0.9759615384615384 -- lea rdx, ptr [rax*8] (path rank: 1.9800032308120863) //ext2fs_dinode_copy at ext2fs.c:801
+0x000055555555c7c6 -- 0x55555555c7c6 edge_only_taken_to 0x55555555c7c8 -- 0.9759615384615384 -- jz 0x55555555c818 (path rank: 1.9995595986053485) //print_dent_act at fls_lib.c:122
+0x00005555555b760f -- memory_value min_reg_val_less 0x75 -- 0.9732142857142856 -- mov dword ptr [rbp-0x64], eax (path rank: 1.9568891343554133) //ext2fs_dinode_copy at ext2fs.c:786
+0x00005555555b75e4 -- rax min_reg_val_less 0x75 -- 0.9732142857142856 -- sub rax, rcx (path rank: 1.96635188111425) //ext2fs_dinode_copy at ext2fs.c:787
+0x00005555555b75e7 -- rdx min_reg_val_less 0x75 -- 0.9732142857142856 -- mov rdx, rax (path rank: 1.9669420439790817) //ext2fs_dinode_copy at ext2fs.c:787
+0x00005555555b7603 -- rax min_reg_val_less 0x75 -- 0.9732142857142856 -- sub eax, dword ptr [rbp-0x70] (path rank: 1.9681223697087442) //ext2fs_dinode_copy at ext2fs.c:788 (discriminator 1)
+0x00005555555b1082 -- num_successors_equal 2 -- 0.9684065934065934 -- ret  (path rank: 2) //tsk_deinit_lock at tsk_lock.c:83
+0x000055555555cabe -- rax min_reg_val_greater_or_equal 0x29 -- 0.966346153846154 -- movzx eax, byte ptr [rax] (path rank: 1.9641827188862093) //print_dent_act at fls_lib.c:197
+0x000055555555da76 -- 0x55555555da76 edge_only_taken_to 0x55555555da78 -- 0.9567307692307692 -- jz 0x55555555da9b (path rank: 1.9907176144474845) //tsk_fs_dir_walk_lcl at fs_dir.c:582
+0x000055555555a727 -- memory_value max_reg_val_less 0x51cace4cbb4f48 -- 0.95260989010989 -- mov qword ptr [rbp-0x88], r9 (path rank: 0.6673743259349844) //tsk_fprintf at tsk_printf.c:87
+0x00005555555b75f6 -- num_successors_equal 2 -- 0.9429945054945056 -- jnl 0x5555555b7608 (path rank: 2) //ext2fs_dinode_copy at ext2fs.c:789
+0x00005555555b2c28 -- rax min_reg_val_greater_or_equal 0x6 -- 0.9326923076923076 -- test eax, eax (path rank: 0.3261679982220387) //endsWith at mult_files.c:27
+0x00005555555b762f -- rsi max_reg_val_greater_or_equal 0x10018 -- 0.9127747252747253 -- mov rsi, qword ptr [rax] (path rank: 1.9786616861123287) //ext2fs_dinode_copy at ext2fs.c:791
+0x00005555555b7684 -- rax min_reg_val_greater_or_equal 0x10018 -- 0.9127747252747253 -- mov rax, qword ptr [rax] (path rank: 1.9805612397323027) //ext2fs_dinode_copy at ext2fs.c:799
+0x00005555555b7687 -- rsi min_reg_val_greater_or_equal 0x10018 -- 0.9127747252747253 -- mov rsi, rax (path rank: 1.9809411504562977) //ext2fs_dinode_copy at ext2fs.c:799
+0x00005555555b76b4 -- rax max_reg_val_greater_or_equal 0x3a4 -- 0.9065934065934066 -- mov eax, dword ptr [rbp-0x64] (path rank: 1.9614033757824196) //ext2fs_dinode_copy at ext2fs.c:806
+0x00005555555b76b7 -- rdx max_reg_val_greater_or_equal 0x3a4 -- 0.9065934065934066 -- movsxd rdx, eax (path rank: 1.961998372741148) //ext2fs_dinode_copy at ext2fs.c:806
+0x00005555555b76cd -- rax max_reg_val_greater_or_equal 0x3a4 -- 0.9065934065934066 -- mov eax, dword ptr [rbp-0x64] (path rank: 1.9625933696998772) //ext2fs_dinode_copy at ext2fs.c:807
+0x00005555555eafff -- memory_value max_reg_val_greater_or_equal 0x10018 -- 0.9059065934065934 -- mov qword ptr [rbp-0x20], rsi (path rank: 1.9790415968363237) //tsk_fs_read_block at fs_io.c:137
+0x00005555555eb105 -- rax min_reg_val_less 0x1 -- 0.9024725274725276 -- mov rax, qword ptr [rbp-0x20] (path rank: 1.9584283909887756) //tsk_fs_read_block at fs_io.c:163
+0x00005555555eb109 -- rax min_reg_val_less 0xff -- 0.9024725274725276 -- imul rax, rcx (path rank: 1.9590233879475043) //tsk_fs_read_block at fs_io.c:163
+0x00005555555eb10d -- max_zero_flag_set -- 0.9024725274725276 -- add rax, rdx (path rank: 1.9596183849062327) //tsk_fs_read_block at fs_io.c:162
+0x00005555555eb110 -- memory_value min_reg_val_less 0xff -- 0.9024725274725276 -- mov qword ptr [rbp-0x10], rax (path rank: 1.9602133818649619) //tsk_fs_read_block at fs_io.c:162
+0x00005555555eb124 -- rsi min_reg_val_less 0xff -- 0.9024725274725276 -- mov rsi, qword ptr [rbp-0x10] (path rank: 1.9608083788236905) //tsk_fs_read_block at fs_io.c:164
+0x00005555555b7653 -- num_successors_equal 2 -- 0.9017857142857142 -- jz 0x5555555b76b4 (path rank: 2) //ext2fs_dinode_copy at ext2fs.c:794
