@@ -1,8 +1,8 @@
 0x00005555555a2f7a -- max_parity_flag_set -- 0.9939759036144578 -- jle 0x5555555a2fc2 (path rank: 0.17852112090768651) //mrb_vm_exec at vm.c:1867
 0x000055555555f4cf -- rdx min_reg_val_less 0xff -- 0.9939759036144578 -- jz 0x55555555f4e4 (path rank: 1.9887042611347092) //mrb_ary_size at array.c:1048
 0x00005555555a60fa -- rcx max_reg_val_greater_or_equal 0x60 -- 0.9939759036144578 -- jmp 0x5555555a621c (path rank: 1.9888772248702697) //mrb_vm_exec at vm.c:2631 (discriminator 2)
-0x00005555555a6272 -- rdx max_reg_val_greater_or_equal 0x50 -- 0.9939759036144578 -- jmp 0x5555555a62c0 (path rank: 1.9889637067380497) //mrb_vm_exec at vm.c:2631 (discriminator 10)
-0x000055555559fa4e -- rdx max_reg_val_greater_or_equal 0x48 -- 0.9939759036144578 -- jz 0x55555559fa95 (path rank: 1.98905018860583) //mrb_vm_exec at vm.c:1243
+0x00005555555a6272 -- rdx max_reg_val_greater_or_equal 0x50 -- 0.9939759036144578 -- jmp 0x5555555a62c0 (path rank: 1.9889637067380497) //mrb_vm_exec at readelf.c: 16180 (discriminator 10)
+0x000055555559fa4e -- rdx max_reg_val_greater_or_equal 0x48 -- 0.9939759036144578 -- jz 0x55555559fa95 (path rank: 1.98905018860583) //mrb_vm_exec at vm.c:1243 vm.c:1200
 0x000055555555e75e -- rdx min_reg_val_less 0xff -- 0.9939759036144578 -- jz 0x55555555e773 (path rank: 1.9891366704736102) //mrb_ary_aget at array.c:815
 0x000055555555db0f -- rsi min_reg_val_less 0xff -- 0.9939759036144578 -- jz 0x55555555db24 (path rank: 1.9892231523413906) //mrb_ary_ref at array.c:608
 0x000055555559e8ee -- 0x55555559e8ee has_edge_to 0x55555559c035 -- 0.9939759036144578 -- jmp rax (path rank: 2) //mrb_vm_exec at vm.c:1016

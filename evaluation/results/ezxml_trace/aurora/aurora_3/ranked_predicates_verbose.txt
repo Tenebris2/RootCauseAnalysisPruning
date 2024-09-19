@@ -1,0 +1,30 @@
+0x00005555555553d4 -- 0x5555555553d4 edge_only_taken_to 0x555555558996 -- 0.9814814814814814 -- bnd jmp qword ptr [rip+0x7bb5] (path rank: 0) //?? ??:0
+0x0000555555555254 -- 0x555555555254 edge_only_taken_to 0x5555555575a5 -- 0.9444444444444444 -- bnd jmp qword ptr [rip+0x7c75] (path rank: 0.5001612123915185) //?? ??:0
+0x0000555555556f54 -- rax min_reg_val_less 0xff -- 0.9444444444444444 -- mov rax, qword ptr [rbp-0x40] (path rank: 1.9916346100239726) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x0000555555556f5b -- rdi min_reg_val_less 0xff -- 0.9444444444444444 -- mov rdi, rax (path rank: 1.992086655144859) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x0000555555556f51 -- rdx min_reg_val_greater_or_equal 0x7ffff4dbc312 -- 0.9211111111111112 -- mov rdx, qword ptr [rax] (path rank: 1.9912977829811749) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x0000555555556f58 -- rsi min_reg_val_greater_or_equal 0x7ffff4dbc312 -- 0.9211111111111112 -- mov rsi, rdx (path rank: 1.991749828102061) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x0000555555556f42 -- rax max_reg_val_less 0x2 -- 0.9119444444444444 -- mov eax, dword ptr [rbp-0x48] (path rank: 1.9905130921187117) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x0000555555556f45 -- rax max_reg_val_less 0x2 -- 0.9119444444444444 -- cdqe  (path rank: 1.990774655739533) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x0000555555556f47 -- rax max_reg_val_less 0xc -- 0.9119444444444444 -- shl rax, 0x3 (path rank: 1.9910362193603537) //ezxml_internal_dtd at ezxml.c:362 (discriminator 3)
+0x000055555555727a -- rdx min_reg_val_greater_or_equal 0x7ffff4dbc331 -- 0.9077777777777778 -- mov rdx, qword ptr [rbp-0x20] (path rank: 1.9893195629146458) //ezxml_internal_dtd at ezxml.c:392 (discriminator 2)
+0x000055555555727e -- memory_value min_reg_val_greater_or_equal 0x7ffff4dbc331 -- 0.9077777777777778 -- mov qword ptr [rax], rdx (path rank: 1.9895811265354668) //ezxml_internal_dtd at ezxml.c:392 (discriminator 2)
+0x000055555555743d -- rax min_reg_val_greater_or_equal 0x7ffff4dbc333 -- 0.9077777777777778 -- mov rax, qword ptr [rbp-0x40] (path rank: 1.9898426901562878) //ezxml_internal_dtd at ezxml.c:404 (discriminator 1)
+0x0000555555557441 -- memory_value min_reg_val_greater_or_equal 0x7ffff4dbc333 -- 0.9077777777777778 -- mov qword ptr [rdx], rax (path rank: 1.9901042537771088) //ezxml_internal_dtd at ezxml.c:404 (discriminator 1)
+0x000055555555712b -- rax min_reg_val_greater_or_equal 0x7ffff4dbc337 -- 0.9077777777777778 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.99128198695434) //ezxml_internal_dtd at ezxml.c:379
+0x0000555555557139 -- rdi min_reg_val_greater_or_equal 0x7ffff4dbc337 -- 0.9077777777777778 -- mov rdi, rax (path rank: 1.9914785081117243) //ezxml_internal_dtd at ezxml.c:379
+0x0000555555557145 -- memory_value min_reg_val_greater_or_equal 0x7ffff4dbc347 -- 0.9077777777777778 -- add qword ptr [rbp-0x60], rax (path rank: 1.9916750292691086) //ezxml_internal_dtd at ezxml.c:379
+0x0000555555556f98 -- rax min_reg_val_greater_or_equal 0x7ffff4dbc334 -- 0.9002777777777777 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.9850806526546616) //ezxml_internal_dtd at ezxml.c:365 (discriminator 1)
+0x0000555555556f9f -- rax min_reg_val_greater_or_equal 0x7ffff4dbc334 -- 0.9002777777777777 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.9853422162754826) //ezxml_internal_dtd at ezxml.c:368 (discriminator 1)
+0x0000555555556fa3 -- rax min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- add rax, 0x1 (path rank: 1.9856037798963038) //ezxml_internal_dtd at ezxml.c:368 (discriminator 1)
+0x0000555555556fb1 -- rdi min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rdi, rax (path rank: 1.9858653435171247) //ezxml_internal_dtd at ezxml.c:368 (discriminator 1)
+0x0000555555556fbd -- memory_value min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- add qword ptr [rbp-0x60], rax (path rank: 1.9861269071379457) //ezxml_internal_dtd at ezxml.c:368 (discriminator 1)
+0x0000555555556fc1 -- rax min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.986388470758767) //ezxml_internal_dtd at ezxml.c:369 (discriminator 1)
+0x0000555555556fd4 -- rdi min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rdi, rax (path rank: 1.9866500343795879) //ezxml_internal_dtd at ezxml.c:369 (discriminator 1)
+0x000055555555701a -- rax min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.9869115980004088) //ezxml_internal_dtd at ezxml.c:370 (discriminator 4)
+0x000055555555702d -- rdi min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rdi, rax (path rank: 1.9871731616212298) //ezxml_internal_dtd at ezxml.c:370 (discriminator 4)
+0x000055555555705b -- rax min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.9874347252420508) //ezxml_internal_dtd at ezxml.c:372
+0x0000555555557079 -- rax min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rax, qword ptr [rbp-0x60] (path rank: 1.987696288862872) //ezxml_internal_dtd at ezxml.c:372 (discriminator 2)
+0x0000555555557087 -- rdi min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rdi, rax (path rank: 1.987957852483693) //ezxml_internal_dtd at ezxml.c:372 (discriminator 2)
+0x000055555555708f -- rdx min_reg_val_greater_or_equal 0x7ffff4dbc335 -- 0.9002777777777777 -- mov rdx, qword ptr [rbp-0x60] (path rank: 1.988219416104514) //ezxml_internal_dtd at ezxml.c:372 (discriminator 2)
+0x00005555555570db -- r8 min_reg_val_greater_or_equal 0x7ffff4dbc330 -- 0.9002777777777777 -- add qword ptr [rbp-0x60], rax (path rank: 1.988480979725335) //ezxml_internal_dtd at ezxml.c:375
