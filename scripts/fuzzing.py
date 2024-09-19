@@ -5,7 +5,7 @@ import subprocess
 import sys
 import os
 
-TIME_OUT = 60 * 60
+TIME_OUT = 60 * 15
 threads = []
 # env
 afl_dir = os.getenv("AFL_DIR")
@@ -44,10 +44,10 @@ def cleanup(id: int):
 def main():
     # threaded
     for t in range(0, 5):
-        # run(t, sys.argv[1], sys.argv[2])
+        run(t, sys.argv[1], sys.argv[2])
 
-        thread = threading.Thread(target=run, args=[t, sys.argv[1], sys.argv[2]])
-        thread.start()
+        # thread = threading.Thread(target=run, args=[t, sys.argv[1], sys.argv[2]])
+        # thread.start()
 
 
 def move(id):
