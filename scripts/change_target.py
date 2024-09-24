@@ -1,10 +1,11 @@
 import os
+import sys
 
-target_rca = "vm.c:1236"
+target_rca = "fiber.c:209"
 from extract_ranking import extract_ranking
 
 
-DIR_PATH = ""
+DIR_PATH = sys.argv[1]
 
 
 def get_target_rca_rankings(file, target_rca):

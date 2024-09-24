@@ -1,0 +1,176 @@
+0x00005555555d5270 -- rax min_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov rax, qword ptr [rbp-0x40] (path rank: 1.9946465643856617) //fiber_switch at fiber.c:208
+0x00005555555d5274 -- rax min_reg_val_greater_or_equal 0x3e8 -- 0.9285714285714286 -- shl rax, 0x4 (path rank: 1.994710509837141) //fiber_switch at fiber.c:208
+0x00005555555d5278 -- rdx min_reg_val_greater_or_equal 0x3e8 -- 0.9285714285714286 -- mov rdx, rax (path rank: 1.9947744552886204) //fiber_switch at fiber.c:208
+0x00005555555d52c0 -- rdx min_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov rdx, qword ptr [rbp-0x40] (path rank: 1.9948384007400997) //fiber_switch at fiber.c:212
+0x00005555555a30e0 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov eax, dword ptr [rax+0x40] (path rank: 1.9949856071321646) //mrb_vm_exec at vm.c:1789
+0x00005555555a313e -- rax max_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov eax, dword ptr [rbp-0x90c] (path rank: 1.9950495525836438) //mrb_vm_exec at vm.c:1793 (discriminator 1)
+0x00005555555a3144 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- cdqe  (path rank: 1.9951134980351233) //mrb_vm_exec at vm.c:1793 (discriminator 1)
+0x00005555555a3146 -- rax max_reg_val_greater_or_equal 0x3e8 -- 0.9285714285714286 -- shl rax, 0x4 (path rank: 1.9951774434866025) //mrb_vm_exec at vm.c:1793 (discriminator 1)
+0x00005555555a314a -- rdx max_reg_val_greater_or_equal 0x3e8 -- 0.9285714285714286 -- mov rdx, rax (path rank: 1.9952413889380818) //mrb_vm_exec at vm.c:1793 (discriminator 1)
+0x00005555555a3398 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov eax, dword ptr [rbp-0x90c] (path rank: 1.9953053343895613) //mrb_vm_exec at vm.c:1814
+0x00005555555a30e3 -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov dword ptr [rbp-0x90c], eax (path rank: 1.999871161000435) //mrb_vm_exec at vm.c:1789
+0x00005555555d52c4 -- memory_value min_reg_val_greater_or_equal 0x3f -- 0.9285714285714286 -- mov dword ptr [rax+0x40], edx (path rank: 2) //fiber_switch at fiber.c:212
+0x000055555555a528 -- rdx min_reg_val_greater_or_equal 0x5550003ff8a4 -- 0.9209617598158332 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.999119796423772) //cleanup at mruby.c:190
+0x000055555557ba77 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9205141322419746 -- mov rax, qword ptr [rax+0x18] (path rank: 1.9964374574594934) //mrb_get_argc at class.c:550 (discriminator 2)
+0x000055555557ba7b -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9205141322419746 -- mov qword ptr [rbp-0x10], rax (path rank: 1.9964639801638013) //mrb_get_argc at class.c:550 (discriminator 4)
+0x00005555555a48cb -- rax max_reg_val_greater_or_equal 0x5555556a97fa -- 0.919171249520399 -- mov rax, qword ptr [rax+0x30] (path rank: 1.989853465497512) //mrb_vm_exec at vm.c:2122
+0x00005555555a48cf -- memory_value max_reg_val_greater_or_equal 0x5555556a97fa -- 0.919171249520399 -- mov qword ptr [rbp-0x958], rax (path rank: 1.9899623413079939) //mrb_vm_exec at vm.c:2122
+0x00005555555a4988 -- rax max_reg_val_greater_or_equal 0x5555556a97fa -- 0.919171249520399 -- mov rax, qword ptr [rbp-0x958] (path rank: 1.9900712171184758) //mrb_vm_exec at vm.c:2133 (discriminator 7)
+0x000055555557ba7f -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.993245344497292) //mrb_get_argc at class.c:552
+0x000055555557bb9c -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov qword ptr [rbp-0x1c8], rax (path rank: 1.9933092899487712) //mrb_get_args at class.c:608
+0x000055555557d61a -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rbp-0x1c8] (path rank: 1.9933732354002507) //mrb_get_args at class.c:974
+0x000055555557d62e -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rbp-0x1c8] (path rank: 1.99343718085173) //mrb_get_args at class.c:975
+0x000055555557d635 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- sub rax, qword ptr [rbp-0x1e0] (path rank: 1.9935011263032094) //mrb_get_args at class.c:975
+0x000055555557d63c -- rdx max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rdx, rax (path rank: 1.9935650717546887) //mrb_get_args at class.c:975
+0x000055555557d646 -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov qword ptr [rax], rdx (path rank: 1.993629017206168) //mrb_get_args at class.c:975
+0x000055555557d650 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rax] (path rank: 1.9936929626576474) //mrb_get_args at class.c:976
+0x000055555557d74a -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rbp-0x1c8] (path rank: 1.9938208535606061) //mrb_get_args at class.c:986
+0x000055555557d751 -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov qword ptr [rbp-0x1e0], rax (path rank: 1.9938847990120854) //mrb_get_args at class.c:986
+0x000055555557d75f -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rax] (path rank: 1.9939487444635646) //mrb_get_args at class.c:987
+0x000055555557d762 -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- add qword ptr [rbp-0x1d8], rax (path rank: 1.994012689915044) //mrb_get_args at class.c:987
+0x000055555557d828 -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rbp-0x1c8] (path rank: 1.9940766353665236) //mrb_get_args at class.c:1003 (discriminator 1)
+0x000055555557d86a -- rax max_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rax, qword ptr [rbp-0x1e0] (path rank: 1.9941405808180028) //mrb_get_args at class.c:1007
+0x00005555555d56b8 -- rcx min_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov rcx, qword ptr [rbp-0x18] (path rank: 1.9943298088611416) //fiber_transfer at fiber.c:327
+0x00005555555d50ac -- memory_value min_reg_val_greater_or_equal 0x3f -- 0.9178283667988234 -- mov qword ptr [rbp-0x40], rcx (path rank: 1.994456213897662) //fiber_switch at fiber.c:184
+0x00005555555d504a -- min_parity_flag_set -- 0.9173807392249648 -- sub qword ptr [rbp-0x8], 0x50 (path rank: 1.9931283536371964) //fiber_check_cfunc at fiber.c:168 (discriminator 2)
+0x000055555555d4f2 -- rax max_reg_val_greater_or_equal 0x3e -- 0.9173807392249648 -- mov rax, qword ptr [rax+0x18] (path rank: 1.996180860408138) //mrb_ary_push at array.c:498 (discriminator 2)
+0x000055555555d4f6 -- memory_value max_reg_val_greater_or_equal 0x3e -- 0.9173807392249648 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9962073831124458) //mrb_ary_push at array.c:498 (discriminator 4)
+0x000055555555d56f -- rdx max_reg_val_greater_or_equal 0x3e -- 0.9173807392249648 -- mov rdx, qword ptr [rbp-0x8] (path rank: 1.996233905816754) //mrb_ary_push at array.c:503 (discriminator 4)
+0x000055555555d573 -- rdx max_reg_val_greater_or_equal 0x3d8 -- 0.9173807392249648 -- shl rdx, 0x4 (path rank: 1.996260428521062) //mrb_ary_push at array.c:503 (discriminator 4)
+0x000055555555d5f5 -- rax max_reg_val_greater_or_equal 0x3e -- 0.9173807392249648 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.99628695122537) //mrb_ary_push at array.c:504 (discriminator 2)
+0x000055555555d5f9 -- rdx max_reg_val_greater_or_equal 0x3f -- 0.9173807392249648 -- lea rdx, ptr [rax+0x1] (path rank: 1.996313473929678) //mrb_ary_push at array.c:504 (discriminator 2)
+0x000055555555d601 -- memory_value max_reg_val_greater_or_equal 0x3f -- 0.9173807392249648 -- mov qword ptr [rax+0x18], rdx (path rank: 1.9963399966339859) //mrb_ary_push at array.c:504 (discriminator 2)
+0x000055555557d653 -- max_parity_flag_set -- 0.914247346207955 -- test rax, rax (path rank: 1.9937569081091269) //mrb_get_args at class.c:976
+0x00005555555a17e3 -- max_parity_flag_set -- 0.9129044634863792 -- sub rax, 0x50 (path rank: 1.9885440438703992) //mrb_vm_exec at vm.c:1492
+0x00005555555a181f -- max_parity_flag_set -- 0.9129044634863792 -- sub rax, 0x50 (path rank: 1.988667418996775) //mrb_vm_exec at vm.c:1493
+0x00005555555d522e -- max_parity_flag_set -- 0.9129044634863792 -- cmp qword ptr [rbp-0x40], rax (path rank: 1.9945826189341824) //fiber_switch at fiber.c:204
+0x00005555555d4d59 -- max_zero_flag_set -- 0.9120092083386622 -- mov rax, qword ptr [rbp-0x68] (path rank: 1.9980834690730482) //fiber_init at fiber.c:116
+0x000055555558fe65 -- memory_value max_reg_val_greater_or_equal 0xc2 -- 0.9118173679498658 -- mov dword ptr [rax+0x44], edx (path rank: 1.1012200580079556) //pushback at parse.y:3558
+0x000055555558fe5b -- rax max_reg_val_greater_or_equal 0xc3 -- 0.9118173679498658 -- mov eax, dword ptr [rax+0x44] (path rank: 1.9137855622020639) //pushback at parse.y:3558
+0x000055555558fe5e -- rdx max_reg_val_greater_or_equal 0xc2 -- 0.9118173679498658 -- lea edx, ptr [rax-0x1] (path rank: 1.9148783174054123) //pushback at parse.y:3558
+0x00005555555a1546 -- rax max_reg_val_greater_or_equal 0x5555556a97f6 -- 0.9111139531909452 -- mov rax, qword ptr [rbp-0x958] (path rank: 1.9814888967098692) //mrb_vm_exec at vm.c:1457
+0x00005555555a154d -- rdx max_reg_val_greater_or_equal 0x5555556a97fa -- 0.9111139531909452 -- lea rdx, ptr [rax+0x4] (path rank: 1.981668680416268) //mrb_vm_exec at vm.c:1457
+0x00005555555a1558 -- memory_value max_reg_val_greater_or_equal 0x5555556a97fa -- 0.9111139531909452 -- mov qword ptr [rax+0x30], rdx (path rank: 1.9818484641226666) //mrb_vm_exec at vm.c:1457
+0x000055555555c0a7 -- min_parity_flag_set -- 0.9106663256170866 -- shl qword ptr [rbp-0x28], 0x1 (path rank: 1.9965949591884034) //ary_expand_capa at array.c:202
+0x000055555555c196 -- min_parity_flag_set -- 0.9106663256170866 -- cmp qword ptr [rbp-0x28], rax (path rank: 1.9966333086702504) //ary_expand_capa at array.c:223
+0x000055555555d521 -- rax min_reg_val_greater_or_equal 0x17 -- 0.9097710704693694 -- mov rax, qword ptr [rax+0x20] (path rank: 1.9958702716351557) //mrb_ary_push at array.c:501 (discriminator 1)
+0x000055555555c030 -- rax min_reg_val_greater_or_equal 0xc -- 0.9093234428955108 -- mov rax, qword ptr [rax+0x20] (path rank: 1.9954453007150554) //ary_expand_capa at array.c:190 (discriminator 1)
+0x000055555555c192 -- rax min_reg_val_greater_or_equal 0xc -- 0.9093234428955108 -- mov rax, qword ptr [rax+0x20] (path rank: 1.9954909981602869) //ary_expand_capa at array.c:223
+0x000055555555c19c -- rax min_reg_val_greater_or_equal 0x17 -- 0.9093234428955108 -- mov rax, qword ptr [rbp-0x28] (path rank: 1.9955366956055183) //ary_expand_capa at array.c:224
+0x000055555555c1a0 -- rax min_reg_val_greater_or_equal 0x170 -- 0.9093234428955108 -- shl rax, 0x4 (path rank: 1.9955632183098264) //ary_expand_capa at array.c:224
+0x000055555555c1a4 -- rdx min_reg_val_greater_or_equal 0x170 -- 0.9093234428955108 -- mov rdx, rax (path rank: 1.9955897410141343) //ary_expand_capa at array.c:224
+0x000055555555c1c6 -- rdx min_reg_val_greater_or_equal 0x17 -- 0.9093234428955108 -- mov rdx, qword ptr [rbp-0x28] (path rank: 1.9956162637184423) //ary_expand_capa at array.c:226
+0x000055555555c1ca -- memory_value min_reg_val_greater_or_equal 0x17 -- 0.9093234428955108 -- mov qword ptr [rax+0x20], rdx (path rank: 1.9956427864227502) //ary_expand_capa at array.c:226
+0x000055555555d532 -- rax min_reg_val_greater_or_equal 0x17 -- 0.9093234428955108 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9961228771610733) //mrb_ary_push at array.c:502
+0x000055555555d536 -- rdx min_reg_val_greater_or_equal 0x18 -- 0.9093234428955108 -- lea rdx, ptr [rax+0x1] (path rank: 1.9961493998653812) //mrb_ary_push at array.c:502
+0x000055555555d608 -- min_parity_flag_set -- 0.9079805601739352 -- cmp eax, 0x7 (path rank: 0.7769271486235484) //mrb_ary_push at array.c:505
+0x000055555555bd9f -- rax max_reg_val_less 0x60e -- 0.9075329326000768 -- mov eax, dword ptr [rax] (path rank: 0.2611687739357605) //ary_modify at array.c:133
+0x000055555555bda1 -- min_zero_flag_set -- 0.9075329326000768 -- shr eax, 0xb (path rank: 0.29928536758312535) //ary_modify at array.c:133
+0x00005555555d56e3 -- rsi min_reg_val_greater_or_equal 0x4c34ecbe62d18800 -- 0.9075329326000768 -- mov rsi, qword ptr [rbp-0x8] (path rank: 1.99625575961007) //fiber_transfer at fiber.c:328 (discriminator 1)
+0x000055555555d4cf -- rax max_reg_val_less 0x60e -- 0.9070853050262182 -- mov eax, dword ptr [rax] (path rank: 0.10906731290380611) //mrb_ary_push at array.c:498
+0x000055555555d4d1 -- min_zero_flag_set -- 0.9070853050262182 -- shr eax, 0xb (path rank: 0.14718390655117097) //mrb_ary_push at array.c:498
+0x000055555555d4d4 -- min_zero_flag_set -- 0.9070853050262182 -- and eax, 0x7 (path rank: 0.18530050019853583) //mrb_ary_push at array.c:498
+0x000055555555d4d7 -- min_zero_flag_set -- 0.9070853050262182 -- test eax, eax (path rank: 0.22341709384590072) //mrb_ary_push at array.c:498
+0x000055555555d511 -- rax max_reg_val_less 0x60e -- 0.9070853050262182 -- mov eax, dword ptr [rax] (path rank: 0.3377166341609709) //mrb_ary_push at array.c:501 (discriminator 4)
+0x000055555555d513 -- min_zero_flag_set -- 0.9070853050262182 -- shr eax, 0xb (path rank: 0.37583322780833583) //mrb_ary_push at array.c:501 (discriminator 4)
+0x000055555555d516 -- min_zero_flag_set -- 0.9070853050262182 -- and eax, 0x7 (path rank: 0.41394982145570064) //mrb_ary_push at array.c:501 (discriminator 4)
+0x000055555555d519 -- min_zero_flag_set -- 0.9070853050262182 -- test eax, eax (path rank: 0.45206641510306556) //mrb_ary_push at array.c:501 (discriminator 4)
+0x000055555555d551 -- rax max_reg_val_less 0x60e -- 0.9070853050262182 -- mov eax, dword ptr [rax] (path rank: 0.4862186760681795) //mrb_ary_push at array.c:503
+0x000055555555d553 -- min_zero_flag_set -- 0.9070853050262182 -- shr eax, 0xb (path rank: 0.5243422037589237) //mrb_ary_push at array.c:503
+0x000055555555d556 -- min_zero_flag_set -- 0.9070853050262182 -- and eax, 0x7 (path rank: 0.5624657314496679) //mrb_ary_push at array.c:503
+0x000055555555d559 -- min_zero_flag_set -- 0.9070853050262182 -- test eax, eax (path rank: 0.6005892591404122) //mrb_ary_push at array.c:503
+0x000055555555d58e -- rax max_reg_val_less 0x60e -- 0.9070853050262182 -- mov eax, dword ptr [rax] (path rank: 0.6387127868311564) //mrb_ary_push at array.c:504 (discriminator 4)
+0x000055555555d590 -- min_zero_flag_set -- 0.9070853050262182 -- shr eax, 0xb (path rank: 0.6768363145219006) //mrb_ary_push at array.c:504 (discriminator 4)
+0x000055555555d593 -- min_zero_flag_set -- 0.9070853050262182 -- and eax, 0x7 (path rank: 0.7149598422126447) //mrb_ary_push at array.c:504 (discriminator 4)
+0x000055555555d596 -- min_zero_flag_set -- 0.9070853050262182 -- test eax, eax (path rank: 0.7530833699033892) //mrb_ary_push at array.c:504 (discriminator 4)
+0x000055555555d626 -- 0x55555555d626 edge_only_taken_to 0x5555555a7765 -- 0.9070853050262182 -- ret  (path rank: 0.8188516187252701) //mrb_ary_push at array.c:506
+0x000055555555d4d9 -- 0x55555555d4d9 edge_only_taken_to 0x55555555d4ee -- 0.9070853050262182 -- jz 0x55555555d4ee (path rank: 0.8517998213551117) //mrb_ary_push at array.c:498
+0x000055555555d51b -- 0x55555555d51b edge_only_taken_to 0x55555555d51d -- 0.9070853050262182 -- jnz 0x55555555d527 (path rank: 0.8900141758434231) //mrb_ary_push at array.c:501 (discriminator 4)
+0x000055555555d55b -- 0x55555555d55b edge_only_taken_to 0x55555555d567 -- 0.9070853050262182 -- jz 0x55555555d567 (path rank: 0.9282285303317346) //mrb_ary_push at array.c:503
+0x000055555555d598 -- 0x55555555d598 edge_only_taken_to 0x55555555d5f5 -- 0.9070853050262182 -- jz 0x55555555d5f5 (path rank: 0.9664428848200461) //mrb_ary_push at array.c:504 (discriminator 4)
+0x000055555559f3e3 -- memory_value max_reg_val_greater_or_equal 0x5555556a97f2 -- 0.9070853050262182 -- add qword ptr [rbp-0x958], 0x4 (path rank: 1.9948654377458048) //mrb_vm_exec at vm.c:1048
+0x000055555559f3eb -- rax max_reg_val_greater_or_equal 0x5555556a97f2 -- 0.9070853050262182 -- mov rax, qword ptr [rbp-0x958] (path rank: 1.9949128586003473) //mrb_vm_exec at vm.c:1048
+0x000055555555bd73 -- num_successors_equal 2 -- 0.9070853050262182 -- ret  (path rank: 2) //ary_modify_check at array.c:126
+0x000055555556c924 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov dword ptr [rax], edx (path rank: 1.50611191489144) //mrb_debug_info_append_file at debug.c:157
+0x000055555556ca32 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- add dword ptr [rbp-0x38], 0x1 (path rank: 1.8035907390920762) //mrb_debug_info_append_file at debug.c:171 (discriminator 3)
+0x00005555555be932 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov dword ptr [rax+0x50], edx (path rank: 1.8375106955744174) //scope_finish at codegen.c:2938
+0x00005555555b3ba9 -- rdx max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov edx, dword ptr [rax+0xec] (path rank: 1.9206778924515486) //genop at codegen.c:152
+0x00005555555b3cc2 -- rax max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.921177061123279) //genop at codegen.c:166
+0x00005555555b3cc8 -- rax max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- cdqe  (path rank: 1.9216762297950094) //genop at codegen.c:166
+0x00005555555b3cca -- rax max_reg_val_greater_or_equal 0x1da -- 0.9043995395830668 -- shl rax, 0x2 (path rank: 1.92217539846674) //genop at codegen.c:166
+0x00005555555b3cf5 -- rax max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9226745671384704) //genop at codegen.c:168
+0x00005555555b3cfb -- rax max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- cdqe  (path rank: 1.9231737358102008) //genop at codegen.c:168
+0x00005555555b3cfd -- rax max_reg_val_greater_or_equal 0xed -- 0.9043995395830668 -- add rax, rax (path rank: 1.9236729044819314) //genop at codegen.c:168
+0x00005555555b3d15 -- rax max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9241720731536618) //genop at codegen.c:170
+0x00005555555b3d1b -- rcx max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- lea ecx, ptr [rax+0x1] (path rank: 1.9246712418253922) //genop at codegen.c:170
+0x00005555555be8f2 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.928257177021148) //scope_finish at codegen.c:2937
+0x00005555555b3b21 -- memory_value max_reg_val_greater_or_equal 0x1de -- 0.9043995395830668 -- mov qword ptr [rbp-0x18], rdx (path rank: 1.9286431044025718) //codegen_realloc at codegen.c:135
+0x00005555555be8f8 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- cdqe  (path rank: 1.928745311519501) //scope_finish at codegen.c:2937
+0x00005555555b3b2c -- rdx max_reg_val_greater_or_equal 0x1de -- 0.9043995395830668 -- mov rdx, qword ptr [rbp-0x18] (path rank: 1.9291312389009247) //codegen_realloc at codegen.c:136
+0x00005555555be8fa -- rdx max_reg_val_greater_or_equal 0x1de -- 0.9043995395830668 -- lea rdx, ptr [rax*4] (path rank: 1.929233446017854) //scope_finish at codegen.c:2937
+0x00005555555be928 -- rdx max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov edx, dword ptr [rax+0xec] (path rank: 1.9303565096358681) //scope_finish at codegen.c:2938
+0x00005555555be949 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9309178578717363) //scope_finish at codegen.c:2940
+0x00005555555be94f -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- cdqe  (path rank: 1.931405992370089) //scope_finish at codegen.c:2940
+0x00005555555be951 -- rdx max_reg_val_greater_or_equal 0xef -- 0.9043995395830668 -- lea rdx, ptr [rax+rax*1] (path rank: 1.931894126868442) //scope_finish at codegen.c:2940
+0x00005555555bea57 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9323822613667951) //scope_finish at codegen.c:2951
+0x00005555555bea5d -- rcx max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov ecx, eax (path rank: 1.9328703958651479) //scope_finish at codegen.c:2951
+0x00005555555b3dac -- rax max_reg_val_greater_or_equal 0x75 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9331025614388415) //genop_peep at codegen.c:188 (discriminator 1)
+0x000055555556c90b -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rbp-0x58] (path rank: 1.9333585303635006) //mrb_debug_info_append_file at debug.c:154
+0x00005555555b3dbe -- rax max_reg_val_greater_or_equal 0x75 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9335321263064265) //genop_peep at codegen.c:188 (discriminator 2)
+0x000055555556c90e -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- sub eax, dword ptr [rbp-0x54] (path rank: 1.9338466648618535) //mrb_debug_info_append_file at debug.c:154
+0x00005555555b3ddb -- rax max_reg_val_greater_or_equal 0x75 -- 0.9043995395830668 -- mov eax, dword ptr [rax+0xec] (path rank: 1.9339616911740116) //genop_peep at codegen.c:189
+0x000055555556c921 -- rdx max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov edx, dword ptr [rbp-0x58] (path rank: 1.9343347993602065) //mrb_debug_info_append_file at debug.c:157
+0x00005555555b3de1 -- rax max_reg_val_greater_or_equal 0x75 -- 0.9043995395830668 -- cdqe  (path rank: 1.9343912560415966) //genop_peep at codegen.c:189
+0x00005555555b3de3 -- rax max_reg_val_greater_or_equal 0x1d2 -- 0.9043995395830668 -- shl rax, 0x2 (path rank: 1.934820820909182) //genop_peep at codegen.c:189
+0x000055555556c985 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rbp-0x58] (path rank: 1.9351986051852226) //mrb_debug_info_append_file at debug.c:164
+0x00005555555b3de7 -- rax max_reg_val_greater_or_equal 0x1ce -- 0.9043995395830668 -- sub rax, 0x4 (path rank: 1.935250385776767) //genop_peep at codegen.c:189
+0x000055555556c988 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- sub eax, dword ptr [rbp-0x54] (path rank: 1.9356867396835757) //mrb_debug_info_append_file at debug.c:164
+0x000055555556c98b -- rcx max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov ecx, eax (path rank: 1.9361748741819282) //mrb_debug_info_append_file at debug.c:164
+0x000055555556c99e -- rsi max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov rsi, rcx (path rank: 1.9366630086802812) //mrb_debug_info_append_file at debug.c:164
+0x000055555556c394 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov qword ptr [rbp-0x30], rsi (path rank: 1.9371511431786341) //select_line_type at debug.c:40
+0x000055555556c3b1 -- rax max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9376392776769866) //select_line_type at debug.c:45
+0x000055555556c3b5 -- rdx max_reg_val_greater_or_equal 0xed -- 0.9043995395830668 -- lea rdx, ptr [rax+rax*1] (path rank: 1.9381274121753396) //select_line_type at debug.c:45
+0x000055555556c3cb -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- add qword ptr [rbp-0x10], 0x1 (path rank: 1.9386155466736927) //select_line_type at debug.c:46
+0x000055555556c3d0 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- add qword ptr [rbp-0x8], 0x1 (path rank: 1.9391036811720455) //select_line_type at debug.c:44 (discriminator 2)
+0x000055555556c3d5 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.9395918156703984) //select_line_type at debug.c:44 (discriminator 1)
+0x000055555556c3df -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov rax, qword ptr [rbp-0x30] (path rank: 1.9400799501687511) //select_line_type at debug.c:49
+0x000055555556c3e3 -- rdx max_reg_val_greater_or_equal 0xef -- 0.9043995395830668 -- lea rdx, ptr [rax+rax*1] (path rank: 1.940568084667104) //select_line_type at debug.c:49
+0x000055555556c3e7 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov rax, qword ptr [rbp-0x10] (path rank: 1.941056219165457) //select_line_type at debug.c:49
+0x000055555556c3eb -- rax max_reg_val_greater_or_equal 0x3bc -- 0.9043995395830668 -- shl rax, 0x3 (path rank: 1.9415443536638097) //select_line_type at debug.c:49
+0x000055555556c9d5 -- rdx max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov edx, dword ptr [rbp-0x34] (path rank: 1.9420324881621627) //mrb_debug_info_append_file at debug.c:169
+0x000055555556c9db -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rbp-0x34] (path rank: 1.9425206226605154) //mrb_debug_info_append_file at debug.c:170
+0x000055555556c9de -- rdx max_reg_val_greater_or_equal 0xef -- 0.9043995395830668 -- lea rdx, ptr [rax+rax*1] (path rank: 1.9430087571588683) //mrb_debug_info_append_file at debug.c:170
+0x000055555556c9e6 -- rsi max_reg_val_greater_or_equal 0xef -- 0.9043995395830668 -- mov rsi, rdx (path rank: 1.943496891657221) //mrb_debug_info_append_file at debug.c:170
+0x000055555556ca0d -- rdx max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov edx, dword ptr [rbp-0x38] (path rank: 1.9442225969711244) //mrb_debug_info_append_file at debug.c:172 (discriminator 3)
+0x000055555556ca10 -- rdx max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- add edx, ecx (path rank: 1.9447107314694771) //mrb_debug_info_append_file at debug.c:172 (discriminator 3)
+0x000055555556ca12 -- rdx max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov edx, edx (path rank: 1.9451988659678303) //mrb_debug_info_append_file at debug.c:172 (discriminator 3)
+0x000055555556ca14 -- rdx max_reg_val_greater_or_equal 0xed -- 0.9043995395830668 -- add rdx, rdx (path rank: 1.945687000466183) //mrb_debug_info_append_file at debug.c:172 (discriminator 3)
+0x000055555556ca23 -- rdx max_reg_val_greater_or_equal 0x77 -- 0.9043995395830668 -- mov edx, dword ptr [rbp-0x38] (path rank: 1.946175134964536) //mrb_debug_info_append_file at debug.c:172 (discriminator 3)
+0x000055555556ca26 -- rdx max_reg_val_greater_or_equal 0xed -- 0.9043995395830668 -- add rdx, rdx (path rank: 1.9466632694628887) //mrb_debug_info_append_file at debug.c:172 (discriminator 3)
+0x000055555556ca36 -- rax max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov eax, dword ptr [rbp-0x38] (path rank: 1.9471514039612414) //mrb_debug_info_append_file at debug.c:171 (discriminator 1)
+0x00005555555b3d22 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov dword ptr [rdx+0xec], ecx (path rank: 1.9760069179280535) //genop at codegen.c:170
+0x000055555556c792 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov dword ptr [rbp-0x58], ecx (path rank: 2) //mrb_debug_info_append_file at debug.c:127
+0x000055555556c911 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov dword ptr [rbp-0x34], eax (path rank: 2) //mrb_debug_info_append_file at debug.c:154
+0x000055555559dbec -- r12 min_reg_val_greater_or_equal 0x7fffffffd2a0 -- 0.9043995395830668 -- pop r12 (path rank: 2) //mrb_funcall_with_block at vm.c:511
+0x000055555556c9d8 -- memory_value max_reg_val_greater_or_equal 0x78 -- 0.9043995395830668 -- mov dword ptr [rax+0x14], edx (path rank: 2) //mrb_debug_info_append_file at debug.c:169
+0x00005555555b5f13 -- rax max_reg_val_greater_or_equal 0x55555569e714 -- 0.9039519120092084 -- mov rax, qword ptr [rax+0x8] (path rank: 1.9956885590000697) //gen_values at codegen.c:879
+0x00005555555b5f17 -- memory_value max_reg_val_greater_or_equal 0x55555569e714 -- 0.9039519120092084 -- mov qword ptr [rbp-0x20], rax (path rank: 1.9957112863888078) //gen_values at codegen.c:879
+0x000055555555bb05 -- rcx max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov rcx, qword ptr [rbp-0x28] (path rank: 2) //ary_new_from_values at array.c:85 (discriminator 4)
+0x000055555555ba59 -- memory_value max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov qword ptr [rbp-0x20], rsi (path rank: 2) //array_copy at array.c:72
+0x000055555555bac4 -- memory_value max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov qword ptr [rbp-0x28], rdx (path rank: 2) //ary_new_from_values at array.c:82
+0x000055555555ba76 -- rax max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov rax, qword ptr [rbp-0x20] (path rank: 2) //array_copy at array.c:76 (discriminator 3)
+0x000055555555bba5 -- memory_value max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov qword ptr [rbp-0x28], rdx (path rank: 2) //mrb_ary_new_from_values at array.c:93
+0x000055555555ba7a -- rax max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- add rax, rdx (path rank: 2) //array_copy at array.c:76 (discriminator 3)
+0x000055555555bba9 -- rdx max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov rdx, qword ptr [rbp-0x28] (path rank: 2) //mrb_ary_new_from_values at array.c:94
+0x000055555555bb09 -- rsi max_reg_val_greater_or_equal 0x7fffffffc458 -- 0.9039519120092084 -- mov rsi, rcx (path rank: 2) //ary_new_from_values at array.c:85 (discriminator 4)
+0x0000555555576adc -- r12 min_reg_val_greater_or_equal 0x7fffffffd2a0 -- 0.9035042844353498 -- pop r12 (path rank: 2) //const_get at variable.c:688
+0x00005555555d56b4 -- rdi min_reg_val_less 0x5555556aa878 -- 0.9026090292876326 -- mov rdi, qword ptr [rbp-0x20] (path rank: 1.9944129641870676) //fiber_transfer at fiber.c:327
+0x00005555555d56d4 -- r8 min_reg_val_less 0x5555556aa878 -- 0.9026090292876326 -- mov r8, rdi (path rank: 1.9945378833571497) //fiber_transfer at fiber.c:327
+0x00005555555d50b0 -- memory_value min_reg_val_less 0x5555556aa878 -- 0.9026090292876326 -- mov qword ptr [rbp-0x58], r8 (path rank: 1.9946628025272313) //fiber_switch at fiber.c:184
+0x00005555555d563c -- max_parity_flag_set -- 0.9017137741399156 -- cmp qword ptr [rbp-0x10], rax (path rank: 1.9970108231273511) //fiber_transfer at fiber.c:316
+0x00005555555d5695 -- max_parity_flag_set -- 0.9017137741399156 -- cmp qword ptr [rbp-0x10], rax (path rank: 1.9970422346306604) //fiber_transfer at fiber.c:323
+0x0000555555586790 -- memory_value max_reg_val_greater_or_equal 0x55555569d4b4 -- 0.9015219337511192 -- mov qword ptr [rbp-0x30], rcx (path rank: 1.7623761756915939) //new_call at parse.y:427
+0x00005555555867b0 -- rcx max_reg_val_greater_or_equal 0x55555569d4b4 -- 0.9015219337511192 -- mov rcx, qword ptr [rbp-0x30] (path rank: 1.7654814439273503) //new_call at parse.y:428 (discriminator 4)
+0x00005555555867bc -- r8 max_reg_val_greater_or_equal 0x55555569d4b4 -- 0.9015219337511192 -- mov r8, rcx (path rank: 1.7685867121631063) //new_call at parse.y:428 (discriminator 4)
+0x00005555555d55d3 -- rax min_reg_val_greater_or_equal 0x4c34ecbe62d18800 -- 0.901266146566057 -- mov rax, qword ptr fs:[0x28] (path rank: 1.9947922761854169) //fiber_transfer at fiber.c:308
+0x00005555555d55dc -- memory_value min_reg_val_greater_or_equal 0x4c34ecbe62d18800 -- 0.901266146566057 -- mov qword ptr [rbp-0x8], rax (path rank: 1.994841600655766) //fiber_transfer at fiber.c:308

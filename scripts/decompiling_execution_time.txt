@@ -1,4 +1,22 @@
+An error occured launching Ghidra: java.nio.file.FileSystemNotFoundException: Unknown filesystem for jar:file:/media/ssd-partition/Tools/ghidra_11.1.2_PUBLIC/Ghidra/Framework/Utility/lib/Utility.jar!/ghidra
+Traceback (most recent call last):
+  File "/media/ssd-partition/Documents/RootCauseAnalysisPruning/scripts/./decompiler/pydra.py", line 9, in <module>
+    pyhidra.start()
+  File "/home/tenebris/.local/lib/python3.10/site-packages/pyhidra/core.py", line 26, in start
+    launcher.start()
+  File "/home/tenebris/.local/lib/python3.10/site-packages/pyhidra/launcher.py", line 309, in start
+    self._report_fatal_error("An error occured launching Ghidra", str(e), e)
+  File "/home/tenebris/.local/lib/python3.10/site-packages/pyhidra/launcher.py", line 220, in _report_fatal_error
+    raise cause
+  File "/home/tenebris/.local/lib/python3.10/site-packages/pyhidra/launcher.py", line 275, in start
+    from ghidra import GhidraApplicationLayout
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "/home/tenebris/.local/lib/python3.10/site-packages/jpype/imports.py", line 160, in find_spec
+    if not _jpype.isPackage(jname):
+RuntimeError: java.nio.file.FileSystemNotFoundException: Unknown filesystem for jar:file:/media/ssd-partition/Tools/ghidra_11.1.2_PUBLIC/Ghidra/Framework/Utility/lib/Utility.jar!/ghidra
 
-real	0m12.128s
-user	0m43.952s
-sys	0m1.351s
+real	0m0.638s
+user	0m0.925s
+sys	0m0.151s

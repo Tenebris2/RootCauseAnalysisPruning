@@ -289,11 +289,8 @@ VOID Instruction(INS ins, VOID *v) {
                 + INS_Disassemble(ins) + "\n");
             return;
         }
-
-        baseCount++;
-        if (INS_IsBranch(ins)) {
         hitCount++;
-
+        baseCount++;
         std::set<REG>* reg_ops = get_written_reg_operands(ins);
         // Check whether the instruction is a branch | call | ret | ...
         EdgeType type = get_edge_type(ins);
@@ -338,7 +335,7 @@ VOID Instruction(INS ins, VOID *v) {
                     IARG_MEMORYWRITE_SIZE,
                     IARG_END
                 );
-            }}
+            }
         }
     }
 }
@@ -459,8 +456,8 @@ VOID Fini(INT32 code, VOID *v) {
     std::string data = jsonify();
     fprintf(g_trace_file, "%s", data.c_str());
     fclose(g_trace_file);
+    outFile << baseCount << " / " << baseCount << std::endl;
     parse_maps();
-    outFile << hitCount << " / " << baseCount << std::endl;
     LOG("[=] Completed trace.\n");
 }
 
@@ -495,8 +492,6 @@ int main(int argc, char * argv[]) {
     // Check if ASLR is disabled
     std::ifstream infile("/proc/sys/kernel/randomize_va_space");
     outFile.open("hitcount.out", std::ios_base::app);
-
-
     int aslr;
     if (!infile) {
         PIN_ERROR("Unable to check whether ASLR is enabled or not. Failed to open /proc/sys/kernel/randomize_va_space");
