@@ -1,7 +1,7 @@
 import os
 import sys
 
-target_rca = "fiber.c:209"
+target_rca = "mat5.c:4975"
 from extract_ranking import extract_ranking
 
 
@@ -17,7 +17,6 @@ def replace_content(ranked_predicates_path, path):
         content = file.readlines()
         target = content[-2:]
         content = content[:-2]
-        print(content)
 
         target = [x.split(" ") for x in target]
 
@@ -44,8 +43,11 @@ def main():
                     rca_results_path = dirpath + "/" + f
                 elif f == "ranked_predicates_verbose.txt":
                     ranked_predicates_path = dirpath + "/" + f
-
-            replace_content(ranked_predicates_path, rca_results_path)
+                print(dirpath)
+            try:
+                replace_content(ranked_predicates_path, rca_results_path)
+            except:
+                print("errored out at", dirpath)
 
 
 main()
