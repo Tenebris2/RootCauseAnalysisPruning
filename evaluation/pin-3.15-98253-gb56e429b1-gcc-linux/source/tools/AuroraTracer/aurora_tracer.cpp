@@ -35,6 +35,7 @@ END_LEGAL */
 #include <iterator>
 #include "pin.H"
 
+#include <set>
 #define NUM_REGS 23
 
 enum EdgeType {Direct, Indirect, Conditional, Syscall, Return, Regular, Unknown};
@@ -112,10 +113,10 @@ static ADDRINT g_low_address;
 static ADDRINT g_first_ins_addr;
 static UINT64 g_reg_state[23] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 static PIN_LOCK g_lock;
+std::set<ADDRINT> addresses;
 UINT baseCount = 0;
 UINT hitCount = 0;
 std::ofstream outFile;
-
 /**
  *  Add instruction to global instruction map
  */
@@ -137,7 +138,22 @@ VOID add_instruction(ADDRINT ins_addr, const std::string& ins_disas) {
         };
 }
 
+void ReadFileToVector() {
+    std::ifstream file("addresses");
 
+    if (!file.is_open()) {
+
+        return;
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        ADDRINT address = AddrintFromString(line.c_str()) + g_low_address;
+        addresses.insert(address); // Store each line in the vector as std::string
+    }
+
+    file.close();
+}
 /**
  * Add new edge to global edge map (if necessary) and increase visited count
  */
@@ -289,8 +305,11 @@ VOID Instruction(INS ins, VOID *v) {
                 + INS_Disassemble(ins) + "\n");
             return;
         }
-        hitCount++;
+        
         baseCount++;
+        if (addresses.find(INS_Address(ins)) != addresses.end()) {
+        hitCount++;
+        
         std::set<REG>* reg_ops = get_written_reg_operands(ins);
         // Check whether the instruction is a branch | call | ret | ...
         EdgeType type = get_edge_type(ins);
@@ -335,7 +354,7 @@ VOID Instruction(INS ins, VOID *v) {
                     IARG_MEMORYWRITE_SIZE,
                     IARG_END
                 );
-            }
+            }}
         }
     }
 }
@@ -375,6 +394,8 @@ VOID parse_image(IMG img, VOID *v) {
     if (IMG_IsMainExecutable(img)) {
         g_load_offset  = IMG_LoadOffset(img);
         g_low_address  = IMG_LowAddress(img);
+
+        ReadFileToVector();
         LOG("[*] Image base: " + StringFromAddrint(g_low_address) + "\n");
         LOG("[*] Load offset: " + StringFromAddrint(g_load_offset) + "\n");
         ADDRINT img_entry_addr = IMG_EntryAddress(img);
@@ -447,7 +468,7 @@ std::string jsonify() {
     return ss.str();
 }
 
-
+  
 /**
  *  Write data as JSON to output file upon application exit
  */
@@ -456,8 +477,8 @@ VOID Fini(INT32 code, VOID *v) {
     std::string data = jsonify();
     fprintf(g_trace_file, "%s", data.c_str());
     fclose(g_trace_file);
-    outFile << baseCount << " / " << baseCount << std::endl;
     parse_maps();
+    outFile << hitCount << " / " << baseCount << std::endl;
     LOG("[=] Completed trace.\n");
 }
 
@@ -491,6 +512,7 @@ INT32 Aslr() {
 int main(int argc, char * argv[]) {
     // Check if ASLR is disabled
     std::ifstream infile("/proc/sys/kernel/randomize_va_space");
+
     outFile.open("hitcount.out", std::ios_base::app);
     int aslr;
     if (!infile) {
