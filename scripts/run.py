@@ -217,8 +217,8 @@ def move_source_code_extraction_results(id):
 
 
 setup()
-for i in range(1, 2):
+for i in range(0, 1):
     # run(Method.AURORA, False, i)
-    run(Method.LOC, False, i)
+    # run(Method.LOC, False, i)
     run(Method.LOC, True, i)
-    run(Method.BASIC_BLOCK, False, i)
+    # run(Method.BASIC_BLOCK, False, i)

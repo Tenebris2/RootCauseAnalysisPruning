@@ -1,4 +1,5 @@
 import re
+from pprint import pprint
 
 FILE_TO_WRITE = "decompiled_code"
 OFFSET = "00"
@@ -6,9 +7,12 @@ GLOBAL_END_INDICATOR = "END_OF_LINE"
 JUMP_FILE = "jump_instructions"
 START_ADDRESS = "00101000"
 END_ADDRESS = "0010136c"
-
+MID_ADDRESS_FILE = "mid_addresses"
 jump_set = set()
 address_set = set()
+
+INS = []
+
 
 def extract_number(s):
     if not isinstance(s, str):
@@ -39,12 +43,13 @@ def extract_addr(line):
     for token in token_set:
         addr_set.add(token.getMinAddress())
         addr_set.add(token.getMaxAddress())
-    
+
     return sorted({x for x in addr_set if x is not None})
 
 
-def disassembleInstructions(Disassembler, AddressSet, program, flat_api, startAddr, endAddr):
-
+def disassembleInstructions(
+    Disassembler, AddressSet, program, flat_api, startAddr, endAddr
+):
 
     address_set = AddressSet(startAddr, endAddr)
 
@@ -52,7 +57,7 @@ def disassembleInstructions(Disassembler, AddressSet, program, flat_api, startAd
         flat_api.disassemble(address)
 
 
-def getExecutableSectionFunctions(program ,flat_api):
+def getExecutableSectionFunctions(program, flat_api):
 
     function_manager = program.getFunctionManager()
     functions = function_manager.getFunctions(True)
@@ -95,6 +100,7 @@ def getInsts(addrs, AddressSet, flat_api):
     if len(insts) >= 1:
         address_set.add(tmp_inst[len(tmp_inst) - 1])
         insts.append(GLOBAL_END_INDICATOR + "\n")
+    INS.append(tmp_inst)
     return insts
 
 
@@ -114,6 +120,7 @@ def extractLastLineInstruction():
 
     return instruction_addr
 
+
 def writeInstructionMappingToFile(function_name, markup, flat_api, AddressSet):
     lines = getLines(markup)
     lines = sorted(lines, key=lambda s: extract_number(s))
@@ -130,14 +137,20 @@ def writeInstructionMappingToFile(function_name, markup, flat_api, AddressSet):
         for line in write_data:
             file.write("".join(line))
 
+
 # test
 
-def extractJumpSet() :
+
+def extractJumpSet():
     temp = jump_set
     with open(JUMP_FILE, "w") as file:
         for t in temp:
             file.write(t.toString() + "\n")
-def definedUndefinedFunctions(currentProgram, monitor, flat_api, AddressSet, IsolatedEntrySubModel):
+
+
+def definedUndefinedFunctions(
+    currentProgram, monitor, flat_api, AddressSet, IsolatedEntrySubModel
+):
     set = AddressSet()
     listing = currentProgram.getListing()
 
@@ -154,7 +167,7 @@ def definedUndefinedFunctions(currentProgram, monitor, flat_api, AddressSet, Iso
     if set.getNumAddressRanges() == 0:
         pass
 
-# go through address set and find the actual start of flow into the dead code
+    # go through address set and find the actual start of flow into the dead code
     submodel = IsolatedEntrySubModel(currentProgram)
     subIter = submodel.getCodeBlocksContaining(set, monitor)
     codeStarts = AddressSet()
@@ -163,8 +176,22 @@ def definedUndefinedFunctions(currentProgram, monitor, flat_api, AddressSet, Iso
         deadStart = block.getFirstStartAddress()
         codeStarts.add(deadStart)
 
-
     for startAdr in codeStarts:
         phyAdr = startAdr.getMinAddress()
         print("Undef Func detected at: " + phyAdr.toString())
         flat_api.createFunction(phyAdr, None)
+
+
+def writeIns():
+    current_ins = INS
+
+    middle_ins = set()
+    for i in current_ins:
+        if len(i) >= 1:
+            middle_ins.add(i[len(i) // 2])
+        else:
+            continue
+
+    with open(MID_ADDRESS_FILE, "w") as file:
+        for ins in middle_ins:
+            file.write(ins.toString() + "\n")

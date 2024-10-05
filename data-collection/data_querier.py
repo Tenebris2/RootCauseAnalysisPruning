@@ -1,4 +1,5 @@
 import pandas as pd
+from enum import Enum
 import matplotlib.pyplot as plt
 from pprint import pprint
 
@@ -6,6 +7,30 @@ COLUMNS_TO_WRITE = ["Test Case", "Predicates", "SLOC"]
 FILE_TO_WRITE = "stats/stats"
 METHODS = ["aurora", "loc", "loc with source", "basic block"]
 COMBINE_WRITETO_CSV = "stats_sum.csv"
+
+
+class Columns(Enum):
+    TRACING_TIME = "Tracing Time"
+    TEST_CASE = "Test Case"
+    PREDICATES = "Predicates"
+    SLOC = "SLOC"
+    TRACE_ANALYSIS_TIME = "Trace Analysis Time"
+    RANKING_TIME = "Ranking Time"
+
+    MONITORING_TIME = "Monitoring Time"
+    TIME_TO_PREPARE = "Time to Prepare For Tracing"
+    STEPS_TO_ROOT_CAUSE = "Steps To Root Cause"
+    INSTRUCTIONS_TRACED = "Instructions Traced"
+    TRACING_TIME_WITH_TIME_TO_PREPARE = "Tracing Time with Time to Prepare"
+    TOTAL_TIME = "Total Time"
+    PREDICATE_ANALYSIS_TIME = "PA Time"
+
+
+class Method(Enum):
+    AURORA = "aurora"
+    LOC = "loc"
+    LOC_WITH_SOURCE = "loc with source"
+    BASIC_BLOCK = "basic block"
 
 
 def write_to_stats():
@@ -36,7 +61,15 @@ def write_to_stats():
             )
 
 
-def get_predicates_and_loc():
+def apply_timedelta(df):
+    time_columns = df.filter(like="Time").columns
+    for col in time_columns:
+        df[col] = pd.to_timedelta(df[col], unit="s").astype(str).str.split().str[-1]
+
+    return df
+
+
+def get_merged_df():
     df_arr = []
     for method in METHODS:
         df = pd.read_csv("Avg_res.csv")
@@ -44,15 +77,20 @@ def get_predicates_and_loc():
 
     merged_df, method = df_arr[0]
 
-    count = 0
     for dfs in df_arr[1:]:
         prev_method = method
         (df, method) = dfs
         merged_df = pd.merge(
             merged_df, df, on="Test Case", suffixes=(f"_{prev_method}", f"_{method}")
         )
-        count += 1
-    filtered = merged_df.filter(regex="^(Predicates|SLOC)").columns.tolist()
+    merged_df = apply_timedelta(merged_df)
+    return merged_df
+
+
+def get_stats(*args):
+    merged_df = get_merged_df()
+    columns = "|".join([x.value for x in list(args)])
+    filtered = merged_df.filter(regex=f"^{columns}").columns.tolist()
     filtered = list(["Test Case"]) + filtered
     pprint(merged_df[filtered])
 
@@ -63,75 +101,42 @@ def to_csv(df, fname: str):
     return df.to_csv(fname)
 
 
-def csv_to_latex(csv_file):
+def to_tex(df, fname: str):
+    with open(fname, "w") as f:
+        f.write(df.to_latex(index=False))
+
+
+def csv_to_latex(csv_file, tex_file):
     csv_table = pd.read_csv(csv_file)
     tex = csv_table.to_latex(index=False)
-    with open("instructions_traced.tex", "w") as texfile:
-        texfile.write(tex)
+    with open(tex_file, "w") as file:
+        file.write(tex)
 
 
-def combine_csv():
-    sum_contents = []
-    for method in METHODS:
-        if method == "basic block":
-            with open(f"{FILE_TO_WRITE}_basic_block.csv") as file:
-                contents = file.readlines()[1:]
-        elif method == "loc with source":
-            with open(f"{FILE_TO_WRITE}_loc_with_source.csv") as file:
-                contents = file.readlines()[1:]
-        else:
-            with open(f"{FILE_TO_WRITE}_{method}.csv") as file:
-                if method == "aurora":
-                    contents = file.readlines()[1:]
-                    sum_contents = contents
-                    continue
-                else:
-                    contents = file.readlines()[1:]
-        for i in range(0, len(sum_contents)):
-            sum_contents[i] = sum_contents[i].strip() + " " + contents[i].strip()
-    with open(COMBINE_WRITETO_CSV, "w") as f:
-        f.writelines(sum_contents)
-    pprint(sum_contents)
+def plot_stats(plt_name: str, *args):
+    df = get_merged_df()
 
+    columns = "|".join([x.value for x in list(args)])
+    filtered = df.filter(regex=f"^{columns}").columns.tolist()
 
-def plot_stats(method):
-    df = pd.read_csv("Avg_res.csv")
-    df["Total_Time"] = (
-        df["Trace Analysis Time"]
-        + df["Monitoring Time"]
-        + df["Ranking Time"]
-        + df["Tracing Time"]
-        + df["Time to Prepare For Tracing"]
-    )
-    aur_df = df[df["Method"] == "aurora"].round()
-    loc_df = df[df["Method"] == "loc"].round()
-
-    df_compare = pd.merge(aur_df, loc_df, on="Test Case", suffixes=("_aurora", "_loc"))
-    #
-    # df_compare["Time_Diff"] = (
-    #     df_compare["Predicates_aurora"] - df_compare["Predicates_loc"]
-    # )
-    #
-    # print(df_compare[["Test Case", "Predicates_Diff"]])
-
-    df_compare.plot(
-        x="Test Case",
-        y=["Total_Time_aurora", "Total_Time_loc"],
-        kind="line",
-        marker="o",
-    )
-
+    df.plot(x="Test Case", y=filtered, kind="barh", figsize=(20, 8), logx=True)
+    # plt.xticks([])  # Hides x-axis ticks
+    # plt.xlabel("")  # Optionally hide the x-axis label
     plt.grid(True)
-
+    plt.savefig(plt_name, dpi=300, bbox_inches="tight")
     plt.show()
-    # ax = df.plot(x="Predicates", y="aurora", kind="line", marker="o")
-    # ax.set_title("AURORA vs LOC")
-    # ax.set_xlabel("Predicates")
-    # ax.set_ylabel("SLOC")
-    # ax.grid(True)
-    #
-    # plt.show()
 
 
-# plot_stats("aurora")
-to_csv(get_predicates_and_loc(), "predicates_and_loc.csv")
+def summary_stats(col: Columns):
+    df = get_merged_df()
+
+    filtered_cols = df.filter(regex=f"^{col.value}")
+    pd.set_option("display.max_rows", None)
+    pd.set_option("display.max_columns", None)
+    summary_stats = filtered_cols.describe()
+    pprint(summary_stats)
+
+    return summary_stats.describe()
+
+
+summary_stats(Columns.PREDICATES)

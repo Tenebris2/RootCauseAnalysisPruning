@@ -1,53 +1,6 @@
-0x0000555555564ac0 -- rax min_reg_val_less 0x1 -- 0.989247311827957 -- mov rax, qword ptr [rip+0x2d579] (path rank: 1.9127459177650992) //another_hunk at pch.c:1332
-0x0000555555564ac7 -- max_sign_flag_set -- 0.989247311827957 -- sub rax, 0x1 (path rank: 1.9139140271493211) //another_hunk at pch.c:1332
-0x0000555555564ace -- rax min_reg_val_less 0x5 -- 0.989247311827957 -- movzx eax, byte ptr [rax] (path rank: 1.9150821365335433) //another_hunk at pch.c:1332
-0x0000555555564ad1 -- max_sign_flag_set -- 0.989247311827957 -- cmp al, 0xa (path rank: 1.9162502459177653) //another_hunk at pch.c:1332
-0x0000555555564add -- rax min_reg_val_less 0x1 -- 0.989247311827957 -- mov rax, qword ptr [rip+0x2d55c] (path rank: 1.917418355301987) //another_hunk at pch.c:1332
-0x0000555555564aed -- rax min_reg_val_less 0x1 -- 0.989247311827957 -- mov rax, qword ptr [rip+0x2d54c] (path rank: 1.9185864646862087) //another_hunk at pch.c:1334
-0x0000555555564af4 -- max_sign_flag_set -- 0.989247311827957 -- cmp rax, 0x1 (path rank: 1.9197545740704307) //another_hunk at pch.c:1334
-0x0000555555564b9b -- rcx min_reg_val_less 0x1 -- 0.989247311827957 -- mov rcx, qword ptr [rip+0x2d49e] (path rank: 1.9361081054495377) //another_hunk at pch.c:1347
-0x0000555555564ba9 -- max_zero_flag_set -- 0.989247311827957 -- cmp rcx, rax (path rank: 1.9384443242179816) //another_hunk at pch.c:1346
-0x0000555555564bc1 -- rsi min_reg_val_less 0x555555587361 -- 0.989247311827957 -- mov rsi, rax (path rank: 1.9407805429864253) //another_hunk at pch.c:1346 (discriminator 4)
-0x0000555555564bac -- 0x555555564bac edge_only_taken_to 0x555555564bae -- 0.989247311827957 -- jnle 0x555555564bb7 (path rank: 2) //another_hunk at pch.c:1346
-0x000055555556c5d4 -- memory_value min_reg_val_greater_or_equal 0x7fffffffcccb -- 0.9859836042561554 -- mov qword ptr [rbp-0x98], rcx (path rank: 2) //fatal at util.c:924
-0x00005555555752fa -- rbx min_reg_val_greater_or_equal 0x7fffffffcccb -- 0.9859836042561554 -- mov rbx, qword ptr [rbp-0x8] (path rank: 2) //gl_linked_iterator at gl_anylinked_list2.h:933
-0x0000555555569aa8 -- rbx max_reg_val_greater_or_equal 0x7fffffffcccb -- 0.9859836042561554 -- mov rbx, qword ptr [rbp-0x8] (path rank: 2) //traverse_another_path at safe.c:549
-0x0000555555564b66 -- rdx min_reg_val_greater_or_equal 0x7 -- 0.9853308627417952 -- mov rdx, qword ptr [rip+0x2f9fb] (path rank: 1.9232589022230968) //another_hunk at pch.c:1346
-0x0000555555564b71 -- rsi min_reg_val_greater_or_equal 0x7 -- 0.9853308627417952 -- mov rsi, rdx (path rank: 1.9255951209915403) //another_hunk at pch.c:1346
-0x0000555555564ae7 -- num_successors_equal 2 -- 0.9840253797130744 -- jz 0x555555564c48 (path rank: 2) //another_hunk at pch.c:1331
-0x0000555555564b5c -- max_zero_flag_set -- 0.9801089306269126 -- cmp qword ptr [rbp-0x130], 0x0 (path rank: 1.9220907928388746) //another_hunk at pch.c:1345
-0x0000555555564b6d -- rax min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- lea rax, ptr [rbp-0x80] (path rank: 1.9244270116073185) //another_hunk at pch.c:1346
-0x0000555555564b74 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- mov rdi, rax (path rank: 1.9267632303757625) //another_hunk at pch.c:1346
-0x0000555555564b7c -- rbx min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- mov rbx, rax (path rank: 1.9279313397599844) //another_hunk at pch.c:1346
-0x0000555555564b7f -- rdx min_reg_val_less 0xffff -- 0.9801089306269126 -- mov rdx, qword ptr [rip+0x2f992] (path rank: 1.9290994491442064) //another_hunk at pch.c:1346
-0x0000555555564b86 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- lea rax, ptr [rbp-0xa0] (path rank: 1.930267558528428) //another_hunk at pch.c:1346
-0x0000555555564b8d -- rsi min_reg_val_less 0xffff -- 0.9801089306269126 -- mov rsi, rdx (path rank: 1.9314356679126499) //another_hunk at pch.c:1346
-0x0000555555564b90 -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- mov rdi, rax (path rank: 1.932603777296872) //another_hunk at pch.c:1346
-0x000055555556c5af -- 0x55555556c5af has_edge_to 0x555555564b98 -- 0.9801089306269126 -- ret  (path rank: 1.9337718866810938) //format_linenum at util.c:918
-0x0000555555564b98 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- mov rdx, rax (path rank: 1.9349399960653157) //another_hunk at pch.c:1346
-0x0000555555564ba2 -- rax min_reg_val_less 0xff -- 0.9801089306269126 -- mov rax, qword ptr [rip+0x2f947] (path rank: 1.9372762148337597) //another_hunk at pch.c:1347
-0x0000555555564bbe -- rcx min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- mov rcx, rbx (path rank: 1.9396124336022034) //another_hunk at pch.c:1346 (discriminator 4)
-0x0000555555564bc4 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- lea rax, ptr [rip+0x227a5] (path rank: 1.9419486523706473) //another_hunk at pch.c:1346 (discriminator 4)
-0x0000555555564bcb -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9801089306269126 -- mov rdi, rax (path rank: 1.9431167617548692) //another_hunk at pch.c:1346 (discriminator 4)
-0x0000555555564bce -- is_visited -- 0.9801089306269126 -- mov eax, 0x0 (path rank: 1.944284871139091) //another_hunk at pch.c:1346 (discriminator 4)
-0x0000555555564b93 -- 0x555555564b93 edge_only_taken_to 0x55555556c472 -- 0.9801089306269126 -- call 0x55555556c472 (path rank: 2) //another_hunk at pch.c:1346
-0x0000555555564b64 -- 0x555555564b64 edge_only_taken_to 0x555555564b66 -- 0.9801089306269126 -- jnz 0x555555564bd8 (path rank: 2) //another_hunk at pch.c:1345
-0x0000555555564bd3 -- 0x555555564bd3 edge_only_taken_to 0x55555556c5b0 -- 0.9801089306269126 -- call 0x55555556c5b0 (path rank: 2) //another_hunk at pch.c:1346 (discriminator 4)
-0x0000555555564b77 -- 0x555555564b77 edge_only_taken_to 0x55555556c472 -- 0.9801089306269126 -- call 0x55555556c472 (path rank: 2) //another_hunk at pch.c:1346
-0x0000555555564af8 -- 0x555555564af8 has_edge_to 0x555555564b5c -- 0.978803447598192 -- jnz 0x555555564b5c (path rank: 1.920922683454653) //another_hunk at pch.c:1334
-0x000055555556c5cd -- memory_value min_reg_val_greater_or_equal 0x7fffffffccba -- 0.9774979645694714 -- mov qword ptr [rbp-0xa0], rdx (path rank: 2) //fatal at util.c:924
-0x000055555556c5bf -- memory_value min_reg_val_greater_or_equal 0x555555587354 -- 0.9677068418540666 -- mov qword ptr [rbp-0xd8], rdi (path rank: 1.9454529805233132) //fatal at util.c:924
-0x000055555556c688 -- rcx min_reg_val_greater_or_equal 0x555555587354 -- 0.9677068418540666 -- mov rcx, qword ptr [rbp-0xd8] (path rank: 1.9489507508689095) //fatal at util.c:928
-0x000055555556c68f -- rsi min_reg_val_greater_or_equal 0x555555587354 -- 0.9677068418540666 -- mov rsi, rcx (path rank: 1.9501188602531312) //fatal at util.c:928
-0x000055555556c69a -- rsi min_reg_val_greater_or_equal 0x55555558737d -- 0.9677068418540666 -- mov rax, qword ptr [rip+0x2593f] (path rank: 1.9512869696373532) //fatal at util.c:930
-0x000055555556c6b1 -- rdx min_reg_val_greater_or_equal 0x5555555924a7 -- 0.9631376512535444 -- mov rax, qword ptr [rip+0x25928] (path rank: 1.9591046953898617) //fatal at util.c:931
-0x000055555556c5c6 -- memory_value min_reg_val_less 0x555555587361 -- 0.9481245964232572 -- mov qword ptr [rbp-0xa8], rsi (path rank: 1.0853678929765886) //fatal at util.c:924
-0x000055555556c5db -- memory_value min_reg_val_greater_or_equal 0x5555555983f8 -- 0.9376035262079228 -- mov qword ptr [rbp-0x90], r8 (path rank: 1.9480711849957373) //fatal at util.c:924
-0x000055555555d236 -- 0x55555555d236 edge_only_taken_to 0x55555555b79e -- 0.9353013840927596 -- jnz 0x55555555b79e (path rank: 2) //main at patch.c:202 (discriminator 6)
-0x00005555555644c0 -- rax min_reg_val_less 0xd -- 0.9294267104635168 -- movzx eax, byte ptr [rax] (path rank: 1.90663436946685) //another_hunk at pch.c:1233
-0x00005555555644ce -- rax min_reg_val_less 0xd -- 0.9294267104635168 -- movzx eax, byte ptr [rax] (path rank: 1.9092263427109974) //another_hunk at pch.c:1235
-0x00005555555644d1 -- max_carry_flag_set -- 0.9274684859204356 -- cmp al, 0x20 (path rank: 1.9104072398190048) //another_hunk at pch.c:1235
-0x00005555555610e9 -- 0x5555555610e9 edge_only_taken_to 0x555555561158 -- 0.9268157444060754 -- jnz 0x555555561158 (path rank: 0.09462915601023018) //there_is_another_patch at pch.c:241
-0x00005555555610e5 -- rax min_reg_val_greater_or_equal 0x1 -- 0.9268157444060754 -- mov eax, dword ptr [rax] (path rank: 1.9059994097973638) //there_is_another_patch at pch.c:241
-0x00005555555610dc -- memory_value min_reg_val_greater_or_equal 0x1 -- 0.9268157444060754 -- mov dword ptr [rdx], eax (path rank: 2) //there_is_another_patch at pch.c:240
-0x00005555555644c3 -- max_carry_flag_set -- 0.9209410707768326 -- cmp al, 0x2a (path rank: 1.9078024788510721) //another_hunk at pch.c:1233
+0x0000555555560875 -- memory_value min_reg_val_greater_or_equal 0x555555592351 -- 0.9154929577464788 -- mov qword ptr [rbp-0x10], rsi (path rank: 0.00006268609935746749) //remove_if_needed at patch.c:2001
+0x0000555555560879 -- rax min_reg_val_greater_or_equal 0x555555592351 -- 0.9154929577464788 -- mov rax, qword ptr [rbp-0x10] (path rank: 0.4898977433004231) //remove_if_needed at patch.c:2002
+0x0000555555567969 -- rax max_reg_val_greater_or_equal 0x2c -- 0.9154929577464788 -- movzx eax, byte ptr [rax] (path rank: 1.952550540667607) //pch_swap at pch.c:2153
+0x000055555556796e -- 0x55555556796e has_edge_to 0x555555567970 -- 0.9154929577464788 -- jz 0x555555567998 (path rank: 1.9591933082588935) //pch_swap at pch.c:2153
+0x000055555555d236 -- 0x55555555d236 edge_only_taken_to 0x55555555b79e -- 0.9081733839792934 -- jnz 0x55555555b79e (path rank: 2) //main at patch.c:202 (discriminator 6)
+0x0000555555564ace -- rax max_reg_val_greater_or_equal 0x2c -- 0.9011731486772664 -- movzx eax, byte ptr [rax] (path rank: 1.9464974141984015) //another_hunk at pch.c:1332
