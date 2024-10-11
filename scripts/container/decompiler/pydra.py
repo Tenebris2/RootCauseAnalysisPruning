@@ -3,6 +3,7 @@ import pyhidra
 import re
 import sys
 import lib
+
 JUMP_FILE = "jump_instructions"
 INSTRUCTION_FILE = "instructions"
 TARGET = sys.argv[1]
@@ -19,13 +20,14 @@ with pyhidra.open_program(TARGET, analyze=True) as flat_api:
     from ghidra.program.disassemble import Disassembler
     from ghidra.program.model.address import Address
     from ghidra.program.model.block import IsolatedEntrySubModel
+
     decomp_interface = DecompInterface()
     options = DecompileOptions()
     decomp_interface.setOptions(options)
     decomp_interface.openProgram(flat_api.getCurrentProgram())
 
     mb = flat_api.getMemoryBlock(".text")
-    
+
     function_manager = program.getFunctionManager()
     functions = function_manager.getFunctions(True)
     address_factory = program.getAddressFactory()
@@ -34,15 +36,17 @@ with pyhidra.open_program(TARGET, analyze=True) as flat_api:
 
     with open(JUMP_FILE, "w") as file:
         file.write("")
-    
+
     startAddr = mb.getStart()
-    
+
     endAddr = mb.getEnd()
     # lib.disassembleInstructions(Disassembler, AddressSet, program, flat_api, startAddr, endAddr)
     #
     instruction = listing.getInstructionAt(startAddr)
-    
-    lib.definedUndefinedFunctions(program, monitor, flat_api, AddressSet, IsolatedEntrySubModel)
+
+    lib.definedUndefinedFunctions(
+        program, monitor, flat_api, AddressSet, IsolatedEntrySubModel
+    )
     with open(JUMP_FILE, "a") as file:
         while instruction != None and mb.contains(instruction.getAddress()):
             if instruction.getMnemonicString().startswith("J"):
@@ -53,7 +57,7 @@ with pyhidra.open_program(TARGET, analyze=True) as flat_api:
 
     with open(lib.FILE_TO_WRITE, "w") as file:
         file.write("")
-    
+
     with open(INSTRUCTION_FILE, "w") as file:
         file.write("")
     for f in internal_functions:
@@ -64,7 +68,9 @@ with pyhidra.open_program(TARGET, analyze=True) as flat_api:
         markup = res.getCCodeMarkup()
 
         if markup is not None:
-            lib.writeInstructionMappingToFile(function_name, markup, flat_api, AddressSet)
+            lib.writeInstructionMappingToFile(
+                function_name, markup, flat_api, AddressSet
+            )
 
 lines_to_write = lib.extractLastLineInstruction()
 
@@ -73,3 +79,4 @@ with open(INSTRUCTION_FILE, "a") as file:
         file.write(line + "\n")
 
 lib.extractJumpSet()
+lib.writeIns(lib.SelectionMethod.BEGIN)

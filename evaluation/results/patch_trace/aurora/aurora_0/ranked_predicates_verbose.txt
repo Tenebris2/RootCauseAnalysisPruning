@@ -1,6 +1,6 @@
-0x0000555555560875 -- memory_value min_reg_val_greater_or_equal 0x555555592351 -- 0.9154929577464788 -- mov qword ptr [rbp-0x10], rsi (path rank: 0.00006268609935746749) //remove_if_needed at patch.c:2001
-0x0000555555560879 -- rax min_reg_val_greater_or_equal 0x555555592351 -- 0.9154929577464788 -- mov rax, qword ptr [rbp-0x10] (path rank: 0.4898977433004231) //remove_if_needed at patch.c:2002
-0x0000555555567969 -- rax max_reg_val_greater_or_equal 0x2c -- 0.9154929577464788 -- movzx eax, byte ptr [rax] (path rank: 1.952550540667607) //pch_swap at pch.c:2153
-0x000055555556796e -- 0x55555556796e has_edge_to 0x555555567970 -- 0.9154929577464788 -- jz 0x555555567998 (path rank: 1.9591933082588935) //pch_swap at pch.c:2153
-0x000055555555d236 -- 0x55555555d236 edge_only_taken_to 0x55555555b79e -- 0.9081733839792934 -- jnz 0x55555555b79e (path rank: 2) //main at patch.c:202 (discriminator 6)
-0x0000555555564ace -- rax max_reg_val_greater_or_equal 0x2c -- 0.9011731486772664 -- movzx eax, byte ptr [rax] (path rank: 1.9464974141984015) //another_hunk at pch.c:1332
+0x0000555555560875 -- memory_value min_reg_val_greater_or_equal 0x555555592351 -- 0.9107142857142856 -- mov qword ptr [rbp-0x10], rsi (path rank: 0.0001225622724487221) //remove_if_needed at patch.c:2001
+0x0000555555560879 -- rax min_reg_val_greater_or_equal 0x555555592351 -- 0.9107142857142856 -- mov rax, qword ptr [rbp-0x10] (path rank: 0.4729912404022926) //remove_if_needed at patch.c:2002
+0x0000555555567969 -- rax max_reg_val_greater_or_equal 0x2c -- 0.9107142857142856 -- movzx eax, byte ptr [rax] (path rank: 1.8729425759705849) //pch_swap at pch.c:2153
+0x000055555556796e -- 0x55555556796e has_edge_to 0x555555567970 -- 0.9107142857142856 -- jz 0x555555567998 (path rank: 1.891015103997693) //pch_swap at pch.c:2153
+0x000055555555d236 -- 0x55555555d236 edge_only_taken_to 0x55555555b79e -- 0.9082706766917292 -- jnz 0x55555555b79e (path rank: 2) //main at patch.c:202 (discriminator 6)
+0x0000555555564ace -- rax max_reg_val_greater_or_equal 0x2c -- 0.9001879699248121 -- movzx eax, byte ptr [rax] (path rank: 1.857553801232832) //another_hunk at pch.c:1332

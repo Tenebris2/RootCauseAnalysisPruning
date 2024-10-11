@@ -1,2 +1,11 @@
-0.08user 0.00system 0:00.08elapsed 97%CPU (0avgtext+0avgdata 18560maxresident)k
-0inputs+120outputs (0major+3448minor)pagefaults 0swaps
+Traceback (most recent call last):
+  File "/media/ssd-partition/Documents/RootCauseAnalysisPruning/scripts/source-code-extractor/./scripts/extract_addresses.py", line 59, in <module>
+    addresses = extract_addresses(filepath, outpath)
+  File "/media/ssd-partition/Documents/RootCauseAnalysisPruning/scripts/source-code-extractor/./scripts/extract_addresses.py", line 46, in extract_addresses
+    addresses.append(random.choice(addr))
+  File "/usr/lib/python3.10/random.py", line 378, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+Command exited with non-zero status 1
+0.06user 0.02system 0:00.08elapsed 100%CPU (0avgtext+0avgdata 69700maxresident)k
+0inputs+8outputs (0major+14605minor)pagefaults 0swaps

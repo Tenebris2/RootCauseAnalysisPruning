@@ -1,5 +1,7 @@
 import re
 from pprint import pprint
+from enum import Enum
+import random
 
 FILE_TO_WRITE = "decompiled_code"
 OFFSET = "00"
@@ -187,8 +189,10 @@ def writeIns():
 
     middle_ins = set()
     for i in current_ins:
-        if len(i) >= 1:
-            middle_ins.add(i[len(i) // 2])
+        if len(i) >= 3:
+            middle_ins.add(random.choice(i[0 : len(i) * 2 // 3]))
+        elif len(i) > 0 and len(i) < 3:
+            middle_ins.add(random.choice(i))
         else:
             continue
 

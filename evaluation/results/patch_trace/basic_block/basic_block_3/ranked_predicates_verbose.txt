@@ -1,11 +1,8 @@
-0x0000555555564af8 -- max_sign_flag_set -- 0.9727272727272728 -- jnz 0x555555564b5c (path rank: 1.7530058177117) //another_hunk at pch.c:1334
-0x0000555555564bac -- 0x555555564bac edge_only_taken_to 0x555555564bb5 -- 0.9727272727272728 -- jnle 0x555555564bb7 (path rank: 1.7892695539754362) //another_hunk at pch.c:1346
-0x000055555556c5eb -- rsi min_reg_val_less 0x555555587361 -- 0.9721404182671788 -- jz 0x55555556c60d (path rank: 1.0475597931480285) //fatal at util.c:924
-0x000055555556c49a -- rbx min_reg_val_greater_or_equal 0x7fffffffcccc -- 0.9692061459667094 -- jns 0x55555556c52d (path rank: 2) //format_linenum at util.c:902
-0x0000555555564b64 -- max_interrupt_flag_set -- 0.9680324370465216 -- jnz 0x555555564bd8 (path rank: 1.7711376858435681) //another_hunk at pch.c:1345
-0x000055555556c5a8 -- 0x55555556c5a8 has_edge_to 0x555555564bac -- 0.9680324370465216 -- jnz 0x55555556c52d (path rank: 2) //format_linenum at util.c:914 (discriminator 1)
-0x0000555555564ae7 -- num_successors_equal 2 -- 0.9680324370465216 -- jz 0x555555564c48 (path rank: 2) //another_hunk at pch.c:1331
-0x0000555555559e04 -- rdx max_reg_val_greater_or_equal 0x5555555924a7 -- 0.9451451131028596 -- bnd jmp qword ptr [rip+0x38015] (path rank: 1.8529411764705883) //?? ??:0
-0x0000555555569e0b -- rbx max_reg_val_greater_or_equal 0x5555555a7080 -- 0.9449637217242852 -- jns 0x555555569e18 (path rank: 1.8399375134669251) //safe_unlink at safe.c:664
-0x000055555555d236 -- 0x55555555d236 edge_only_taken_to 0x55555555b7d0 -- 0.9165706359368332 -- jnz 0x55555555b79e (path rank: 1.7093837535014007) //main at patch.c:202 (discriminator 6)
-0x00005555555610e9 -- 0x5555555610e9 edge_only_taken_to 0x555555561164 -- 0.9071809645753308 -- jnz 0x555555561158 (path rank: 0) //there_is_another_patch at pch.c:241
+0x0000555555560882 -- rsi min_reg_val_greater_or_equal 0x555555592351 -- 0.9470588235294116 -- jz 0x555555560897 (path rank: 0.07771584725138135) //remove_if_needed at patch.c:2002
+0x000055555556796e -- max_interrupt_flag_set -- 0.9470588235294116 -- jz 0x555555567998 (path rank: 1.7211498187781364) //pch_swap at pch.c:2153
+0x0000555555564aac -- max_zero_flag_set -- 0.9340093729799612 -- jnz 0x555555564aed (path rank: 1.646501295187959) //another_hunk at pch.c:1330
+0x0000555555564a86 -- max_interrupt_flag_set -- 0.9319489334195216 -- jnz 0x555555564a96 (path rank: 1.6092309560367248) //another_hunk at pch.c:1327
+0x00005555555675d2 -- rax max_reg_val_greater_or_equal 0x2c -- 0.9159583063994828 -- jnz 0x5555555675f7 (path rank: 1.8736719100888877) //incomplete_line at pch.c:2066
+0x0000555555565095 -- rsi max_reg_val_less 0xa88caa9d -- 0.9120313510019392 -- jz 0x5555555650d0 (path rank: 1.8855630934102092) //another_hunk at pch.c:1443 (discriminator 5)
+0x000055555556501c -- rdx min_reg_val_less 0x1 -- 0.9099709114414998 -- jnz 0x55555556502e (path rank: 1.884020618556701) //another_hunk at pch.c:1439 (discriminator 4)
+0x0000555555564fc4 -- 0x555555564fc4 edge_only_taken_to 0x555555564fd4 -- 0.9044764059469942 -- jnz 0x555555564fee (path rank: 1.8488672327891456) //another_hunk at pch.c:1429

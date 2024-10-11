@@ -38,12 +38,12 @@ help: consider using `if let` to clear intent
     |             ~~~~~~~~~~~~          ~~~
 
 warning: `trace_analysis` (lib) generated 2 warnings
-    Finished `release` profile [optimized] target(s) in 0.22s
+    Finished `release` profile [optimized] target(s) in 0.04s
      Running `target/release/rca --eval-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --trace-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --monitor --rank-predicates`
 thread 'main' panicked at trace_analysis/src/control_flow_graph.rs:193:9:
 assertion `left == right` failed
   left: 0
  right: 1
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-Predicate Ranking: 1086
- LOC Ranking: 1
+Predicate Ranking: 6
+ LOC Ranking: 5

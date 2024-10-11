@@ -1,8 +1,15 @@
 analyzing traces
 reading crashes
 reading non-crashes
-142 crashes and 838 non-crashes
+722 crashes and 3743 non-crashes
 filling cfg
+calculating scores
+dumping linear scores
+found 1 predicates with score better than 0.9
+trace analysis time: 115.884864434 seconds
+monitoring predicates
+monitoring time: 4.676047984 seconds
+ranking predicates
 warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
 package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/predicate_monitoring/Cargo.toml
 workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
@@ -40,10 +47,8 @@ help: consider using `if let` to clear intent
 warning: `trace_analysis` (lib) generated 2 warnings
     Finished `release` profile [optimized] target(s) in 0.04s
      Running `target/release/rca --eval-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --trace-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --monitor --rank-predicates`
-thread 'main' panicked at trace_analysis/src/control_flow_graph.rs:193:9:
-assertion `left == right` failed
-  left: 0
- right: 1
+thread 'main' panicked at root_cause_analysis/src/rankings.rs:26:5:
+No rankings in rankings.json
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 Predicate Ranking: 6
  LOC Ranking: 5

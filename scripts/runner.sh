@@ -2,9 +2,8 @@
 
 rm $EVAL_DIR/*_trace
 
-cp $EVAL_DIR/test_bin/21-mruby_use_after_free/mruby_use_after_free_trace $EVAL_DIR 
+cp $EVAL_DIR/test_bin/0-matio/matdump_trace $EVAL_DIR 
 
-python3 fuzzing.py $EVAL_DIR/seed/mruby_use_after_free_seed/  "$EVAL_DIR/test_bin/21-mruby_use_after_free/mruby_use_after_free_fuzz @@"
+python3 fuzzing.py $EVAL_DIR/seed/matio_seed/  "$EVAL_DIR/test_bin/0-matio/matdump_fuzz @@"
 
-python3 run.py "$EVAL_DIR/mruby_use_after_free_trace @@" "object.c:401"
-
+python3 run.py "$EVAL_DIR/matdump_trace @@" "mat5.c:4975"

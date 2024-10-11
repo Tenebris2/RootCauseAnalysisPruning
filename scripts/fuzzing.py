@@ -5,7 +5,7 @@ import subprocess
 import sys
 import os
 
-TIME_OUT = 5 * 60
+TIME_OUT = 60 * 60 * 2
 threads = []
 # env
 afl_dir = os.getenv("AFL_DIR")
