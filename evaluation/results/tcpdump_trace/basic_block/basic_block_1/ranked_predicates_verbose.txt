@@ -1,27 +1,25 @@
-0x000055555559ad5c -- max_interrupt_flag_set -- 0.973731884057971 -- jb 0x55555559ad0c (path rank: 1.952789824184242) //aoev1_reserve_print at print-aoe.c:327 (discriminator 1)
-0x0000555555590968 -- 0x555555590968 has_edge_to 0x55555559ad5c -- 0.973731884057971 -- jz 0x55555559096f (path rank: 2) //ndo_printf at print.c:462
-0x000055555559ad0a -- 0x55555559ad0a edge_only_taken_to 0x55555559ad5c -- 0.9719202898550724 -- jmp 0x55555559ad55 (path rank: 1.951412827260709) //aoev1_reserve_print at print-aoe.c:327
-0x000055555559ad5e -- 0x55555559ad5e edge_only_taken_to 0x55555559b150 -- 0.9719202898550724 -- jmp 0x55555559ae0c (path rank: 1.9669563981862437) //aoev1_reserve_print at print-aoe.c:331
-0x000055555559ad04 -- 0x55555559ad04 has_edge_to 0x55555559ad0a -- 0.9719202898550724 -- jnz 0x55555559ad66 (path rank: 2) //aoev1_reserve_print at print-aoe.c:324
-0x000055555559abdb -- rax min_reg_val_less 0x555555868805 -- 0.9619565217391304 -- jbe 0x55555559ad63 (path rank: 1.943249688028961) //aoev1_reserve_print at print-aoe.c:313
-0x000055555559acb9 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9610507246376812 -- jb 0x55555559ade2 (path rank: 1.9499864091824506) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
-0x000055555559ac39 -- 0x55555559ac39 edge_only_taken_to 0x55555565196c -- 0.9565217391304348 -- jb 0x55555559ade2 (path rank: 1.9472324153353842) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
-0x000055555559ac9d -- max_interrupt_flag_set -- 0.9565217391304348 -- jz 0x55555559ade2 (path rank: 1.9486094122589175) //aoev1_reserve_print at print-aoe.c:320
-0x000055555559ac09 -- rax min_reg_val_less 0x18 -- 0.9556159420289856 -- jnz 0x55555559ad63 (path rank: 1.9446266849524938) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
-0x000055555558c7bb -- r10 min_reg_val_less 0x55555586d1b0 -- 0.9556159420289856 -- jnz 0x55555558c7e0 (path rank: 1.9504973003694233) //lookup_emem at addrtoname.c:361
-0x0000555555590890 -- rcx max_reg_val_greater_or_equal 0x55555586cd18 -- 0.9556159420289856 -- jz 0x5555555908b2 (path rank: 1.9647627166808752) //ndo_printf at print.c:451
-0x000055555559ac1d -- max_interrupt_flag_set -- 0.9538043478260868 -- jz 0x55555559ade2 (path rank: 1.945855418411851) //aoev1_reserve_print at print-aoe.c:316
-0x0000555555588164 -- rsi max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9510869565217392 -- bnd jmp qword ptr [rip+0x178e25] (path rank: 1.9605273237209189) //?? ??:0
-0x000055555558ceff -- r12 max_reg_val_greater_or_equal 0x5555558687f3 -- 0.9510869565217392 -- jmp 0x55555558cf56 (path rank: 1.961904320644452) //etheraddr_string at addrtoname.c:520
-0x000055555558cf5d -- r12 max_reg_val_greater_or_equal 0x5555558687f8 -- 0.9510869565217392 -- jns 0x55555558cf01 (path rank: 1.9632813175679849) //etheraddr_string at addrtoname.c:520 (discriminator 1)
-0x000055555558c725 -- rsi max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- jmp 0x55555558c76a (path rank: 1.9577609745851712) //lookup_emem at addrtoname.c:350
-0x000055555558cdfa -- r12 max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9492753623188406 -- jz 0x55555558ce05 (path rank: 1.9591503267973855) //etheraddr_string at addrtoname.c:501
-0x000055555558cfcc -- rcx min_reg_val_less 0x351 -- 0.947463768115942 -- jnz 0x55555558cff7 (path rank: 1.963020620976809) //etheraddr_string at addrtoname.c:532
-0x000055555559b0fb -- max_zero_flag_set -- 0.943840579710145 -- jnz 0x55555559b106 (path rank: 1.9403597860064) //aoev1_print at print-aoe.c:385
-0x000055555559b104 -- 0x55555559b104 edge_only_taken_to 0x55555559b12f -- 0.943840579710145 -- jmp 0x55555559b126 (path rank: 1.9417367829299332) //aoev1_print at print-aoe.c:385 (discriminator 1)
-0x000055555559b12f -- 0x55555559b12f has_edge_to 0x55555559abdb -- 0.943840579710145 -- jz 0x55555559b1fd (path rank: 2) //aoev1_print at print-aoe.c:387
-0x000055555559b0e9 -- max_parity_flag_set -- 0.9411231884057972 -- jz 0x55555559b11f (path rank: 1.937916527669669) //aoev1_print at print-aoe.c:382
-0x000055555558d008 -- 0x55555558d008 edge_only_taken_to 0x555555590890 -- 0.9411231884057972 -- jz 0x55555558d00f (path rank: 1.9522449559533959) //etheraddr_string at addrtoname.c:535 (discriminator 1)
-0x000055555559b0f5 -- 0x55555559b0f5 has_edge_to 0x55555559b0fb -- 0.9356884057971014 -- jz 0x55555559b10d (path rank: 2) //aoev1_print at print-aoe.c:384
-0x000055555559b0ef -- max_interrupt_flag_set -- 0.9130434782608696 -- jz 0x55555559b116 (path rank: 1.9385114348196744) //aoev1_print at print-aoe.c:383
-0x0000555555587fd4 -- rcx max_reg_val_greater_or_equal 0x555555866d80 -- 0.9121376811594204 -- bnd jmp qword ptr [rip+0x178eed] (path rank: 0.020522134499672585) //?? ??:0
+0x000055555559ad5c -- max_interrupt_flag_set -- 0.976642186862505 -- jb 0x55555559ad0c (path rank: 0.6445993031358884) //aoev1_reserve_print at print-aoe.c:327 (discriminator 1)
+0x0000555555590968 -- 0x555555590968 has_edge_to 0x55555559ad5c -- 0.976642186862505 -- jz 0x55555559096f (path rank: 2) //ndo_printf at print.c:462
+0x000055555559ad0a -- 0x55555559ad0a edge_only_taken_to 0x55555559ad5c -- 0.9759111927104582 -- jmp 0x55555559ad55 (path rank: 0.5969802555168409) //aoev1_reserve_print at print-aoe.c:327
+0x000055555559ad5e -- 0x55555559ad5e edge_only_taken_to 0x55555559b150 -- 0.9759111927104582 -- jmp 0x55555559ae0c (path rank: 0.9506387921022065) //aoev1_reserve_print at print-aoe.c:331
+0x000055555559ad04 -- 0x55555559ad04 has_edge_to 0x55555559ad0a -- 0.9759111927104582 -- jnz 0x55555559ad66 (path rank: 2) //aoev1_reserve_print at print-aoe.c:324
+0x000055555559abdb -- rax min_reg_val_less 0x55555586880c -- 0.9649462804297566 -- jbe 0x55555559ad63 (path rank: 0.32375145180023224) //aoev1_reserve_print at print-aoe.c:313
+0x000055555559ac9d -- rax min_reg_val_less 0x5555558687fa -- 0.9627532979736162 -- jz 0x55555559ade2 (path rank: 0.49186991869918695) //aoev1_reserve_print at print-aoe.c:320
+0x000055555559acb9 -- rdx min_reg_val_less 0x5555558687f9 -- 0.9627532979736162 -- jb 0x55555559ade2 (path rank: 0.5394889663182346) //aoev1_reserve_print at print-aoe.c:320 (discriminator 2)
+0x0000555555587c04 -- rdx min_reg_val_less 0x1 -- 0.9620223038215694 -- bnd jmp qword ptr [rip+0x1790d5] (path rank: 0) //?? ??:0
+0x000055555559ac1d -- rax min_reg_val_less 0x5555558687fa -- 0.9605603155174758 -- jz 0x55555559ade2 (path rank: 0.3966318234610917) //aoev1_reserve_print at print-aoe.c:316
+0x000055555559ac39 -- rdx min_reg_val_less 0x5555558687f9 -- 0.9605603155174758 -- jb 0x55555559ade2 (path rank: 0.4442508710801394) //aoev1_reserve_print at print-aoe.c:316 (discriminator 2)
+0x000055555559ac09 -- rax min_reg_val_less 0x21 -- 0.9561743506051952 -- jnz 0x55555559ad63 (path rank: 0.37137049941927985) //aoev1_reserve_print at print-aoe.c:313 (discriminator 1)
+0x0000555555588164 -- rsi max_reg_val_greater_or_equal 0x5555558687f3 -- 0.9561743506051952 -- bnd jmp qword ptr [rip+0x178e25] (path rank: 0.8098141695702671) //?? ??:0
+0x000055555558ceff -- r12 max_reg_val_greater_or_equal 0x5555558687f4 -- 0.9561743506051952 -- jmp 0x55555558cf56 (path rank: 0.8574332171893145) //etheraddr_string at addrtoname.c:520
+0x000055555558cf5d -- r12 max_reg_val_greater_or_equal 0x5555558687f9 -- 0.9561743506051952 -- jns 0x55555558cf01 (path rank: 0.9050522648083624) //etheraddr_string at addrtoname.c:520 (discriminator 1)
+0x000055555558c725 -- rsi max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9547123623011016 -- jmp 0x55555558c76a (path rank: 0.7134146341463414) //lookup_emem at addrtoname.c:350
+0x000055555558cdfa -- r12 max_reg_val_greater_or_equal 0x5555558687f2 -- 0.9547123623011016 -- jz 0x55555558ce05 (path rank: 0.7621951219512194) //etheraddr_string at addrtoname.c:501
+0x000055555559b0fb -- min_zero_flag_set -- 0.9247416020671836 -- jnz 0x55555559b106 (path rank: 0.21167247386759577) //aoev1_print at print-aoe.c:385
+0x0000555555590890 -- r12 min_reg_val_less 0xff -- 0.9240106079151368 -- jz 0x5555555908b2 (path rank: 0.05052264808362369) //ndo_printf at print.c:451
+0x000055555559b104 -- 0x55555559b104 edge_only_taken_to 0x55555559b12f -- 0.9240106079151368 -- jmp 0x55555559b126 (path rank: 0.2592915214866434) //aoev1_print at print-aoe.c:385 (discriminator 1)
+0x000055555559b12f -- 0x55555559b12f has_edge_to 0x55555559abdb -- 0.9240106079151368 -- jz 0x55555559b1fd (path rank: 2) //aoev1_print at print-aoe.c:387
+0x000055555559b0e9 -- max_parity_flag_set -- 0.9225486196110432 -- jz 0x55555559b11f (path rank: 0.13588850174216027) //aoev1_print at print-aoe.c:382
+0x000055555559b0f5 -- 0x55555559b0f5 has_edge_to 0x55555559b0fb -- 0.9203556371549028 -- jz 0x55555559b10d (path rank: 2) //aoev1_print at print-aoe.c:384
+0x000055555559b0ef -- max_interrupt_flag_set -- 0.90281177750578 -- jz 0x55555559b116 (path rank: 0.1286295005807201) //aoev1_print at print-aoe.c:383
+0x000055555558c7bb -- r10 min_reg_val_less 0x55555586d130 -- 0.9013497892016864 -- jnz 0x55555558c7e0 (path rank: 0.40650406504065045) //lookup_emem at addrtoname.c:361

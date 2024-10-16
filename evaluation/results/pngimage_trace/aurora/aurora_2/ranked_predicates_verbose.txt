@@ -1,27 +1,11 @@
-0x0000555555558fb2 -- memory_value max_reg_val_less 0x4 -- 0.9444444444444444 -- mov dword ptr [rbp-0x4], eax (path rank: 0.1042468725476619) //do_test at pngimage.c:1560
-0x0000555555558fb5 -- min_zero_flag_set -- 0.9444444444444444 -- cmp dword ptr [rbp-0x4], 0x0 (path rank: 0.23203619073997137) //do_test at pngimage.c:1562
-0x0000555555558fae -- rdx min_reg_val_greater_or_equal 0x2be60dfc3f055000 -- 0.9444444444444444 -- nop edx, edi (path rank: 0.3295942390250658) //do_test at pngimage.c:1560
-0x0000555555556ead -- memory_value max_reg_val_less 0x5 -- 0.9444444444444444 -- mov dword ptr [rbp-0xfc], esi (path rank: 0.3600609333887273) //display_log at pngimage.c:685
-0x0000555555556f2c -- memory_value max_reg_val_less 0x44 -- 0.9444444444444444 -- mov dword ptr [rax+0xe0], edx (path rank: 0.4882114665558787) //display_log at pngimage.c:686
-0x0000555555556f7f -- 0x555555556f7f edge_only_taken_to 0x555555556f92 -- 0.9444444444444444 -- jmp rax (path rank: 0.6188374186400776) //display_log at pngimage.c:693
-0x0000555555557283 -- 0x555555557283 edge_only_taken_to 0x555555557285 -- 0.9444444444444444 -- jnbe 0x5555555572a4 (path rank: 0.746537875640493) //display_log at pngimage.c:762
-0x0000555555558fb9 -- 0x555555558fb9 edge_only_taken_to 0x555555558fbb -- 0.9444444444444444 -- jnz 0x555555558fd5 (path rank: 0.8742383326409084) //do_test at pngimage.c:1562
-0x0000555555556f12 -- rax max_reg_val_less 0x5 -- 0.9444444444444444 -- mov eax, dword ptr [rbp-0xfc] (path rank: 1.9966994414439365) //display_log at pngimage.c:686
-0x0000555555556f1d -- rcx max_reg_val_less 0x5 -- 0.9444444444444444 -- mov ecx, eax (path rank: 1.9967744541383927) //display_log at pngimage.c:686
-0x0000555555556f1f -- rsi max_reg_val_less 0x44 -- 0.9444444444444444 -- shl esi, cl (path rank: 1.9968494668328487) //display_log at pngimage.c:686
-0x0000555555556f21 -- rax max_reg_val_less 0x44 -- 0.9444444444444444 -- mov eax, esi (path rank: 1.9969244795273045) //display_log at pngimage.c:686
-0x0000555555556f23 -- rdx max_reg_val_less 0x44 -- 0.9444444444444444 -- or edx, eax (path rank: 1.9969994922217607) //display_log at pngimage.c:686
-0x0000555555556f5b -- rax max_reg_val_less 0x5 -- 0.9444444444444444 -- mov eax, dword ptr [rbp-0xfc] (path rank: 1.9971495176106724) //display_log at pngimage.c:693
-0x0000555555556f61 -- rdx max_reg_val_less 0x14 -- 0.9444444444444444 -- lea rdx, ptr [rax*4] (path rank: 1.9972245303051286) //display_log at pngimage.c:693
-0x0000555555556f70 -- rax max_reg_val_less 0xfffcbdba -- 0.9444444444444444 -- mov eax, dword ptr [rdx+rax*1] (path rank: 1.9972995429995846) //display_log at pngimage.c:693
-0x0000555555556f7c -- rax max_reg_val_less 0x555555556faa -- 0.9444444444444444 -- add rax, rdx (path rank: 1.9973745556940405) //display_log at pngimage.c:693
-0x0000555555557050 -- rdx max_reg_val_less 0x55555558b16e -- 0.9444444444444444 -- mov rdx, qword ptr [rbp-0xd8] (path rank: 1.9974495683884965) //display_log at pngimage.c:709 (discriminator 4)
-0x000055555555705a -- rcx max_reg_val_less 0x55555558b16e -- 0.9444444444444444 -- mov rcx, rdx (path rank: 1.9975245810829525) //display_log at pngimage.c:709 (discriminator 4)
-0x000055555557a864 -- max_sign_flag_set -- 0.9444444444444444 -- imul edx, eax (path rank: 1.997528043207312) //png_check_chunk_length at pngrutil.c:3152
-0x000055555555727c -- min_sign_flag_set -- 0.9444444444444444 -- cmp dword ptr [rbp-0xfc], 0x6 (path rank: 1.9975995937774085) //display_log at pngimage.c:762
-0x000055555557a882 -- max_sign_flag_set -- 0.9444444444444444 -- imul edx, eax (path rank: 1.997616904399206) //png_check_chunk_length at pngrutil.c:3152 (discriminator 4)
-0x000055555557a8a0 -- max_sign_flag_set -- 0.9444444444444444 -- add eax, edx (path rank: 1.9977057655911001) //png_check_chunk_length at pngrutil.c:3153 (discriminator 4)
-0x000055555557a8a2 -- max_zero_flag_set -- 0.9444444444444444 -- add eax, 0x1 (path rank: 1.9977946267829942) //png_check_chunk_length at pngrutil.c:3153 (discriminator 4)
-0x000055555557a8a5 -- rax min_reg_val_less 0x1 -- 0.9444444444444444 -- mov eax, eax (path rank: 1.9978834879748881) //png_check_chunk_length at pngrutil.c:3151 (discriminator 4)
-0x000055555557a8a7 -- memory_value min_reg_val_less 0x1 -- 0.9444444444444444 -- mov qword ptr [rbp-0x8], rax (path rank: 1.997972349166782) //png_check_chunk_length at pngrutil.c:3151 (discriminator 4)
-0x000055555557a850 -- rdx min_reg_val_greater_or_equal 0x2aeb2aaa -- 0.9285353535353535 -- mov edx, dword ptr [rax+0x1f8] (path rank: 1.997439182015418) //png_check_chunk_length at pngrutil.c:3152
+0x0000555555558fae -- rdx min_reg_val_greater_or_equal 0xea6e4ea53ebb900 -- 0.9285714285714286 -- nop edx, edi (path rank: 0.1206896551724138) //do_test at pngimage.c:1560
+0x0000555555558fb2 -- memory_value max_reg_val_less 0x4 -- 0.9285714285714286 -- mov dword ptr [rbp-0x4], eax (path rank: 0.23399014778325122) //do_test at pngimage.c:1560
+0x0000555555558fb5 -- min_zero_flag_set -- 0.9285714285714286 -- cmp dword ptr [rbp-0x4], 0x0 (path rank: 0.48800401386608283) //do_test at pngimage.c:1562
+0x0000555555558fb9 -- 0x555555558fb9 edge_only_taken_to 0x555555558fbb -- 0.9285714285714286 -- jnz 0x555555558fd5 (path rank: 0.7532156540777231) //do_test at pngimage.c:1562
+0x000055555557a882 -- rdx min_reg_val_greater_or_equal 0xffffffff -- 0.9285714285714286 -- imul edx, eax (path rank: 1.9901249771939427) //png_check_chunk_length at pngrutil.c:3152 (discriminator 4)
+0x000055555557a8a0 -- rax min_reg_val_greater_or_equal 0xffffffff -- 0.9285714285714286 -- add eax, edx (path rank: 1.9907863528553185) //png_check_chunk_length at pngrutil.c:3153 (discriminator 4)
+0x000055555557a8a2 -- max_zero_flag_set -- 0.9285714285714286 -- add eax, 0x1 (path rank: 1.9914477285166938) //png_check_chunk_length at pngrutil.c:3153 (discriminator 4)
+0x000055555557a8a5 -- rax min_reg_val_less 0x1 -- 0.9285714285714286 -- mov eax, eax (path rank: 1.9921091041780696) //png_check_chunk_length at pngrutil.c:3151 (discriminator 4)
+0x000055555557a8a7 -- memory_value min_reg_val_less 0x1 -- 0.9285714285714286 -- mov qword ptr [rbp-0x8], rax (path rank: 1.9927704798394452) //png_check_chunk_length at pngrutil.c:3151 (discriminator 4)
+0x000055555557a864 -- rdx min_reg_val_greater_or_equal 0xffffffda -- 0.9262566137566136 -- imul edx, eax (path rank: 1.9894636015325668) //png_check_chunk_length at pngrutil.c:3152
+0x000055555557a850 -- rdx min_reg_val_greater_or_equal 0x55555549 -- 0.9031084656084656 -- mov edx, dword ptr [rax+0x1f8] (path rank: 1.9888022258711915) //png_check_chunk_length at pngrutil.c:3152

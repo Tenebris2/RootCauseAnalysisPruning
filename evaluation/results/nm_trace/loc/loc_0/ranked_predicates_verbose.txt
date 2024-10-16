@@ -1,1 +1,16 @@
-0x00005555555a22a8 -- rax min_reg_val_less 0x9 -- 0.9221189591078068 -- movzx eax, byte ptr [rax] (path rank: 0) //getvalue at tekhex.c:276
+0x00005555555a22b0 -- rax min_reg_val_less 0xa -- 0.9578796128251664 -- lea rdx, ptr [rip+0x11b9c9] (path rank: 1.9753474595579859) //getvalue at tekhex.c:276
+0x00005555555a23fd -- rax max_reg_val_greater_or_equal 0xf -- 0.9401845130066546 -- jnz 0x5555555a2406 (path rank: 1.9674982911825016) //getsym at tekhex.c:305
+0x00005555555a298f -- max_adjust_flag_set -- 0.9401845130066546 -- mov rax, qword ptr [rax+0x8] (path rank: 1.9755809979494192) //first_phase at tekhex.c:447
+0x00005555555a2955 -- rdx max_reg_val_greater_or_equal 0x10 -- 0.9387477313974592 -- mov rax, qword ptr [rbp-0x68] (path rank: 1.9729437229437228) //first_phase at tekhex.c:444
+0x00005555555984a2 -- rsi max_reg_val_greater_or_equal 0x10 -- 0.9373109497882638 -- test rax, rax (path rank: 0) //bfd_alloc at opncls.c:953
+0x00005555555a2428 -- memory_value max_reg_val_greater_or_equal 0xf -- 0.9373109497882638 -- add dword ptr [rbp-0x10], 0x1 (path rank: 1.958498519024835) //getsym at tekhex.c:307 (discriminator 4)
+0x00005555555a2463 -- memory_value max_reg_val_greater_or_equal 0xf -- 0.9373109497882638 -- mov dword ptr [rax], edx (path rank: 1.9600592390066074) //getsym at tekhex.c:311
+0x00005555555a241c -- rcx max_reg_val_greater_or_equal 0xe -- 0.9373109497882638 -- mov rdx, qword ptr [rbp-0x18] (path rank: 1.968859649122807) //getsym at tekhex.c:308 (discriminator 4)
+0x00005555555a242f -- rax max_reg_val_greater_or_equal 0xf -- 0.9373109497882638 -- cmp eax, dword ptr [rbp-0xc] (path rank: 1.9702210070631123) //getsym at tekhex.c:307 (discriminator 1)
+0x00005555555a2441 -- rdx max_reg_val_greater_or_equal 0xf -- 0.9373109497882638 -- mov rax, qword ptr [rbp-0x18] (path rank: 1.9715823650034177) //getsym at tekhex.c:309
+0x00005555555a23e8 -- rax max_reg_val_greater_or_equal 0x46 -- 0.9286902601330912 -- lea rdx, ptr [rip+0x11b891] (path rank: 1.9661369332421963) //getsym at tekhex.c:304
+0x00005555555a22bd -- num_successors_equal 2 -- 0.924833635813672 -- jnz 0x5555555a22c9 (path rank: 2) //getvalue at tekhex.c:276
+0x00005555555a23b9 -- rax max_reg_val_greater_or_equal 0x46 -- 0.9200695704779188 -- cdqe  (path rank: 1.9634142173615856) //getsym at tekhex.c:301
+0x00005555555a22bf -- 0x5555555a22bf edge_only_taken_to 0x5555555a238b -- 0.9190865093768904 -- mov eax, 0x0 (path rank: 1.9769081795397583) //getvalue at tekhex.c:277
+0x00005555555a23c8 -- rax max_reg_val_greater_or_equal 0xe -- 0.912885662431942 -- jnz 0x5555555a23d4 (path rank: 1.964775575301891) //getsym at tekhex.c:301
+0x000055555559850a -- max_adjust_flag_set -- 0.9028281911675742 -- jnbe 0x55555559854c (path rank: 1.9721690590111642) //bfd_alloc at opncls.c:959 (discriminator 4)

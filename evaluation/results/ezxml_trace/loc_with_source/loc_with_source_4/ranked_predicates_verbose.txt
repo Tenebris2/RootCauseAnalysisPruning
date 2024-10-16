@@ -1,3 +1,6 @@
-0x00005555555553d4 -- 0x5555555553d4 edge_only_taken_to 0x5555555589aa -- 0.98 -- bnd jmp qword ptr [rip+0x7bb5] (path rank: 0) //?? ??:0
-0x0000555555555254 -- 0x555555555254 edge_only_taken_to 0x5555555575bd -- 0.94 -- bnd jmp qword ptr [rip+0x7c75] (path rank: 0.4992284915968138) //?? ??:0
-0x0000555555555364 -- rdi min_reg_val_less 0xff -- 0.94 -- bnd jmp qword ptr [rip+0x7bed] (path rank: 1.9863213645272948) //?? ??:0
+0x00005555555553d4 -- 0x5555555553d4 edge_only_taken_to 0x5555555589aa -- 0.9852941176470588 -- bnd jmp qword ptr [rip+0x7bb5] (path rank: 0) //?? ??:0
+0x0000555555555254 -- 0x555555555254 edge_only_taken_to 0x5555555575a9 -- 0.9558823529411764 -- bnd jmp qword ptr [rip+0x7c75] (path rank: 0.4964330511132016) //?? ??:0
+0x0000555555555364 -- rdi min_reg_val_less 0xff -- 0.9558823529411764 -- bnd jmp qword ptr [rip+0x7bed] (path rank: 1.970406083411728) //?? ??:0
+0x0000555555556ea4 -- rax max_reg_val_greater_or_equal 0xaf -- 0.9252059546177194 -- movzx eax, byte ptr [rax] (path rank: 1.9882408278457198) //ezxml_internal_dtd at ezxml.c:359
+0x0000555555556ea9 -- max_sign_flag_set -- 0.9233632027749674 -- jnz 0x555555556ecf (path rank: 1.9894167450611477) //ezxml_internal_dtd at ezxml.c:359
+0x0000555555556ef4 -- rax min_reg_val_less 0x5 -- 0.912920942332707 -- movzx eax, byte ptr [rax] (path rank: 1.9740122295390405) //ezxml_internal_dtd at ezxml.c:360

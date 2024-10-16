@@ -1,13 +1,13 @@
-0x0000555555565f15 -- num_successors_equal 1 -- 0.9984520123839008 -- jnz 0x555555565dab (path rank: 2) //_zip_find_central_dir at zip_open.c:611
-0x0000555555569ac2 -- rax min_reg_val_greater_or_equal 0x555555569c4e -- 0.9838709677419356 -- jmp rax (path rank: 0) //read_file at zip_source_filep.c:277
-0x0000555555560a7b -- rax min_reg_val_greater_or_equal 0x6aaaaaabea58 -- 0.9838709677419356 -- jz 0x555555560a90 (path rank: 0.3088104844478782) //zip_error_set at zip_error.c:129
-0x00005555555573f4 -- min_parity_flag_set -- 0.9838709677419356 -- bnd jmp qword ptr [rip+0x279f5] (path rank: 0.6845795061092512) //?? ??:0
-0x000055555556602a -- rax min_reg_val_greater_or_equal 0x555555591702 -- 0.9838709677419356 -- jnz 0x555555565fb7 (path rank: 1.7212636277792084) //_zip_memmem at zip_open.c:665
-0x000055555557434f -- rax min_reg_val_greater_or_equal 0x5555555a1770 -- 0.9838709677419356 -- jz 0x55555557437b (path rank: 1.976993733367671) //_zip_buffer_free at zip_buffer.c:49
-0x000055555555f0a0 -- 0x55555555f0a0 edge_only_taken_to 0x55555557434f -- 0.9838709677419356 -- jz 0x55555555f0b1 (path rank: 1.9832603656966261) //_zip_dirent_read at zip_dirent.c:581
-0x000055555557435b -- rax max_reg_val_greater_or_equal 0x22 -- 0.9838709677419356 -- jz 0x55555557436d (path rank: 1.9845480298738087) //_zip_buffer_free at zip_buffer.c:53
-0x000055555555f034 -- max_interrupt_flag_set -- 0.9204034754818736 -- jz 0x55555555f045 (path rank: 1.980685037342261) //_zip_dirent_read at zip_dirent.c:570
-0x000055555555f053 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9204034754818736 -- jns 0x55555555f077 (path rank: 1.9819727015194437) //_zip_dirent_read at zip_dirent.c:575
-0x0000555555574379 -- 0x555555574379 has_edge_to 0x55555555f053 -- 0.9204034754818736 -- jmp 0x55555557437c (path rank: 2) //_zip_buffer_free at zip_buffer.c:57
-0x000055555556102c -- rcx min_reg_val_less 0xff -- 0.9173075002496754 -- jmp 0x55555556109f (path rank: 1.9793973731650785) //_zip_ef_get_by_id at zip_extra_field.c:127
-0x0000555555565fdc -- rdx max_reg_val_less 0x5 -- 0.9024767801857584 -- jnz 0x555555565fe4 (path rank: 1.7540132200188858) //_zip_memmem at zip_open.c:666
+0x0000555555565f15 -- num_successors_equal 1 -- 0.9982638888888888 -- jnz 0x555555565dab (path rank: 2) //_zip_find_central_dir at zip_open.c:611
+0x0000555555569ac2 -- rax min_reg_val_greater_or_equal 0x555555569c4e -- 0.9807692307692308 -- jmp rax (path rank: 0) //read_file at zip_source_filep.c:277
+0x0000555555560a7b -- rax min_reg_val_greater_or_equal 0x6aaaaaabed18 -- 0.9807692307692308 -- jz 0x555555560a90 (path rank: 0.3088857323232323) //zip_error_set at zip_error.c:129
+0x00005555555573f4 -- rsi min_reg_val_greater_or_equal 0x2aaaaaac0008 -- 0.9807692307692308 -- bnd jmp qword ptr [rip+0x279f5] (path rank: 0.6862610479797979) //?? ??:0
+0x000055555556602a -- rax min_reg_val_greater_or_equal 0x555555591702 -- 0.9807692307692308 -- jnz 0x555555565fb7 (path rank: 1.7230508207070707) //_zip_memmem at zip_open.c:665
+0x000055555557434f -- rax min_reg_val_greater_or_equal 0x5555555a1770 -- 0.9807692307692308 -- jz 0x55555557437b (path rank: 1.9823232323232323) //_zip_buffer_free at zip_buffer.c:49
+0x000055555555f0a0 -- 0x55555555f0a0 edge_only_taken_to 0x55555557434f -- 0.9807692307692308 -- jz 0x55555555f0b1 (path rank: 1.9871764520202022) //_zip_dirent_read at zip_dirent.c:581
+0x000055555557435b -- rax max_reg_val_greater_or_equal 0x22 -- 0.9807692307692308 -- jz 0x55555557436d (path rank: 1.9881628787878785) //_zip_buffer_free at zip_buffer.c:53
+0x000055555556102c -- rcx min_reg_val_less 0xff -- 0.9425747863247864 -- jmp 0x55555556109f (path rank: 1.9841382575757578) //_zip_ef_get_by_id at zip_extra_field.c:127
+0x000055555555f034 -- 0x55555555f034 edge_only_taken_to 0x55555557434f -- 0.9286858974358976 -- jz 0x55555555f045 (path rank: 1.9851246843434345) //_zip_dirent_read at zip_dirent.c:570
+0x000055555555f053 -- rbp min_reg_val_less 0xffffffffffffffff -- 0.9269497863247864 -- jns 0x55555555f077 (path rank: 1.986190025252525) //_zip_dirent_read at zip_dirent.c:575
+0x0000555555574379 -- 0x555555574379 has_edge_to 0x55555555f053 -- 0.9269497863247864 -- jmp 0x55555557437c (path rank: 2) //_zip_buffer_free at zip_buffer.c:57
+0x0000555555565fdc -- rdx max_reg_val_less 0x5 -- 0.9113247863247864 -- jnz 0x555555565fe4 (path rank: 1.7475931186868685) //_zip_memmem at zip_open.c:666

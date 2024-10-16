@@ -1,16 +1,18 @@
-0x000055555555a7b0 -- rsi min_reg_val_less 0x7f -- 0.936026936026936 -- jz 0x55555555aa18 (path rank: 0.375) //get_8bit_row at rdbmp.c:178
-0x000055555555aa8f -- rsi min_reg_val_less 0x555555569eb4 -- 0.936026936026936 -- jnz 0x55555555aae0 (path rank: 0.625) //get_8bit_row at rdbmp.c:204
-0x000055555555ab18 -- rcx min_reg_val_less 0x555555569e41 -- 0.936026936026936 -- jnz 0x55555555aae0 (path rank: 0.6875) //get_8bit_row at rdbmp.c:207 (discriminator 3)
-0x000055555555b325 -- max_sign_flag_set -- 0.9313973063973064 -- jz 0x55555555b360 (path rank: 0) //preload_image at rdbmp.c:389
-0x000055555555b32a -- 0x55555555b32a edge_only_taken_to 0x55555555b32f -- 0.9313973063973064 -- jz 0x55555555b380 (path rank: 0.0625) //preload_image at rdbmp.c:389
-0x000055555555b32f -- max_interrupt_flag_set -- 0.9313973063973064 -- jz 0x55555555b370 (path rank: 0.125) //preload_image at rdbmp.c:389
-0x000055555555b37c -- 0x55555555b37c edge_only_taken_to 0x55555555b35c -- 0.9313973063973064 -- jmp 0x55555555b349 (path rank: 0.1875) //preload_image at rdbmp.c:392
-0x000055555555b35c -- 0x55555555b35c edge_only_taken_to 0x55555555a777 -- 0.9313973063973064 -- jmp rdx (path rank: 0.25) //preload_image at rdbmp.c:405
-0x000055555555a777 -- max_interrupt_flag_set -- 0.9313973063973064 -- jz 0x55555555a860 (path rank: 0.3125) //get_8bit_row at rdbmp.c:163
-0x000055555555a7b9 -- max_interrupt_flag_set -- 0.9313973063973064 -- jz 0x55555555a8e8 (path rank: 0.4375) //get_8bit_row at rdbmp.c:183
-0x000055555555a7f8 -- max_interrupt_flag_set -- 0.9313973063973064 -- js 0x55555555aa78 (path rank: 0.5) //get_8bit_row at rdbmp.c:197
-0x000055555555aa7a -- max_interrupt_flag_set -- 0.9313973063973064 -- jz 0x55555555a855 (path rank: 0.5625) //get_8bit_row at rdbmp.c:207
-0x000055555555ab1a -- 0x55555555ab1a edge_only_taken_to 0x555555556404 -- 0.9313973063973064 -- jmp 0x55555555a855 (path rank: 0.75) //get_8bit_row at rdbmp.c:207 (discriminator 3)
-0x0000555555556404 -- r12 min_reg_val_less 0xff -- 0.9313973063973064 -- bnd jmp qword ptr [rip+0xab7d] (path rank: 0.8125) //?? ??:0
-0x000055555555689e -- min_sign_flag_set -- 0.9313973063973064 -- jb 0x555555556878 (path rank: 0.875) //main at cjpeg.c:663
-0x00005555555563d4 -- r9 min_reg_val_greater_or_equal 0x5555555692c0 -- 0.9175084175084176 -- bnd jmp qword ptr [rip+0xab95] (path rank: 0.9375) //?? ??:0
+0x000055555555a7b0 -- rcx max_reg_val_less 0x555555569480 -- 0.9407051282051282 -- jz 0x55555555aa18 (path rank: 0.39836601307189545) //get_8bit_row at rdbmp.c:178
+0x000055555555aa8f -- rsi max_reg_val_less 0x55555556948f -- 0.9407051282051282 -- jnz 0x55555555aae0 (path rank: 0.6163398692810458) //get_8bit_row at rdbmp.c:204
+0x000055555555ab18 -- rcx max_reg_val_less 0x55555556948f -- 0.9407051282051282 -- jnz 0x55555555aae0 (path rank: 0.6730392156862746) //get_8bit_row at rdbmp.c:207 (discriminator 3)
+0x000055555555b325 -- max_sign_flag_set -- 0.9354967948717948 -- jz 0x55555555b360 (path rank: 0.040522875816993466) //preload_image at rdbmp.c:389
+0x000055555555b32a -- 0x55555555b32a edge_only_taken_to 0x55555555b32f -- 0.9354967948717948 -- jz 0x55555555b380 (path rank: 0.09722222222222222) //preload_image at rdbmp.c:389
+0x000055555555b32f -- max_interrupt_flag_set -- 0.9354967948717948 -- jz 0x55555555b370 (path rank: 0.15392156862745096) //preload_image at rdbmp.c:389
+0x000055555555b37c -- 0x55555555b37c edge_only_taken_to 0x55555555b35c -- 0.9354967948717948 -- jmp 0x55555555b349 (path rank: 0.21062091503267974) //preload_image at rdbmp.c:392
+0x000055555555b35c -- 0x55555555b35c edge_only_taken_to 0x55555555a777 -- 0.9354967948717948 -- jmp rdx (path rank: 0.2673202614379085) //preload_image at rdbmp.c:405
+0x000055555555a777 -- max_interrupt_flag_set -- 0.9354967948717948 -- jz 0x55555555a860 (path rank: 0.3240196078431372) //get_8bit_row at rdbmp.c:163
+0x000055555555a7b9 -- max_interrupt_flag_set -- 0.9354967948717948 -- jz 0x55555555a8e8 (path rank: 0.4344771241830065) //get_8bit_row at rdbmp.c:183
+0x000055555555a7f8 -- max_interrupt_flag_set -- 0.9354967948717948 -- js 0x55555555aa78 (path rank: 0.4911764705882353) //get_8bit_row at rdbmp.c:197
+0x000055555555aa7a -- max_interrupt_flag_set -- 0.9354967948717948 -- jz 0x55555555a855 (path rank: 0.5478758169934641) //get_8bit_row at rdbmp.c:207
+0x000055555555ab1a -- 0x55555555ab1a edge_only_taken_to 0x555555556404 -- 0.9354967948717948 -- jmp 0x55555555a855 (path rank: 0.7120915032679739) //get_8bit_row at rdbmp.c:207 (discriminator 3)
+0x0000555555556404 -- r12 min_reg_val_less 0xff -- 0.9354967948717948 -- bnd jmp qword ptr [rip+0xab7d] (path rank: 0.7687908496732027) //?? ??:0
+0x000055555555689e -- min_sign_flag_set -- 0.9354967948717948 -- jb 0x555555556878 (path rank: 0.8254901960784314) //main at cjpeg.c:663
+0x00005555555563d4 -- r9 min_reg_val_greater_or_equal 0x5555555692e0 -- 0.9146634615384616 -- bnd jmp qword ptr [rip+0xab95] (path rank: 0.891013071895425) //?? ??:0
+0x00005555555568d6 -- r11 min_reg_val_less 0xebe240d357f88000 -- 0.9094551282051282 -- jz 0x5555555568e5 (path rank: 1.0227124183006535) //main at cjpeg.c:676
+0x000055555555b2e3 -- rsi max_reg_val_less 0xffffffff -- 0.9022435897435898 -- jz 0x55555555b27c (path rank: 0.55) //preload_image at rdbmp.c:378

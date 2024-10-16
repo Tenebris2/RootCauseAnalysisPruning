@@ -64,15 +64,26 @@ def write_to_stats():
 def apply_timedelta(df):
     time_columns = df.filter(like="Time").columns
     for col in time_columns:
-        df[col] = pd.to_timedelta(df[col], unit="s").astype(str).str.split().str[-1]
-
+        components = pd.to_timedelta(df[col], unit="s").dt.components
+        df[col] = components.apply(
+            lambda x: f"{int(x['minutes']) + int(x['hours']) * 60}:{int(x['seconds']):02}",
+            axis=1,
+        )
     return df
 
 
 def get_merged_df():
     df_arr = []
     for method in METHODS:
-        df = pd.read_csv("Avg_res.csv")
+        df = pd.read_csv("Avg_res_middle.csv")
+        df[Columns.TRACING_TIME_WITH_TIME_TO_PREPARE.value] = (
+            df[Columns.TRACING_TIME.value] + df[Columns.TIME_TO_PREPARE.value]
+        )
+        df[Columns.PREDICATE_ANALYSIS_TIME.value] = (
+            df[Columns.TRACING_TIME.value] + df[Columns.MONITORING_TIME.value]
+        )
+
+        df = apply_timedelta(df)
         df_arr.append((df[df["Method"] == method].round(), method))
 
     merged_df, method = df_arr[0]
@@ -83,15 +94,15 @@ def get_merged_df():
         merged_df = pd.merge(
             merged_df, df, on="Test Case", suffixes=(f"_{prev_method}", f"_{method}")
         )
-    merged_df = apply_timedelta(merged_df)
     return merged_df
 
 
 def get_stats(*args):
     merged_df = get_merged_df()
+    print(merged_df.columns)
     columns = "|".join([x.value for x in list(args)])
     filtered = merged_df.filter(regex=f"^{columns}").columns.tolist()
-    filtered = list(["Test Case"]) + filtered
+    filtered = filtered
     pprint(merged_df[filtered])
 
     return merged_df[filtered]
@@ -101,9 +112,8 @@ def to_csv(df, fname: str):
     return df.to_csv(fname)
 
 
-def to_tex(df, fname: str):
-    with open(fname, "w") as f:
-        f.write(df.to_latex(index=False))
+def to_tex(df):
+    print(df.to_latex(index=False))
 
 
 def csv_to_latex(csv_file, tex_file):
@@ -139,4 +149,36 @@ def summary_stats(col: Columns):
     return summary_stats.describe()
 
 
-summary_stats(Columns.PREDICATES)
+def plot_circles():
+    df = pd.read_csv("instruction_comparision.csv")
+    class_counts = df["Class"].value_counts()
+
+    plt.figure(figsize=(8, 6))  # Set the figure size
+    plt.pie(
+        class_counts,
+        labels=class_counts.index,
+        autopct="%1.1f%%",
+        shadow=True,
+        startangle=140,
+    )
+
+    plt.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
+    plt.title("Percentage of Classes")
+    plt.savefig("percentage_plot.pdf")
+    plt.show()
+
+
+def tracing_time():
+    to_tex(
+        pd.concat(
+            [
+                get_stats(Columns.TEST_CASE),
+                get_stats(Columns.PREDICATE_ANALYSIS_TIME),
+                get_stats(Columns.RANKING_TIME),
+            ],
+            axis=1,
+        )
+    )
+
+
+plot_circles()

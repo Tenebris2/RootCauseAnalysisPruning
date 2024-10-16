@@ -39,9 +39,10 @@ def extract_addresses(filepath, outpath):
             or "/evaluation" in lines[i + 1]
         ):
             begin = True
-            addr = addr[1:]
+            if "c" in addr:
+                addr = addr[1:]
             if len(addr) >= 3:
-                addresses.append(random.choice(addr[: len(addr) * 2 // 3]))
+                addresses.append(random.choice(addr[0 : 2 * len(addr) // 3]))
             elif len(addr) > 0 and len(addr) < 3:
                 addresses.append(random.choice(addr))
             else:

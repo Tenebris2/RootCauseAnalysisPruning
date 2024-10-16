@@ -190,7 +190,7 @@ def writeIns():
     middle_ins = set()
     for i in current_ins:
         if len(i) >= 3:
-            middle_ins.add(random.choice(i[0 : len(i) * 2 // 3]))
+            middle_ins.add(random.choice(i[0 : 2 * len(i) // 3]))
         elif len(i) > 0 and len(i) < 3:
             middle_ins.add(random.choice(i))
         else:

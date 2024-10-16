@@ -1,17 +1,17 @@
 analyzing traces
 reading crashes
 reading non-crashes
-88 crashes and 342 non-crashes
+95 crashes and 327 non-crashes
 filling cfg
 calculating scores
 dumping linear scores
-found 21 predicates with score better than 0.9
-trace analysis time: 2.575421701 seconds
+found 39 predicates with score better than 0.9
+trace analysis time: 2.590889219 seconds
 monitoring predicates
-monitoring time: 3.525493573 seconds
+monitoring time: 0.759286961 seconds
 ranking predicates
-ranking time: 0.012248749 seconds
-total time: 6.113193715 seconds
+ranking time: 0.016545519 seconds
+total time: 3.366742691 seconds
 warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
 package:   /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/predicate_monitoring/Cargo.toml
 workspace: /media/ssd-partition/Documents/RootCauseAnalysisPruning/aurora/root_cause_analysis/Cargo.toml
@@ -47,7 +47,7 @@ help: consider using `if let` to clear intent
     |             ~~~~~~~~~~~~          ~~~
 
 warning: `trace_analysis` (lib) generated 2 warnings
-    Finished `release` profile [optimized] target(s) in 0.04s
+    Finished `release` profile [optimized] target(s) in 0.03s
      Running `target/release/rca --eval-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --trace-dir /home/tenebris/Documents/RootCauseAnalysisPruning/evaluation/ --monitor --rank-predicates`
-Predicate Ranking: 3
- LOC Ranking: 2
+Predicate Ranking: 4
+ LOC Ranking: 3

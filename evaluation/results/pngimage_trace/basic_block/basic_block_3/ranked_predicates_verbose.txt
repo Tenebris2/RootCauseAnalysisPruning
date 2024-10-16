@@ -1,2 +1,7 @@
 0x0000555555558fb9 -- 0x555555558fb9 edge_only_taken_to 0x55555555738e -- 0.9166666666666669 -- jnz 0x555555558fd5 (path rank: 0) //do_test at pngimage.c:1562
-0x000055555557a874 -- rdx min_reg_val_greater_or_equal 0xffffff80 -- 0.9166666666666669 -- jbe 0x55555557a87d (path rank: 1.9962629757785466) //png_check_chunk_length at pngrutil.c:3152
+0x0000555555556f7f -- 0x555555556f7f edge_only_taken_to 0x555555556fa0 -- 0.9166666666666669 -- jmp rax (path rank: 0.3354020296643247) //display_log at pngimage.c:693
+0x0000555555557283 -- 0x555555557283 edge_only_taken_to 0x55555555728c -- 0.9166666666666669 -- jnbe 0x5555555572a4 (path rank: 0.6681108508977361) //display_log at pngimage.c:762
+0x0000555555556ed1 -- rsi max_reg_val_less 0x5 -- 0.9166666666666669 -- jz 0x555555556ef3 (path rank: 1.9862997658079624) //display_log at pngimage.c:685
+0x0000555555556f48 -- rsi max_reg_val_less 0x44 -- 0.9166666666666669 -- jbe 0x55555555727c (path rank: 1.9873536299765806) //display_log at pngimage.c:688
+0x0000555555556524 -- rcx max_reg_val_less 0x55555558b16e -- 0.9166666666666669 -- bnd jmp qword ptr [rip+0x40a1d] (path rank: 1.9894613583138172) //?? ??:0
+0x000055555557a874 -- rdx min_reg_val_greater_or_equal 0xffffffda -- 0.9166666666666669 -- jbe 0x55555557a87d (path rank: 1.9903395784543325) //png_check_chunk_length at pngrutil.c:3152

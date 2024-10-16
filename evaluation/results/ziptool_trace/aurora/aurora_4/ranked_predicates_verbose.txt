@@ -1,22 +1,28 @@
-0x0000555555565f15 -- num_successors_equal 1 -- 0.9981949458483754 -- jnz 0x555555565dab (path rank: 2) //_zip_find_central_dir at zip_open.c:611
-0x000055555557436d -- rsi min_reg_val_greater_or_equal 0x2aaaaaac0008 -- 0.9891696750902528 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.2261893313183585) //_zip_buffer_free at zip_buffer.c:57
-0x0000555555569ab3 -- rax min_reg_val_greater_or_equal 0xffff3396 -- 0.9814814814814814 -- mov eax, dword ptr [rdx+rax*1] (path rank: 0) //read_file at zip_source_filep.c:277
-0x0000555555569abf -- rax min_reg_val_greater_or_equal 0x555555569c4e -- 0.9814814814814814 -- add rax, rdx (path rank: 0.16787221700669366) //read_file at zip_source_filep.c:277
-0x0000555555560a7d -- rax min_reg_val_greater_or_equal 0x6aaaaaacf2f4 -- 0.9814814814814814 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.3357444340133873) //zip_error_set at zip_error.c:130
-0x0000555555560a86 -- rax min_reg_val_greater_or_equal 0x6aaaaaacf2f4 -- 0.9814814814814814 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.5036166510200811) //zip_error_set at zip_error.c:131
-0x0000555555566021 -- memory_value min_reg_val_greater_or_equal 0x5555555916fa -- 0.9814814814814814 -- mov qword ptr [rbp-0x8], rax (path rank: 1.705073309977942) //_zip_memmem at zip_open.c:665
-0x0000555555565f0c -- memory_value min_reg_val_greater_or_equal 0x2aaaaaac8b82 -- 0.9814814814814814 -- mov qword ptr [rbp-0x60], rax (path rank: 1.9116133283467796) //_zip_find_central_dir at zip_open.c:611
-0x000055555555f097 -- rax min_reg_val_less 0x1 -- 0.9814814814814814 -- movzx eax, byte ptr [rbp-0x7d] (path rank: 1.9332157931292409) //_zip_dirent_read at zip_dirent.c:581
-0x000055555555f09b -- rax min_reg_val_greater_or_equal 0x1 -- 0.9814814814814814 -- xor eax, 0x1 (path rank: 1.9362789620843797) //_zip_dirent_read at zip_dirent.c:581
-0x0000555555574355 -- rax max_reg_val_greater_or_equal 0x27 -- 0.9814814814814814 -- movzx eax, byte ptr [rax+0x1] (path rank: 1.9393421310395182) //_zip_buffer_free at zip_buffer.c:53
-0x0000555555574361 -- rax max_reg_val_greater_or_equal 0x9155bd01f566e00 -- 0.9814814814814814 -- mov rax, qword ptr [rax+0x8] (path rank: 1.944675963028263) //_zip_buffer_free at zip_buffer.c:54
-0x0000555555574365 -- rdi max_reg_val_greater_or_equal 0x9155bd01f566e00 -- 0.9814814814814814 -- mov rdi, rax (path rank: 1.947587754447828) //_zip_buffer_free at zip_buffer.c:54
-0x000055555555f0a0 -- 0x55555555f0a0 edge_only_taken_to 0x55555555f0a2 -- 0.9814814814814814 -- jz 0x55555555f0b1 (path rank: 2) //_zip_dirent_read at zip_dirent.c:581
-0x000055555556602a -- 0x55555556602a edge_only_taken_to 0x555555565fb7 -- 0.9760663190266078 -- jnz 0x555555565fb7 (path rank: 0.7878962847627697) //_zip_memmem at zip_open.c:665
-0x000055555555f02b -- rax min_reg_val_less 0x1 -- 0.930939965235994 -- movzx eax, byte ptr [rbp-0x7d] (path rank: 1.9163398692810458) //_zip_dirent_read at zip_dirent.c:570
-0x000055555555f02f -- rax min_reg_val_greater_or_equal 0x1 -- 0.930939965235994 -- xor eax, 0x1 (path rank: 1.9194030382361844) //_zip_dirent_read at zip_dirent.c:570
-0x000055555555f036 -- rax min_reg_val_less 0xffffffffffffffff -- 0.930939965235994 -- mov rax, qword ptr [rbp-0x98] (path rank: 1.9224662071913232) //_zip_dirent_read at zip_dirent.c:571
-0x000055555555f03d -- rdi min_reg_val_less 0xffffffffffffffff -- 0.930939965235994 -- mov rdi, rax (path rank: 1.9255293761464622) //_zip_dirent_read at zip_dirent.c:571
-0x000055555557437d -- 0x55555557437d has_edge_to 0x55555555f045 -- 0.930939965235994 -- ret  (path rank: 1.9301526241741018) //_zip_buffer_free at zip_buffer.c:58
-0x000055555555f034 -- 0x55555555f034 edge_only_taken_to 0x55555555f036 -- 0.930939965235994 -- jz 0x55555555f045 (path rank: 2) //_zip_dirent_read at zip_dirent.c:570
-0x000055555555f040 -- 0x55555555f040 edge_only_taken_to 0x55555557433a -- 0.930939965235994 -- call 0x55555557433a (path rank: 2) //_zip_dirent_read at zip_dirent.c:571
+0x0000555555565f15 -- num_successors_equal 1 -- 0.9982935153583616 -- jnz 0x555555565dab (path rank: 2) //_zip_find_central_dir at zip_open.c:611
+0x000055555557436d -- rsi min_reg_val_greater_or_equal 0x2aaaaaac0008 -- 0.9931740614334472 -- mov rax, qword ptr [rbp-0x8] (path rank: 1.4195541872235182) //_zip_buffer_free at zip_buffer.c:57
+0x0000555555569ab3 -- rax min_reg_val_greater_or_equal 0xffff3396 -- 0.9791666666666669 -- mov eax, dword ptr [rdx+rax*1] (path rank: 0) //read_file at zip_source_filep.c:277
+0x0000555555569abf -- rax min_reg_val_greater_or_equal 0x555555569c4e -- 0.9791666666666669 -- add rax, rdx (path rank: 0.09251309347429777) //read_file at zip_source_filep.c:277
+0x0000555555560a7d -- rax min_reg_val_greater_or_equal 0x6aaaaaacf5b4 -- 0.9791666666666669 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.49997746852660796) //zip_error_set at zip_error.c:130
+0x0000555555560a86 -- rax min_reg_val_greater_or_equal 0x6aaaaaacf5b4 -- 0.9791666666666669 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.5924905620009057) //zip_error_set at zip_error.c:131
+0x0000555555566021 -- memory_value min_reg_val_greater_or_equal 0x555555591702 -- 0.9791666666666669 -- mov qword ptr [rbp-0x8], rax (path rank: 1.7214743786939286) //_zip_memmem at zip_open.c:665
+0x0000555555565f0c -- memory_value min_reg_val_greater_or_equal 0x2aaaaaac8b82 -- 0.9791666666666669 -- mov qword ptr [rbp-0x60], rax (path rank: 1.9329762662937473) //_zip_find_central_dir at zip_open.c:611
+0x000055555555f097 -- rax min_reg_val_less 0x1 -- 0.9791666666666669 -- movzx eax, byte ptr [rbp-0x7d] (path rank: 1.9494747921866504) //_zip_dirent_read at zip_dirent.c:581
+0x000055555555f09b -- rax min_reg_val_greater_or_equal 0x1 -- 0.9791666666666669 -- xor eax, 0x1 (path rank: 1.951350973841874) //_zip_dirent_read at zip_dirent.c:581
+0x0000555555574355 -- rax max_reg_val_greater_or_equal 0x22 -- 0.9791666666666669 -- movzx eax, byte ptr [rax+0x1] (path rank: 1.9532271554970975) //_zip_buffer_free at zip_buffer.c:53
+0x0000555555574361 -- rax max_reg_val_greater_or_equal 0x34c376f972b8000 -- 0.9791666666666669 -- mov rax, qword ptr [rax+0x8] (path rank: 1.9559447338708738) //_zip_buffer_free at zip_buffer.c:54
+0x0000555555574365 -- rdi max_reg_val_greater_or_equal 0x34c376f972b8000 -- 0.9791666666666669 -- mov rdi, rax (path rank: 1.95777884569017) //_zip_buffer_free at zip_buffer.c:54
+0x000055555555f0a0 -- 0x55555555f0a0 edge_only_taken_to 0x55555555f0a2 -- 0.9791666666666669 -- jz 0x55555555f0b1 (path rank: 2) //_zip_dirent_read at zip_dirent.c:581
+0x000055555556602a -- 0x55555556602a edge_only_taken_to 0x555555565fb7 -- 0.9757536973833902 -- jnz 0x555555565fb7 (path rank: 0.7679236623704441) //_zip_memmem at zip_open.c:665
+0x0000555555560a76 -- min_parity_flag_set -- 0.965514789533561 -- cmp qword ptr [rbp-0x8], 0x0 (path rank: 0.6619152140379118) //zip_error_set at zip_error.c:129
+0x00005555555608a0 -- memory_value max_reg_val_less 0x555555590d18 -- 0.9535693970420932 -- mov qword ptr [rbp-0x8], rdi (path rank: 0.18502618694859554) //zip_error_code_zip at zip_error.c:46
+0x00005555555608a4 -- rax max_reg_val_less 0x555555590d18 -- 0.9535693970420932 -- mov rax, qword ptr [rbp-0x8] (path rank: 0.2775392804228933) //zip_error_code_zip at zip_error.c:47
+0x00005555555608a8 -- rax max_reg_val_less 0x1 -- 0.9535693970420932 -- mov eax, dword ptr [rax] (path rank: 0.3700523738971911) //zip_error_code_zip at zip_error.c:47
+0x00005555555608ab -- 0x5555555608ab edge_only_taken_to 0x55555556a1c4 -- 0.9535693970420932 -- ret  (path rank: 0.9485364242191445) //zip_error_code_zip at zip_error.c:48
+0x000055555555f02b -- rax min_reg_val_less 0x1 -- 0.9194397042093287 -- movzx eax, byte ptr [rbp-0x7d] (path rank: 1.939306030619524) //_zip_dirent_read at zip_dirent.c:570
+0x000055555555f02f -- rax min_reg_val_greater_or_equal 0x1 -- 0.9194397042093287 -- xor eax, 0x1 (path rank: 1.9411822122747475) //_zip_dirent_read at zip_dirent.c:570
+0x000055555555f036 -- rax min_reg_val_less 0xffffffffffffffff -- 0.9194397042093287 -- mov rax, qword ptr [rbp-0x98] (path rank: 1.943058393929971) //_zip_dirent_read at zip_dirent.c:571
+0x000055555555f03d -- rdi min_reg_val_less 0xffffffffffffffff -- 0.9194397042093287 -- mov rdi, rax (path rank: 1.9449345755851946) //_zip_dirent_read at zip_dirent.c:571
+0x000055555557437d -- 0x55555557437d has_edge_to 0x55555555f045 -- 0.9194397042093287 -- ret  (path rank: 1.9475986105314267) //_zip_buffer_free at zip_buffer.c:58
+0x000055555555f034 -- 0x55555555f034 edge_only_taken_to 0x55555555f036 -- 0.9194397042093287 -- jz 0x55555555f045 (path rank: 2) //_zip_dirent_read at zip_dirent.c:570
+0x000055555555f040 -- 0x55555555f040 edge_only_taken_to 0x55555557433a -- 0.9194397042093287 -- call 0x55555557433a (path rank: 2) //_zip_dirent_read at zip_dirent.c:571
+0x0000555555574346 -- memory_value min_reg_val_greater_or_equal 0x5555555a1770 -- 0.9166666666666669 -- mov qword ptr [rbp-0x8], rdi (path rank: 1.9351002110143156) //_zip_buffer_free at zip_buffer.c:48

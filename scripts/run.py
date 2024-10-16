@@ -81,18 +81,21 @@ def trace(res_path, method: Method, with_source: bool, id: int):
     move_input_cmd = f"cp {eval_dir}/inputs/input-{id}/* -r {eval_dir}/inputs/"
     subprocess.run(move_input_cmd, shell=True, text=True, capture_output=True)
     set_method(method, with_source)
-    trace_cmd = f'python3 {SCRIPT_PATH}/tracing.py "{args}" {eval_dir}/inputs/input-{id} {eval_dir}/traces'
+    trace_cmd = (
+        f'python3 tracing.py "{args}" {eval_dir}/inputs/input-{id} {eval_dir}/traces'
+    )
     print(trace_cmd)
     trace_cmd_res = subprocess.run(
-        trace_cmd, shell=True, text=True, capture_output=True
+        trace_cmd, shell=True, text=True, capture_output=True, cwd=SCRIPT_PATH
     )
     print_res(trace_cmd_res)
 
     get_addr_cmd = (
         f"python3 {SCRIPT_PATH}/addr_ranges.py --eval_dir {eval_dir} {TRACES_PATH}"
     )
+    print(get_addr_cmd)
     get_addr_cmd_res = subprocess.run(
-        get_addr_cmd, shell=True, text=True, capture_output=True
+        get_addr_cmd, shell=True, text=True, capture_output=True, cwd=SCRIPT_PATH
     )
     print_res(get_addr_cmd_res)
 

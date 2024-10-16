@@ -1,10 +1,41 @@
-0x000055555555aae0 -- rdi max_reg_val_greater_or_equal 0x54 -- 0.9375 -- movzx edi, byte ptr [rcx] (path rank: 0.583468834688347) //get_8bit_row at rdbmp.c:209 (discriminator 3)
-0x000055555555ab04 -- memory_value min_reg_val_less 0x10 -- 0.9327380952380953 -- mov byte ptr [r8+r9*1], bpl (path rank: 0.5989159891598916) //get_8bit_row at rdbmp.c:210 (discriminator 3)
-0x000055555555ab11 -- rdi min_reg_val_less 0x20 -- 0.9232142857142858 -- mov byte ptr [r8+r10*1], dil (path rank: 0.802981029810298) //get_8bit_row at rdbmp.c:211 (discriminator 3)
-0x000055555555a788 -- rdx max_reg_val_less 0x5 -- 0.918452380952381 -- lea edx, ptr [rax-0x1] (path rank: 0.07317073170731707) //get_8bit_row at rdbmp.c:165
-0x000055555555a78f -- memory_value max_reg_val_less 0x5 -- 0.918452380952381 -- mov dword ptr [rsi+0x48], edx (path rank: 0.0883468834688347) //get_8bit_row at rdbmp.c:165
-0x000055555555aa86 -- rsi max_reg_val_less 0x555555569384 -- 0.918452380952381 -- add rsi, rcx (path rank: 0.35176151761517616) //get_8bit_row at rdbmp.c:204
-0x000055555555a799 -- rdx min_reg_val_less 0x6 -- 0.918452380952381 -- mov rcx, qword ptr [rax] (path rank: 0.4205962059620597) //get_8bit_row at rdbmp.c:169
-0x000055555555aae6 -- rcx max_reg_val_less 0x555555569384 -- 0.918452380952381 -- add rcx, 0x1 (path rank: 0.4926829268292683) //get_8bit_row at rdbmp.c:208 (discriminator 3)
-0x000055555555aaef -- memory_value min_reg_val_less 0x28 -- 0.9089285714285714 -- mov byte ptr [rax], r8b (path rank: 0.4970189701897019) //get_8bit_row at rdbmp.c:209 (discriminator 3)
-0x000055555555689e -- min_adjust_flag_set -- 0.9089285714285714 -- jb 0x555555556878 (path rank: 0.8471544715447155) //main at cjpeg.c:663
+0x000055555555aae0 -- rdi max_reg_val_greater_or_equal 0x54 -- 0.9545454545454546 -- movzx edi, byte ptr [rcx] (path rank: 0.8311229000884173) //get_8bit_row at rdbmp.c:209 (discriminator 3)
+0x000055555555aaf6 -- rbp min_reg_val_less 0x20 -- 0.9501206757843924 -- movzx ebp, byte ptr [r8+rdi*1] (path rank: 0.861184792219275) //get_8bit_row at rdbmp.c:210 (discriminator 3)
+0x000055555555ab0c -- rdi min_reg_val_less 0x1b -- 0.9279967819790828 -- movzx edi, byte ptr [rbp+rdi*1] (path rank: 0.8815207780725023) //get_8bit_row at rdbmp.c:211 (discriminator 3)
+0x000055555555a77d -- rax max_reg_val_less 0x9c -- 0.914722445695897 -- mov eax, dword ptr [rsi+0x48] (path rank: 0.2564102564102564) //get_8bit_row at rdbmp.c:165
+0x000055555555a78b -- rdx max_reg_val_less 0x9b -- 0.914722445695897 -- mov rax, qword ptr [rdi+0x8] (path rank: 0.28205128205128205) //get_8bit_row at rdbmp.c:166
+0x000055555555a78f -- memory_value max_reg_val_less 0x9b -- 0.914722445695897 -- mov dword ptr [rsi+0x48], edx (path rank: 0.3076923076923077) //get_8bit_row at rdbmp.c:165
+0x000055555555a799 -- rdx min_reg_val_less 0x9c -- 0.914722445695897 -- mov rcx, qword ptr [rax] (path rank: 0.38461538461538464) //get_8bit_row at rdbmp.c:169
+0x000055555555a7a5 -- rsi min_reg_val_less 0x32 -- 0.914722445695897 -- mov esi, dword ptr [r12+0x30] (path rank: 0.46153846153846156) //get_8bit_row at rdbmp.c:179
+0x000055555555aa86 -- rsi min_reg_val_less 0x555555569632 -- 0.914722445695897 -- add rsi, rcx (path rank: 0.7338638373121131) //get_8bit_row at rdbmp.c:204
+0x000055555555aae6 -- rcx min_reg_val_less 0x555555569601 -- 0.914722445695897 -- add rcx, 0x1 (path rank: 0.8240495137046862) //get_8bit_row at rdbmp.c:208 (discriminator 3)
+0x000055555555b31d -- rdx min_reg_val_less 0x10 -- 0.910297666934835 -- mov edx, dword ptr [r12+0x50] (path rank: 0) //preload_image at rdbmp.c:389
+0x000055555555b322 -- max_sign_flag_set -- 0.910297666934835 -- cmp edx, 0x18 (path rank: 0.02564102564102564) //preload_image at rdbmp.c:389
+0x000055555555b327 -- max_sign_flag_set -- 0.910297666934835 -- cmp edx, 0x20 (path rank: 0.05128205128205128) //preload_image at rdbmp.c:389
+0x000055555555b32c -- max_interrupt_flag_set -- 0.910297666934835 -- cmp edx, 0x8 (path rank: 0.07692307692307693) //preload_image at rdbmp.c:389
+0x000055555555b32f -- is_visited -- 0.910297666934835 -- jz 0x55555555b370 (path rank: 0.10256410256410256) //preload_image at rdbmp.c:389
+0x000055555555b370 -- rdx min_reg_val_less 0xffffffffffffffff -- 0.910297666934835 -- lea rdx, ptr [rip-0xc17] (path rank: 0.1282051282051282) //preload_image at rdbmp.c:391
+0x000055555555b377 -- 0x55555555b377 edge_only_taken_to 0x55555555b34a -- 0.910297666934835 -- mov qword ptr [r12+0x8], rdx (path rank: 0.15384615384615385) //preload_image at rdbmp.c:391
+0x000055555555b35c -- 0x55555555b35c edge_only_taken_to 0x55555555a771 -- 0.910297666934835 -- jmp rdx (path rank: 0.1794871794871795) //preload_image at rdbmp.c:405
+0x000055555555a771 -- rax min_reg_val_less 0xff -- 0.910297666934835 -- mov rbx, qword ptr [rsi+0x38] (path rank: 0.20512820512820512) //get_8bit_row at rdbmp.c:157
+0x000055555555a777 -- max_interrupt_flag_set -- 0.910297666934835 -- jz 0x55555555a860 (path rank: 0.23076923076923078) //get_8bit_row at rdbmp.c:163
+0x000055555555a792 -- rsi min_reg_val_less 0xffffffffffffffff -- 0.910297666934835 -- mov rsi, qword ptr [rsi+0x40] (path rank: 0.3333333333333333) //get_8bit_row at rdbmp.c:166
+0x000055555555a796 -- is_visited -- 0.910297666934835 -- call qword ptr [rax+0x38] (path rank: 0.358974358974359) //get_8bit_row at rdbmp.c:166
+0x000055555555a79c -- rax min_reg_val_less 0xffffffffffffffff -- 0.910297666934835 -- mov rax, qword ptr [rbp+0x20] (path rank: 0.41025641025641024) //get_8bit_row at rdbmp.c:177
+0x000055555555a7a0 -- rdx min_reg_val_less 0xff -- 0.910297666934835 -- mov edx, dword ptr [r12+0x3c] (path rank: 0.4358974358974359) //get_8bit_row at rdbmp.c:178
+0x000055555555a7ad -- max_interrupt_flag_set -- 0.910297666934835 -- cmp edx, 0x1 (path rank: 0.48717948717948717) //get_8bit_row at rdbmp.c:178
+0x000055555555a7b0 -- is_visited -- 0.910297666934835 -- jz 0x55555555aa18 (path rank: 0.5128205128205128) //get_8bit_row at rdbmp.c:178
+0x000055555555a7b9 -- max_interrupt_flag_set -- 0.910297666934835 -- jz 0x55555555a8e8 (path rank: 0.5384615384615384) //get_8bit_row at rdbmp.c:183
+0x000055555555a7bf -- rdi min_reg_val_less 0xffffffffffffffff -- 0.910297666934835 -- lea rdi, ptr [rip+0x3f5a] (path rank: 0.5641025641025641) //get_8bit_row at rdbmp.c:191
+0x000055555555a7ca -- rdi min_reg_val_less 0xffffffffffffffff -- 0.910297666934835 -- lea rdi, ptr [rip+0x3eef] (path rank: 0.5897435897435898) //get_8bit_row at rdbmp.c:192
+0x000055555555a7eb -- r10 min_reg_val_less 0xff -- 0.910297666934835 -- lea rdi, ptr [rip+0x3e0e] (path rank: 0.6153846153846154) //get_8bit_row at rdbmp.c:195
+0x000055555555a7f8 -- max_interrupt_flag_set -- 0.910297666934835 -- js 0x55555555aa78 (path rank: 0.6410256410256411) //get_8bit_row at rdbmp.c:197
+0x000055555555aa78 -- max_interrupt_flag_set -- 0.910297666934835 -- test esi, esi (path rank: 0.6666666666666666) //get_8bit_row at rdbmp.c:207
+0x000055555555aa7a -- is_visited -- 0.910297666934835 -- jz 0x55555555a855 (path rank: 0.6923076923076922) //get_8bit_row at rdbmp.c:207
+0x000055555555aa89 -- max_interrupt_flag_set -- 0.910297666934835 -- add rax, rdx (path rank: 0.7418213969938108) //get_8bit_row at rdbmp.c:204
+0x000055555555aa8c -- max_interrupt_flag_set -- 0.910297666934835 -- cmp ebp, 0x1 (path rank: 0.7674624226348364) //get_8bit_row at rdbmp.c:204
+0x000055555555ab18 -- max_interrupt_flag_set -- 0.910297666934835 -- jnz 0x55555555aae0 (path rank: 0.8735632183908046) //get_8bit_row at rdbmp.c:207 (discriminator 3)
+0x000055555555a85e -- 0x55555555a85e edge_only_taken_to 0x555555556404 -- 0.910297666934835 -- ret  (path rank: 0.9053934571175951) //get_8bit_row at rdbmp.c:218
+0x0000555555556404 -- rsi min_reg_val_greater_or_equal 0x555555564290 -- 0.910297666934835 -- bnd jmp qword ptr [rip+0xab7d] (path rank: 0.9310344827586207) //?? ??:0
+0x000055555555689e -- min_sign_flag_set -- 0.910297666934835 -- jb 0x555555556878 (path rank: 0.9566755083996462) //main at cjpeg.c:663
+0x000055555555aa8f -- 0x55555555aa8f edge_only_taken_to 0x55555555aae0 -- 0.910297666934835 -- jnz 0x55555555aae0 (path rank: 2) //get_8bit_row at rdbmp.c:204
+0x000055555555b32a -- 0x55555555b32a edge_only_taken_to 0x55555555b32c -- 0.910297666934835 -- jz 0x55555555b380 (path rank: 2) //preload_image at rdbmp.c:389

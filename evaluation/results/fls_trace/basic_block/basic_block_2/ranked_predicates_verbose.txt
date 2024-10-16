@@ -1,20 +1,26 @@
-0x0000555555558af4 -- rdi max_reg_val_less 0x6aaaa4e28588 -- 0.994318181818182 -- bnd jmp qword ptr [rip+0xc43b5] (path rank: 0.19870325510055029) //?? ??:0
-0x0000555555558d14 -- 0x555555558d14 edge_only_taken_to 0x55555555bd0a -- 0.994318181818182 -- bnd jmp qword ptr [rip+0xc42a5] (path rank: 0.3974065102011005) //?? ??:0
-0x000055555555e10d -- min_sign_flag_set -- 0.9715909090909092 -- jb 0x55555555da03 (path rank: 1.9421660701822727) //tsk_fs_dir_walk_lcl at fs_dir.c:568 (discriminator 1)
-0x00005555555b76e9 -- rdx max_reg_val_greater_or_equal 0xb98 -- 0.9715909090909092 -- jnle 0x5555555b7702 (path rank: 1.9504891577802665) //ext2fs_dinode_copy at ext2fs.c:782 (discriminator 1)
-0x0000555555558ac4 -- num_successors_equal 2 -- 0.9678362573099416 -- bnd jmp qword ptr [rip+0xc43cd] (path rank: 2) //?? ??:0
-0x000055555555c7b6 -- rax max_reg_val_less 0x9 -- 0.9659090909090908 -- jz 0x55555555c818 (path rank: 1.95150754329584) //print_dent_act at fls_lib.c:121
-0x000055555555c7c6 -- min_sign_flag_set -- 0.9659090909090908 -- jz 0x55555555c818 (path rank: 1.9536622924477773) //print_dent_act at fls_lib.c:122
-0x000055555555a730 -- rdx max_reg_val_less 0x55555561d322 -- 0.9659090909090908 -- jz 0x55555555a752 (path rank: 1.9575605918585968) //tsk_fprintf at tsk_printf.c:87
-0x00005555555b75f6 -- rdx min_reg_val_less 0x418 -- 0.958433014354067 -- jnl 0x5555555b7608 (path rank: 1.9545803001899011) //ext2fs_dinode_copy at ext2fs.c:789
-0x000055555556238d -- rdx min_reg_val_greater_or_equal 0xafa0 -- 0.9524189261031366 -- jz 0x5555555623b1 (path rank: 0.7433747626235576) //tsk_fs_free at fs_open.c:224
-0x00005555555b7606 -- rax min_reg_val_less 0x4a -- 0.9516214779372674 -- jmp 0x5555555b760f (path rank: 1.9591045024427456) //ext2fs_dinode_copy at ext2fs.c:788 (discriminator 1)
-0x000055555555da76 -- 0x55555555da76 edge_only_taken_to 0x55555555da80 -- 0.9488636363636364 -- jz 0x55555555da9b (path rank: 1.9493527941439028) //tsk_fs_dir_walk_lcl at fs_dir.c:582
-0x00005555555eb026 -- rsi min_reg_val_less 0x1 -- 0.9379651780967572 -- jz 0x5555555eb06a (path rank: 1.9543884716203275) //tsk_fs_read_block at fs_io.c:138
-0x000055555555cac3 -- rax min_reg_val_greater_or_equal 0x29 -- 0.931818181818182 -- jnz 0x55555555cb18 (path rank: 1.955910216925549) //print_dent_act at fls_lib.c:197
-0x0000555555558944 -- 0x555555558944 has_edge_to 0x5555555b76e9 -- 0.9116493886230728 -- bnd jmp qword ptr [rip+0xc448d] (path rank: 2) //?? ??:0
-0x00005555555b7653 -- 0x5555555b7653 has_edge_to 0x555555558944 -- 0.9116493886230728 -- jz 0x5555555b76b4 (path rank: 2) //ext2fs_dinode_copy at ext2fs.c:794
-0x00005555555eb130 -- 0x5555555eb130 has_edge_to 0x5555555b7653 -- 0.9116493886230728 -- jmp 0x5555555eb15f (path rank: 2) //tsk_fs_read_block at fs_io.c:164
-0x00005555555b7467 -- rdi min_reg_val_greater_or_equal 0x555555638b01 -- 0.9030435938330674 -- jnz 0x5555555b7473 (path rank: 1.950297329210693) //ext2fs_dinode_copy at ext2fs.c:748
-0x0000555555558814 -- rdx max_reg_val_less 0x8b -- 0.902046783625731 -- bnd jmp qword ptr [rip+0xc4525] (path rank: 0) //?? ??:0
-0x000055555555a181 -- rdx min_reg_val_less 0x41 -- 0.901913875598086 -- jz 0x55555555a1a3 (path rank: 0.7163114135462825) //tsk_error_set_errstr2 at tsk_error.c:351
+0x0000555555558af4 -- rdi max_reg_val_less 0x6aaaa4e27238 -- 0.9932077901174956 -- bnd jmp qword ptr [rip+0xc43b5] (path rank: 0) //?? ??:0
+0x0000555555558d14 -- 0x555555558d14 edge_only_taken_to 0x55555555bd0a -- 0.9932077901174956 -- bnd jmp qword ptr [rip+0xc42a5] (path rank: 0.21697553980616102) //?? ??:0
+0x000055555555e10d -- min_sign_flag_set -- 0.9789473684210526 -- jb 0x55555555da03 (path rank: 1.687095297780376) //tsk_fs_dir_walk_lcl at fs_dir.c:568 (discriminator 1)
+0x00005555555b76e9 -- rdx max_reg_val_greater_or_equal 0xb98 -- 0.9789473684210526 -- jnle 0x5555555b7702 (path rank: 1.740265328495266) //ext2fs_dinode_copy at ext2fs.c:782 (discriminator 1)
+0x000055555555a730 -- rdx max_reg_val_less 0x55555561d322 -- 0.9789473684210526 -- jz 0x55555555a752 (path rank: 1.75181798379523) //tsk_fprintf at tsk_printf.c:87
+0x00005555555b75f6 -- rcx max_reg_val_greater_or_equal 0xa00 -- 0.9736842105263156 -- jnl 0x5555555b7608 (path rank: 1.768836231633429) //ext2fs_dinode_copy at ext2fs.c:789
+0x00005555555b7606 -- rax min_reg_val_less 0x58 -- 0.9690970545630132 -- jmp 0x5555555b760f (path rank: 1.7760562407443399) //ext2fs_dinode_copy at ext2fs.c:788 (discriminator 1)
+0x000055555555c7b6 -- rax max_reg_val_less 0x9 -- 0.968421052631579 -- jz 0x55555555c818 (path rank: 1.7305824606294893) //print_dent_act at fls_lib.c:121
+0x000055555555c7c6 -- min_sign_flag_set -- 0.968421052631579 -- jz 0x55555555c818 (path rank: 1.7391381619120059) //print_dent_act at fls_lib.c:122
+0x000055555555da76 -- 0x55555555da76 edge_only_taken_to 0x55555555da80 -- 0.963157894736842 -- jz 0x55555555da9b (path rank: 1.7217301701230483) //tsk_fs_dir_walk_lcl at fs_dir.c:582
+0x0000555555558ac4 -- num_successors_equal 2 -- 0.9587155963302753 -- bnd jmp qword ptr [rip+0xc43cd] (path rank: 2) //?? ??:0
+0x00005555555eb026 -- rsi min_reg_val_less 0x1 -- 0.9468372766779334 -- jz 0x5555555eb06a (path rank: 1.7584350862909361) //tsk_fs_read_block at fs_io.c:138
+0x000055555556238d -- rdx min_reg_val_greater_or_equal 0xafa0 -- 0.9459842266216 -- jz 0x5555555623b1 (path rank: 0.6026923965725427) //tsk_fs_free at fs_open.c:224
+0x000055555555cac3 -- rax min_reg_val_greater_or_equal 0x29 -- 0.936842105263158 -- jnz 0x55555555cb18 (path rank: 1.7593242367061561) //print_dent_act at fls_lib.c:197
+0x00005555555b7653 -- num_successors_equal 2 -- 0.935457910832126 -- jz 0x5555555b76b4 (path rank: 2) //ext2fs_dinode_copy at ext2fs.c:794
+0x000055555555a181 -- rdx min_reg_val_less 0x41 -- 0.9232254949299856 -- jz 0x55555555a1a3 (path rank: 0.4990908882219797) //tsk_error_set_errstr2 at tsk_error.c:351
+0x0000555555558944 -- 0x555555558944 has_edge_to 0x5555555b76e9 -- 0.9193143408981168 -- bnd jmp qword ptr [rip+0xc448d] (path rank: 2) //?? ??:0
+0x00005555555eb130 -- 0x5555555eb130 has_edge_to 0x5555555b7653 -- 0.9193143408981168 -- jmp 0x5555555eb15f (path rank: 2) //tsk_fs_read_block at fs_io.c:164
+0x00005555555b7bf7 -- rdx min_reg_val_less 0x555555634 -- 0.9125221310156124 -- jmp 0x5555555b7c11 (path rank: 1.9073570604712473) //ext2fs_inode_lookup at ext2fs.c:913
+0x00005555555b7482 -- rax max_reg_val_greater_or_equal 0xb98 -- 0.9116690809592788 -- jnle 0x5555555b756d (path rank: 1.73293951855009) //ext2fs_dinode_copy at ext2fs.c:753
+0x00005555555b76fc -- rax max_reg_val_greater_or_equal 0xb98 -- 0.9116690809592788 -- jl 0x5555555b75d6 (path rank: 1.7498793850084198) //ext2fs_dinode_copy at ext2fs.c:782 (discriminator 2)
+0x00005555555b76af -- r11 min_reg_val_greater_or_equal 0x93c275718b4af00 -- 0.9094640270400772 -- jmp 0x5555555b7a7c (path rank: 1.8145262811006757) //ext2fs_dinode_copy at ext2fs.c:803
+0x00005555555b7467 -- rcx min_reg_val_less 0xff -- 0.9070819249959762 -- jnz 0x5555555b7473 (path rank: 1.7233254620369363) //ext2fs_dinode_copy at ext2fs.c:748
+0x00005555555eb0d9 -- 0x5555555eb0d9 edge_only_taken_to 0x5555555b7653 -- 0.906405923064542 -- jmp 0x5555555eb15f (path rank: 1.7892068406309893) //tsk_fs_read_block at fs_io.c:157
+0x00005555555b765a -- 0x5555555b765a edge_only_taken_to 0x55555555a181 -- 0.906405923064542 -- js 0x5555555b7670 (path rank: 1.797507436411097) //ext2fs_dinode_copy at ext2fs.c:795
+0x00005555555b7be4 -- num_successors_equal 2 -- 0.906405923064542 -- jz 0x5555555b7bf9 (path rank: 2) //ext2fs_inode_lookup at ext2fs.c:911
