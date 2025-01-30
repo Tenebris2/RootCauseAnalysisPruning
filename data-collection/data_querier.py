@@ -1,3 +1,4 @@
+from logging import log
 import pandas as pd
 from enum import Enum
 import matplotlib.pyplot as plt
@@ -35,7 +36,7 @@ class Method(Enum):
 
 def write_to_stats():
     for method in METHODS:
-        df = pd.read_csv("Avg_res.csv")
+        df = pd.read_csv("Avg_res_final.csv")
         df = df[df["Method"] == method].round()
         columns_to_write = ["Test Case", "Predicates", "SLOC"]
         if method == "basic block":
@@ -75,15 +76,19 @@ def apply_timedelta(df):
 def get_merged_df():
     df_arr = []
     for method in METHODS:
-        df = pd.read_csv("Avg_res_middle.csv")
+        df = pd.read_csv("Avg_res_final.csv")
         df[Columns.TRACING_TIME_WITH_TIME_TO_PREPARE.value] = (
             df[Columns.TRACING_TIME.value] + df[Columns.TIME_TO_PREPARE.value]
         )
         df[Columns.PREDICATE_ANALYSIS_TIME.value] = (
             df[Columns.TRACING_TIME.value] + df[Columns.MONITORING_TIME.value]
         )
-
-        df = apply_timedelta(df)
+        df[Columns.TOTAL_TIME.value] = (
+            df[Columns.TRACING_TIME_WITH_TIME_TO_PREPARE.value]
+            + df[Columns.PREDICATE_ANALYSIS_TIME.value]
+            + df[Columns.RANKING_TIME.value]
+        )
+        # df = apply_timedelta(df)
         df_arr.append((df[df["Method"] == method].round(), method))
 
     merged_df, method = df_arr[0]
@@ -99,6 +104,7 @@ def get_merged_df():
 
 def get_stats(*args):
     merged_df = get_merged_df()
+    merged_df = apply_timedelta(merged_df)
     print(merged_df.columns)
     columns = "|".join([x.value for x in list(args)])
     filtered = merged_df.filter(regex=f"^{columns}").columns.tolist()
@@ -137,6 +143,31 @@ def plot_stats(plt_name: str, *args):
     plt.show()
 
 
+def plot_stats_difference(col: Columns):
+    df = get_merged_df()
+    df[f"{col.value}_aurora_loc"] = df[f"{col.value}_aurora"] / df[f"{col.value}_loc"]
+    df[f"{col.value}_aurora_loc with source"] = (
+        df[f"{col.value}_aurora"] / df[f"{col.value}_loc with source"]
+    )
+    df[f"{col.value}_aurora basic block"] = (
+        df[f"{col.value}_aurora"] / df[f"{col.value}_basic block"]
+    )
+    ax = df.plot(
+        x="Test Case",
+        y=f"{col.value}_aurora basic block",
+        figsize=(10, 4),
+        label="Speedup Time of Block-based to AURORA",
+    )
+    ax.set_yscale("log", base=2)
+    ax.set_xticklabels([])
+    ax.set_xlabel("Target")
+    ax.set_ylabel("Speedup")
+    ax.set_yticks([1 / 2, 2, 4, 8])
+    plt.savefig("overall_time_aurora_basic_block.pdf", dpi=300, bbox_inches="tight")
+    plt.grid(True)
+    plt.show()
+
+
 def summary_stats(col: Columns):
     df = get_merged_df()
 
@@ -147,6 +178,18 @@ def summary_stats(col: Columns):
     pprint(summary_stats)
 
     return summary_stats.describe()
+
+
+def get_mean(col: Columns):
+    df = get_merged_df()
+
+    filtered_cols = df.filter(regex=f"^{col.value}")
+
+    print(filtered_cols.mean())
+
+
+def seconds_to_minute_seconds(time: int):
+    return f"{time // 60}:{time % 60}"
 
 
 def plot_circles():
@@ -181,4 +224,34 @@ def tracing_time():
     )
 
 
-plot_circles()
+def predicates():
+    to_tex(
+        pd.concat(
+            [
+                get_stats(Columns.TEST_CASE),
+                get_stats(Columns.PREDICATES),
+                get_stats(Columns.SLOC),
+            ],
+            axis=1,
+        )
+    )
+
+
+def predicates_analysis_time():
+    to_tex(
+        pd.concat(
+            [
+                get_stats(
+                    Columns.TEST_CASE,
+                ),
+                get_stats(Columns.PREDICATE_ANALYSIS_TIME),
+                get_stats(Columns.RANKING_TIME),
+            ],
+            axis=1,
+        )
+    )
+
+
+# predicates_analysis_time()
+# plot_stats_difference(Columns.TOTAL_TIME)
+# predicates()
